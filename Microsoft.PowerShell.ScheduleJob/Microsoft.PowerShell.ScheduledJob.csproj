@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>10.0.0</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{7091427D-7CE8-46C9-A10E-EC560921A557}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>Microsoft.PowerShell.ScheduleJob</RootNamespace>
+    <AssemblyName>Microsoft.PowerShell.ScheduledJob</AssemblyName>
+    <SignAssembly>True</SignAssembly>
+    <AssemblyOriginatorKeyFile>..\mono.snk</AssemblyOriginatorKeyFile>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>True</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>False</Optimize>
+    <OutputPath>..\v1.0\Modules\PSScheduledJob</OutputPath>
+    <DefineConstants>DEBUG;</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>False</ConsolePause>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>none</DebugType>
+    <Optimize>True</Optimize>
+    <OutputPath>..\v1.0\Modules\PSScheduledJob</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>False</ConsolePause>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="CustomMarshalers" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <ItemGroup>
+    <Folder Include="Properties\" />
+    <Folder Include="Microsoft.PowerShell.ScheduledJob\" />
+    <Folder Include="TaskScheduler\" />
+    <Folder Include="TaskScheduler\Implementation\" />
+    <Folder Include="TaskScheduler\Implementation\OSX\" />
+    <Folder Include="TaskScheduler\Implementation\Unix\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Microsoft.PowerShell.ScheduledJob\AddJobTriggerCommand.cs" />
+    <Compile Include="Microsoft.PowerShell.ScheduledJob\DisableJobTriggerCommand.cs" />
+    <Compile Include="Microsoft.PowerShell.ScheduledJob\DisableScheduledJobCommand.cs" />
+    <Compile Include="Microsoft.PowerShell.ScheduledJob\DisableScheduledJobDefinitionBase.cs" />
+    <Compile Include="Microsoft.PowerShell.ScheduledJob\EnableDisableScheduledJobCmdletBase.cs" />
+    <Compile Include="Microsoft.PowerShell.ScheduledJob\EnableJobTriggerCommand.cs" />
+    <Compile Include="Microsoft.PowerShell.ScheduledJob\EnableScheduledJobCommand.cs" />
+    <Compile Include="Microsoft.PowerShell.ScheduledJob\GetJobTriggerCommand.cs" />
+    <Compile Include="Microsoft.PowerShell.ScheduledJob\GetScheduledJobCommand.cs" />
+    <Compile Include="Microsoft.PowerShell.ScheduledJob\GetScheduledJobOptionCommand.cs" />
+    <Compile Include="Microsoft.PowerShell.ScheduledJob\JobTriggerToCimInstanceConverter.cs" />
+    <Compile Include="Microsoft.PowerShell.ScheduledJob\NewJobTriggerCommand.cs" />
+    <Compile Include="Microsoft.PowerShell.ScheduledJob\NewScheduledJobOptionCommand.cs" />
+    <Compile Include="Microsoft.PowerShell.ScheduledJob\RegisterScheduledJobCommand.cs" />
+    <Compile Include="Microsoft.PowerShell.ScheduledJob\RemoveJobTriggerCommand.cs" />
+    <Compile Include="Microsoft.PowerShell.ScheduledJob\ScheduleJobCmdletBase.cs" />
+    <Compile Include="Microsoft.PowerShell.ScheduledJob\ScheduledJob.cs" />
+    <Compile Include="Microsoft.PowerShell.ScheduledJob\ScheduledJobDefinition.cs" />
+    <Compile Include="Microsoft.PowerShell.ScheduledJob\ScheduledJobDefinitionRepository.cs" />
+    <Compile Include="Microsoft.PowerShell.ScheduledJob\ScheduledJobException.cs" />
+    <Compile Include="Microsoft.PowerShell.ScheduledJob\ScheduledJobInvocationInfo.cs" />
+    <Compile Include="Microsoft.PowerShell.ScheduledJob\ScheduledJobOptionCmdletBase.cs" />
+    <Compile Include="Microsoft.PowerShell.ScheduledJob\ScheduledJobOptions.cs" />
+    <Compile Include="Microsoft.PowerShell.ScheduledJob\ScheduledJobSourceAdapter.cs" />
+    <Compile Include="Microsoft.PowerShell.ScheduledJob\ScheduledJobStore.cs" />
+    <Compile Include="Microsoft.PowerShell.ScheduledJob\ScheduledJobTrigger.cs" />
+    <Compile Include="Microsoft.PowerShell.ScheduledJob\ScheduledJobWTS.cs" />
+    <Compile Include="Microsoft.PowerShell.ScheduledJob\SetJobTriggerCommand.cs" />
+    <Compile Include="Microsoft.PowerShell.ScheduledJob\SetScheduledJobCommand.cs" />
+    <Compile Include="Microsoft.PowerShell.ScheduledJob\SetScheduledJobOptionCommand.cs" />
+    <Compile Include="Microsoft.PowerShell.ScheduledJob\StatusInfo.cs" />
+    <Compile Include="Microsoft.PowerShell.ScheduledJob\StringUtil.cs" />
+    <Compile Include="Microsoft.PowerShell.ScheduledJob\TaskMultipleInstancePolicy.cs" />
+    <Compile Include="Microsoft.PowerShell.ScheduledJob\TriggerFrequency.cs" />
+    <Compile Include="Microsoft.PowerShell.ScheduledJob\UnregisterScheduledJobCommand.cs" />
+    <Compile Include="TaskScheduler\IAction.cs" />
+    <Compile Include="TaskScheduler\IActionCollection.cs" />
+    <Compile Include="TaskScheduler\IBootTrigger.cs" />
+    <Compile Include="TaskScheduler\IDailyTrigger.cs" />
+    <Compile Include="TaskScheduler\IExecAction.cs" />
+    <Compile Include="TaskScheduler\IIdleSettings.cs" />
+    <Compile Include="TaskScheduler\ILogonTrigger.cs" />
+    <Compile Include="TaskScheduler\IPrincipal.cs" />
+    <Compile Include="TaskScheduler\IRegisteredTask.cs" />
+    <Compile Include="TaskScheduler\IRepetitionPattern.cs" />
+    <Compile Include="TaskScheduler\IRunningTaskCollection.cs" />
+    <Compile Include="TaskScheduler\ITaskDefinition.cs" />
+    <Compile Include="TaskScheduler\ITaskFolder.cs" />
+    <Compile Include="TaskScheduler\ITaskService.cs" />
+    <Compile Include="TaskScheduler\ITaskSettings.cs" />
+    <Compile Include="TaskScheduler\ITimeTrigger.cs" />
+    <Compile Include="TaskScheduler\ITrigger.cs" />
+    <Compile Include="TaskScheduler\ITriggerCollection.cs" />
+    <Compile Include="TaskScheduler\IWeeklyTrigger.cs" />
+    <Compile Include="TaskScheduler\TaskScheduler.cs" />
+    <Compile Include="TaskScheduler\_TASK_ACTION_TYPE.cs" />
+    <Compile Include="TaskScheduler\_TASK_CREATION.cs" />
+    <Compile Include="TaskScheduler\_TASK_INSTANCES_POLICY.cs" />
+    <Compile Include="TaskScheduler\_TASK_LOGON_TYPE.cs" />
+    <Compile Include="TaskScheduler\_TASK_RUNLEVEL.cs" />
+    <Compile Include="TaskScheduler\_TASK_TRIGGER_TYPE2.cs" />
+    <Compile Include="Resources.Designer.cs" />
+    <Compile Include="ScheduledJobErrorStrings.Designer.cs" />
+    <Compile Include="TaskScheduler\Implementation\OSX\OSXTaskScheduler.cs" />
+    <Compile Include="TaskScheduler\Implementation\Unix\CronTaskScheduler.cs" />
+    <Compile Include="TaskScheduler\Implementation\OSX\OSXTaskFolder.cs" />
+    <Compile Include="TaskScheduler\Implementation\OSX\OSXRegistredTask.cs" />
+    <Compile Include="TaskScheduler\Implementation\OSX\OSXRunningTaskCollection.cs" />
+    <Compile Include="TaskScheduler\Implementation\OSX\OSXPrincipal.cs" />
+    <Compile Include="TaskScheduler\Implementation\OSX\OSXLogonTrigger.cs" />
+    <Compile Include="TaskScheduler\Implementation\OSX\OSXTrigger.cs" />
+    <Compile Include="TaskScheduler\Implementation\OSX\OSXBootTrigger.cs" />
+    <Compile Include="TaskScheduler\Implementation\OSX\OSXTaskDefinition.cs" />
+    <Compile Include="TaskScheduler\Implementation\OSX\OSXWeeklyTrigger.cs" />
+    <Compile Include="TaskScheduler\Implementation\OSX\OSXExecAction.cs" />
+    <Compile Include="TaskScheduler\Implementation\OSX\OSXActionCollection.cs" />
+    <Compile Include="TaskScheduler\Implementation\OSX\OSXAction.cs" />
+    <Compile Include="TaskScheduler\Implementation\OSX\OSXIdleSettings.cs" />
+    <Compile Include="TaskScheduler\Implementation\OSX\OSXRepetitionPattern.cs" />
+    <Compile Include="TaskScheduler\Implementation\OSX\OSXTimeTrigger.cs" />
+    <Compile Include="TaskScheduler\Implementation\OSX\OSXTaskSettings.cs" />
+    <Compile Include="TaskScheduler\Implementation\Unix\CronAction.cs" />
+    <Compile Include="TaskScheduler\Implementation\Unix\CronActionCollection.cs" />
+    <Compile Include="TaskScheduler\Implementation\Unix\CronBootTrigger.cs" />
+    <Compile Include="TaskScheduler\Implementation\Unix\CronExecAction.cs" />
+    <Compile Include="TaskScheduler\Implementation\Unix\CronIdleSettings.cs" />
+    <Compile Include="TaskScheduler\Implementation\Unix\CronLogonTrigger.cs" />
+    <Compile Include="TaskScheduler\Implementation\Unix\CronPrincipal.cs" />
+    <Compile Include="TaskScheduler\Implementation\Unix\CronRegistredTask.cs" />
+    <Compile Include="TaskScheduler\Implementation\Unix\CronRepetitionPattern.cs" />
+    <Compile Include="TaskScheduler\Implementation\Unix\CronRunningTaskCollection.cs" />
+    <Compile Include="TaskScheduler\Implementation\Unix\CronTaskDefinition.cs" />
+    <Compile Include="TaskScheduler\Implementation\Unix\CronTaskFolder.cs" />
+    <Compile Include="TaskScheduler\Implementation\Unix\CronTaskSettings.cs" />
+    <Compile Include="TaskScheduler\Implementation\Unix\CronTimeTrigger.cs" />
+    <Compile Include="TaskScheduler\Implementation\Unix\CronTrigger.cs" />
+    <Compile Include="TaskScheduler\Implementation\Unix\CronWeeklyTrigger.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\System.Management.Automation\System.Management.Automation.csproj">
+      <Project>{3AA23D43-1616-4C39-95D6-D26E63E7D5AB}</Project>
+      <Name>System.Management.Automation</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="PSScheduledJob.Format.ps1xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="PSScheduledJob.psd1">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="PSScheduledJob.types.ps1xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="ScheduledJobErrorStrings.resx" />
+    <EmbeddedResource Include="Resources.resx" />
+  </ItemGroup>
+</Project>

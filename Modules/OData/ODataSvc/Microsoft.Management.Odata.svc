@@ -1,0 +1,1 @@
+<%@ ServiceHost Language="C#" Debug="true" Factory="System.Data.Services.DataServiceHostFactory, Microsoft.Data.Services.PowerShell" Service="Microsoft.Management.Odata.DataService, Microsoft.Management.Odata" %>

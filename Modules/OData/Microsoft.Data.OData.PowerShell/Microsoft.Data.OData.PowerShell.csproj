@@ -1,0 +1,624 @@
+<?xml version="1.0" encoding="utf-8"?>
+<VisualStudioProject ToolsVersion="4.0">
+  <CSHARP ProjectType="Local" ProductVersion="7.10.3077" SchemaVersion="2.0" ProjectGuid="2936531D-2DE0-46C0-A866-B3077CAE4753">
+    <Build>
+      <Settings ApplicationIcon="" AssemblyKeyContainerName="" AssemblyName="Microsoft.Data.OData.PowerShell" AssemblyOriginatorKeyFile="" DefaultClientScript="JScript" DefaultHTMLPageLayout="Grid" DefaultTargetSchema="IE50" DelaySign="false" OutputType="Library" PreBuildEvent="" PostBuildEvent="" RootNamespace="Microsoft.Data.OData.PowerShell" RunPostBuildEvent="OnBuildSuccess" StartupObject="">
+        <Config Name="Debug" AllowUnsafeBlocks="false" BaseAddress="285212672" CheckForOverflowUnderflow="false" ConfigurationOverrideFile="" DefineConstants="DEBUG;TRACE" DocumentationFile="" DebugSymbols="true" FileAlignment="4096" IncrementalBuild="false" NoStdLib="false" NoWarn="" Optimize="false" OutputPath="bin\Debug\" RegisterForComInterop="false" RemoveIntegerChecks="false" TreatWarningsAsErrors="false" WarningLevel="4" />
+        <Config Name="Release" AllowUnsafeBlocks="false" BaseAddress="285212672" CheckForOverflowUnderflow="false" ConfigurationOverrideFile="" DefineConstants="TRACE" DocumentationFile="" DebugSymbols="false" FileAlignment="4096" IncrementalBuild="false" NoStdLib="false" NoWarn="" Optimize="true" OutputPath="bin\Release\" RegisterForComInterop="false" RemoveIntegerChecks="false" TreatWarningsAsErrors="false" WarningLevel="4" />
+      </Settings>
+      <References>
+        <Reference Name="mscorlib" AssemblyName="mscorlib" HintPath="mscorlib.dll" />
+        <Reference Name="System.Xml" AssemblyName="System.Xml" HintPath="System.Xml.dll" />
+        <Reference Name="System" AssemblyName="System" HintPath="System.dll" />
+        <Reference Name="Microsoft.Data.Edm.PowerShell" AssemblyName="Microsoft.Data.Edm.PowerShell" HintPath="Microsoft.Data.Edm.PowerShell.dll" />
+        <Reference Name="System.Spatial.PowerShell" AssemblyName="System.Spatial.PowerShell" HintPath="System.Spatial.PowerShell.dll" />
+        <Reference Name="System.Core" AssemblyName="System.Core" HintPath="System.Core.dll" />
+      </References>
+    </Build>
+    <Files>
+      <Include>
+        <File RelPath="AssemblyInfo.cs" SubType="Code" BuildAction="Compile" />
+        <File RelPath="Microsoft.Data.OData.Query\InternalErrorCodes.cs" SubType="Code" BuildAction="Compile" />
+        <File RelPath="Microsoft.Data.OData.Query\ExpressionLexer.cs" SubType="Code" BuildAction="Compile" />
+        <File RelPath="Microsoft.Data.OData.Query\ExpressionToken.cs" SubType="Code" BuildAction="Compile" />
+        <File RelPath="Microsoft.Data.OData.Query\ExpressionTokenKind.cs" SubType="Code" BuildAction="Compile" />
+        <File RelPath="Microsoft.Data.OData\ODataException.cs" SubType="Code" BuildAction="Compile" />
+        <File RelPath="Microsoft.Data.OData\Strings.cs" SubType="Code" BuildAction="Compile" />
+        <File RelPath="Microsoft.Data.OData.Query\UriPrimitiveTypeParser.cs" SubType="Code" BuildAction="Compile" />
+        <File RelPath="Microsoft.Data.OData.Query\ODataUriNullValue.cs" SubType="Code" BuildAction="Compile" />
+        <File RelPath="Microsoft.Data.OData.Query\LiteralUtils.cs" SubType="Code" BuildAction="Compile" />
+        <File RelPath="Microsoft.Data.OData.Query\TypePromotionUtils.cs" SubType="Code" BuildAction="Compile" />
+        <File RelPath="Microsoft.Data.OData.Metadata\MetadataUtilsCommon.cs" SubType="Code" BuildAction="Compile" />
+        <File RelPath="Microsoft.Data.OData.Metadata\EdmLibraryExtensions.cs" SubType="Code" BuildAction="Compile" />
+        <File RelPath="Microsoft.Data.OData\PlatformHelper.cs" SubType="Code" BuildAction="Compile" />
+        <File RelPath="_PrivateImplementationDetails_{15F6C87D-FC00-4FE4-8415-1D2254A12E24}.cs" SubType="Code" BuildAction="Compile" />
+        <File RelPath="Microsoft.Data.OData.Atom\AtomCategoriesMetadata.cs" SubType="Code" BuildAction="Compile" />
+        <File RelPath="Microsoft.Data.OData.Atom\AtomCategoryMetadata.cs" SubType="Code" BuildAction="Compile" />
+        <File RelPath="Microsoft.Data.OData\ODataDeserializer.cs" SubType="Code" BuildAction="Compile" />
+        <File RelPath="Microsoft.Data.OData\ODataInputContext.cs" SubType="Code" BuildAction="Compile" />
+        <File RelPath="Microsoft.Data.OData\ODataMessageReaderSettings.cs" SubType="Code" BuildAction="Compile" />
+        <File RelPath="Microsoft.Data.OData\ODataVersion.cs" SubType="Code" BuildAction="Compile" />
+        <File RelPath="Microsoft.Data.OData\IODataUrlResolver.cs" SubType="Code" BuildAction="Compile" />
+        <File RelPath="Microsoft.Data.OData\DuplicatePropertyNamesChecker.cs" SubType="Code" BuildAction="Compile" />
+        <File RelPath="Microsoft.Data.OData.Atom\ODataAtomDeserializer.cs" SubType="Code" BuildAction="Compile" />
+        <File RelPath="Microsoft.Data.OData.Atom\ODataAtomInputContext.cs" SubType="Code" BuildAction="Compile" />
+        <File RelPath="Microsoft.Data.OData.Atom\BufferingXmlReader.cs" SubType="Code" BuildAction="Compile" />
+        <File RelPath="Microsoft.Data.OData.Atom\XmlReaderExtensions.cs" SubType="Code" BuildAction="Compile" />
+        <File RelPath="Microsoft.Data.OData\UriUtils.cs" SubType="Code" BuildAction="Compile" />
+        <File RelPath="Microsoft.Data.OData.Atom\ODataAtomPropertyAndValueDeserializer.cs" SubType="Code" BuildAction="Compile" />
+        <File RelPath="Microsoft.Data.OData\ODataProperty.cs" SubType="Code" BuildAction="Compile" />
+        <File RelPath="Microsoft.Data.OData.Metadata\ODataNullValueBehaviorKind.cs" SubType="Code" BuildAction="Compile" />
+        <File RelPath="Microsoft.Data.OData\CollectionWithoutExpectedTypeValidator.cs" SubType="Code" BuildAction="Compile" />
+        <File RelPath="Microsoft.Data.OData.Atom\ODataAtomReaderUtils.cs" SubType="Code" BuildAction="Compile" />
+        <File RelPath="Microsoft.Data.OData\SerializationTypeNameAnnotation.cs" SubType="Code" BuildAction="Compile" />
+        <File RelPath="Microsoft.Data.OData\ReaderValidationUtils.cs" SubType="Code" BuildAction="Compile" />
+        <File RelPath="Microsoft.Data.OData\ODataComplexValue.cs" SubType="Code" BuildAction="Compile" />
+        <File RelPath="Microsoft.Data.OData\ValidationUtils.cs" SubType="Code" BuildAction="Compile" />
+        <File RelPath="Microsoft.Data.OData\ODataCollectionValue.cs" SubType="Code" BuildAction="Compile" />
+        <File RelPath="Microsoft.Data.OData\InternalErrorCodes.cs" SubType="Code" BuildAction="Compile" />
+        <File RelPath="Microsoft.Data.OData\ODataUtils.cs" SubType="Code" BuildAction="Compile" />
+        <File RelPath="Microsoft.Data.OData\AtomValueUtils.cs" SubType="Code" BuildAction="Compile" />
+        <File RelPath="Microsoft.Data.OData\ODataAnnotatable.cs" SubType="Code" BuildAction="Compile" />
+        <File RelPath="Microsoft.Data.OData\ReadOnlyEnumerable!1.cs" SubType="Code" BuildAction="Compile" />
+        <File RelPath="Microsoft.Data.OData\ReadOnlyEnumerable.cs" SubType="Code" BuildAction="Compile" />
+        <File RelPath="Microsoft.Data.OData\ODataMessageQuotas.cs" SubType="Code" BuildAction="Compile" />
+        <File RelPath="Microsoft.Data.OData.Atom\ODataAtomPayloadKindDetectionDeserializer.cs" SubType="Code" BuildAction="Compile" />
+        <File RelPath="Microsoft.Data.OData\ODataPayloadKind.cs" SubType="Code" BuildAction="Compile" />
+        <File RelPath="Microsoft.Data.OData\ODataPayloadKindDetectionInfo.cs" SubType="Code" BuildAction="Compile" />
+        <File RelPath="Microsoft.Data.OData\ODataSerializer.cs" SubType="Code" BuildAction="Compile" />
+        <File RelPath="Microsoft.Data.OData\ODataOutputContext.cs" SubType="Code" BuildAction="Compile" />
+        <File RelPath="Microsoft.Data.OData\ODataMessageWriterSettings.cs" SubType="Code" BuildAction="Compile" />
+        <File RelPath="Microsoft.Data.OData\ODataWriterBehavior.cs" SubType="Code" BuildAction="Compile" />
+        <File RelPath="Microsoft.Data.OData\ODataAssociationLink.cs" SubType="Code" BuildAction="Compile" />
+        <File RelPath="Microsoft.Data.OData\WriterValidationUtils.cs" SubType="Code" BuildAction="Compile" />
+        <File RelPath="Microsoft.Data.OData.Atom\ODataAtomSerializer.cs" SubType="Code" BuildAction="Compile" />
+        <File RelPath="Microsoft.Data.OData.Atom\ODataAtomOutputContext.cs" SubType="Code" BuildAction="Compile" />
+        <File RelPath="Microsoft.Data.OData\UriUtilsCommon.cs" SubType="Code" BuildAction="Compile" />
+        <File RelPath="Microsoft.Data.OData\ODataError.cs" SubType="Code" BuildAction="Compile" />
+        <File RelPath="Microsoft.Data.OData.Atom\ODataAtomWriterUtils.cs" SubType="Code" BuildAction="Compile" />
+        <File RelPath="Microsoft.Data.OData.Atom\ODataAtomPropertyAndValueSerializer.cs" SubType="Code" BuildAction="Compile" />
+        <File RelPath="Microsoft.Data.OData.Atom\EpmValueCache.cs" SubType="Code" BuildAction="Compile" />
+        <File RelPath="Microsoft.Data.OData.Metadata\EpmSourcePathSegment.cs" SubType="Code" BuildAction="Compile" />
+        <File RelPath="Microsoft.Data.OData\ProjectedPropertiesAnnotation.cs" SubType="Code" BuildAction="Compile" />
+        <File RelPath="Microsoft.Data.OData.Metadata\CachedPrimitiveKeepInContentAnnotation.cs" SubType="Code" BuildAction="Compile" />
+        <File RelPath="System.Data.Services.Common\EntityPropertyMappingAttribute.cs" SubType="Code" BuildAction="Compile" />
+        <File RelPath="Microsoft.Data.OData.Metadata\EpmExtensionMethods.cs" SubType="Code" BuildAction="Compile" />
+        <File RelPath="Microsoft.Data.OData.Atom\EpmWriterUtils.cs" SubType="Code" BuildAction="Compile" />
+        <File RelPath="Microsoft.Data.OData\ODataStreamReferenceValue.cs" SubType="Code" BuildAction="Compile" />
+        <File RelPath="Microsoft.Data.OData\ODataVersionChecker.cs" SubType="Code" BuildAction="Compile" />
+        <File RelPath="System.Data.Services.Common\SyndicationItemProperty.cs" SubType="Code" BuildAction="Compile" />
+        <File RelPath="Microsoft.Data.OData\WriterUtils.cs" SubType="Code" BuildAction="Compile" />
+        <File RelPath="Microsoft.Data.OData.Atom\ODataAtomCollectionSerializer.cs" SubType="Code" BuildAction="Compile" />
+        <File RelPath="Microsoft.Data.OData.Atom\ODataAtomEntityReferenceLinkSerializer.cs" SubType="Code" BuildAction="Compile" />
+        <File RelPath="Microsoft.Data.OData\ODataEntityReferenceLink.cs" SubType="Code" BuildAction="Compile" />
+        <File RelPath="Microsoft.Data.OData\ODataEntityReferenceLinks.cs" SubType="Code" BuildAction="Compile" />
+        <File RelPath="Microsoft.Data.OData.Atom\ODataAtomEntryAndFeedSerializer.cs" SubType="Code" BuildAction="Compile" />
+        <File RelPath="Microsoft.Data.OData.Atom\ODataAtomEntryMetadataSerializer.cs" SubType="Code" BuildAction="Compile" />
+        <File RelPath="Microsoft.Data.OData.Atom\ODataAtomFeedMetadataSerializer.cs" SubType="Code" BuildAction="Compile" />
+        <File RelPath="Microsoft.Data.OData.Atom\AtomEntryMetadata.cs" SubType="Code" BuildAction="Compile" />
+        <File RelPath="Microsoft.Data.OData.Atom\ODataAtomWriterMetadataUtils.cs" SubType="Code" BuildAction="Compile" />
+        <File RelPath="Microsoft.Data.OData.Atom\ODataAtomMetadataSerializer.cs" SubType="Code" BuildAction="Compile" />
+        <File RelPath="Microsoft.Data.OData.Atom\AtomLinkMetadata.cs" SubType="Code" BuildAction="Compile" />
+        <File RelPath="Microsoft.Data.OData.Atom\AtomStreamReferenceMetadata.cs" SubType="Code" BuildAction="Compile" />
+        <File RelPath="Microsoft.Data.OData.Atom\AtomUtils.cs" SubType="Code" BuildAction="Compile" />
+        <File RelPath="Microsoft.Data.OData\ODataNavigationLink.cs" SubType="Code" BuildAction="Compile" />
+        <File RelPath="Microsoft.Data.OData\ODataFeed.cs" SubType="Code" BuildAction="Compile" />
+        <File RelPath="Microsoft.Data.OData.Atom\AtomFeedMetadata.cs" SubType="Code" BuildAction="Compile" />
+        <File RelPath="Microsoft.Data.OData\ODataOperation.cs" SubType="Code" BuildAction="Compile" />
+        <File RelPath="Microsoft.Data.OData\ODataAction.cs" SubType="Code" BuildAction="Compile" />
+        <File RelPath="Microsoft.Data.OData.Atom\AtomTextConstruct.cs" SubType="Code" BuildAction="Compile" />
+        <File RelPath="Microsoft.Data.OData.Atom\AtomTextConstructKind.cs" SubType="Code" BuildAction="Compile" />
+        <File RelPath="Microsoft.Data.OData.Atom\AtomPersonMetadata.cs" SubType="Code" BuildAction="Compile" />
+        <File RelPath="Microsoft.Data.OData.Atom\ODataAtomConvert.cs" SubType="Code" BuildAction="Compile" />
+        <File RelPath="Microsoft.Data.OData.Atom\ODataAtomWriterMetadataEpmMergeUtils.cs" SubType="Code" BuildAction="Compile" />
+        <File RelPath="Microsoft.Data.OData.Atom\AtomGeneratorMetadata.cs" SubType="Code" BuildAction="Compile" />
+        <File RelPath="Microsoft.Data.OData\ODataFormat.cs" SubType="Code" BuildAction="Compile" />
+        <File RelPath="Microsoft.Data.OData.Atom\ODataAtomFormat.cs" SubType="Code" BuildAction="Compile" />
+        <File RelPath="Microsoft.Data.OData.Json\ODataVerboseJsonFormat.cs" SubType="Code" BuildAction="Compile" />
+        <File RelPath="Microsoft.Data.OData\ODataRawValueFormat.cs" SubType="Code" BuildAction="Compile" />
+        <File RelPath="Microsoft.Data.OData\ODataBatchFormat.cs" SubType="Code" BuildAction="Compile" />
+        <File RelPath="Microsoft.Data.OData\ODataMetadataFormat.cs" SubType="Code" BuildAction="Compile" />
+        <File RelPath="Microsoft.Data.OData\IODataResponseMessage.cs" SubType="Code" BuildAction="Compile" />
+        <File RelPath="Microsoft.Data.OData\IODataRequestMessage.cs" SubType="Code" BuildAction="Compile" />
+        <File RelPath="Microsoft.Data.OData\IODataResponseMessageAsync.cs" SubType="Code" BuildAction="Compile" />
+        <File RelPath="Microsoft.Data.OData\IODataRequestMessageAsync.cs" SubType="Code" BuildAction="Compile" />
+        <File RelPath="Microsoft.Data.OData\ExceptionUtils.cs" SubType="Code" BuildAction="Compile" />
+        <File RelPath="Microsoft.Data.OData\ODataMessage.cs" SubType="Code" BuildAction="Compile" />
+        <File RelPath="Microsoft.Data.OData\TaskUtils.cs" SubType="Code" BuildAction="Compile" />
+        <File RelPath="Microsoft.Data.OData\ODataBehaviorKind.cs" SubType="Code" BuildAction="Compile" />
+        <File RelPath="Microsoft.Data.OData.Json\ODataJsonOutputContext.cs" SubType="Code" BuildAction="Compile" />
+        <File RelPath="Microsoft.Data.OData\ODataMetadataOutputContext.cs" SubType="Code" BuildAction="Compile" />
+        <File RelPath="Microsoft.Data.OData\ODataRawOutputContext.cs" SubType="Code" BuildAction="Compile" />
+        <File RelPath="Microsoft.Data.OData\ODataWriter.cs" SubType="Code" BuildAction="Compile" />
+        <File RelPath="Microsoft.Data.OData\ODataCollectionWriter.cs" SubType="Code" BuildAction="Compile" />
+        <File RelPath="Microsoft.Data.OData\ODataBatchWriter.cs" SubType="Code" BuildAction="Compile" />
+        <File RelPath="Microsoft.Data.OData\ODataParameterWriter.cs" SubType="Code" BuildAction="Compile" />
+        <File RelPath="Microsoft.Data.OData\ODataWorkspace.cs" SubType="Code" BuildAction="Compile" />
+        <File RelPath="Microsoft.Data.OData\AsyncBufferedStream.cs" SubType="Code" BuildAction="Compile" />
+        <File RelPath="Microsoft.Data.OData\IODataOutputInStreamErrorListener.cs" SubType="Code" BuildAction="Compile" />
+        <File RelPath="Microsoft.Data.OData.Atom\ODataAtomWriter.cs" SubType="Code" BuildAction="Compile" />
+        <File RelPath="Microsoft.Data.OData.Atom\ODataAtomCollectionWriter.cs" SubType="Code" BuildAction="Compile" />
+        <File RelPath="Microsoft.Data.OData\IODataReaderWriterListener.cs" SubType="Code" BuildAction="Compile" />
+        <File RelPath="Microsoft.Data.OData.Atom\ODataAtomServiceDocumentSerializer.cs" SubType="Code" BuildAction="Compile" />
+        <File RelPath="Microsoft.Data.OData\Utils.cs" SubType="Code" BuildAction="Compile" />
+        <File RelPath="Microsoft.Data.OData.Atom\ODataAtomReaderNavigationLinkDescriptor.cs" SubType="Code" BuildAction="Compile" />
+        <File RelPath="Microsoft.Data.OData\BufferingReadStream.cs" SubType="Code" BuildAction="Compile" />
+        <File RelPath="Microsoft.Data.OData\ODataJsonDateTimeFormat.cs" SubType="Code" BuildAction="Compile" />
+        <File RelPath="Microsoft.Data.OData\MediaTypeResolver.cs" SubType="Code" BuildAction="Compile" />
+        <File RelPath="Microsoft.Data.OData\MediaType.cs" SubType="Code" BuildAction="Compile" />
+        <File RelPath="Microsoft.Data.OData\MediaTypeWithFormat.cs" SubType="Code" BuildAction="Compile" />
+        <File RelPath="Microsoft.Data.OData\ODataBatchOperationHeaders.cs" SubType="Code" BuildAction="Compile" />
+        <File RelPath="Microsoft.Data.OData\MessageStreamWrapper.cs" SubType="Code" BuildAction="Compile" />
+        <File RelPath="Microsoft.Data.OData.Json\ODataJsonDeserializer.cs" SubType="Code" BuildAction="Compile" />
+        <File RelPath="Microsoft.Data.OData.Json\ODataJsonInputContext.cs" SubType="Code" BuildAction="Compile" />
+        <File RelPath="Microsoft.Data.OData.Json\BufferingJsonReader.cs" SubType="Code" BuildAction="Compile" />
+        <File RelPath="Microsoft.Data.OData.Json\JsonReader.cs" SubType="Code" BuildAction="Compile" />
+        <File RelPath="Microsoft.Data.OData.Json\JsonReaderExtensions.cs" SubType="Code" BuildAction="Compile" />
+        <File RelPath="Microsoft.Data.OData.Json\JsonNodeType.cs" SubType="Code" BuildAction="Compile" />
+        <File RelPath="Microsoft.Data.OData.Json\ODataJsonPropertyAndValueDeserializer.cs" SubType="Code" BuildAction="Compile" />
+        <File RelPath="Microsoft.Data.OData.Json\ODataJsonReaderUtils.cs" SubType="Code" BuildAction="Compile" />
+        <File RelPath="Microsoft.Data.OData.Json\ODataJsonPayloadKindDetectionDeserializer.cs" SubType="Code" BuildAction="Compile" />
+        <File RelPath="Microsoft.Data.OData\ODataReaderBehavior.cs" SubType="Code" BuildAction="Compile" />
+        <File RelPath="Microsoft.Data.OData.Metadata\MetadataUtils.cs" SubType="Code" BuildAction="Compile" />
+        <File RelPath="Microsoft.Data.OData\ODataUtilsInternal.cs" SubType="Code" BuildAction="Compile" />
+        <File RelPath="Microsoft.Data.OData\InternalErrorCodesCommon.cs" SubType="Code" BuildAction="Compile" />
+        <File RelPath="Microsoft.Data.OData\ODataPayloadKindDetectionResult.cs" SubType="Code" BuildAction="Compile" />
+        <File RelPath="Microsoft.Data.OData\FeedWithoutExpectedTypeValidator.cs" SubType="Code" BuildAction="Compile" />
+        <File RelPath="Microsoft.Data.OData.Atom\ODataAtomServiceDocumentMetadataSerializer.cs" SubType="Code" BuildAction="Compile" />
+        <File RelPath="Microsoft.Data.OData.Atom\AtomWorkspaceMetadata.cs" SubType="Code" BuildAction="Compile" />
+        <File RelPath="Microsoft.Data.OData\ODataResourceCollectionInfo.cs" SubType="Code" BuildAction="Compile" />
+        <File RelPath="Microsoft.Data.OData.Atom\AtomResourceCollectionMetadata.cs" SubType="Code" BuildAction="Compile" />
+        <File RelPath="Microsoft.Data.OData.Json\JsonWriterExtensions.cs" SubType="Code" BuildAction="Compile" />
+        <File RelPath="Microsoft.Data.OData.Json\JsonWriter.cs" SubType="Code" BuildAction="Compile" />
+        <File RelPath="Microsoft.Data.OData.Json\ODataJsonSerializer.cs" SubType="Code" BuildAction="Compile" />
+        <File RelPath="Microsoft.Data.OData.Json\ODataJsonWriterUtils.cs" SubType="Code" BuildAction="Compile" />
+        <File RelPath="Microsoft.Data.OData.Json\ODataJsonPropertyAndValueSerializer.cs" SubType="Code" BuildAction="Compile" />
+        <File RelPath="Microsoft.Data.OData\PrimitiveConverter.cs" SubType="Code" BuildAction="Compile" />
+        <File RelPath="Microsoft.Data.OData.Json\ODataJsonCollectionSerializer.cs" SubType="Code" BuildAction="Compile" />
+        <File RelPath="Microsoft.Data.OData.Json\ODataJsonEntityReferenceLinkSerializer.cs" SubType="Code" BuildAction="Compile" />
+        <File RelPath="Microsoft.Data.OData.Json\ODataJsonEntryAndFeedSerializer.cs" SubType="Code" BuildAction="Compile" />
+        <File RelPath="Microsoft.Data.OData\ODataEntry.cs" SubType="Code" BuildAction="Compile" />
+        <File RelPath="Microsoft.Data.OData\ODataFunction.cs" SubType="Code" BuildAction="Compile" />
+        <File RelPath="Microsoft.Data.OData.Json\ODataJsonWriter.cs" SubType="Code" BuildAction="Compile" />
+        <File RelPath="Microsoft.Data.OData.Json\ODataJsonCollectionWriter.cs" SubType="Code" BuildAction="Compile" />
+        <File RelPath="Microsoft.Data.OData.Json\ODataJsonParameterWriter.cs" SubType="Code" BuildAction="Compile" />
+        <File RelPath="Microsoft.Data.OData.Json\ODataJsonServiceDocumentSerializer.cs" SubType="Code" BuildAction="Compile" />
+        <File RelPath="Microsoft.Data.OData\NonDisposingStream.cs" SubType="Code" BuildAction="Compile" />
+        <File RelPath="Microsoft.Data.OData\MediaTypeUtils.cs" SubType="Code" BuildAction="Compile" />
+        <File RelPath="Microsoft.Data.OData\HttpUtils.cs" SubType="Code" BuildAction="Compile" />
+        <File RelPath="Microsoft.Data.OData\ODataUndeclaredPropertyBehaviorKinds.cs" SubType="Code" BuildAction="Compile" />
+        <File RelPath="Microsoft.Data.OData.Query\ExpressionConstants.cs" SubType="Code" BuildAction="Compile" />
+        <File RelPath="Microsoft.Data.OData\ODataBatchOperationStream.cs" SubType="Code" BuildAction="Compile" />
+        <File RelPath="Microsoft.Data.OData\IODataBatchOperationListener.cs" SubType="Code" BuildAction="Compile" />
+        <File RelPath="Microsoft.Data.OData\ODataBatchOperationWriteStream.cs" SubType="Code" BuildAction="Compile" />
+        <File RelPath="Microsoft.Data.OData\ODataBatchOperationReadStream.cs" SubType="Code" BuildAction="Compile" />
+        <File RelPath="Microsoft.Data.OData\ODataBatchReaderStream.cs" SubType="Code" BuildAction="Compile" />
+        <File RelPath="Microsoft.Data.OData\ODataBatchUtils.cs" SubType="Code" BuildAction="Compile" />
+        <File RelPath="Microsoft.Data.OData\ODataBatchReaderStreamScanResult.cs" SubType="Code" BuildAction="Compile" />
+        <File RelPath="Microsoft.Data.OData\ODataBatchReaderStreamBuffer.cs" SubType="Code" BuildAction="Compile" />
+        <File RelPath="Microsoft.Data.OData\ODataRawInputContext.cs" SubType="Code" BuildAction="Compile" />
+        <File RelPath="Microsoft.Data.OData\ODataBatchReaderState.cs" SubType="Code" BuildAction="Compile" />
+        <File RelPath="Microsoft.Data.OData\ODataParameterWriterCore.cs" SubType="Code" BuildAction="Compile" />
+        <File RelPath="Microsoft.Data.OData\IPrimitiveTypeConverter.cs" SubType="Code" BuildAction="Compile" />
+        <File RelPath="Microsoft.Data.OData\GeometryTypeConverter.cs" SubType="Code" BuildAction="Compile" />
+        <File RelPath="Microsoft.Data.OData.Atom\ODataAtomMetadataDeserializer.cs" SubType="Code" BuildAction="Compile" />
+        <File RelPath="Microsoft.Data.OData.Metadata\EpmTargetPathSegment.cs" SubType="Code" BuildAction="Compile" />
+        <File RelPath="Microsoft.Data.OData.Metadata\EntityPropertyMappingInfo.cs" SubType="Code" BuildAction="Compile" />
+        <File RelPath="Microsoft.Data.OData.Atom\ODataAtomFeedMetadataDeserializer.cs" SubType="Code" BuildAction="Compile" />
+        <File RelPath="Microsoft.Data.OData\AtomMetadataReaderUtils.cs" SubType="Code" BuildAction="Compile" />
+        <File RelPath="Microsoft.Data.OData\ODataParameterReader.cs" SubType="Code" BuildAction="Compile" />
+        <File RelPath="Microsoft.Data.OData\ODataParameterReaderState.cs" SubType="Code" BuildAction="Compile" />
+        <File RelPath="Microsoft.Data.OData\ODataCollectionReader.cs" SubType="Code" BuildAction="Compile" />
+        <File RelPath="Microsoft.Data.OData\ODataParameterReaderCore.cs" SubType="Code" BuildAction="Compile" />
+        <File RelPath="Microsoft.Data.OData.Json\ODataJsonParameterReader.cs" SubType="Code" BuildAction="Compile" />
+        <File RelPath="Microsoft.Data.OData.Json\ODataJsonCollectionReader.cs" SubType="Code" BuildAction="Compile" />
+        <File RelPath="Microsoft.Data.OData.Atom\ODataAtomServiceDocumentMetadataDeserializer.cs" SubType="Code" BuildAction="Compile" />
+        <File RelPath="Microsoft.Data.OData\ODataBatchUrlResolver.cs" SubType="Code" BuildAction="Compile" />
+        <File RelPath="Microsoft.Data.OData\ODataContentTypeException.cs" SubType="Code" BuildAction="Compile" />
+        <File RelPath="Microsoft.Data.OData.Query\ODataUriConversionUtils.cs" SubType="Code" BuildAction="Compile" />
+        <File RelPath="Microsoft.Data.OData\TypeUtils.cs" SubType="Code" BuildAction="Compile" />
+        <File RelPath="Microsoft.Data.OData.Query\ODataUriUtils.cs" SubType="Code" BuildAction="Compile" />
+        <File RelPath="System.Data.Services.Common\SyndicationTextContentKind.cs" SubType="Code" BuildAction="Compile" />
+        <File RelPath="Microsoft.Data.OData.Atom\ODataAtomErrorDeserializer.cs" SubType="Code" BuildAction="Compile" />
+        <File RelPath="Microsoft.Data.OData\ODataInnerError.cs" SubType="Code" BuildAction="Compile" />
+        <File RelPath="Microsoft.Data.OData\ODataErrorException.cs" SubType="Code" BuildAction="Compile" />
+        <File RelPath="Microsoft.Data.OData.Atom\EpmReader.cs" SubType="Code" BuildAction="Compile" />
+        <File RelPath="Microsoft.Data.OData.Atom\IODataAtomReaderEntryState.cs" SubType="Code" BuildAction="Compile" />
+        <File RelPath="Microsoft.Data.OData\ReaderUtils.cs" SubType="Code" BuildAction="Compile" />
+        <File RelPath="Microsoft.Data.OData.Atom\EpmCustomReader.cs" SubType="Code" BuildAction="Compile" />
+        <File RelPath="Microsoft.Data.OData.Atom\EpmCustomReaderValueCache.cs" SubType="Code" BuildAction="Compile" />
+        <File RelPath="Microsoft.Data.OData.Atom\ODataAtomEpmDeserializer.cs" SubType="Code" BuildAction="Compile" />
+        <File RelPath="Microsoft.Data.OData.Metadata\ODataEntityPropertyMappingCache.cs" SubType="Code" BuildAction="Compile" />
+        <File RelPath="Microsoft.Data.OData.Metadata\EpmTargetTree.cs" SubType="Code" BuildAction="Compile" />
+        <File RelPath="Microsoft.Data.OData.Atom\ODataAtomEntityReferenceLinkDeserializer.cs" SubType="Code" BuildAction="Compile" />
+        <File RelPath="Microsoft.Data.OData.Metadata\ODataEdmPropertyAnnotation.cs" SubType="Code" BuildAction="Compile" />
+        <File RelPath="Microsoft.Data.OData\ODataMetadataInputContext.cs" SubType="Code" BuildAction="Compile" />
+        <File RelPath="Microsoft.Data.OData\ODataReader.cs" SubType="Code" BuildAction="Compile" />
+        <File RelPath="Microsoft.Data.OData\ODataBatchReader.cs" SubType="Code" BuildAction="Compile" />
+        <File RelPath="Microsoft.Data.OData.Metadata\EpmConstants.cs" SubType="Code" BuildAction="Compile" />
+        <File RelPath="Microsoft.Data.OData.Metadata\EpmAttributeNameBuilder.cs" SubType="Code" BuildAction="Compile" />
+        <File RelPath="Microsoft.Data.OData.Metadata\ODataEntityPropertyMappingCollection.cs" SubType="Code" BuildAction="Compile" />
+        <File RelPath="Microsoft.Data.OData.Metadata\EpmSourceTree.cs" SubType="Code" BuildAction="Compile" />
+        <File RelPath="Microsoft.Data.OData.Json\JsonValueUtils.cs" SubType="Code" BuildAction="Compile" />
+        <File RelPath="Microsoft.Data.OData\ODataReaderState.cs" SubType="Code" BuildAction="Compile" />
+        <File RelPath="Microsoft.Data.OData\ODataItem.cs" SubType="Code" BuildAction="Compile" />
+        <File RelPath="Microsoft.Data.OData\ODataReaderCore.cs" SubType="Code" BuildAction="Compile" />
+        <File RelPath="Microsoft.Data.OData.Json\ODataJsonReader.cs" SubType="Code" BuildAction="Compile" />
+        <File RelPath="Microsoft.Data.OData.Json\IODataJsonReaderEntryState.cs" SubType="Code" BuildAction="Compile" />
+        <File RelPath="Microsoft.Data.OData.Json\ODataJsonEntryAndFeedDeserializer.cs" SubType="Code" BuildAction="Compile" />
+        <File RelPath="Microsoft.Data.OData.Atom\EpmSyndicationReader.cs" SubType="Code" BuildAction="Compile" />
+        <File RelPath="Microsoft.Data.OData.Atom\EpmWriter.cs" SubType="Code" BuildAction="Compile" />
+        <File RelPath="Microsoft.Data.OData.Atom\EntryPropertiesValueCache.cs" SubType="Code" BuildAction="Compile" />
+        <File RelPath="Microsoft.Data.OData.Atom\IODataAtomReaderFeedState.cs" SubType="Code" BuildAction="Compile" />
+        <File RelPath="Microsoft.Data.OData.Atom\ODataAtomCollectionDeserializer.cs" SubType="Code" BuildAction="Compile" />
+        <File RelPath="Microsoft.Data.OData\ODataCollectionStart.cs" SubType="Code" BuildAction="Compile" />
+        <File RelPath="Microsoft.Data.OData.Atom\ODataAtomDeserializerExpandedNavigationLinkContent.cs" SubType="Code" BuildAction="Compile" />
+        <File RelPath="Microsoft.Data.OData.Atom\ODataAtomEntryAndFeedDeserializer.cs" SubType="Code" BuildAction="Compile" />
+        <File RelPath="Microsoft.Data.OData.Atom\ODataAtomEntryMetadataDeserializer.cs" SubType="Code" BuildAction="Compile" />
+        <File RelPath="Microsoft.Data.OData.Atom\ODataAtomServiceDocumentDeserializer.cs" SubType="Code" BuildAction="Compile" />
+        <File RelPath="Microsoft.Data.OData\GeographyTypeConverter.cs" SubType="Code" BuildAction="Compile" />
+        <File RelPath="Microsoft.Data.OData\ODataCollectionReaderState.cs" SubType="Code" BuildAction="Compile" />
+        <File RelPath="Microsoft.Data.OData\ODataCollectionReaderCore.cs" SubType="Code" BuildAction="Compile" />
+        <File RelPath="Microsoft.Data.OData.Atom\ODataAtomCollectionReader.cs" SubType="Code" BuildAction="Compile" />
+        <File RelPath="Microsoft.Data.OData.Atom\ODataAtomReader.cs" SubType="Code" BuildAction="Compile" />
+        <File RelPath="Microsoft.Data.OData\ErrorUtils.cs" SubType="Code" BuildAction="Compile" />
+        <File RelPath="Microsoft.Data.OData.Json\ODataJsonCollectionDeserializer.cs" SubType="Code" BuildAction="Compile" />
+        <File RelPath="Microsoft.Data.OData.Json\ODataJsonEntityReferenceLinkDeserializer.cs" SubType="Code" BuildAction="Compile" />
+        <File RelPath="Microsoft.Data.OData.Json\ODataJsonErrorDeserializer.cs" SubType="Code" BuildAction="Compile" />
+        <File RelPath="Microsoft.Data.OData.Json\ODataJsonServiceDocumentDeserializer.cs" SubType="Code" BuildAction="Compile" />
+        <File RelPath="Microsoft.Data.OData\ODataBatchOperationRequestMessage.cs" SubType="Code" BuildAction="Compile" />
+        <File RelPath="Microsoft.Data.OData\ODataBatchOperationResponseMessage.cs" SubType="Code" BuildAction="Compile" />
+        <File RelPath="Microsoft.Data.OData\ODataMessageReader.cs" SubType="Code" BuildAction="Compile" />
+        <File RelPath="Microsoft.Data.OData\ODataRequestMessage.cs" SubType="Code" BuildAction="Compile" />
+        <File RelPath="Microsoft.Data.OData\ODataResponseMessage.cs" SubType="Code" BuildAction="Compile" />
+        <File RelPath="Microsoft.Data.OData\ODataMessageWriter.cs" SubType="Code" BuildAction="Compile" />
+        <File RelPath="Microsoft.Data.OData\BufferedReadStream.cs" SubType="Code" BuildAction="Compile" />
+        <File RelPath="Microsoft.Data.OData\ODataBatchOperationMessage.cs" SubType="Code" BuildAction="Compile" />
+        <File RelPath="Microsoft.Data.OData\ODataBatchWriterUtils.cs" SubType="Code" BuildAction="Compile" />
+        <File RelPath="Microsoft.Data.OData.Atom\EpmCustomWriter.cs" SubType="Code" BuildAction="Compile" />
+        <File RelPath="Microsoft.Data.OData.Atom\EpmSyndicationWriter.cs" SubType="Code" BuildAction="Compile" />
+        <File RelPath="Microsoft.Data.OData\ReferenceEqualityComparer!1.cs" SubType="Code" BuildAction="Compile" />
+        <File RelPath="Microsoft.Data.OData\ODataCollectionWriterCore.cs" SubType="Code" BuildAction="Compile" />
+        <File RelPath="Microsoft.Data.OData\DebugUtils.cs" SubType="Code" BuildAction="Compile" />
+        <File RelPath="Microsoft.Data.OData.Metadata\EdmConstants.cs" SubType="Code" BuildAction="Compile" />
+        <File RelPath="Microsoft.Data.OData.Atom\ExtensionMethods.cs" SubType="Code" BuildAction="Compile" />
+        <File RelPath="Microsoft.Data.OData.Atom\AtomConstants.cs" SubType="Code" BuildAction="Compile" />
+        <File RelPath="Microsoft.Data.OData\ODataWriterCore.cs" SubType="Code" BuildAction="Compile" />
+        <File RelPath="Microsoft.Data.OData\MimeConstants.cs" SubType="Code" BuildAction="Compile" />
+        <File RelPath="Microsoft.Data.OData\ODataConstants.cs" SubType="Code" BuildAction="Compile" />
+        <File RelPath="Microsoft.Data.OData.Json\IndentedTextWriter.cs" SubType="Code" BuildAction="Compile" />
+        <File RelPath="Microsoft.Data.OData.Json\JsonConstants.cs" SubType="Code" BuildAction="Compile" />
+        <File RelPath="Microsoft.Data.OData\Error.cs" SubType="Code" BuildAction="Compile" />
+        <File RelPath="Microsoft.Data.OData\TextResDescriptionAttribute.cs" SubType="Code" BuildAction="Compile" />
+        <File RelPath="Microsoft.Data.OData\TextRes.cs" SubType="Code" BuildAction="Compile" />
+        <File RelPath="Microsoft.Data.OData\TextResCategoryAttribute.cs" SubType="Code" BuildAction="Compile" />
+        <File RelPath="Microsoft.Data.OData.resx" BuildAction="EmbeddedResource" />
+      </Include>
+    </Files>
+  </CSHARP>
+  <PropertyGroup xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{6E31202F-874A-440B-AD71-209FFB503EC7}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>Microsoft.Data.OData.PowerShell</RootNamespace>
+    <AssemblyName>Microsoft.Data.OData.PowerShell</AssemblyName>
+    <SignAssembly>True</SignAssembly>
+    <AssemblyOriginatorKeyFile>..\..\..\mono.snk</AssemblyOriginatorKeyFile>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' " xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <DebugSymbols>True</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>False</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <WarningLevel>4</WarningLevel>
+    <RunWithWarnings>False</RunWithWarnings>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' " xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <DebugType>none</DebugType>
+    <Optimize>False</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <WarningLevel>4</WarningLevel>
+    <RunWithWarnings>False</RunWithWarnings>
+  </PropertyGroup>
+  <ItemGroup xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <Compile Include="AssemblyInfo.cs" />
+    <Compile Include="Microsoft.Data.OData.Query\InternalErrorCodes.cs" />
+    <Compile Include="Microsoft.Data.OData.Query\ExpressionLexer.cs" />
+    <Compile Include="Microsoft.Data.OData.Query\ExpressionToken.cs" />
+    <Compile Include="Microsoft.Data.OData.Query\ExpressionTokenKind.cs" />
+    <Compile Include="Microsoft.Data.OData\ODataException.cs" />
+    <Compile Include="Microsoft.Data.OData\Strings.cs" />
+    <Compile Include="Microsoft.Data.OData.Query\UriPrimitiveTypeParser.cs" />
+    <Compile Include="Microsoft.Data.OData.Query\ODataUriNullValue.cs" />
+    <Compile Include="Microsoft.Data.OData.Query\LiteralUtils.cs" />
+    <Compile Include="Microsoft.Data.OData.Query\TypePromotionUtils.cs" />
+    <Compile Include="Microsoft.Data.OData.Metadata\MetadataUtilsCommon.cs" />
+    <Compile Include="Microsoft.Data.OData.Metadata\EdmLibraryExtensions.cs" />
+    <Compile Include="Microsoft.Data.OData\PlatformHelper.cs" />
+    <Compile Include="_PrivateImplementationDetails_{15F6C87D-FC00-4FE4-8415-1D2254A12E24}.cs" />
+    <Compile Include="Microsoft.Data.OData.Atom\AtomCategoriesMetadata.cs" />
+    <Compile Include="Microsoft.Data.OData.Atom\AtomCategoryMetadata.cs" />
+    <Compile Include="Microsoft.Data.OData\ODataDeserializer.cs" />
+    <Compile Include="Microsoft.Data.OData\ODataInputContext.cs" />
+    <Compile Include="Microsoft.Data.OData\ODataMessageReaderSettings.cs" />
+    <Compile Include="Microsoft.Data.OData\ODataVersion.cs" />
+    <Compile Include="Microsoft.Data.OData\IODataUrlResolver.cs" />
+    <Compile Include="Microsoft.Data.OData\DuplicatePropertyNamesChecker.cs" />
+    <Compile Include="Microsoft.Data.OData.Atom\ODataAtomDeserializer.cs" />
+    <Compile Include="Microsoft.Data.OData.Atom\ODataAtomInputContext.cs" />
+    <Compile Include="Microsoft.Data.OData.Atom\BufferingXmlReader.cs" />
+    <Compile Include="Microsoft.Data.OData.Atom\XmlReaderExtensions.cs" />
+    <Compile Include="Microsoft.Data.OData\UriUtils.cs" />
+    <Compile Include="Microsoft.Data.OData.Atom\ODataAtomPropertyAndValueDeserializer.cs" />
+    <Compile Include="Microsoft.Data.OData\ODataProperty.cs" />
+    <Compile Include="Microsoft.Data.OData.Metadata\ODataNullValueBehaviorKind.cs" />
+    <Compile Include="Microsoft.Data.OData\CollectionWithoutExpectedTypeValidator.cs" />
+    <Compile Include="Microsoft.Data.OData.Atom\ODataAtomReaderUtils.cs" />
+    <Compile Include="Microsoft.Data.OData\SerializationTypeNameAnnotation.cs" />
+    <Compile Include="Microsoft.Data.OData\ReaderValidationUtils.cs" />
+    <Compile Include="Microsoft.Data.OData\ODataComplexValue.cs" />
+    <Compile Include="Microsoft.Data.OData\ValidationUtils.cs" />
+    <Compile Include="Microsoft.Data.OData\ODataCollectionValue.cs" />
+    <Compile Include="Microsoft.Data.OData\InternalErrorCodes.cs" />
+    <Compile Include="Microsoft.Data.OData\ODataUtils.cs" />
+    <Compile Include="Microsoft.Data.OData\AtomValueUtils.cs" />
+    <Compile Include="Microsoft.Data.OData\ODataAnnotatable.cs" />
+    <Compile Include="Microsoft.Data.OData\ReadOnlyEnumerable!1.cs" />
+    <Compile Include="Microsoft.Data.OData\ReadOnlyEnumerable.cs" />
+    <Compile Include="Microsoft.Data.OData\ODataMessageQuotas.cs" />
+    <Compile Include="Microsoft.Data.OData.Atom\ODataAtomPayloadKindDetectionDeserializer.cs" />
+    <Compile Include="Microsoft.Data.OData\ODataPayloadKind.cs" />
+    <Compile Include="Microsoft.Data.OData\ODataPayloadKindDetectionInfo.cs" />
+    <Compile Include="Microsoft.Data.OData\ODataSerializer.cs" />
+    <Compile Include="Microsoft.Data.OData\ODataOutputContext.cs" />
+    <Compile Include="Microsoft.Data.OData\ODataMessageWriterSettings.cs" />
+    <Compile Include="Microsoft.Data.OData\ODataWriterBehavior.cs" />
+    <Compile Include="Microsoft.Data.OData\ODataAssociationLink.cs" />
+    <Compile Include="Microsoft.Data.OData\WriterValidationUtils.cs" />
+    <Compile Include="Microsoft.Data.OData.Atom\ODataAtomSerializer.cs" />
+    <Compile Include="Microsoft.Data.OData.Atom\ODataAtomOutputContext.cs" />
+    <Compile Include="Microsoft.Data.OData\UriUtilsCommon.cs" />
+    <Compile Include="Microsoft.Data.OData\ODataError.cs" />
+    <Compile Include="Microsoft.Data.OData.Atom\ODataAtomWriterUtils.cs" />
+    <Compile Include="Microsoft.Data.OData.Atom\ODataAtomPropertyAndValueSerializer.cs" />
+    <Compile Include="Microsoft.Data.OData.Atom\EpmValueCache.cs" />
+    <Compile Include="Microsoft.Data.OData.Metadata\EpmSourcePathSegment.cs" />
+    <Compile Include="Microsoft.Data.OData\ProjectedPropertiesAnnotation.cs" />
+    <Compile Include="Microsoft.Data.OData.Metadata\CachedPrimitiveKeepInContentAnnotation.cs" />
+    <Compile Include="System.Data.Services.Common\EntityPropertyMappingAttribute.cs" />
+    <Compile Include="Microsoft.Data.OData.Metadata\EpmExtensionMethods.cs" />
+    <Compile Include="Microsoft.Data.OData.Atom\EpmWriterUtils.cs" />
+    <Compile Include="Microsoft.Data.OData\ODataStreamReferenceValue.cs" />
+    <Compile Include="Microsoft.Data.OData\ODataVersionChecker.cs" />
+    <Compile Include="System.Data.Services.Common\SyndicationItemProperty.cs" />
+    <Compile Include="Microsoft.Data.OData\WriterUtils.cs" />
+    <Compile Include="Microsoft.Data.OData.Atom\ODataAtomCollectionSerializer.cs" />
+    <Compile Include="Microsoft.Data.OData.Atom\ODataAtomEntityReferenceLinkSerializer.cs" />
+    <Compile Include="Microsoft.Data.OData\ODataEntityReferenceLink.cs" />
+    <Compile Include="Microsoft.Data.OData\ODataEntityReferenceLinks.cs" />
+    <Compile Include="Microsoft.Data.OData.Atom\ODataAtomEntryAndFeedSerializer.cs" />
+    <Compile Include="Microsoft.Data.OData.Atom\ODataAtomEntryMetadataSerializer.cs" />
+    <Compile Include="Microsoft.Data.OData.Atom\ODataAtomFeedMetadataSerializer.cs" />
+    <Compile Include="Microsoft.Data.OData.Atom\AtomEntryMetadata.cs" />
+    <Compile Include="Microsoft.Data.OData.Atom\ODataAtomWriterMetadataUtils.cs" />
+    <Compile Include="Microsoft.Data.OData.Atom\ODataAtomMetadataSerializer.cs" />
+    <Compile Include="Microsoft.Data.OData.Atom\AtomLinkMetadata.cs" />
+    <Compile Include="Microsoft.Data.OData.Atom\AtomStreamReferenceMetadata.cs" />
+    <Compile Include="Microsoft.Data.OData.Atom\AtomUtils.cs" />
+    <Compile Include="Microsoft.Data.OData\ODataNavigationLink.cs" />
+    <Compile Include="Microsoft.Data.OData\ODataFeed.cs" />
+    <Compile Include="Microsoft.Data.OData.Atom\AtomFeedMetadata.cs" />
+    <Compile Include="Microsoft.Data.OData\ODataOperation.cs" />
+    <Compile Include="Microsoft.Data.OData\ODataAction.cs" />
+    <Compile Include="Microsoft.Data.OData.Atom\AtomTextConstruct.cs" />
+    <Compile Include="Microsoft.Data.OData.Atom\AtomTextConstructKind.cs" />
+    <Compile Include="Microsoft.Data.OData.Atom\AtomPersonMetadata.cs" />
+    <Compile Include="Microsoft.Data.OData.Atom\ODataAtomConvert.cs" />
+    <Compile Include="Microsoft.Data.OData.Atom\ODataAtomWriterMetadataEpmMergeUtils.cs" />
+    <Compile Include="Microsoft.Data.OData.Atom\AtomGeneratorMetadata.cs" />
+    <Compile Include="Microsoft.Data.OData\ODataFormat.cs" />
+    <Compile Include="Microsoft.Data.OData.Atom\ODataAtomFormat.cs" />
+    <Compile Include="Microsoft.Data.OData.Json\ODataVerboseJsonFormat.cs" />
+    <Compile Include="Microsoft.Data.OData\ODataRawValueFormat.cs" />
+    <Compile Include="Microsoft.Data.OData\ODataBatchFormat.cs" />
+    <Compile Include="Microsoft.Data.OData\ODataMetadataFormat.cs" />
+    <Compile Include="Microsoft.Data.OData\IODataResponseMessage.cs" />
+    <Compile Include="Microsoft.Data.OData\IODataRequestMessage.cs" />
+    <Compile Include="Microsoft.Data.OData\IODataResponseMessageAsync.cs" />
+    <Compile Include="Microsoft.Data.OData\IODataRequestMessageAsync.cs" />
+    <Compile Include="Microsoft.Data.OData\ExceptionUtils.cs" />
+    <Compile Include="Microsoft.Data.OData\ODataMessage.cs" />
+    <Compile Include="Microsoft.Data.OData\TaskUtils.cs" />
+    <Compile Include="Microsoft.Data.OData\ODataBehaviorKind.cs" />
+    <Compile Include="Microsoft.Data.OData.Json\ODataJsonOutputContext.cs" />
+    <Compile Include="Microsoft.Data.OData\ODataMetadataOutputContext.cs" />
+    <Compile Include="Microsoft.Data.OData\ODataRawOutputContext.cs" />
+    <Compile Include="Microsoft.Data.OData\ODataWriter.cs" />
+    <Compile Include="Microsoft.Data.OData\ODataCollectionWriter.cs" />
+    <Compile Include="Microsoft.Data.OData\ODataBatchWriter.cs" />
+    <Compile Include="Microsoft.Data.OData\ODataParameterWriter.cs" />
+    <Compile Include="Microsoft.Data.OData\ODataWorkspace.cs" />
+    <Compile Include="Microsoft.Data.OData\AsyncBufferedStream.cs" />
+    <Compile Include="Microsoft.Data.OData\IODataOutputInStreamErrorListener.cs" />
+    <Compile Include="Microsoft.Data.OData.Atom\ODataAtomWriter.cs" />
+    <Compile Include="Microsoft.Data.OData.Atom\ODataAtomCollectionWriter.cs" />
+    <Compile Include="Microsoft.Data.OData\IODataReaderWriterListener.cs" />
+    <Compile Include="Microsoft.Data.OData.Atom\ODataAtomServiceDocumentSerializer.cs" />
+    <Compile Include="Microsoft.Data.OData\Utils.cs" />
+    <Compile Include="Microsoft.Data.OData.Atom\ODataAtomReaderNavigationLinkDescriptor.cs" />
+    <Compile Include="Microsoft.Data.OData\BufferingReadStream.cs" />
+    <Compile Include="Microsoft.Data.OData\ODataJsonDateTimeFormat.cs" />
+    <Compile Include="Microsoft.Data.OData\MediaTypeResolver.cs" />
+    <Compile Include="Microsoft.Data.OData\MediaType.cs" />
+    <Compile Include="Microsoft.Data.OData\MediaTypeWithFormat.cs" />
+    <Compile Include="Microsoft.Data.OData\ODataBatchOperationHeaders.cs" />
+    <Compile Include="Microsoft.Data.OData\MessageStreamWrapper.cs" />
+    <Compile Include="Microsoft.Data.OData.Json\ODataJsonDeserializer.cs" />
+    <Compile Include="Microsoft.Data.OData.Json\ODataJsonInputContext.cs" />
+    <Compile Include="Microsoft.Data.OData.Json\BufferingJsonReader.cs" />
+    <Compile Include="Microsoft.Data.OData.Json\JsonReader.cs" />
+    <Compile Include="Microsoft.Data.OData.Json\JsonReaderExtensions.cs" />
+    <Compile Include="Microsoft.Data.OData.Json\JsonNodeType.cs" />
+    <Compile Include="Microsoft.Data.OData.Json\ODataJsonPropertyAndValueDeserializer.cs" />
+    <Compile Include="Microsoft.Data.OData.Json\ODataJsonReaderUtils.cs" />
+    <Compile Include="Microsoft.Data.OData.Json\ODataJsonPayloadKindDetectionDeserializer.cs" />
+    <Compile Include="Microsoft.Data.OData\ODataReaderBehavior.cs" />
+    <Compile Include="Microsoft.Data.OData.Metadata\MetadataUtils.cs" />
+    <Compile Include="Microsoft.Data.OData\ODataUtilsInternal.cs" />
+    <Compile Include="Microsoft.Data.OData\InternalErrorCodesCommon.cs" />
+    <Compile Include="Microsoft.Data.OData\ODataPayloadKindDetectionResult.cs" />
+    <Compile Include="Microsoft.Data.OData\FeedWithoutExpectedTypeValidator.cs" />
+    <Compile Include="Microsoft.Data.OData.Atom\ODataAtomServiceDocumentMetadataSerializer.cs" />
+    <Compile Include="Microsoft.Data.OData.Atom\AtomWorkspaceMetadata.cs" />
+    <Compile Include="Microsoft.Data.OData\ODataResourceCollectionInfo.cs" />
+    <Compile Include="Microsoft.Data.OData.Atom\AtomResourceCollectionMetadata.cs" />
+    <Compile Include="Microsoft.Data.OData.Json\JsonWriterExtensions.cs" />
+    <Compile Include="Microsoft.Data.OData.Json\JsonWriter.cs" />
+    <Compile Include="Microsoft.Data.OData.Json\ODataJsonSerializer.cs" />
+    <Compile Include="Microsoft.Data.OData.Json\ODataJsonWriterUtils.cs" />
+    <Compile Include="Microsoft.Data.OData.Json\ODataJsonPropertyAndValueSerializer.cs" />
+    <Compile Include="Microsoft.Data.OData\PrimitiveConverter.cs" />
+    <Compile Include="Microsoft.Data.OData.Json\ODataJsonCollectionSerializer.cs" />
+    <Compile Include="Microsoft.Data.OData.Json\ODataJsonEntityReferenceLinkSerializer.cs" />
+    <Compile Include="Microsoft.Data.OData.Json\ODataJsonEntryAndFeedSerializer.cs" />
+    <Compile Include="Microsoft.Data.OData\ODataEntry.cs" />
+    <Compile Include="Microsoft.Data.OData\ODataFunction.cs" />
+    <Compile Include="Microsoft.Data.OData.Json\ODataJsonWriter.cs" />
+    <Compile Include="Microsoft.Data.OData.Json\ODataJsonCollectionWriter.cs" />
+    <Compile Include="Microsoft.Data.OData.Json\ODataJsonParameterWriter.cs" />
+    <Compile Include="Microsoft.Data.OData.Json\ODataJsonServiceDocumentSerializer.cs" />
+    <Compile Include="Microsoft.Data.OData\NonDisposingStream.cs" />
+    <Compile Include="Microsoft.Data.OData\MediaTypeUtils.cs" />
+    <Compile Include="Microsoft.Data.OData\HttpUtils.cs" />
+    <Compile Include="Microsoft.Data.OData\ODataUndeclaredPropertyBehaviorKinds.cs" />
+    <Compile Include="Microsoft.Data.OData.Query\ExpressionConstants.cs" />
+    <Compile Include="Microsoft.Data.OData\ODataBatchOperationStream.cs" />
+    <Compile Include="Microsoft.Data.OData\IODataBatchOperationListener.cs" />
+    <Compile Include="Microsoft.Data.OData\ODataBatchOperationWriteStream.cs" />
+    <Compile Include="Microsoft.Data.OData\ODataBatchOperationReadStream.cs" />
+    <Compile Include="Microsoft.Data.OData\ODataBatchReaderStream.cs" />
+    <Compile Include="Microsoft.Data.OData\ODataBatchUtils.cs" />
+    <Compile Include="Microsoft.Data.OData\ODataBatchReaderStreamScanResult.cs" />
+    <Compile Include="Microsoft.Data.OData\ODataBatchReaderStreamBuffer.cs" />
+    <Compile Include="Microsoft.Data.OData\ODataRawInputContext.cs" />
+    <Compile Include="Microsoft.Data.OData\ODataBatchReaderState.cs" />
+    <Compile Include="Microsoft.Data.OData\ODataParameterWriterCore.cs" />
+    <Compile Include="Microsoft.Data.OData\IPrimitiveTypeConverter.cs" />
+    <Compile Include="Microsoft.Data.OData\GeometryTypeConverter.cs" />
+    <Compile Include="Microsoft.Data.OData.Atom\ODataAtomMetadataDeserializer.cs" />
+    <Compile Include="Microsoft.Data.OData.Metadata\EpmTargetPathSegment.cs" />
+    <Compile Include="Microsoft.Data.OData.Metadata\EntityPropertyMappingInfo.cs" />
+    <Compile Include="Microsoft.Data.OData.Atom\ODataAtomFeedMetadataDeserializer.cs" />
+    <Compile Include="Microsoft.Data.OData\AtomMetadataReaderUtils.cs" />
+    <Compile Include="Microsoft.Data.OData\ODataParameterReader.cs" />
+    <Compile Include="Microsoft.Data.OData\ODataParameterReaderState.cs" />
+    <Compile Include="Microsoft.Data.OData\ODataCollectionReader.cs" />
+    <Compile Include="Microsoft.Data.OData\ODataParameterReaderCore.cs" />
+    <Compile Include="Microsoft.Data.OData.Json\ODataJsonParameterReader.cs" />
+    <Compile Include="Microsoft.Data.OData.Json\ODataJsonCollectionReader.cs" />
+    <Compile Include="Microsoft.Data.OData.Atom\ODataAtomServiceDocumentMetadataDeserializer.cs" />
+    <Compile Include="Microsoft.Data.OData\ODataBatchUrlResolver.cs" />
+    <Compile Include="Microsoft.Data.OData\ODataContentTypeException.cs" />
+    <Compile Include="Microsoft.Data.OData.Query\ODataUriConversionUtils.cs" />
+    <Compile Include="Microsoft.Data.OData\TypeUtils.cs" />
+    <Compile Include="Microsoft.Data.OData.Query\ODataUriUtils.cs" />
+    <Compile Include="System.Data.Services.Common\SyndicationTextContentKind.cs" />
+    <Compile Include="Microsoft.Data.OData.Atom\ODataAtomErrorDeserializer.cs" />
+    <Compile Include="Microsoft.Data.OData\ODataInnerError.cs" />
+    <Compile Include="Microsoft.Data.OData\ODataErrorException.cs" />
+    <Compile Include="Microsoft.Data.OData.Atom\EpmReader.cs" />
+    <Compile Include="Microsoft.Data.OData.Atom\IODataAtomReaderEntryState.cs" />
+    <Compile Include="Microsoft.Data.OData\ReaderUtils.cs" />
+    <Compile Include="Microsoft.Data.OData.Atom\EpmCustomReader.cs" />
+    <Compile Include="Microsoft.Data.OData.Atom\EpmCustomReaderValueCache.cs" />
+    <Compile Include="Microsoft.Data.OData.Atom\ODataAtomEpmDeserializer.cs" />
+    <Compile Include="Microsoft.Data.OData.Metadata\ODataEntityPropertyMappingCache.cs" />
+    <Compile Include="Microsoft.Data.OData.Metadata\EpmTargetTree.cs" />
+    <Compile Include="Microsoft.Data.OData.Atom\ODataAtomEntityReferenceLinkDeserializer.cs" />
+    <Compile Include="Microsoft.Data.OData.Metadata\ODataEdmPropertyAnnotation.cs" />
+    <Compile Include="Microsoft.Data.OData\ODataMetadataInputContext.cs" />
+    <Compile Include="Microsoft.Data.OData\ODataReader.cs" />
+    <Compile Include="Microsoft.Data.OData\ODataBatchReader.cs" />
+    <Compile Include="Microsoft.Data.OData.Metadata\EpmConstants.cs" />
+    <Compile Include="Microsoft.Data.OData.Metadata\EpmAttributeNameBuilder.cs" />
+    <Compile Include="Microsoft.Data.OData.Metadata\ODataEntityPropertyMappingCollection.cs" />
+    <Compile Include="Microsoft.Data.OData.Metadata\EpmSourceTree.cs" />
+    <Compile Include="Microsoft.Data.OData.Json\JsonValueUtils.cs" />
+    <Compile Include="Microsoft.Data.OData\ODataReaderState.cs" />
+    <Compile Include="Microsoft.Data.OData\ODataItem.cs" />
+    <Compile Include="Microsoft.Data.OData\ODataReaderCore.cs" />
+    <Compile Include="Microsoft.Data.OData.Json\ODataJsonReader.cs" />
+    <Compile Include="Microsoft.Data.OData.Json\IODataJsonReaderEntryState.cs" />
+    <Compile Include="Microsoft.Data.OData.Json\ODataJsonEntryAndFeedDeserializer.cs" />
+    <Compile Include="Microsoft.Data.OData.Atom\EpmSyndicationReader.cs" />
+    <Compile Include="Microsoft.Data.OData.Atom\EpmWriter.cs" />
+    <Compile Include="Microsoft.Data.OData.Atom\EntryPropertiesValueCache.cs" />
+    <Compile Include="Microsoft.Data.OData.Atom\IODataAtomReaderFeedState.cs" />
+    <Compile Include="Microsoft.Data.OData.Atom\ODataAtomCollectionDeserializer.cs" />
+    <Compile Include="Microsoft.Data.OData\ODataCollectionStart.cs" />
+    <Compile Include="Microsoft.Data.OData.Atom\ODataAtomDeserializerExpandedNavigationLinkContent.cs" />
+    <Compile Include="Microsoft.Data.OData.Atom\ODataAtomEntryAndFeedDeserializer.cs" />
+    <Compile Include="Microsoft.Data.OData.Atom\ODataAtomEntryMetadataDeserializer.cs" />
+    <Compile Include="Microsoft.Data.OData.Atom\ODataAtomServiceDocumentDeserializer.cs" />
+    <Compile Include="Microsoft.Data.OData\GeographyTypeConverter.cs" />
+    <Compile Include="Microsoft.Data.OData\ODataCollectionReaderState.cs" />
+    <Compile Include="Microsoft.Data.OData\ODataCollectionReaderCore.cs" />
+    <Compile Include="Microsoft.Data.OData.Atom\ODataAtomCollectionReader.cs" />
+    <Compile Include="Microsoft.Data.OData.Atom\ODataAtomReader.cs" />
+    <Compile Include="Microsoft.Data.OData\ErrorUtils.cs" />
+    <Compile Include="Microsoft.Data.OData.Json\ODataJsonCollectionDeserializer.cs" />
+    <Compile Include="Microsoft.Data.OData.Json\ODataJsonEntityReferenceLinkDeserializer.cs" />
+    <Compile Include="Microsoft.Data.OData.Json\ODataJsonErrorDeserializer.cs" />
+    <Compile Include="Microsoft.Data.OData.Json\ODataJsonServiceDocumentDeserializer.cs" />
+    <Compile Include="Microsoft.Data.OData\ODataBatchOperationRequestMessage.cs" />
+    <Compile Include="Microsoft.Data.OData\ODataBatchOperationResponseMessage.cs" />
+    <Compile Include="Microsoft.Data.OData\ODataMessageReader.cs" />
+    <Compile Include="Microsoft.Data.OData\ODataRequestMessage.cs" />
+    <Compile Include="Microsoft.Data.OData\ODataResponseMessage.cs" />
+    <Compile Include="Microsoft.Data.OData\ODataMessageWriter.cs" />
+    <Compile Include="Microsoft.Data.OData\BufferedReadStream.cs" />
+    <Compile Include="Microsoft.Data.OData\ODataBatchOperationMessage.cs" />
+    <Compile Include="Microsoft.Data.OData\ODataBatchWriterUtils.cs" />
+    <Compile Include="Microsoft.Data.OData.Atom\EpmCustomWriter.cs" />
+    <Compile Include="Microsoft.Data.OData.Atom\EpmSyndicationWriter.cs" />
+    <Compile Include="Microsoft.Data.OData\ReferenceEqualityComparer!1.cs" />
+    <Compile Include="Microsoft.Data.OData\ODataCollectionWriterCore.cs" />
+    <Compile Include="Microsoft.Data.OData\DebugUtils.cs" />
+    <Compile Include="Microsoft.Data.OData.Metadata\EdmConstants.cs" />
+    <Compile Include="Microsoft.Data.OData.Atom\ExtensionMethods.cs" />
+    <Compile Include="Microsoft.Data.OData.Atom\AtomConstants.cs" />
+    <Compile Include="Microsoft.Data.OData\ODataWriterCore.cs" />
+    <Compile Include="Microsoft.Data.OData\MimeConstants.cs" />
+    <Compile Include="Microsoft.Data.OData\ODataConstants.cs" />
+    <Compile Include="Microsoft.Data.OData.Json\IndentedTextWriter.cs" />
+    <Compile Include="Microsoft.Data.OData.Json\JsonConstants.cs" />
+    <Compile Include="Microsoft.Data.OData\Error.cs" />
+    <Compile Include="Microsoft.Data.OData\TextResDescriptionAttribute.cs" />
+    <Compile Include="Microsoft.Data.OData\TextRes.cs" />
+    <Compile Include="Microsoft.Data.OData\TextResCategoryAttribute.cs" />
+  </ItemGroup>
+  <ItemGroup xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <EmbeddedResource Include="Microsoft.Data.OData.resx">
+      <LogicalName>Microsoft.Data.OData.resources</LogicalName>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <Reference Include="System.Xml" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+  </ItemGroup>
+  <ItemGroup xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <ProjectReference Include="..\System.Spatial.PowerShell\System.Spatial.PowerShell.csproj">
+      <Project>{16E74297-50B6-44A4-A3EB-6DD23F27884B}</Project>
+      <Name>System.Spatial.PowerShell</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Microsoft.Data.Edm.PowerShell\Microsoft.Data.Edm.PowerShell.csproj">
+      <Project>{72D167B9-C5C7-44A6-9C1B-A3D925153411}</Project>
+      <Name>Microsoft.Data.Edm.PowerShell</Name>
+    </ProjectReference>
+  </ItemGroup>
+</VisualStudioProject>

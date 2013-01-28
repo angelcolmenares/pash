@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/svnroot/pash/!svn/ver/6/trunk/Pash/PashConsole
+END
+App.config
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svnroot/pash/!svn/ver/4/trunk/Pash/PashConsole/App.config
+END
+FullHost.cs
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svnroot/pash/!svn/ver/4/trunk/Pash/PashConsole/FullHost.cs
+END
+Program.cs
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svnroot/pash/!svn/ver/4/trunk/Pash/PashConsole/Program.cs
+END
+PashConsole.csproj
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svnroot/pash/!svn/ver/4/trunk/Pash/PashConsole/PashConsole.csproj
+END

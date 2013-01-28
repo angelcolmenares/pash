@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!--
+   Copyright (c) 2012 Code Owls LLC, All Rights Reserved.
+
+   Licensed under the Microsoft Reciprocal License (Ms-RL) (the "License");
+   you may not use this file except in compliance with the License.
+   You may obtain a copy of the License at
+
+     http://www.opensource.org/licenses/ms-rl
+
+   Unless required by applicable law or agreed to in writing, software
+   distributed under the License is distributed on an "AS IS" BASIS,
+   WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+   See the License for the specific language governing permissions and
+   limitations under the License.
+-->
+
+<Configuration>
+    <Controls>
+        <Control>
+            <Name>GenericCollection-GroupingFormat</Name>
+                    <CustomControl>
+                        <CustomEntries>
+                            <CustomEntry>
+                                <CustomItem>
+                                    <Frame>
+                                        <LeftIndent>4</LeftIndent>
+                                        <CustomItem>
+                                            <Text>Container: </Text>
+                                            <ExpressionBinding>
+                                                <PropertyName>PSParentPath</PropertyName>
+                                            </ExpressionBinding>                                            
+                                          <NewLine/>
+                                        </CustomItem> 
+                                    </Frame>
+                                </CustomItem>
+                            </CustomEntry>
+                        </CustomEntries>
+            </CustomControl>
+        </Control>
+    </Controls>
+
+    <ViewDefinitions>
+        <View>
+            <Name>CollectionChildren</Name>
+            <ViewSelectedBy>
+                <TypeName>Mono.Data.OData.Provider.Collection</TypeName>
+                <TypeName>Mono.Data.OData.Provider.Entry</TypeName>
+                <TypeName>Mono.Data.OData.Provider.Link</TypeName>
+            </ViewSelectedBy>
+            <GroupBy>
+                <PropertyName>PSParentPath</PropertyName>
+                <CustomControlName>GenericCollection-GroupingFormat</CustomControlName>  
+            </GroupBy>
+            <TableControl>
+                <TableHeaders>
+                  <TableColumnHeader>
+                    <Width>10</Width>
+                    <Label>          </Label>
+                    <Alignment>Left</Alignment>
+                  </TableColumnHeader>
+                  <TableColumnHeader>
+                        <Width>24</Width>
+						            <Label>Uri</Label>
+                        <Alignment>Left</Alignment>
+                    </TableColumnHeader>
+                  <TableColumnHeader>
+                        <Width>24</Width>
+						            <Label>Name</Label>
+                        <Alignment>Left</Alignment>
+                    </TableColumnHeader>
+                </TableHeaders>
+                <TableRowEntries>
+                  <TableRowEntry>
+                        <TableColumnItems>
+                          <TableColumnItem>
+                            <PropertyName>SSItemMode</PropertyName>
+                          </TableColumnItem>
+                          <TableColumnItem>
+                                <PropertyName>Uri</PropertyName>
+                            </TableColumnItem>
+                          <TableColumnItem>
+                                <PropertyName>PSChildName</PropertyName>
+                            </TableColumnItem>
+                        </TableColumnItems>
+                    </TableRowEntry>
+                </TableRowEntries>
+            </TableControl>
+        </View>
+    </ViewDefinitions>
+</Configuration>

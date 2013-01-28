@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>10.0.0</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{1DB193A6-8503-4E6B-B7C5-5D4225963FFA}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>Microsoft.PowerShell.Workflow.ServiceCore</RootNamespace>
+    <AssemblyName>Microsoft.PowerShell.Workflow.ServiceCore</AssemblyName>
+    <SignAssembly>True</SignAssembly>
+    <AssemblyOriginatorKeyFile>..\mono.snk</AssemblyOriginatorKeyFile>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>True</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>False</Optimize>
+    <OutputPath>bin\Debug</OutputPath>
+    <DefineConstants>DEBUG;</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>False</ConsolePause>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>none</DebugType>
+    <Optimize>True</Optimize>
+    <OutputPath>bin\Release</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>False</ConsolePause>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Configuration.Install" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xaml" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="Microsoft.Build" />
+    <Reference Include="Microsoft.Build.Framework" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Runtime.DurableInstancing" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <ItemGroup>
+    <ProjectReference Include="..\Microsoft.PowerShell.Commands.Management\Microsoft.PowerShell.Commands.Management.csproj">
+      <Project>{85FF5EDC-B108-4683-A8AC-BBC9D13B9009}</Project>
+      <Name>Microsoft.PowerShell.Commands.Management</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\System.Management.Automation\System.Management.Automation.csproj">
+      <Project>{3AA23D43-1616-4C39-95D6-D26E63E7D5AB}</Project>
+      <Name>System.Management.Automation</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\External\System.Activities\System.Activities.csproj">
+      <Project>{F998DCAB-07EC-45E0-A8FA-99C2D41193D3}</Project>
+      <Name>System.Activities</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Microsoft.Management.Infrastructure.CimCmdlets\Microsoft.Management.Infrastructure.CimCmdlets.csproj">
+      <Project>{bc8d336f-8a97-418f-a173-7f212607239c}</Project>
+      <Name>Microsoft.Management.Infrastructure.CimCmdlets</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\External\System.Management\System.Management.csproj">
+      <Project>{fdc0ff3f-39c6-4837-937b-877497b41a34}</Project>
+      <Name>System.Management</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Properties\" />
+    <Folder Include="Microsoft.PowerShell.Commands\" />
+    <Folder Include="Microsoft.PowerShell.Activities\" />
+    <Folder Include="Microsoft.PowerShell.Workflow\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Microsoft.PowerShell.Commands\ImportWorkflowCommand.cs" />
+    <Compile Include="Microsoft.PowerShell.Commands\NewPSWorkflowExecutionOptionCommand.cs" />
+    <Compile Include="Microsoft.PowerShell.Commands\PSWorkflowExecutionOption.cs" />
+    <Compile Include="Microsoft.PowerShell.Activities\ActivityCreatedEventArgs.cs" />
+    <Compile Include="Microsoft.PowerShell.Activities\ActivityCreatedEventHandler.cs" />
+    <Compile Include="Microsoft.PowerShell.Activities\ActivityImplementationContext.cs" />
+    <Compile Include="Microsoft.PowerShell.Activities\ActivityOnResumeAction.cs" />
+    <Compile Include="Microsoft.PowerShell.Activities\ActivityParameters.cs" />
+    <Compile Include="Microsoft.PowerShell.Activities\ActivityUtils.cs" />
+    <Compile Include="Microsoft.PowerShell.Activities\BehaviorCategoryAttribute.cs" />
+    <Compile Include="Microsoft.PowerShell.Activities\BookmarkContext.cs" />
+    <Compile Include="Microsoft.PowerShell.Activities\CimActivityImplementationContext.cs" />
+    <Compile Include="Microsoft.PowerShell.Activities\CimConnectionManager.cs" />
+    <Compile Include="Microsoft.PowerShell.Activities\ConnectivityCategoryAttribute.cs" />
+    <Compile Include="Microsoft.PowerShell.Activities\DefaultWorkflowHost.cs" />
+    <Compile Include="Microsoft.PowerShell.Activities\DirectExecutionActivitiesCommandRuntime.cs" />
+    <Compile Include="Microsoft.PowerShell.Activities\DisablePSWorkflowConnection.cs" />
+    <Compile Include="Microsoft.PowerShell.Activities\GenericCimCmdletActivity.cs" />
+    <Compile Include="Microsoft.PowerShell.Activities\HostParameterDefaults.cs" />
+    <Compile Include="Microsoft.PowerShell.Activities\HostSettingCommandMetadata.cs" />
+    <Compile Include="Microsoft.PowerShell.Activities\IImplementsConnectionRetry.cs" />
+    <Compile Include="Microsoft.PowerShell.Activities\InputAndOutputCategoryAttribute.cs" />
+    <Compile Include="Microsoft.PowerShell.Activities\PSActivity.cs" />
+    <Compile Include="Microsoft.PowerShell.Activities\PSActivityArgumentInfo.cs" />
+    <Compile Include="Microsoft.PowerShell.Activities\PSActivityContext.cs" />
+    <Compile Include="Microsoft.PowerShell.Activities\PSActivityEnvironment.cs" />
+    <Compile Include="Microsoft.PowerShell.Activities\PSActivityHostController.cs" />
+    <Compile Include="Microsoft.PowerShell.Activities\PSCleanupActivity.cs" />
+    <Compile Include="Microsoft.PowerShell.Activities\PSGeneratedCIMActivity.cs" />
+    <Compile Include="Microsoft.PowerShell.Activities\PSRemotingActivity.cs" />
+    <Compile Include="Microsoft.PowerShell.Activities\PSResumableActivityContext.cs" />
+    <Compile Include="Microsoft.PowerShell.Activities\PSResumableActivityHostController.cs" />
+    <Compile Include="Microsoft.PowerShell.Activities\PSWorkflowHost.cs" />
+    <Compile Include="Microsoft.PowerShell.Activities\PSWorkflowInstanceExtension.cs" />
+    <Compile Include="Microsoft.PowerShell.Activities\ParameterSpecificCategoryAttribute.cs" />
+    <Compile Include="Microsoft.PowerShell.Activities\PipelineEnabledActivity.cs" />
+    <Compile Include="Microsoft.PowerShell.Activities\PrepareSessionDelegate.cs" />
+    <Compile Include="Microsoft.PowerShell.Activities\RetryCount.cs" />
+    <Compile Include="Microsoft.PowerShell.Activities\RunCommandsArguments.cs" />
+    <Compile Include="Microsoft.PowerShell.Activities\RunspaceProvider.cs" />
+    <Compile Include="Microsoft.PowerShell.Activities\WmiActivity.cs" />
+    <Compile Include="Microsoft.PowerShell.Activities\WorkflowPreferenceVariables.cs" />
+    <Compile Include="Microsoft.PowerShell.Workflow\ActivityHostCrashedEventArgs.cs" />
+    <Compile Include="Microsoft.PowerShell.Workflow\ActivityHostProcess.cs" />
+    <Compile Include="Microsoft.PowerShell.Workflow\ActivityInvoker.cs" />
+    <Compile Include="Microsoft.PowerShell.Workflow\ActivityRunMode.cs" />
+    <Compile Include="Microsoft.PowerShell.Workflow\CloseOneAndOpenAnotherOperation.cs" />
+    <Compile Include="Microsoft.PowerShell.Workflow\CloseOperation.cs" />
+    <Compile Include="Microsoft.PowerShell.Workflow\CompareBasedOnCommand.cs" />
+    <Compile Include="Microsoft.PowerShell.Workflow\CompareBasedOnInstanceId.cs" />
+    <Compile Include="Microsoft.PowerShell.Workflow\Connection.cs" />
+    <Compile Include="Microsoft.PowerShell.Workflow\ConnectionAsyncResult.cs" />
+    <Compile Include="Microsoft.PowerShell.Workflow\ConnectionManager.cs" />
+    <Compile Include="Microsoft.PowerShell.Workflow\Constants.cs" />
+    <Compile Include="Microsoft.PowerShell.Workflow\DefinitionCache.cs" />
+    <Compile Include="Microsoft.PowerShell.Workflow\DisconnectOperation.cs" />
+    <Compile Include="Microsoft.PowerShell.Workflow\FileInstanceStore.cs" />
+    <Compile Include="Microsoft.PowerShell.Workflow\FileStoreAsyncResult.cs" />
+    <Compile Include="Microsoft.PowerShell.Workflow\GetRunspaceAsyncResult.cs" />
+    <Compile Include="Microsoft.PowerShell.Workflow\InstanceStoreCryptography.cs" />
+    <Compile Include="Microsoft.PowerShell.Workflow\InstanceStorePermission.cs" />
+    <Compile Include="Microsoft.PowerShell.Workflow\InternalStoreComponents.cs" />
+    <Compile Include="Microsoft.PowerShell.Workflow\Item`1.cs" />
+    <Compile Include="Microsoft.PowerShell.Workflow\LocalRunspaceAsyncResult.cs" />
+    <Compile Include="Microsoft.PowerShell.Workflow\LocalRunspaceProvider.cs" />
+    <Compile Include="Microsoft.PowerShell.Workflow\LockObjectsCollection.cs" />
+    <Compile Include="Microsoft.PowerShell.Workflow\OpenOperation.cs" />
+    <Compile Include="Microsoft.PowerShell.Workflow\PSOutOfProcessActivityController.cs" />
+    <Compile Include="Microsoft.PowerShell.Workflow\PSPersistableIdleAction.cs" />
+    <Compile Include="Microsoft.PowerShell.Workflow\PSTimer.cs" />
+    <Compile Include="Microsoft.PowerShell.Workflow\PSWorkflowApplicationInstance.cs" />
+    <Compile Include="Microsoft.PowerShell.Workflow\PSWorkflowConfigurationProvider.cs" />
+    <Compile Include="Microsoft.PowerShell.Workflow\PSWorkflowContext.cs" />
+    <Compile Include="Microsoft.PowerShell.Workflow\PSWorkflowDefinition.cs" />
+    <Compile Include="Microsoft.PowerShell.Workflow\PSWorkflowExtensions.cs" />
+    <Compile Include="Microsoft.PowerShell.Workflow\PSWorkflowFileInstanceStore.cs" />
+    <Compile Include="Microsoft.PowerShell.Workflow\PSWorkflowId.cs" />
+    <Compile Include="Microsoft.PowerShell.Workflow\PSWorkflowInstance.cs" />
+    <Compile Include="Microsoft.PowerShell.Workflow\PSWorkflowInstanceStore.cs" />
+    <Compile Include="Microsoft.PowerShell.Workflow\PSWorkflowJob.cs" />
+    <Compile Include="Microsoft.PowerShell.Workflow\PSWorkflowJobManager.cs" />
+    <Compile Include="Microsoft.PowerShell.Workflow\PSWorkflowPerformanceCounterIds.cs" />
+    <Compile Include="Microsoft.PowerShell.Workflow\PSWorkflowPerformanceCounterSetInfo.cs" />
+    <Compile Include="Microsoft.PowerShell.Workflow\PSWorkflowRuntime.cs" />
+    <Compile Include="Microsoft.PowerShell.Workflow\PSWorkflowSessionConfiguration.cs" />
+    <Compile Include="Microsoft.PowerShell.Workflow\PSWorkflowTimer.cs" />
+    <Compile Include="Microsoft.PowerShell.Workflow\PSWorkflowTrackingParticipant.cs" />
+    <Compile Include="Microsoft.PowerShell.Workflow\PSWorkflowValidationResults.cs" />
+    <Compile Include="Microsoft.PowerShell.Workflow\PSWorkflowValidator.cs" />
+    <Compile Include="Microsoft.PowerShell.Workflow\PersistenceVersion.cs" />
+    <Compile Include="Microsoft.PowerShell.Workflow\ReconnectOperation.cs" />
+    <Compile Include="Microsoft.PowerShell.Workflow\ThrottleOperation.cs" />
+    <Compile Include="Microsoft.PowerShell.Workflow\TimeBasedCache`1.cs" />
+    <Compile Include="Microsoft.PowerShell.Workflow\TypedAsyncResult`1.cs" />
+    <Compile Include="Microsoft.PowerShell.Workflow\TypedCompletedAsyncResult`1.cs" />
+    <Compile Include="Microsoft.PowerShell.Workflow\Validation.cs" />
+    <Compile Include="Microsoft.PowerShell.Workflow\WorkflowFilterTypes.cs" />
+    <Compile Include="Microsoft.PowerShell.Workflow\WorkflowInstanceCreationMode.cs" />
+    <Compile Include="Microsoft.PowerShell.Workflow\WorkflowInstanceState.cs" />
+    <Compile Include="Microsoft.PowerShell.Workflow\WorkflowJobDefinition.cs" />
+    <Compile Include="Microsoft.PowerShell.Workflow\WorkflowJobSourceAdapter.cs" />
+    <Compile Include="Microsoft.PowerShell.Workflow\WorkflowRuntimeCompilation.cs" />
+    <Compile Include="Microsoft.PowerShell.Workflow\WorkflowStatusEventArgs.cs" />
+    <Compile Include="Microsoft.PowerShell.Workflow\WorkflowStoreComponents.cs" />
+    <Compile Include="Microsoft.PowerShell.Workflow\WorkflowTimerElapsedHandler.cs" />
+    <Compile Include="Microsoft.PowerShell.Workflow\WorkflowTimerType.cs" />
+    <Compile Include="Microsoft.PowerShell.Workflow\WorkflowUnhandledErrorAction.cs" />
+    <Compile Include="Microsoft.PowerShell.Workflow\WorkflowUtils.cs" />
+    <Compile Include="_PrivateImplementationDetails_{8AEF7EB8-CA5E-4A0A-BDCE-FF01E6B16089}.cs" />
+    <Compile Include="Resources.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources.resx" />
+  </ItemGroup>
+</Project>

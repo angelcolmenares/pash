@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>10.0.0</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{6498C2FA-73B6-4109-AE0D-3E6FEAD0B858}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>WSManSvc</RootNamespace>
+    <AssemblyName>WSManSvc</AssemblyName>
+    <SignAssembly>True</SignAssembly>
+    <AssemblyOriginatorKeyFile>..\mono.snk</AssemblyOriginatorKeyFile>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>True</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>False</Optimize>
+    <OutputPath>..\v1.0</OutputPath>
+    <DefineConstants>DEBUG;</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Externalconsole>True</Externalconsole>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>none</DebugType>
+    <Optimize>True</Optimize>
+    <OutputPath>..\v1.0</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>False</ConsolePause>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.IdentityModel" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Transactions" />
+    <Reference Include="System.ServiceModel" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <ItemGroup>
+    <Compile Include="..\GlobalAssemblyInfo.cs">
+      <Link>Properties\GlobalAssemblyInfo.cs</Link>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Main.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\System.Management.Automation\System.Management.Automation.csproj">
+      <Project>{3AA23D43-1616-4C39-95D6-D26E63E7D5AB}</Project>
+      <Name>System.Management.Automation</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\WSMan\Microsoft.WSMan.PowerShell\Microsoft.WSMan.PowerShell.csproj">
+      <Project>{B21C896A-99E6-4DB7-90FD-D71B9CE211DF}</Project>
+      <Name>Microsoft.WSMan.PowerShell</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\WSMan\Microsoft.WSMan\Microsoft.WSMan.csproj">
+      <Project>{B8D62759-07A1-4B92-9F0C-20F42C08E9E9}</Project>
+      <Name>Microsoft.WSMan</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\WSMan\Microsoft.WSMan.Cim\Microsoft.WSMan.Cim.csproj">
+      <Project>{B55EE102-28FB-462F-A827-23AF26DE5140}</Project>
+      <Name>Microsoft.WSMan.Cim</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="powershell.pfx">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="WSManSvc.exe.config">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+</Project>

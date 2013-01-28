@@ -1,0 +1,563 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{BC191DD9-C148-4229-B30D-2BAC26DB8252}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Microsoft.PowerShell.Commands.Utility</RootNamespace>
+    <AssemblyName>Microsoft.PowerShell.Commands.Utility</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <ProductVersion>10.0.0</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>True</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>False</Optimize>
+    <OutputPath>..\v1.0\</OutputPath>
+    <DefineConstants>DEBUG;TRACE;MONO</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>True</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>True</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AssemblyOriginatorKeyFile>..\mono.snk</AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="CustomMarshalers" />
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Configuration.Install" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Numerics" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="..\GlobalAssemblyInfo.cs">
+      <Link>Properties\GlobalAssemblyInfo.cs</Link>
+    </Compile>
+    <Compile Include="AddMember.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>AddMember.resx</DependentUpon>
+    </Compile>
+    <Compile Include="AddTypeStrings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>AddTypeStrings.resx</DependentUpon>
+    </Compile>
+    <Compile Include="AliasCommandStrings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>AliasCommandStrings.resx</DependentUpon>
+    </Compile>
+    <Compile Include="ConvertFromStringData.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ConvertFromStringData.resx</DependentUpon>
+    </Compile>
+    <Compile Include="CsvCommandStrings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CsvCommandStrings.resx</DependentUpon>
+    </Compile>
+    <Compile Include="UtilityDebuggerStrings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>UtilityDebuggerStrings.resx</DependentUpon>
+    </Compile>
+    <Compile Include="EventingStrings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>EventingStrings.resx</DependentUpon>
+    </Compile>
+    <Compile Include="FormatAndOut_out_gridview.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>FormatAndOut_out_gridview.resx</DependentUpon>
+    </Compile>
+    <Compile Include="GetMember.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>GetMember.resx</DependentUpon>
+    </Compile>
+    <Compile Include="GetRandomCommandStrings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>GetRandomCommandStrings.resx</DependentUpon>
+    </Compile>
+    <Compile Include="HostStrings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>HostStrings.resx</DependentUpon>
+    </Compile>
+    <Compile Include="ImplicitRemotingStrings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ImplicitRemotingStrings.resx</DependentUpon>
+    </Compile>
+    <Compile Include="ImportLocalizedData.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ImportLocalizedData.resx</DependentUpon>
+    </Compile>
+    <Compile Include="MatchStringStrings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>MatchStringStrings.resx</DependentUpon>
+    </Compile>
+    <Compile Include="MeasureObjectStrings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>MeasureObjectStrings.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Microsoft.PowerShell.Commands.Internal.Format\PrinterLineOutput.cs" />
+    <Compile Include="Microsoft.PowerShell.Commands\AddMemberCommand.cs" />
+    <Compile Include="Microsoft.PowerShell.Commands\AddTypeCommand.cs" />
+    <Compile Include="Microsoft.PowerShell.Commands\ArgumentToEncodingNameTransformationAttribute.cs" />
+    <Compile Include="Microsoft.PowerShell.Commands\ArgumentToTypeNameTransformationAttribute.cs" />
+    <Compile Include="Microsoft.PowerShell.Commands\BaseCsvWritingCommand.cs" />
+    <Compile Include="Microsoft.PowerShell.Commands\BasicHtmlWebResponseObject.cs" />
+    <Compile Include="Microsoft.PowerShell.Commands\BreakpointType.cs" />
+    <Compile Include="Microsoft.PowerShell.Commands\BufferingStreamReader.cs" />
+    <Compile Include="Microsoft.PowerShell.Commands\ClearVariableCommand.cs" />
+    <Compile Include="Microsoft.PowerShell.Commands\ColumnInfo.cs" />
+    <Compile Include="Microsoft.PowerShell.Commands\CompareObjectCommand.cs" />
+    <Compile Include="Microsoft.PowerShell.Commands\ConsoleColorCmdlet.cs" />
+    <Compile Include="Microsoft.PowerShell.Commands\ContentHelper.cs" />
+    <Compile Include="Microsoft.PowerShell.Commands\ConvertFromCsvCommand.cs" />
+    <Compile Include="Microsoft.PowerShell.Commands\ConvertFromJsonCommand.cs" />
+    <Compile Include="Microsoft.PowerShell.Commands\ConvertFromStringDataCommand.cs" />
+    <Compile Include="Microsoft.PowerShell.Commands\ConvertToCsvCommand.cs" />
+    <Compile Include="Microsoft.PowerShell.Commands\ConvertToHtmlCommand.cs" />
+    <Compile Include="Microsoft.PowerShell.Commands\ConvertToJsonCommand.cs" />
+    <Compile Include="Microsoft.PowerShell.Commands\ConvertToXmlCommand.cs" />
+    <Compile Include="Microsoft.PowerShell.Commands\CSVHelper.cs" />
+    <Compile Include="Microsoft.PowerShell.Commands\DisablePSBreakpointCommand.cs" />
+    <Compile Include="Microsoft.PowerShell.Commands\DisplayHintType.cs" />
+    <Compile Include="Microsoft.PowerShell.Commands\EnablePSBreakpointCommand.cs" />
+    <Compile Include="Microsoft.PowerShell.Commands\ExportAliasCommand.cs" />
+    <Compile Include="Microsoft.PowerShell.Commands\ExportAliasFormat.cs" />
+    <Compile Include="Microsoft.PowerShell.Commands\ExportClixmlCommand.cs" />
+    <Compile Include="Microsoft.PowerShell.Commands\ExportCsvCommand.cs" />
+    <Compile Include="Microsoft.PowerShell.Commands\ExportCsvHelper.cs" />
+    <Compile Include="Microsoft.PowerShell.Commands\ExportFormatDataCommand.cs" />
+    <Compile Include="Microsoft.PowerShell.Commands\ExportPSSessionCommand.cs" />
+    <Compile Include="Microsoft.PowerShell.Commands\ExpressionColumnInfo.cs" />
+    <Compile Include="Microsoft.PowerShell.Commands\FormatCustomCommand.cs" />
+    <Compile Include="Microsoft.PowerShell.Commands\FormatListCommand.cs" />
+    <Compile Include="Microsoft.PowerShell.Commands\FormatTableCommand.cs" />
+    <Compile Include="Microsoft.PowerShell.Commands\FormatWideCommand.cs" />
+    <Compile Include="Microsoft.PowerShell.Commands\FormObject.cs" />
+    <Compile Include="Microsoft.PowerShell.Commands\FormObjectCollection.cs" />
+    <Compile Include="Microsoft.PowerShell.Commands\GenericMeasureInfo.cs" />
+    <Compile Include="Microsoft.PowerShell.Commands\GenericObjectMeasureInfo.cs" />
+    <Compile Include="Microsoft.PowerShell.Commands\GetAliasCommand.cs" />
+    <Compile Include="Microsoft.PowerShell.Commands\GetCultureCommand.cs" />
+    <Compile Include="Microsoft.PowerShell.Commands\GetDateCommand.cs" />
+    <Compile Include="Microsoft.PowerShell.Commands\GetEventCommand.cs" />
+    <Compile Include="Microsoft.PowerShell.Commands\GetEventSubscriberCommand.cs" />
+    <Compile Include="Microsoft.PowerShell.Commands\GetFormatDataCommand.cs" />
+    <Compile Include="Microsoft.PowerShell.Commands\GetHostCommand.cs" />
+    <Compile Include="Microsoft.PowerShell.Commands\GetMemberCommand.cs" />
+    <Compile Include="Microsoft.PowerShell.Commands\GetPSBreakpointCommand.cs" />
+    <Compile Include="Microsoft.PowerShell.Commands\GetPSCallStackCommand.cs" />
+    <Compile Include="Microsoft.PowerShell.Commands\GetRandomCommand.cs" />
+    <Compile Include="Microsoft.PowerShell.Commands\GetTraceSourceCommand.cs" />
+    <Compile Include="Microsoft.PowerShell.Commands\GetTypeDataCommand.cs" />
+    <Compile Include="Microsoft.PowerShell.Commands\GetUICultureCommand.cs" />
+    <Compile Include="Microsoft.PowerShell.Commands\GetUniqueCommand.cs" />
+    <Compile Include="Microsoft.PowerShell.Commands\GetVariableCommand.cs" />
+    <Compile Include="Microsoft.PowerShell.Commands\GroupInfo.cs" />
+    <Compile Include="Microsoft.PowerShell.Commands\GroupInfoNoElement.cs" />
+    <Compile Include="Microsoft.PowerShell.Commands\GroupObjectCommand.cs" />
+    <Compile Include="Microsoft.PowerShell.Commands\GroupObjectExpressionParameterDefinition.cs" />
+    <Compile Include="Microsoft.PowerShell.Commands\HeaderInfo.cs" />
+    <Compile Include="Microsoft.PowerShell.Commands\HtmlWebResponseObject.cs" />
+    <Compile Include="Microsoft.PowerShell.Commands\ImplicitRemotingCodeGenerator.cs" />
+    <Compile Include="Microsoft.PowerShell.Commands\ImplicitRemotingCommandBase.cs" />
+    <Compile Include="Microsoft.PowerShell.Commands\ImportAliasCommand.cs" />
+    <Compile Include="Microsoft.PowerShell.Commands\ImportClixmlCommand.cs" />
+    <Compile Include="Microsoft.PowerShell.Commands\ImportCsvCommand.cs" />
+    <Compile Include="Microsoft.PowerShell.Commands\ImportCsvHelper.cs" />
+    <Compile Include="Microsoft.PowerShell.Commands\ImportExportCSVHelper.cs" />
+    <Compile Include="Microsoft.PowerShell.Commands\ImportLocalizedData.cs" />
+    <Compile Include="Microsoft.PowerShell.Commands\ImportPSSessionCommand.cs" />
+    <Compile Include="Microsoft.PowerShell.Commands\ImportXmlHelper.cs" />
+    <Compile Include="Microsoft.PowerShell.Commands\IndexColumnInfo.cs" />
+    <Compile Include="Microsoft.PowerShell.Commands\InputFileOpenModeConversion.cs" />
+    <Compile Include="Microsoft.PowerShell.Commands\InvokeExpressionCommand.cs" />
+    <Compile Include="Microsoft.PowerShell.Commands\InvokeRestMethodCommand.cs" />
+    <Compile Include="Microsoft.PowerShell.Commands\InvokeWebRequestCommand.cs" />
+    <Compile Include="Microsoft.PowerShell.Commands\JsonObject.cs" />
+    <Compile Include="Microsoft.PowerShell.Commands\JsonObjectTypeResolver.cs" />
+    <Compile Include="Microsoft.PowerShell.Commands\Language.cs" />
+    <Compile Include="Microsoft.PowerShell.Commands\MatchInfo.cs" />
+    <Compile Include="Microsoft.PowerShell.Commands\MatchInfoContext.cs" />
+    <Compile Include="Microsoft.PowerShell.Commands\MeasureCommandCommand.cs" />
+    <Compile Include="Microsoft.PowerShell.Commands\MeasureInfo.cs" />
+    <Compile Include="Microsoft.PowerShell.Commands\MeasureObjectCommand.cs" />
+    <Compile Include="Microsoft.PowerShell.Commands\MemberDefinition.cs" />
+    <Compile Include="Microsoft.PowerShell.Commands\MshExpressionFilter.cs" />
+    <Compile Include="Microsoft.PowerShell.Commands\NewAliasCommand.cs" />
+    <Compile Include="Microsoft.PowerShell.Commands\NewEventCommand.cs" />
+    <Compile Include="Microsoft.PowerShell.Commands\NewObjectCommand.cs" />
+    <Compile Include="Microsoft.PowerShell.Commands\NewObjectNativeMethods.cs" />
+    <Compile Include="Microsoft.PowerShell.Commands\NewTimeSpanCommand.cs" />
+    <Compile Include="Microsoft.PowerShell.Commands\NewVariableCommand.cs" />
+    <Compile Include="Microsoft.PowerShell.Commands\ObjectCmdletBase.cs" />
+    <Compile Include="Microsoft.PowerShell.Commands\ObjectCommandComparer.cs" />
+    <Compile Include="Microsoft.PowerShell.Commands\ObjectCommandPropertyValue.cs" />
+    <Compile Include="Microsoft.PowerShell.Commands\OrderByProperty.cs" />
+    <Compile Include="Microsoft.PowerShell.Commands\OrderByPropertyComparer.cs" />
+    <Compile Include="Microsoft.PowerShell.Commands\OrderByPropertyEntry.cs" />
+    <Compile Include="Microsoft.PowerShell.Commands\OrderByPropertyEntryEvaluationHelper.cs" />
+    <Compile Include="Microsoft.PowerShell.Commands\OrderObjectBase.cs" />
+    <Compile Include="Microsoft.PowerShell.Commands\OriginalColumnInfo.cs" />
+    <Compile Include="Microsoft.PowerShell.Commands\OutFileCommand.cs" />
+    <Compile Include="Microsoft.PowerShell.Commands\OutGridViewCommand.cs" />
+    <Compile Include="Microsoft.PowerShell.Commands\OutPrinterCommand.cs" />
+    <Compile Include="Microsoft.PowerShell.Commands\OutputAssemblyType.cs" />
+    <Compile Include="Microsoft.PowerShell.Commands\OutputModeOption.cs" />
+    <Compile Include="Microsoft.PowerShell.Commands\OutStringCommand.cs" />
+    <Compile Include="Microsoft.PowerShell.Commands\OutWindowProxy.cs" />
+    <Compile Include="Microsoft.PowerShell.Commands\PSBreakpointCommandBase.cs" />
+    <Compile Include="Microsoft.PowerShell.Commands\PSHostTraceListener.cs" />
+    <Compile Include="Microsoft.PowerShell.Commands\PSUserAgent.cs" />
+    <Compile Include="Microsoft.PowerShell.Commands\ReadHostCommand.cs" />
+    <Compile Include="Microsoft.PowerShell.Commands\RegisterEngineEventCommand.cs" />
+    <Compile Include="Microsoft.PowerShell.Commands\RegisterObjectEventCommand.cs" />
+    <Compile Include="Microsoft.PowerShell.Commands\RemoveEventCommand.cs" />
+    <Compile Include="Microsoft.PowerShell.Commands\RemovePSBreakpointCommand.cs" />
+    <Compile Include="Microsoft.PowerShell.Commands\RemoveTypeDataCommand.cs" />
+    <Compile Include="Microsoft.PowerShell.Commands\RemoveVariableCommand.cs" />
+    <Compile Include="Microsoft.PowerShell.Commands\RestReturnType.cs" />
+    <Compile Include="Microsoft.PowerShell.Commands\ScalarTypeColumnInfo.cs" />
+    <Compile Include="Microsoft.PowerShell.Commands\SelectObjectCommand.cs" />
+    <Compile Include="Microsoft.PowerShell.Commands\SelectObjectException.cs" />
+    <Compile Include="Microsoft.PowerShell.Commands\SelectObjectExpressionParameterDefinition.cs" />
+    <Compile Include="Microsoft.PowerShell.Commands\SelectStringCommand.cs" />
+    <Compile Include="Microsoft.PowerShell.Commands\SelectXmlCommand.cs" />
+    <Compile Include="Microsoft.PowerShell.Commands\SelectXmlInfo.cs" />
+    <Compile Include="Microsoft.PowerShell.Commands\SendMailMessage.cs" />
+    <Compile Include="Microsoft.PowerShell.Commands\SetAliasCommand.cs" />
+    <Compile Include="Microsoft.PowerShell.Commands\SetDateCommand.cs" />
+    <Compile Include="Microsoft.PowerShell.Commands\SetPSBreakpointCommand.cs" />
+    <Compile Include="Microsoft.PowerShell.Commands\SetTraceSourceCommand.cs" />
+    <Compile Include="Microsoft.PowerShell.Commands\SetVariableCommand.cs" />
+    <Compile Include="Microsoft.PowerShell.Commands\ShowCommandCommand.cs" />
+    <Compile Include="Microsoft.PowerShell.Commands\ShowCommandProxy.cs" />
+    <Compile Include="Microsoft.PowerShell.Commands\SortObjectCommand.cs" />
+    <Compile Include="Microsoft.PowerShell.Commands\SortObjectExpressionParameterDefinition.cs" />
+    <Compile Include="Microsoft.PowerShell.Commands\SortObjectParameterDefinitionKeys.cs" />
+    <Compile Include="Microsoft.PowerShell.Commands\StartSleepCommand.cs" />
+    <Compile Include="Microsoft.PowerShell.Commands\StreamHelper.cs" />
+    <Compile Include="Microsoft.PowerShell.Commands\TableView.cs" />
+    <Compile Include="Microsoft.PowerShell.Commands\TeeObjectCommand.cs" />
+    <Compile Include="Microsoft.PowerShell.Commands\TextEncodingType.cs" />
+    <Compile Include="Microsoft.PowerShell.Commands\TextMeasureInfo.cs" />
+    <Compile Include="Microsoft.PowerShell.Commands\ToStringColumnInfo.cs" />
+    <Compile Include="Microsoft.PowerShell.Commands\TraceCommandBase.cs" />
+    <Compile Include="Microsoft.PowerShell.Commands\TraceCommandCommand.cs" />
+    <Compile Include="Microsoft.PowerShell.Commands\TraceListenerCommandBase.cs" />
+    <Compile Include="Microsoft.PowerShell.Commands\TracePipelineWriter.cs" />
+    <Compile Include="Microsoft.PowerShell.Commands\TypeNameColumnInfo.cs" />
+    <Compile Include="Microsoft.PowerShell.Commands\UnblockFileCommand.cs" />
+    <Compile Include="Microsoft.PowerShell.Commands\UnregisterEventCommand.cs" />
+    <Compile Include="Microsoft.PowerShell.Commands\UpdateData.cs" />
+    <Compile Include="Microsoft.PowerShell.Commands\UpdateFormatDataCommand.cs" />
+    <Compile Include="Microsoft.PowerShell.Commands\UpdateListCommand.cs" />
+    <Compile Include="Microsoft.PowerShell.Commands\UpdateTypeDataCommand.cs" />
+    <Compile Include="Microsoft.PowerShell.Commands\UtilityCommon.cs" />
+    <Compile Include="Microsoft.PowerShell.Commands\VariableCommandBase.cs" />
+    <Compile Include="Microsoft.PowerShell.Commands\WaitEventCommand.cs" />
+    <Compile Include="Microsoft.PowerShell.Commands\WebCmdletElementCollection.cs" />
+    <Compile Include="Microsoft.PowerShell.Commands\WebRequestMethod.cs" />
+    <Compile Include="Microsoft.PowerShell.Commands\WebRequestPSCmdlet.cs" />
+    <Compile Include="Microsoft.PowerShell.Commands\WebRequestSession.cs" />
+    <Compile Include="Microsoft.PowerShell.Commands\WebResponseHelper.cs" />
+    <Compile Include="Microsoft.PowerShell.Commands\WebResponseObject.cs" />
+    <Compile Include="Microsoft.PowerShell.Commands\WebResponseObjectFactory.cs" />
+    <Compile Include="Microsoft.PowerShell.Commands\WriteAliasCommandBase.cs" />
+    <Compile Include="Microsoft.PowerShell.Commands\WriteDebugCommand.cs" />
+    <Compile Include="Microsoft.PowerShell.Commands\WriteErrorCommand.cs" />
+    <Compile Include="Microsoft.PowerShell.Commands\WriteErrorException.cs" />
+    <Compile Include="Microsoft.PowerShell.Commands\WriteHostCommand.cs" />
+    <Compile Include="Microsoft.PowerShell.Commands\WriteOrThrowErrorCommand.cs" />
+    <Compile Include="Microsoft.PowerShell.Commands\WriteOutputCommand.cs" />
+    <Compile Include="Microsoft.PowerShell.Commands\WriteProgressCommand.cs" />
+    <Compile Include="Microsoft.PowerShell.Commands\WriteVerboseCommand.cs" />
+    <Compile Include="Microsoft.PowerShell.Commands\WriteWarningCommand.cs" />
+    <Compile Include="Microsoft.PowerShell\PSUtilityPSSnapIn.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="mshtml\DispHTMLDocument.cs" />
+    <Compile Include="mshtml\HTMLDocument.cs" />
+    <Compile Include="mshtml\HTMLDocumentEvents.cs" />
+    <Compile Include="mshtml\HTMLDocumentEvents2.cs" />
+    <Compile Include="mshtml\HTMLDocumentEvents2_Event.cs" />
+    <Compile Include="mshtml\HTMLDocumentEvents2_onreadystatechangeEventHandler.cs" />
+    <Compile Include="mshtml\HTMLDocumentEvents3.cs" />
+    <Compile Include="mshtml\HTMLDocumentEvents3_Event.cs" />
+    <Compile Include="mshtml\HTMLDocumentEvents4.cs" />
+    <Compile Include="mshtml\HTMLDocumentEvents4_Event.cs" />
+    <Compile Include="mshtml\HTMLDocumentEvents_Event.cs" />
+    <Compile Include="mshtml\IDocumentEvent.cs" />
+    <Compile Include="mshtml\IDocumentRange.cs" />
+    <Compile Include="mshtml\IDocumentSelector.cs" />
+    <Compile Include="mshtml\IDocumentTraversal.cs" />
+    <Compile Include="mshtml\IEventTarget.cs" />
+    <Compile Include="mshtml\IHTMLDocument.cs" />
+    <Compile Include="mshtml\IHTMLDocument2.cs" />
+    <Compile Include="mshtml\IHTMLDocument3.cs" />
+    <Compile Include="mshtml\IHTMLDocument4.cs" />
+    <Compile Include="mshtml\IHTMLDocument5.cs" />
+    <Compile Include="mshtml\IHTMLDocument6.cs" />
+    <Compile Include="mshtml\IHTMLDocument7.cs" />
+    <Compile Include="mshtml\IHTMLDocument8.cs" />
+    <Compile Include="mshtml\IHTMLDOMConstructor.cs" />
+    <Compile Include="mshtml\IHTMLDOMNode.cs" />
+    <Compile Include="mshtml\IHTMLDOMNode2.cs" />
+    <Compile Include="mshtml\IHTMLDOMNode3.cs" />
+    <Compile Include="mshtml\IHTMLElement.cs" />
+    <Compile Include="mshtml\IHTMLElementCollection.cs" />
+    <Compile Include="mshtml\IHTMLEventObj.cs" />
+    <Compile Include="mshtml\IHTMLFormElement.cs" />
+    <Compile Include="mshtml\IHTMLInputElement.cs" />
+    <Compile Include="mshtml\ISVGDocument.cs" />
+    <Compile Include="NewObjectStrings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>NewObjectStrings.resx</DependentUpon>
+    </Compile>
+    <Compile Include="OutPrinterDisplayStrings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>OutPrinterDisplayStrings.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SelectObjectStrings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SelectObjectStrings.resx</DependentUpon>
+    </Compile>
+    <Compile Include="SendMailMessageStrings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SendMailMessageStrings.resx</DependentUpon>
+    </Compile>
+    <Compile Include="SortObjectStrings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SortObjectStrings.resx</DependentUpon>
+    </Compile>
+    <Compile Include="System.Management.Automation\CustomInternalSerializer.cs" />
+    <Compile Include="System.Management.Automation\CustomSerialization.cs" />
+    <Compile Include="System.Management.Automation\CustomSerializationStrings.cs" />
+    <Compile Include="TraceCommandStrings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>TraceCommandStrings.resx</DependentUpon>
+    </Compile>
+    <Compile Include="UpdateDataStrings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>UpdateDataStrings.resx</DependentUpon>
+    </Compile>
+    <Compile Include="UpdateListStrings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>UpdateListStrings.resx</DependentUpon>
+    </Compile>
+    <Compile Include="UtilityCommonStrings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>UtilityCommonStrings.resx</DependentUpon>
+    </Compile>
+    <Compile Include="UtilityMshSnapInResources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>UtilityMshSnapInResources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="VariableCommandStrings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>VariableCommandStrings.resx</DependentUpon>
+    </Compile>
+    <Compile Include="WebCmdletStrings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>WebCmdletStrings.resx</DependentUpon>
+    </Compile>
+    <Compile Include="WriteErrorStrings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>WriteErrorStrings.resx</DependentUpon>
+    </Compile>
+    <Compile Include="WriteProgressResourceStrings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>WriteProgressResourceStrings.resx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\External\Microsoft.JScript\Microsoft.JScript.csproj">
+      <Project>{B023085C-5EFE-413F-A664-D1701FCAD87B}</Project>
+      <Name>Microsoft.JScript</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\System.Management.Automation\System.Management.Automation.csproj">
+      <Project>{3AA23D43-1616-4C39-95D6-D26E63E7D5AB}</Project>
+      <Name>System.Management.Automation</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\External\System.Management\System.Management.csproj">
+      <Project>{FDC0FF3F-39C6-4837-937B-877497B41A34}</Project>
+      <Name>System.Management</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="AddMember.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>AddMember.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddTypeStrings.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>AddTypeStrings.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AliasCommandStrings.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>AliasCommandStrings.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ConvertFromStringData.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>ConvertFromStringData.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CsvCommandStrings.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>CsvCommandStrings.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UtilityDebuggerStrings.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>UtilityDebuggerStrings.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EventingStrings.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>EventingStrings.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormatAndOut_out_gridview.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>FormatAndOut_out_gridview.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GetMember.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>GetMember.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GetRandomCommandStrings.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>GetRandomCommandStrings.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HostStrings.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>HostStrings.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ImplicitRemotingStrings.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>ImplicitRemotingStrings.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ImportLocalizedData.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>ImportLocalizedData.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MatchStringStrings.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>MatchStringStrings.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MeasureObjectStrings.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>MeasureObjectStrings.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NewObjectStrings.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>NewObjectStrings.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OutPrinterDisplayStrings.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>OutPrinterDisplayStrings.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SelectObjectStrings.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>SelectObjectStrings.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SendMailMessageStrings.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>SendMailMessageStrings.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SortObjectStrings.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>SortObjectStrings.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TraceCommandStrings.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>TraceCommandStrings.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UpdateDataStrings.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>UpdateDataStrings.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UpdateListStrings.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>UpdateListStrings.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UtilityCommonStrings.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>UtilityCommonStrings.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UtilityMshSnapInResources.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>UtilityMshSnapInResources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VariableCommandStrings.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>VariableCommandStrings.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WebCmdletStrings.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>WebCmdletStrings.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WriteErrorStrings.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>WriteErrorStrings.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WriteProgressResourceStrings.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>WriteProgressResourceStrings.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

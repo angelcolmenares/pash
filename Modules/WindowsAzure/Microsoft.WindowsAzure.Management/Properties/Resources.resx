@@ -1,0 +1,252 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="AzureDirectory" xml:space="preserve">
+    <value>Windows Azure Powershell\</value>
+  </data>
+  <data name="AzureDirectoryName" xml:space="preserve">
+    <value>Windows Azure Powershell</value>
+  </data>
+  <data name="CannotFindServiceRoot" xml:space="preserve">
+    <value>Cannot locate deploymentSettings.json in parent folders</value>
+  </data>
+  <data name="CertificateNotFoundInStore" xml:space="preserve">
+    <value>No certificate was found in the certificate store with thumbprint {0}</value>
+  </data>
+  <data name="GlobalComponents_Load_PublishSettingsNotFound" xml:space="preserve">
+    <value>Could not find publish settings. Please run Import-AzurePublishSettingsFile.</value>
+  </data>
+  <data name="IllegalPath" xml:space="preserve">
+    <value>Illegal characters in path.</value>
+  </data>
+  <data name="InvalidCertificate" xml:space="preserve">
+    <value>Invalid certificate format. Publish settings may be corrupted. Use Get-AzurePublishSettingsFile to download updated settings</value>
+  </data>
+  <data name="InvalidDnsName" xml:space="preserve">
+    <value>"{0}" is an invalid DNS name for {1}</value>
+  </data>
+  <data name="InvalidFileExtension" xml:space="preserve">
+    <value>The provided file in {0} must be have {1} extension</value>
+  </data>
+  <data name="InvalidOrEmptyArgumentMessage" xml:space="preserve">
+    <value>{0} is invalid or empty</value>
+  </data>
+  <data name="InvalidPublishSettingsSchema" xml:space="preserve">
+    <value>The provided publish settings file {0} has invalid content. Please get valid by running cmdlet Get-AzurePublishSettingsFile</value>
+  </data>
+  <data name="InvalidSubscriptionsDataSchema" xml:space="preserve">
+    <value>The provided subscriptions file {0} has invalid content.</value>
+  </data>
+  <data name="InvalidServiceSettingElement" xml:space="preserve">
+    <value>You must provide valid value for {0}</value>
+  </data>
+  <data name="NoInternetConnection" xml:space="preserve">
+    <value>Please connect to internet before executing this cmdlet</value>
+  </data>
+  <data name="PathDoesNotExist" xml:space="preserve">
+    <value>Path {0} doesn't exist.</value>
+  </data>
+  <data name="PathDoesNotExistForElement" xml:space="preserve">
+    <value>Path for {0} doesn't exist in {1}.</value>
+  </data>
+  <data name="PublishSettings" xml:space="preserve">
+    <value>publish settings</value>
+  </data>
+  <data name="PublishSettingsFileExtention" xml:space="preserve">
+    <value>.PublishSettings</value>
+  </data>
+  <data name="PublishSettingsFileName" xml:space="preserve">
+    <value>publishSettings.xml</value>
+  </data>
+  <data name="RemoveCurrentSubscription" xml:space="preserve">
+    <value>The current subscription is being removed. Use Select-Subscription &lt;subscriptionName&gt; to select a new current subscription.</value>
+  </data>
+  <data name="RemoveDefaultSubscription" xml:space="preserve">
+    <value>The current subscription is being removed. Use Select-Subscription &lt;subscriptionName&gt; to select a new current subscription.</value>
+  </data>
+  <data name="ServiceNameExists" xml:space="preserve">
+    <value>The provided service name {0} already exists, please pick another name</value>
+  </data>
+  <data name="ServiceSettings" xml:space="preserve">
+    <value>service settings</value>
+  </data>
+  <data name="ServiceSettings_ValidateStorageAccountName_InvalidName" xml:space="preserve">
+    <value>The storage account name '{0}' is invalid.  Storage account names must be between 3 and 24 characters in length and use numbers and lower-case letters only.</value>
+  </data>
+  <data name="SettingsFileName" xml:space="preserve">
+    <value>deploymentSettings.json</value>
+  </data>
+  <data name="SubscriptionIdNotFoundMessage" xml:space="preserve">
+    <value>The provided subscription name doesn't exist in the imported publish profile. If subscriptions have changed for the hosted service, retrieve an updated profile by using Get-AzurePublishSettingsFile then import the profile using Import-AzurePublishSettingsFile</value>
+  </data>
+  <data name="x86InProgramFiles" xml:space="preserve">
+    <value> (x86)</value>
+  </data>
+  <data name="InvalidSubscriptionName" xml:space="preserve">
+    <value>Must specify a non-null subscription name.</value>
+  </data>
+  <data name="InvalidSubscription" xml:space="preserve">
+    <value>"The subscription named '{0}' cannot be found. Use Set-AzureSubscription to initialize the subscription data."</value>
+  </data>
+  <data name="PublishSettingsUrl" xml:space="preserve">
+    <value>https://windows.azure.com/download/publishprofile.aspx?client=nodejs&amp;lang=en</value>
+  </data>
+  <data name="DefaultAndCurrentSubscription" xml:space="preserve">
+    <value>Setting: {0} as the default and current subscription. To view other subscriptions use Get-AzureSubscription</value>
+  </data>
+  <data name="SubscriptionDataFileName" xml:space="preserve">
+    <value>DefaultSubscriptionData.xml</value>
+  </data>
+  <data name="ManagementCertificateFileName" xml:space="preserve">
+    <value>managementCertificate.pem</value>
+  </data>
+  <data name="ConfigurationFileName" xml:space="preserve">
+    <value>config.json</value>
+  </data>
+  <data name="InvalidNullArgument" xml:space="preserve">
+    <value>Value cannot be null. Parameter name: '{0}'</value>
+  </data>
+  <data name="CommunicationCouldNotBeEstablished" xml:space="preserve">
+    <value>Communication could not be established. This could be due to an invalid subscription ID. Note that subscription IDs are case sensitive.</value>
+  </data>
+  <data name="InvalidCurrentSubscription" xml:space="preserve">
+    <value>Call Set-AzureSubscription and Select-AzureSubscription first.</value>
+  </data>
+  <data name="InvalidCurrentSubscriptionId" xml:space="preserve">
+    <value>You MUST specify a subscription Id. Call Set-AzureSubscription and Select-AzureSubscription first.</value>
+  </data>
+  <data name="InvalidCurrentSuscriptionCertificate" xml:space="preserve">
+    <value>You MUST specify a certificate. Call Set-AzureSubscription and Select-AzureSubscription first.</value>
+  </data>
+  <data name="InvalidDefaultSubscription" xml:space="preserve">
+    <value>No default subscription has been designated. Use Set-AzureSubscription &lt;subscriptionName&gt; -DefaultSubscription to set the default subscription.</value>
+  </data>
+  <data name="InvalidSelectedSubscription" xml:space="preserve">
+    <value>No subscription is currently selected. Use Select-Subscription to activate a subscription.</value>
+  </data>
+  <data name="UpdatedSettings" xml:space="preserve">
+    <value>Updated settings for subscription '{0}'. Current subscription is '{1}'.</value>
+  </data>
+  <data name="InvalidCertificateSingle" xml:space="preserve">
+    <value>Invalid certificate format.</value>
+  </data>
+  <data name="InvalidEndpoint" xml:space="preserve">
+    <value>Invalid service endpoint.</value>
+  </data>
+</root>

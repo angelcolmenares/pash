@@ -1,0 +1,24 @@
+﻿TOPIC
+    about_OData_Version
+
+VERSION
+    You are running version 1.0 of the OData Provider.
+
+CHANGE LOG
+  Description
+    The changelog documents the changes placed in each release of 
+	this project.  Each item is identified by its codeplex work item 
+	number(s) if available.
+  
+1.0
+  Initial Release
+  	Support for OData feed and entity content read operations.
+	Support for custom formatting of entries by category term.
+	Support for following link elements as child path items of entities.
+
+SEE ALSO
+    http://o.codeplex.com
+    http://www.odata.org
+    about_OData
+	about_OData_Query
+	about_OData_Format

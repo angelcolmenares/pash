@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{154AEF28-C81F-405D-9072-9F52580E3E7D}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <NoWarn>1699</NoWarn>
+    <OutputPath>./../../class/lib/net_4_0</OutputPath>
+    <DefineConstants>NET_1_1;NET_2_0;NET_3_0;NET_3_5;NET_4_0;NET_3_5;NET_3_0</DefineConstants>
+    <NoStdLib>true</NoStdLib>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>mscorlib</RootNamespace>
+    <AssemblyName>System.ServiceModel.Web</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SignAssembly>True</SignAssembly>
+    <AssemblyOriginatorKeyFile>..\..\..\mono.snk</AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>True</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>True</Optimize>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AdditionalLibPaths>./../../class/lib/net_4_0</AdditionalLibPaths>
+    <OutputPath>..\..\class\lib\net_4_0</OutputPath>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>True</Optimize>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AdditionalLibPaths>./../../class/lib/net_4_0</AdditionalLibPaths>
+    <OutputPath>..\..\class\lib\net_4_0</OutputPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <ItemGroup>
+    <Compile Include="Assembly\AssemblyInfo.cs" />
+    <Compile Include="System.ServiceModel.Activation\WebScriptServiceHostFactory.cs" />
+    <Compile Include="System.ServiceModel.Activation\WebServiceHostFactory.cs" />
+    <Compile Include="System.ServiceModel.Channels\WebBodyFormatMessageProperty.cs" />
+    <Compile Include="System.ServiceModel.Channels\WebContentFormat.cs" />
+    <Compile Include="System.ServiceModel.Channels\WebContentTypeMapper.cs" />
+    <Compile Include="System.ServiceModel.Channels\WebMessageEncoder.cs" />
+    <Compile Include="System.ServiceModel.Channels\WebMessageEncoderFactory.cs" />
+    <Compile Include="System.ServiceModel.Channels\WebMessageEncodingBindingElement.cs" />
+    <Compile Include="System.ServiceModel.Configuration\WebHttpBindingCollectionElement.cs" />
+    <Compile Include="System.ServiceModel.Configuration\WebHttpBindingElement.cs" />
+    <Compile Include="System.ServiceModel.Configuration\WebHttpElement.cs" />
+    <Compile Include="System.ServiceModel.Configuration\WebHttpEndpointCollectionElement.cs" />
+    <Compile Include="System.ServiceModel.Configuration\WebHttpEndpointElement.cs" />
+    <Compile Include="System.ServiceModel.Configuration\WebHttpSecurityElement.cs" />
+    <Compile Include="System.ServiceModel.Configuration\WebMessageEncodingElement.cs" />
+    <Compile Include="System.ServiceModel.Configuration\WebScriptEnablingElement.cs" />
+    <Compile Include="System.ServiceModel.Configuration\WebScriptEndpointCollectionElement.cs" />
+    <Compile Include="System.ServiceModel.Configuration\WebScriptEndpointElement.cs" />
+    <Compile Include="System.ServiceModel.Description\WebHttpBehavior.cs" />
+    <Compile Include="System.ServiceModel.Description\WebHttpEndpoint.cs" />
+    <Compile Include="System.ServiceModel.Description\WebScriptEnablingBehavior.cs" />
+    <Compile Include="System.ServiceModel.Description\WebScriptEndpoint.cs" />
+    <Compile Include="System.ServiceModel.Description\WebServiceEndpoint.cs" />
+    <Compile Include="System.ServiceModel.Dispatcher\JsonQueryStringConverter.cs" />
+    <Compile Include="System.ServiceModel.Dispatcher\QueryStringConverter.cs" />
+    <Compile Include="System.ServiceModel.Dispatcher\WebHttpDispatchOperationSelector.cs" />
+    <Compile Include="System.ServiceModel.Dispatcher\WebMessageFormatter.cs" />
+    <Compile Include="System.ServiceModel\WebHttpBinding.cs" />
+    <Compile Include="System.ServiceModel\WebHttpSecurity.cs" />
+    <Compile Include="System.ServiceModel\WebHttpSecurityMode.cs" />
+    <Compile Include="System.ServiceModel.Web\IncomingWebRequestContext.cs" />
+    <Compile Include="System.ServiceModel.Web\IncomingWebResponseContext.cs" />
+    <Compile Include="System.ServiceModel.Web\OutgoingWebRequestContext.cs" />
+    <Compile Include="System.ServiceModel.Web\OutgoingWebResponseContext.cs" />
+    <Compile Include="System.ServiceModel.Web\WebAttributeInfo.cs" />
+    <Compile Include="System.ServiceModel.Web\WebChannelFactory.cs" />
+    <Compile Include="System.ServiceModel.Web\WebGetAttribute.cs" />
+    <Compile Include="System.ServiceModel.Web\WebInvokeAttribute.cs" />
+    <Compile Include="System.ServiceModel.Web\WebMessageBodyStyle.cs" />
+    <Compile Include="System.ServiceModel.Web\WebMessageFormat.cs" />
+    <Compile Include="System.ServiceModel.Web\WebOperationContext.cs" />
+    <Compile Include="System.ServiceModel.Web\WebServiceHost.cs" />
+    <Compile Include="Consts.cs" />
+    <Compile Include="Locale.cs" />
+    <Compile Include="MonoTODOAttribute.cs" />
+  </ItemGroup>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <PropertyGroup>
+    <PreBuildEvent>
+    </PreBuildEvent>
+  </PropertyGroup>
+  <ItemGroup>
+    <Folder Include="Properties\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="mscorlib" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\System.ServiceModel\System.ServiceModel-net_4_0.csproj">
+      <Project>{155AEF28-C81F-405D-9072-9D52780E3E70}</Project>
+      <Name>System.ServiceModel-net_4_0</Name>
+    </ProjectReference>
+  </ItemGroup>
+</Project>

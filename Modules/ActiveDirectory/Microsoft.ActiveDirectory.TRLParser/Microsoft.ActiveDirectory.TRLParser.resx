@@ -1,0 +1,252 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="POLICY0401" xml:space="preserve">
+    <value>POLICY0401: No {0} nodes found in the Rules XML.</value>
+  </data>
+  <data name="POLICY0400" xml:space="preserve">
+    <value>POLICY0400: Unexpected XML Root Node {0}, instead of {1}.</value>
+  </data>
+  <data name="POLICY0403" xml:space="preserve">
+    <value>POLICY0403: Empty node {0} with attribute {1} = {2} found in the Rules XML.</value>
+  </data>
+  <data name="POLICY0402" xml:space="preserve">
+    <value>POLICY0402: Node {0} with attribute {1} = {2} was not found in the Rules XML.</value>
+  </data>
+  <data name="POLICY0040" xml:space="preserve">
+    <value>POLICY0040: Unexpected Expression of type {0} found.</value>
+  </data>
+  <data name="POLICY0014" xml:space="preserve">
+    <value>POLICY0014: Encountered unsupported character '{0}' in string '{1}'.</value>
+  </data>
+  <data name="POLICY0015" xml:space="preserve">
+    <value>POLICY0015: Use of ClaimPropertyAccessExpression is not supported in context '{0}'.</value>
+  </data>
+  <data name="POLICY0016" xml:space="preserve">
+    <value>POLICY0016: AttributeLookupIssuanceStatement must specify at least one return claim type.</value>
+  </data>
+  <data name="POLICY0017" xml:space="preserve">
+    <value>POLICY0017: Attribute store '{0}' is not configured.</value>
+  </data>
+  <data name="POLICY0010" xml:space="preserve">
+    <value>POLICY0010: Processing has terminated because an internal inconsistency has been detected. Detailed information may have been logged as an ERROR level message to the debug logs if they are enabled.</value>
+  </data>
+  <data name="POLICY0011" xml:space="preserve">
+    <value>POLICY0011: No conditions in the claim rule match the condition tag specified in the CopyIssuanceStatement: '{0}'.</value>
+  </data>
+  <data name="POLICY0012" xml:space="preserve">
+    <value>POLICY0012: No claims were matched by condition '{0}' specified in the CopyIssuanceStatement.</value>
+  </data>
+  <data name="POLICY0013" xml:space="preserve">
+    <value>POLICY0013: No claims were matched by condition '{0}' specified in the ClaimPropertyAccessExpression.</value>
+  </data>
+  <data name="POLICY0018" xml:space="preserve">
+    <value>POLICY0018: Query '{0}' to attribute store '{1}' failed: '{2}'.</value>
+  </data>
+  <data name="POLICY0019" xml:space="preserve">
+    <value>POLICY0019: Query '{0}' to attribute store '{1}' returned an unexpected number of fields: expected '{2}', got '{3}'.</value>
+  </data>
+  <data name="POLICY0036" xml:space="preserve">
+    <value>POLICY0036: Unrecognized operator {0} in expression with function {1}.</value>
+  </data>
+  <data name="POLICY0037" xml:space="preserve">
+    <value>POLICY0037: {0} is null.</value>
+  </data>
+  <data name="POLICY0034" xml:space="preserve">
+    <value>POLICY0034: Unexpected ConditionType {0} found.</value>
+  </data>
+  <data name="POLICY0035" xml:space="preserve">
+    <value>POLICY0035: Condition operator {0} is not valid.</value>
+  </data>
+  <data name="POLICY0033" xml:space="preserve">
+    <value>POLICY0033: Internal error. Parser stack is empty.</value>
+  </data>
+  <data name="POLICY0030" xml:space="preserve">
+    <value>POLICY0030: Syntax error, unexpected {0}, expecting one of the following: {1}.</value>
+  </data>
+  <data name="POLICY0031" xml:space="preserve">
+    <value>POLICY0031: Line:{0}, Column:{1}, Error token:{2}, Error '{3}'.</value>
+  </data>
+  <data name="POLICY0038" xml:space="preserve">
+    <value>POLICY0038: A serious internal error was encountered during an attempt to parse a claims policy rule. The parser is in a bad state.</value>
+  </data>
+  <data name="POLICY0039" xml:space="preserve">
+    <value>POLICY0039: Unexpected ClaimCondition of type {0} found.</value>
+  </data>
+  <data name="POLICY0005" xml:space="preserve">
+    <value>POLICY0005: {0} cannot be null.</value>
+  </data>
+  <data name="POLICY0004" xml:space="preserve">
+    <value>POLICY0004: Encountered unsupported claim property: '{0}'.</value>
+  </data>
+  <data name="POLICY0007" xml:space="preserve">
+    <value>POLICY0007: Claim type for issued claim is not assigned.</value>
+  </data>
+  <data name="POLICY0006" xml:space="preserve">
+    <value>POLICY0006: Claim properties must be identified by name.</value>
+  </data>
+  <data name="POLICY0001" xml:space="preserve">
+    <value>POLICY0001: CopyIssuanceStatement is not supported for claim rules of type: '{0}'.</value>
+  </data>
+  <data name="POLICY0000" xml:space="preserve">
+    <value>POLICY0000: {0} cannot be an empty string.</value>
+  </data>
+  <data name="POLICY0003" xml:space="preserve">
+    <value>POLICY0003: Encountered unexpected exception while parsing policy data: '{0}'.</value>
+  </data>
+  <data name="POLICY0002" xml:space="preserve">
+    <value>POLICY0002: Could not parse policy data.{0}Line number: {1}, Column number: {2}, Error token: '{3}' in line: '{4}'.{5}Parser error: {6} </value>
+  </data>
+  <data name="POLICY0009" xml:space="preserve">
+    <value>POLICY0009: Claim property '{0}' has multiple assignments.</value>
+  </data>
+  <data name="POLICY0008" xml:space="preserve">
+    <value>POLICY0008: Claim value for issued claim is not assigned.</value>
+  </data>
+  <data name="POLICY0026" xml:space="preserve">
+    <value>POLICY0026: At least one SelectionCondition must be specified.</value>
+  </data>
+  <data name="POLICY0025" xml:space="preserve">
+    <value>POLICY0025: No conditions in the claim rule match the condition tag specified in the ClaimPropertyAccessExpression: '{0}'.</value>
+  </data>
+  <data name="POLICY0024" xml:space="preserve">
+    <value>POLICY0024: Encountered duplicate ConditionTag: '{0}'.</value>
+  </data>
+  <data name="POLICY0023" xml:space="preserve">
+    <value>POLICY0023: Unexpected number of parameters for function '{0}': expected '{1}', got '{2}'.</value>
+  </data>
+  <data name="POLICY0022" xml:space="preserve">
+    <value>POLICY0022: Function '{0}' is not supported.</value>
+  </data>
+  <data name="POLICY0021" xml:space="preserve">
+    <value>POLICY0021: Multiple conditions match condition '{0}' specified in the ClaimPropertyAccessExpression.</value>
+  </data>
+  <data name="POLICY0020" xml:space="preserve">
+    <value>POLICY0020: Multiple conditions match condition '{0}' specified in the CopyIssuanceStatement.</value>
+  </data>
+  <data name="POLICY0029" xml:space="preserve">
+    <value>POLICY0029: Unexpected input.</value>
+  </data>
+  <data name="POLICY0028" xml:space="preserve">
+    <value>POLICY0028: At least one AggregationCondition must be specified.</value>
+  </data>
+  <data name="INFO0001" xml:space="preserve">
+    <value>More information at http://go.microsoft.com/fwlink/?LinkId=230694.</value>
+  </data>
+</root>

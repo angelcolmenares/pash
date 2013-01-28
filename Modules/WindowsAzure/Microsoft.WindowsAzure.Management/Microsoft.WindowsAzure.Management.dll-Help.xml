@@ -1,0 +1,1426 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<helpItems xmlns="http://msh" schema="maml">
+  <command:command xmlns:maml="http://schemas.microsoft.com/maml/2004/10" xmlns:command="http://schemas.microsoft.com/maml/dev/command/2004/10" xmlns:dev="http://schemas.microsoft.com/maml/dev/2004/10" xmlns:MSHelp="http://msdn.microsoft.com/mshelp">
+    <command:details>
+      <command:name>Get-AzurePublishSettingsFile</command:name>
+      <maml:description>
+        <maml:para>Downloads the publish-settings file for a Windows Azure subscription</maml:para>
+      </maml:description>
+      <maml:copyright>
+        <maml:para />
+      </maml:copyright>
+      <command:verb>Get</command:verb>
+      <command:noun>AzurePublishSettingsFile</command:noun>
+      <dev:version />
+    </command:details>
+    <maml:description>
+      <maml:para>
+        The Get-AzurePublishSettingsFile cmdlet opens your default browser, logs onto your Windows Azure account, and automatically downloads a .publishsettings file that contains information and a certificate for your Windows Azure subscription. This file is used by the Import-AzureSubscription cmdlet and is an XML file with a ".publishsettings" extension.
+      </maml:para>
+      <maml:para>Security Note: The file downloaded contains an encoded management certificate that serves as the credentials to administer your Windows Azure subscriptions and services. Store this file in a secure location or delete after use.</maml:para>
+    </maml:description>
+    <command:syntax></command:syntax>
+    <command:parameters></command:parameters>
+    <command:inputTypes>
+      <command:inputType>
+        <dev:type>
+          <maml:name></maml:name>
+          <maml:uri></maml:uri>
+          <maml:description>
+            <maml:para />
+          </maml:description>
+        </dev:type>
+        <maml:description>
+          <maml:para></maml:para>
+        </maml:description>
+      </command:inputType>
+    </command:inputTypes>
+    <command:returnValues>
+      <command:returnValue>
+        <dev:type>
+          <maml:name></maml:name>
+          <maml:uri></maml:uri>
+          <maml:description>
+            <maml:para />
+          </maml:description>
+        </dev:type>
+        <maml:description>
+          <maml:para></maml:para>
+        </maml:description>
+      </command:returnValue>
+    </command:returnValues>
+    <command:terminatingErrors />
+    <command:nonTerminatingErrors />
+    <maml:alertSet>
+      <maml:title></maml:title>
+      <maml:alert>
+        <maml:para>node-dev, php-dev</maml:para>
+      </maml:alert>
+    </maml:alertSet>
+    <command:examples>
+      <command:example>
+        <maml:title>
+          --------------  Example 1 --------------
+        </maml:title>
+        <maml:introduction>
+          <maml:para></maml:para>
+        </maml:introduction>
+        <dev:code>
+          PS C:\&gt; Get-AzurePublishSettingsFile
+        </dev:code>
+        <dev:remarks>
+          <maml:para>This example launches your default browser, connects to your Windows Azure account, and then automatically downloads the .publishsettings file for your account. </maml:para>
+        </dev:remarks>
+        <command:commandLines>
+          <command:commandLine>
+            <command:commandText />
+          </command:commandLine>
+        </command:commandLines>
+      </command:example>
+    </command:examples>
+    <maml:relatedLinks>
+      <maml:navigationLink>
+        <maml:linkText>Import-AzurePublishSettingsFile</maml:linkText>
+        <maml:uri />
+      </maml:navigationLink>
+    </maml:relatedLinks>
+  </command:command>
+  <command:command xmlns:maml="http://schemas.microsoft.com/maml/2004/10" xmlns:command="http://schemas.microsoft.com/maml/dev/command/2004/10" xmlns:dev="http://schemas.microsoft.com/maml/dev/2004/10" xmlns:MSHelp="http://msdn.microsoft.com/mshelp">
+    <command:details>
+      <command:name>Get-AzureSubscription</command:name>
+      <maml:description>
+        <maml:para>Retrieves a Windows Azure subscription configuration object.</maml:para>
+      </maml:description>
+      <maml:copyright>
+        <maml:para />
+      </maml:copyright>
+      <command:verb>Get</command:verb>
+      <command:noun>AzureSubscription</command:noun>
+      <dev:version />
+    </command:details>
+    <maml:description>
+      <maml:para>The Get-AzureSubscription cmdlet retrieves an object with the common subscription settings, including, including subscription ID and management certificate information, as well as connection information for one or more Windows Azure storage accounts. These settings are stored in the user’s profile. </maml:para>
+      <maml:para>The Windows Azure cmdlets use a number of common parameters, including the subscription ID, the management certificate for a subscription, and storage account settings. These common settings are stored in a file in the PowerShell user’s profile. The Windows Azure PowerShell cmdlets reference the information stored in the subscription data file and use it to provide default values for certain parameters. Multiple subscription data sets are supported, with each identified by a subscription name. </maml:para>
+      <maml:para>
+        Use the Import-AzurePublishSettingsFile and Set-AzureSubscription cmdlets to store common settings for each subscription to be managed. During a session, use the Select-AzureSubscription cmdlet to choose which subscription data set is used by other Windows Azure cmdlets to retrieve subscription and storage account information. The cmdlets use the settings in the selected subscription unless explicitly overriden by parameters at the command line.
+      </maml:para>
+    </maml:description>
+    <command:syntax>
+      <command:syntaxItem>
+        <maml:name>Get-AzureSubscription</maml:name>
+        <command:parameter required="false" variableLength="false" globbing="false" pipelineInput="true (ByPropertyName)" position="1" aliases="">
+          <maml:name>SubscriptionName</maml:name>
+          <maml:description>
+            <maml:para>
+              Retrieves the configuration settings for the subscription identified by this name. The Default, Current, and SubscriptionName parameters are mutually exclusive. If none of these parameters are used, Get-AzureSubscription returns a list object with all of the subscriptions currently stored in the subscription data file.
+            </maml:para>
+          </maml:description>
+          <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
+        </command:parameter>
+        <command:parameter required="false" variableLength="false" globbing="false" pipelineInput="false" position="named" aliases="">
+          <maml:name>ExtendedDetails</maml:name>
+          <maml:description>
+            <maml:para>If this parameter is specified, returns quota information for the subscription in addition to the core settings.</maml:para>
+          </maml:description>
+          <command:parameterValue required="false" variableLength="false">SwitchParameter</command:parameterValue>
+        </command:parameter>
+        <command:parameter required="false" variableLength="false" globbing="false" pipelineInput="true (ByPropertyName)" position="named" aliases="">
+          <maml:name>SubscriptionDataFile</maml:name>
+          <maml:description>
+            <maml:para>
+              Specifies the path and filename of the subscription data file. This parameter is optional. If it is not provided, the subscription data is read from a default subscription data file in the user's profile.
+            </maml:para>
+          </maml:description>
+          <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
+        </command:parameter>
+      </command:syntaxItem>
+      <command:syntaxItem>
+        <maml:name>Get-AzureSubscription</maml:name>
+        <command:parameter required="false" variableLength="false" globbing="false" pipelineInput="false" position="named" aliases="">
+          <maml:name>Current</maml:name>
+          <maml:description>
+            <maml:para>
+              If this parameter is specified, returns subscription settings for the current subscription. The Default, Current, and SubscriptionName parameters are mutually exclusive. If none of these parameters is specified, Get-AzureSubscription returns a list object with all of the subscriptions currently listed in the subscription data file. The Windows Azure PowerShell cmdlets retrieve default settings for their parameters from the information stored in the current subscription. Use the Select-AzureSubscription cmdlet to select the subscription.
+            </maml:para>
+          </maml:description>
+          <command:parameterValue required="false" variableLength="false">SwitchParameter</command:parameterValue>
+        </command:parameter>
+        <command:parameter required="false" variableLength="false" globbing="false" pipelineInput="false" position="named" aliases="">
+          <maml:name>ExtendedDetails</maml:name>
+          <maml:description>
+            <maml:para>If this parameter is specified, returns quota information for the subscription in addition to the core settings.</maml:para>
+          </maml:description>
+          <command:parameterValue required="false" variableLength="false">SwitchParameter</command:parameterValue>
+        </command:parameter>
+      </command:syntaxItem>
+      <command:syntaxItem>
+        <maml:name>Get-AzureSubscription</maml:name>
+        <command:parameter required="false" variableLength="false" globbing="false" pipelineInput="false" position="named" aliases="">
+          <maml:name>Default</maml:name>
+          <maml:description>
+            <maml:para>
+              If this parameter is specified, returns the subscription that has been designated as the default subscription. The Default, Current, and SubscriptionName parameters are mutually exclusive. A default subscription is automatically selected whenever the PowerShell session starts. To designate the default subscription, use the Set-AzureSubscription cmdlet.
+            </maml:para>
+          </maml:description>
+          <command:parameterValue required="false" variableLength="false">SwitchParameter</command:parameterValue>
+        </command:parameter>
+        <command:parameter required="false" variableLength="false" globbing="false" pipelineInput="false" position="named" aliases="">
+          <maml:name>ExtendedDetails</maml:name>
+          <maml:description>
+            <maml:para>If this parameter is specified, returns quota information for the subscription in addition to the core settings.</maml:para>
+          </maml:description>
+          <command:parameterValue required="false" variableLength="false">SwitchParameter</command:parameterValue>
+        </command:parameter>
+        <command:parameter required="false" variableLength="false" globbing="false" pipelineInput="true (ByPropertyName)" position="named" aliases="">
+          <maml:name>SubscriptionDataFile</maml:name>
+          <maml:description>
+            <maml:para>
+              Specifies the path and filename of the subscription data file. This parameter is optional. If it is not provided, the subscription data is read from a default subscription data file in the user's profile.
+            </maml:para>
+          </maml:description>
+          <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
+        </command:parameter>
+      </command:syntaxItem>
+    </command:syntax>
+    <command:parameters>
+      <command:parameter required="false" variableLength="false" globbing="false" pipelineInput="false" position="named" aliases="">
+        <maml:name>Current</maml:name>
+        <maml:description>
+          <maml:para>
+            If this parameter is specified, returns subscription settings for the current subscription. The Default, Current, and SubscriptionName parameters are mutually exclusive. If none of these parameters is specified, Get-AzureSubscription returns a list object with all of the subscriptions currently listed in the subscription data file. The Windows Azure PowerShell cmdlets retrieve default settings for their parameters from the information stored in the current subscription. Use the Select-AzureSubscription cmdlet to select the subscription.
+          </maml:para>
+        </maml:description>
+        <command:parameterValue required="false" variableLength="false">SwitchParameter</command:parameterValue>
+        <dev:type>
+          <maml:name>SwitchParameter</maml:name>
+          <maml:uri />
+        </dev:type>
+        <dev:defaultValue></dev:defaultValue>
+      </command:parameter>
+      <command:parameter required="false" variableLength="false" globbing="false" pipelineInput="false" position="named" aliases="">
+        <maml:name>Default</maml:name>
+        <maml:description>
+          <maml:para>
+            If this parameter is specified, returns the subscription that has been designated as the default subscription. The Default, Current, and SubscriptionName parameters are mutually exclusive. A default subscription is automatically selected whenever the PowerShell session starts. To designate the default subscription, use the Set-AzureSubscription cmdlet.
+          </maml:para>
+        </maml:description>
+        <command:parameterValue required="false" variableLength="false">SwitchParameter</command:parameterValue>
+        <dev:type>
+          <maml:name>SwitchParameter</maml:name>
+          <maml:uri />
+        </dev:type>
+        <dev:defaultValue></dev:defaultValue>
+      </command:parameter>
+      <command:parameter required="false" variableLength="false" globbing="false" pipelineInput="false" position="named" aliases="">
+        <maml:name>ExtendedDetails</maml:name>
+        <maml:description>
+          <maml:para>If this parameter is specified, returns quota information for the subscription in addition to the core settings.</maml:para>
+        </maml:description>
+        <command:parameterValue required="false" variableLength="false">SwitchParameter</command:parameterValue>
+        <dev:type>
+          <maml:name>SwitchParameter</maml:name>
+          <maml:uri />
+        </dev:type>
+        <dev:defaultValue></dev:defaultValue>
+      </command:parameter>
+      <command:parameter required="false" variableLength="false" globbing="false" pipelineInput="true (ByPropertyName)" position="named" aliases="">
+        <maml:name>SubscriptionDataFile</maml:name>
+        <maml:description>
+          <maml:para>
+            Specifies the path and filename of the subscription data file. This parameter is optional. If it is not provided, the subscription data is read from a default subscription data file in the user's profile.
+          </maml:para>
+        </maml:description>
+        <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
+        <dev:type>
+          <maml:name>String</maml:name>
+          <maml:uri />
+        </dev:type>
+        <dev:defaultValue></dev:defaultValue>
+      </command:parameter>
+      <command:parameter required="false" variableLength="false" globbing="false" pipelineInput="true (ByPropertyName)" position="1" aliases="">
+        <maml:name>SubscriptionName</maml:name>
+        <maml:description>
+          <maml:para>
+            Retrieves the configuration settings for the subscription identified by this name. The Default, Current, and SubscriptionName parameters are mutually exclusive. If none of these parameters are used, Get-AzureSubscription returns a list object with all of the subscriptions currently stored in the subscription data file.
+          </maml:para>
+        </maml:description>
+        <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
+        <dev:type>
+          <maml:name>String</maml:name>
+          <maml:uri />
+        </dev:type>
+        <dev:defaultValue></dev:defaultValue>
+      </command:parameter>
+    </command:parameters>
+    <command:inputTypes>
+      <command:inputType>
+        <dev:type>
+          <maml:name></maml:name>
+          <maml:uri></maml:uri>
+          <maml:description>
+            <maml:para />
+          </maml:description>
+        </dev:type>
+        <maml:description></maml:description>
+      </command:inputType>
+    </command:inputTypes>
+    <command:returnValues>
+      <command:returnValue>
+        <dev:type>
+          <maml:name></maml:name>
+          <maml:uri></maml:uri>
+          <maml:description>
+            <maml:para />
+          </maml:description>
+        </dev:type>
+        <maml:description></maml:description>
+      </command:returnValue>
+    </command:returnValues>
+    <command:terminatingErrors />
+    <command:nonTerminatingErrors />
+    <command:examples>
+      <command:example>
+        <maml:title>
+          --------------  EXAMPLE 1 --------------
+        </maml:title>
+        <maml:introduction>
+          <maml:para></maml:para>
+        </maml:introduction>
+        <dev:code>
+          C:\PS&gt;Get-AzureSubscription | Format-Table
+
+        </dev:code>
+        <dev:remarks>
+          <maml:para>
+            This command gets settings for every subscription currently stored in the default subscription data file and displays it in tabular form.
+          </maml:para>
+        </dev:remarks>
+        <command:commandLines>
+          <command:commandLine>
+            <command:commandText />
+          </command:commandLine>
+        </command:commandLines>
+      </command:example>
+      <command:example>
+        <maml:title>
+          --------------  EXAMPLE 2 --------------
+        </maml:title>
+        <maml:introduction>
+          <maml:para></maml:para>
+        </maml:introduction>
+        <dev:code>
+          C:\PS&gt;Get-AzureSubscription –SubscriptionName "MyProdSubscription"
+
+        </dev:code>
+        <dev:remarks>
+          <maml:para>
+            This command gets the settings for the "MyProdSubsciption" subscription only.
+          </maml:para>
+        </dev:remarks>
+        <command:commandLines>
+          <command:commandLine>
+            <command:commandText />
+          </command:commandLine>
+        </command:commandLines>
+      </command:example>
+      <command:example>
+        <maml:title>
+          --------------  EXAMPLE 3 --------------
+        </maml:title>
+        <maml:introduction>
+          <maml:para></maml:para>
+        </maml:introduction>
+        <dev:code>
+          C:\PS&gt;Get-AzureSubscription -SubscriptionDataFile "C:\Temp\MySubscriptions.xml"
+
+        </dev:code>
+        <dev:remarks>
+          <maml:para>
+            This command gets the settings for all subscriptions currently stored in the specified subscription data file.
+          </maml:para>
+        </dev:remarks>
+        <command:commandLines>
+          <command:commandLine>
+            <command:commandText />
+          </command:commandLine>
+        </command:commandLines>
+      </command:example>
+      <command:example>
+        <maml:title>
+          --------------  EXAMPLE 4 --------------
+        </maml:title>
+        <maml:introduction>
+          <maml:para></maml:para>
+        </maml:introduction>
+        <dev:code>
+          C:\PS&gt;Get-AzureSubscription -Default
+
+        </dev:code>
+        <dev:remarks>
+          <maml:para>
+            This command retrieves the settings for the subscription that has been designated as the default subscription. This command returns an error if no subscription has been designated as the default.
+          </maml:para>
+        </dev:remarks>
+        <command:commandLines>
+          <command:commandLine>
+            <command:commandText />
+          </command:commandLine>
+        </command:commandLines>
+      </command:example>
+      <command:example>
+        <maml:title>
+          --------------  EXAMPLE 5 --------------
+        </maml:title>
+        <maml:introduction>
+          <maml:para></maml:para>
+        </maml:introduction>
+        <dev:code>
+          C:\PS&gt;Get-AzureSubscription -Current
+
+        </dev:code>
+        <dev:remarks>
+          <maml:para>
+            This command retrieves the settings for the current subscription.
+          </maml:para>
+        </dev:remarks>
+        <command:commandLines>
+          <command:commandLine>
+            <command:commandText />
+          </command:commandLine>
+        </command:commandLines>
+      </command:example>
+    </command:examples>
+    <maml:relatedLinks>
+      <maml:navigationLink>
+        <maml:linkText>Remove-AzureSubscription</maml:linkText>
+        <maml:uri />
+      </maml:navigationLink>
+      <maml:navigationLink>
+        <maml:linkText>Select-AzureSubscription</maml:linkText>
+        <maml:uri />
+      </maml:navigationLink>
+      <maml:navigationLink>
+        <maml:linkText>Set-AzureSubscription</maml:linkText>
+        <maml:uri />
+      </maml:navigationLink>
+      <maml:navigationLink>
+        <maml:linkText>Import-AzurePublishSettingsFile</maml:linkText>
+        <maml:uri />
+      </maml:navigationLink>
+    </maml:relatedLinks>
+  </command:command>
+  <command:command xmlns:maml="http://schemas.microsoft.com/maml/2004/10" xmlns:command="http://schemas.microsoft.com/maml/dev/command/2004/10" xmlns:dev="http://schemas.microsoft.com/maml/dev/2004/10" xmlns:MSHelp="http://msdn.microsoft.com/mshelp">
+    <command:details>
+      <command:name>Import-AzurePublishSettingsFile</command:name>
+      <maml:description>
+        <maml:para>Imports a publish-settings file with a certificate to connect to your Windows Azure account.</maml:para>
+      </maml:description>
+      <maml:copyright>
+        <maml:para />
+      </maml:copyright>
+      <command:verb>Import</command:verb>
+      <command:noun>AzurePublishSettingsFile</command:noun>
+      <dev:version />
+    </command:details>
+    <maml:description>
+      <maml:para>The Import-AzurePublishSettingsFile cmdlet imports a .publishsettings file downloaded using the Get-AzurePublishSettingsFile cmdlet. This file contains settings and an encoded certificate that is used to provide management credentials for the Windows Azure account. </maml:para>
+      <maml:para>Security Note: The file downloaded contains an encoded management certificate that serves as the credentials to administer Windows Azure subscriptions and services. Store this file in a secure location or delete after use.</maml:para>
+    </maml:description>
+    <command:syntax>
+      <command:syntaxItem>
+        <maml:name>Import-AzurePublishSettingsFile</maml:name>
+        <command:parameter required="true" variableLength="false" globbing="false" pipelineInput="false" position="1" aliases="">
+          <maml:name>PublishSettingsFile</maml:name>
+          <maml:description>
+            <maml:para>Specifies the full path and filename for the .publishsettings file for the Windows Azure account.</maml:para>
+          </maml:description>
+          <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
+        </command:parameter>
+        <command:parameter required="false" variableLength="false" globbing="false" pipelineInput="false" position="named" aliases="">
+          <maml:name>SubscriptionDataFile</maml:name>
+          <maml:description>
+            <maml:para>Specifies the path to a file where the subscription data is stored. This parameter is optional. If it is not provided, the subscription data is imported into a default file in the user's profile.. </maml:para>
+          </maml:description>
+          <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
+        </command:parameter>
+      </command:syntaxItem>
+    </command:syntax>
+    <command:parameters>
+      <command:parameter required="true" variableLength="false" globbing="false" pipelineInput="false" position="1" aliases="">
+        <maml:name>PublishSettingsFile</maml:name>
+        <maml:description>
+          <maml:para>Specifies the full path and filename for the .publishsettings file for the Windows Azure account.</maml:para>
+        </maml:description>
+        <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
+        <dev:type>
+          <maml:name>String</maml:name>
+          <maml:uri />
+        </dev:type>
+        <dev:defaultValue></dev:defaultValue>
+      </command:parameter>
+      <command:parameter required="false" variableLength="false" globbing="false" pipelineInput="false" position="named" aliases="">
+        <maml:name>SubscriptionDataFile</maml:name>
+        <maml:description>
+          <maml:para>Specifies the path to a file where the subscription data is stored. This parameter is optional. If it is not provided, the subscription data is imported into a default file in the user's profile.. </maml:para>
+        </maml:description>
+        <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
+        <dev:type>
+          <maml:name>String</maml:name>
+          <maml:uri />
+        </dev:type>
+        <dev:defaultValue></dev:defaultValue>
+      </command:parameter>
+    </command:parameters>
+    <command:inputTypes>
+      <command:inputType>
+        <dev:type>
+          <maml:name></maml:name>
+          <maml:uri></maml:uri>
+          <maml:description>
+            <maml:para />
+          </maml:description>
+        </dev:type>
+        <maml:description>
+          <maml:para></maml:para>
+        </maml:description>
+      </command:inputType>
+    </command:inputTypes>
+    <command:returnValues>
+      <command:returnValue>
+        <dev:type>
+          <maml:name></maml:name>
+          <maml:uri></maml:uri>
+          <maml:description>
+            <maml:para />
+          </maml:description>
+        </dev:type>
+        <maml:description>
+          <maml:para></maml:para>
+        </maml:description>
+      </command:returnValue>
+    </command:returnValues>
+    <command:terminatingErrors />
+    <command:nonTerminatingErrors />
+    <maml:alertSet>
+      <maml:title></maml:title>
+      <maml:alert>
+        <maml:para>node-dev, php-dev</maml:para>
+      </maml:alert>
+    </maml:alertSet>
+    <command:examples>
+      <command:example>
+        <maml:title>
+          --------------  Example 1 --------------
+        </maml:title>
+        <maml:introduction>
+          <maml:para></maml:para>
+        </maml:introduction>
+        <dev:code>
+          PS C:\&gt; Import-AzurePublishSettingsFile –PublishSettingsFile "C:\Temp\MyAccountName-date-credentials.publishsettings"
+        </dev:code>
+        <dev:remarks>
+          <maml:para>This example imports the "C:\Temp\MyAccountName-date-credentials.publishsettings" file for a Windows Azure account, including the encoded certificate used for management of the account. </maml:para>
+        </dev:remarks>
+        <command:commandLines>
+          <command:commandLine>
+            <command:commandText />
+          </command:commandLine>
+        </command:commandLines>
+      </command:example>
+      <command:example>
+        <maml:title>
+          --------------  Example 2 --------------
+        </maml:title>
+        <maml:introduction>
+          <maml:para></maml:para>
+        </maml:introduction>
+        <dev:code>
+          PS C:\&gt; Import-AzurePublishSettingsFile –PublishSettingsFile "C:\Temp\MyAccountName-date-credentials.publishsettings" –SubscriptionDataFile c:\Subs\Subscriptions.xml"
+        </dev:code>
+        <dev:remarks>
+          <maml:para>This example imports the "C:\Temp\MyAccountName-date-credentials.publishsettings" file for a Windows Azure account, including the encoded certificate used for management of the account. </maml:para>
+        </dev:remarks>
+        <command:commandLines>
+          <command:commandLine>
+            <command:commandText />
+          </command:commandLine>
+        </command:commandLines>
+      </command:example>
+    </command:examples>
+    <maml:relatedLinks>
+      <maml:navigationLink>
+        <maml:linkText>Get-AzureSubscription</maml:linkText>
+        <maml:uri />
+      </maml:navigationLink>
+      <maml:navigationLink>
+        <maml:linkText>Remove-AzureSubscription</maml:linkText>
+        <maml:uri />
+      </maml:navigationLink>
+      <maml:navigationLink>
+        <maml:linkText>Select-AzureSubscription</maml:linkText>
+        <maml:uri />
+      </maml:navigationLink>
+      <maml:navigationLink>
+        <maml:linkText>Set-AzureSubscription</maml:linkText>
+        <maml:uri />
+      </maml:navigationLink>
+    </maml:relatedLinks>
+  </command:command>
+  <command:command xmlns:maml="http://schemas.microsoft.com/maml/2004/10" xmlns:command="http://schemas.microsoft.com/maml/dev/command/2004/10" xmlns:dev="http://schemas.microsoft.com/maml/dev/2004/10" xmlns:MSHelp="http://msdn.microsoft.com/mshelp">
+    <command:details>
+      <command:name>Remove-AzureSubscription</command:name>
+      <maml:description>
+        <maml:para>Removes the settings for a Windows Azure subscription from the subscription data file.</maml:para>
+      </maml:description>
+      <maml:copyright>
+        <maml:para />
+      </maml:copyright>
+      <command:verb>Remove</command:verb>
+      <command:noun>AzureSubscription</command:noun>
+      <dev:version />
+    </command:details>
+    <maml:description>
+      <maml:para>
+        The Remove-AzureSubscription cmdlet removes all the settings associated with the specified subscription from a subscription data file.
+      </maml:para>
+    </maml:description>
+    <command:syntax>
+      <command:syntaxItem>
+        <maml:name>Remove-AzureSubscription</maml:name>
+        <command:parameter required="true" variableLength="false" globbing="false" pipelineInput="true (ByPropertyName)" position="1" aliases="">
+          <maml:name>SubscriptionName</maml:name>
+          <maml:description>
+            <maml:para>
+              Specifies the name of the subscription for which all data will be removed from the subscription data file.
+            </maml:para>
+          </maml:description>
+          <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
+        </command:parameter>
+        <command:parameter required="false" variableLength="false" globbing="false" pipelineInput="true (ByPropertyName)" position="named" aliases="">
+          <maml:name>SubscriptionDataFile</maml:name>
+          <maml:description>
+            <maml:para>
+              Specifies the path and file name of a subscription data file. This parameter is optional. If it is not provided, the subscription data is removed from the default subscription data file in the user's profile.
+            </maml:para>
+          </maml:description>
+          <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
+        </command:parameter>
+      </command:syntaxItem>
+    </command:syntax>
+    <command:parameters>
+      <command:parameter required="false" variableLength="false" globbing="false" pipelineInput="true (ByPropertyName)" position="named" aliases="">
+        <maml:name>SubscriptionDataFile</maml:name>
+        <maml:description>
+          <maml:para>
+            Specifies the path and file name of a subscription data file. This parameter is optional. If it is not provided, the subscription data is removed from the default subscription data file in the user's profile.
+          </maml:para>
+        </maml:description>
+        <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
+        <dev:type>
+          <maml:name>String</maml:name>
+          <maml:uri />
+        </dev:type>
+        <dev:defaultValue></dev:defaultValue>
+      </command:parameter>
+      <command:parameter required="true" variableLength="false" globbing="false" pipelineInput="true (ByPropertyName)" position="1" aliases="">
+        <maml:name>SubscriptionName</maml:name>
+        <maml:description>
+          <maml:para>
+            Specifies the name of the subscription for which all data will be removed from the subscription data file.
+          </maml:para>
+        </maml:description>
+        <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
+        <dev:type>
+          <maml:name>String</maml:name>
+          <maml:uri />
+        </dev:type>
+        <dev:defaultValue></dev:defaultValue>
+      </command:parameter>
+    </command:parameters>
+    <command:inputTypes>
+      <command:inputType>
+        <dev:type>
+          <maml:name></maml:name>
+          <maml:uri></maml:uri>
+          <maml:description>
+            <maml:para />
+          </maml:description>
+        </dev:type>
+        <maml:description></maml:description>
+      </command:inputType>
+    </command:inputTypes>
+    <command:returnValues>
+      <command:returnValue>
+        <dev:type>
+          <maml:name></maml:name>
+          <maml:uri></maml:uri>
+          <maml:description>
+            <maml:para />
+          </maml:description>
+        </dev:type>
+        <maml:description></maml:description>
+      </command:returnValue>
+    </command:returnValues>
+    <command:terminatingErrors />
+    <command:nonTerminatingErrors />
+    <command:examples>
+      <command:example>
+        <maml:title>
+          --------------  EXAMPLE 1 --------------
+        </maml:title>
+        <maml:introduction>
+          <maml:para></maml:para>
+        </maml:introduction>
+        <dev:code>
+          C:\PS&gt;Remove-AzureSubscription "Test"
+
+        </dev:code>
+        <dev:remarks>
+          <maml:para>
+            This command removes the data for the subscription named "Test" in the default subscription data file.
+          </maml:para>
+        </dev:remarks>
+        <command:commandLines>
+          <command:commandLine>
+            <command:commandText />
+          </command:commandLine>
+        </command:commandLines>
+      </command:example>
+      <command:example>
+        <maml:title>
+          --------------  EXAMPLE 2 --------------
+        </maml:title>
+        <maml:introduction>
+          <maml:para></maml:para>
+        </maml:introduction>
+        <dev:code>
+          C:\PS&gt;Remove-AzureSubscription "Test" -SubscriptionDataFile "C:\Subs\MySubscriptions.xml"
+
+        </dev:code>
+        <dev:remarks>
+          <maml:para>
+            This command removes the data for the subscription named "Test" from the specified subscription data file.
+          </maml:para>
+        </dev:remarks>
+        <command:commandLines>
+          <command:commandLine>
+            <command:commandText />
+          </command:commandLine>
+        </command:commandLines>
+      </command:example>
+    </command:examples>
+    <maml:relatedLinks>
+      <maml:navigationLink>
+        <maml:linkText>Get-AzureSubscription</maml:linkText>
+        <maml:uri />
+      </maml:navigationLink>
+      <maml:navigationLink>
+        <maml:linkText>Select-AzureSubscription</maml:linkText>
+        <maml:uri />
+      </maml:navigationLink>
+      <maml:navigationLink>
+        <maml:linkText>Set-AzureSubscription</maml:linkText>
+        <maml:uri />
+      </maml:navigationLink>
+      <maml:navigationLink>
+        <maml:linkText>Import-AzurePublishSettingsFile</maml:linkText>
+        <maml:uri />
+      </maml:navigationLink>
+    </maml:relatedLinks>
+  </command:command>
+  <command:command xmlns:maml="http://schemas.microsoft.com/maml/2004/10" xmlns:command="http://schemas.microsoft.com/maml/dev/command/2004/10" xmlns:dev="http://schemas.microsoft.com/maml/dev/2004/10" xmlns:MSHelp="http://msdn.microsoft.com/mshelp">
+    <command:details>
+      <command:name>Select-AzureSubscription</command:name>
+      <maml:description>
+        <maml:para>Selects the current Windows Azure subscription default settings.</maml:para>
+      </maml:description>
+      <maml:copyright>
+        <maml:para />
+      </maml:copyright>
+      <command:verb>Select</command:verb>
+      <command:noun>AzureSubscription</command:noun>
+      <dev:version />
+    </command:details>
+    <maml:description>
+      <maml:para>The Select-AzureSubscription cmdlet selects the subscription whose settings will be used by other  Windows Azure PowerShell cmdlets.</maml:para>
+    </maml:description>
+    <command:syntax>
+      <command:syntaxItem>
+        <maml:name>Select-AzureSubscription</maml:name>
+        <command:parameter required="true" variableLength="false" globbing="false" pipelineInput="true (ByPropertyName)" position="1" aliases="">
+          <maml:name>SubscriptionName</maml:name>
+          <maml:description>
+            <maml:para>
+              Specifies the name of the subscription that the Windows Azure PowerShell cmdlets will use to read default values. Use the Set-AzureSubscription and Import-AzurePublishDataFile cmdlets to store settings for one or more subscriptions.
+            </maml:para>
+          </maml:description>
+          <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
+        </command:parameter>
+        <command:parameter required="false" variableLength="false" globbing="false" pipelineInput="true (ByPropertyName)" position="named" aliases="">
+          <maml:name>SubscriptionDataFile</maml:name>
+          <maml:description>
+            <maml:para>
+              Specifies the path and file name of the subscription data file. This parameter is optional. If it is not provided, the subscription data is selected from a default file in the user's profile.
+            </maml:para>
+          </maml:description>
+          <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
+        </command:parameter>
+      </command:syntaxItem>
+      <command:syntaxItem>
+        <maml:name>Select-AzureSubscription</maml:name>
+        <command:parameter required="false" variableLength="false" globbing="false" pipelineInput="true (ByPropertyName)" position="named" aliases="">
+          <maml:name>SubscriptionDataFile</maml:name>
+          <maml:description>
+            <maml:para>
+              Specifies the path and file name of the subscription data file. This parameter is optional. If it is not provided, the subscription data is selected from a default file in the user's profile.
+            </maml:para>
+          </maml:description>
+          <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
+        </command:parameter>
+        <command:parameter required="true" variableLength="false" globbing="false" pipelineInput="false" position="named" aliases="">
+          <maml:name>Clear</maml:name>
+          <maml:description>
+            <maml:para>
+              Specify to clear the current selection. If no subscription is current, the necessary information must be explicitly provided in the command line when executing any Windows Azure PowerShell cmdlet.
+            </maml:para>
+          </maml:description>
+          <command:parameterValue required="false" variableLength="false">SwitchParameter</command:parameterValue>
+        </command:parameter>
+      </command:syntaxItem>
+    </command:syntax>
+    <command:parameters>
+      <command:parameter required="true" variableLength="false" globbing="false" pipelineInput="false" position="named" aliases="">
+        <maml:name>Clear</maml:name>
+        <maml:description>
+          <maml:para>
+            Specify to clear the current selection. If no subscription is current, the necessary information must be explicitly provided in the command line when executing any Windows Azure PowerShell cmdlet.
+          </maml:para>
+        </maml:description>
+        <command:parameterValue required="false" variableLength="false">SwitchParameter</command:parameterValue>
+        <dev:type>
+          <maml:name>SwitchParameter</maml:name>
+          <maml:uri />
+        </dev:type>
+        <dev:defaultValue></dev:defaultValue>
+      </command:parameter>
+      <command:parameter required="false" variableLength="false" globbing="false" pipelineInput="true (ByPropertyName)" position="named" aliases="">
+        <maml:name>SubscriptionDataFile</maml:name>
+        <maml:description>
+          <maml:para>
+            Specifies the path and file name of the subscription data file. This parameter is optional. If it is not provided, the subscription data is selected from a default file in the user's profile.
+          </maml:para>
+        </maml:description>
+        <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
+        <dev:type>
+          <maml:name>String</maml:name>
+          <maml:uri />
+        </dev:type>
+        <dev:defaultValue></dev:defaultValue>
+      </command:parameter>
+      <command:parameter required="true" variableLength="false" globbing="false" pipelineInput="true (ByPropertyName)" position="1" aliases="">
+        <maml:name>SubscriptionName</maml:name>
+        <maml:description>
+          <maml:para>
+            Specifies the name of the subscription that the Windows Azure PowerShell cmdlets will use to read default values. Use the Set-AzureSubscription and Import-AzurePublishDataFile cmdlets to store settings for one or more subscriptions.
+          </maml:para>
+        </maml:description>
+        <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
+        <dev:type>
+          <maml:name>String</maml:name>
+          <maml:uri />
+        </dev:type>
+        <dev:defaultValue></dev:defaultValue>
+      </command:parameter>
+    </command:parameters>
+    <command:inputTypes>
+      <command:inputType>
+        <dev:type>
+          <maml:name></maml:name>
+          <maml:uri></maml:uri>
+          <maml:description>
+            <maml:para />
+          </maml:description>
+        </dev:type>
+        <maml:description></maml:description>
+      </command:inputType>
+    </command:inputTypes>
+    <command:returnValues>
+      <command:returnValue>
+        <dev:type>
+          <maml:name></maml:name>
+          <maml:uri></maml:uri>
+          <maml:description>
+            <maml:para />
+          </maml:description>
+        </dev:type>
+        <maml:description></maml:description>
+      </command:returnValue>
+    </command:returnValues>
+    <command:terminatingErrors />
+    <command:nonTerminatingErrors />
+    <command:examples>
+      <command:example>
+        <maml:title>
+          --------------  EXAMPLE 1 --------------
+        </maml:title>
+        <maml:introduction>
+          <maml:para></maml:para>
+        </maml:introduction>
+        <dev:code>
+          C:\PS&gt;Select-AzureSubscription "MySubscription"
+
+        </dev:code>
+        <dev:remarks>
+          <maml:para>
+            This command selects "MySubscription" as the current subscription.
+          </maml:para>
+        </dev:remarks>
+        <command:commandLines>
+          <command:commandLine>
+            <command:commandText />
+          </command:commandLine>
+        </command:commandLines>
+      </command:example>
+      <command:example>
+        <maml:title>
+          --------------  EXAMPLE 2 --------------
+        </maml:title>
+        <maml:introduction>
+          <maml:para></maml:para>
+        </maml:introduction>
+        <dev:code>
+          C:\PS&gt;Select-AzureSubscription "MySubscription" -SubscriptionDataFile "C:\subs\MySubscriptions.xml"
+
+        </dev:code>
+        <dev:remarks>
+          <maml:para>
+            This command selects "MySubscription" as the current subscription and retrieves its settings from the specified subscription data file.
+          </maml:para>
+        </dev:remarks>
+        <command:commandLines>
+          <command:commandLine>
+            <command:commandText />
+          </command:commandLine>
+        </command:commandLines>
+      </command:example>
+      <command:example>
+        <maml:title>
+          --------------  EXAMPLE 3 --------------
+        </maml:title>
+        <maml:introduction>
+          <maml:para></maml:para>
+        </maml:introduction>
+        <dev:code>
+          C:\PS&gt;Select-AzureSubscription -Clear
+
+        </dev:code>
+        <dev:remarks>
+          <maml:para>
+            This command clears the current subscription selection.
+          </maml:para>
+        </dev:remarks>
+        <command:commandLines>
+          <command:commandLine>
+            <command:commandText />
+          </command:commandLine>
+        </command:commandLines>
+      </command:example>
+    </command:examples>
+    <maml:relatedLinks>
+      <maml:navigationLink>
+        <maml:linkText>Get-AzureSubscription</maml:linkText>
+        <maml:uri />
+      </maml:navigationLink>
+      <maml:navigationLink>
+        <maml:linkText>Remove-AzureSubscription</maml:linkText>
+        <maml:uri />
+      </maml:navigationLink>
+      <maml:navigationLink>
+        <maml:linkText>Set-AzureSubscription</maml:linkText>
+        <maml:uri />
+      </maml:navigationLink>
+      <maml:navigationLink>
+        <maml:linkText>Import-Subscription</maml:linkText>
+        <maml:uri />
+      </maml:navigationLink>
+    </maml:relatedLinks>
+  </command:command>
+  <command:command xmlns:maml="http://schemas.microsoft.com/maml/2004/10" xmlns:command="http://schemas.microsoft.com/maml/dev/command/2004/10" xmlns:dev="http://schemas.microsoft.com/maml/dev/2004/10" xmlns:MSHelp="http://msdn.microsoft.com/mshelp">
+    <command:details>
+      <command:name>Set-AzureSubscription</command:name>
+      <maml:description>
+        <maml:para>Configures and stores common Windows Azure subscription settings.</maml:para>
+      </maml:description>
+      <maml:copyright>
+        <maml:para />
+      </maml:copyright>
+      <command:verb>Set</command:verb>
+      <command:noun>AzureSubscription</command:noun>
+      <dev:version />
+    </command:details>
+    <maml:description>
+      <maml:para>
+        The Set-AzureSubscription cmdlet configures common settings including subscription ID, management certificate, and custom endpoints. They are stored in a subscription data file in the user’s profile or in a user specified file. Multiple subscription data sets are supported and identified by a subscription name. To select a subscription and make it current, use the Select-AzureSubscription cmdlet.
+      </maml:para>
+      <maml:para>
+        Use the Set-AzureSubscription cmdlet to store the management certificate associated with a subscription. The management certificates specified for a subscription must be accessible and installed locally in the user's personal certificate store, or in the local machine’s personal certificate store.
+      </maml:para>
+      <maml:para>
+        The service endpoint is the Windows Azure management API endpoint for the target environment. Custom service endpoints are supported and can be different for each configured subscription.
+      </maml:para>
+      <maml:para>
+        Each subscription data set can contain information for the current Windows Azure Storage account. Storage account information is set with the –CurrentStorageAccount parameter.
+      </maml:para>
+      <maml:para>
+        All connection information is stored in encrypted form in the subscription data file. If a subscription is designated as the default subscription, it is automatically made current when starting a PowerShell session or executing a script. To set the default subscription, use the  -DefaultSubscription parameter and specify the name of the subscription to designate as the default. The default subscription setting can be cleared by specifying the -NoDefaultSubscription switch parameter.
+      </maml:para>
+      <maml:para>
+        All the parameters required to initialize a subscription are optional. Whenever a Windows Azure PowerShell cmdlet is executed, it retrieves its default settings from the current subscription data. If a setting is not part of the current subscription data, specify it as an explicit command line parameter.
+      </maml:para>
+    </maml:description>
+    <command:syntax>
+      <command:syntaxItem>
+        <maml:name>Set-AzureSubscription</maml:name>
+        <command:parameter required="true" variableLength="false" globbing="false" pipelineInput="true (ByPropertyName)" position="1" aliases="">
+          <maml:name>SubscriptionName</maml:name>
+          <maml:description>
+            <maml:para>
+              The name of the subscription data set that will be updated.
+            </maml:para>
+          </maml:description>
+          <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
+        </command:parameter>
+        <command:parameter required="false" variableLength="false" globbing="false" pipelineInput="true (ByPropertyName)" position="named" aliases="">
+          <maml:name>Certificate</maml:name>
+          <maml:description>
+            <maml:para>
+              The account management certificate associated with the subscription.  Management certificates are X.509 certificates that are saved as a .cer file and uploaded to the Windows Azure Management Portal. The certificate, including its private key, needs to be installed on the local machine, either in the current user's personal certificate store, or the local machine’s personal certificate store.
+            </maml:para>
+          </maml:description>
+          <command:parameterValue required="true" variableLength="false">X509Certificate2</command:parameterValue>
+        </command:parameter>
+        <command:parameter required="false" variableLength="false" globbing="false" pipelineInput="false" position="named" aliases="">
+          <maml:name>CurrentStorageAccount</maml:name>
+          <maml:description>
+            <maml:para>The storage account to use for the subscription.</maml:para>
+          </maml:description>
+          <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
+        </command:parameter>
+        <command:parameter required="false" variableLength="false" globbing="false" pipelineInput="true (ByPropertyName)" position="named" aliases="">
+          <maml:name>ServiceEndpoint</maml:name>
+          <maml:description>
+            <maml:para>
+              Specifies a custom service endpoint for the management service in the target environment (Advanced).
+            </maml:para>
+          </maml:description>
+          <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
+        </command:parameter>
+        <command:parameter required="false" variableLength="false" globbing="false" pipelineInput="true (ByPropertyName)" position="named" aliases="">
+          <maml:name>SubscriptionDataFile</maml:name>
+          <maml:description>
+            <maml:para>
+              Specifies the path to the file in which subscription data is stored. This parameter is optional. If not specified, subscription data is stored in a default subscription data file in the user's profile.
+            </maml:para>
+          </maml:description>
+          <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
+        </command:parameter>
+        <command:parameter required="false" variableLength="false" globbing="false" pipelineInput="true (ByPropertyName)" position="named" aliases="">
+          <maml:name>SubscriptionId</maml:name>
+          <maml:description>
+            <maml:para>
+              The ID of the subscription. Each Windows Azure subscription is uniquely identified by a subscription ID. You can retrieve this ID from the Windows Azure Management Portal.
+            </maml:para>
+          </maml:description>
+          <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
+        </command:parameter>
+      </command:syntaxItem>
+      <command:syntaxItem>
+        <maml:name>Set-AzureSubscription</maml:name>
+        <command:parameter required="false" variableLength="false" globbing="false" pipelineInput="true (ByPropertyName)" position="named" aliases="">
+          <maml:name>SubscriptionDataFile</maml:name>
+          <maml:description>
+            <maml:para>
+              Specifies the path to the file in which subscription data is stored. This parameter is optional. If not specified, subscription data is stored in a default subscription data file in the user's profile.
+            </maml:para>
+          </maml:description>
+          <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
+        </command:parameter>
+        <command:parameter required="true" variableLength="false" globbing="false" pipelineInput="false" position="named" aliases="">
+          <maml:name>DefaultSubscription</maml:name>
+          <maml:description>
+            <maml:para>
+              Designates a subscription as the default subscription. A default subscription is automatically made current when the PowerShell session starts.
+            </maml:para>
+          </maml:description>
+          <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
+        </command:parameter>
+      </command:syntaxItem>
+      <command:syntaxItem>
+        <maml:name>Set-AzureSubscription</maml:name>
+        <command:parameter required="false" variableLength="false" globbing="false" pipelineInput="true (ByPropertyName)" position="named" aliases="">
+          <maml:name>SubscriptionDataFile</maml:name>
+          <maml:description>
+            <maml:para>
+              Specifies the path to the file in which subscription data is stored. This parameter is optional. If not specified, subscription data is stored in a default subscription data file in the user's profile.
+            </maml:para>
+          </maml:description>
+          <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
+        </command:parameter>
+        <command:parameter required="true" variableLength="false" globbing="false" pipelineInput="false" position="named" aliases="">
+          <maml:name>NoDefaultSubscription</maml:name>
+          <maml:description>
+            <maml:para>
+              Specify to reset the current default subscription setting. If no default subscription is defined, you will need to execute Select-AzureSubscription to choose the current subscription.
+            </maml:para>
+          </maml:description>
+          <command:parameterValue required="false" variableLength="false">SwitchParameter</command:parameterValue>
+        </command:parameter>
+      </command:syntaxItem>
+    </command:syntax>
+    <command:parameters>
+      <command:parameter required="false" variableLength="false" globbing="false" pipelineInput="true (ByPropertyName)" position="named" aliases="">
+        <maml:name>Certificate</maml:name>
+        <maml:description>
+          <maml:para>
+            The account management certificate associated with the subscription.  Management certificates are X.509 certificates that are saved as a .cer file and uploaded to the Windows Azure Management Portal. The certificate, including its private key, needs to be installed on the local machine, either in the current user's personal certificate store, or the local machine’s personal certificate store.
+          </maml:para>
+        </maml:description>
+        <command:parameterValue required="true" variableLength="false">X509Certificate2</command:parameterValue>
+        <dev:type>
+          <maml:name>X509Certificate2</maml:name>
+          <maml:uri />
+        </dev:type>
+        <dev:defaultValue></dev:defaultValue>
+      </command:parameter>
+      <command:parameter required="false" variableLength="false" globbing="false" pipelineInput="false" position="named" aliases="">
+        <maml:name>CurrentStorageAccount</maml:name>
+        <maml:description>
+          <maml:para>The storage account to use for the subscription.</maml:para>
+        </maml:description>
+        <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
+        <dev:type>
+          <maml:name>String</maml:name>
+          <maml:uri />
+        </dev:type>
+        <dev:defaultValue></dev:defaultValue>
+      </command:parameter>
+      <command:parameter required="true" variableLength="false" globbing="false" pipelineInput="false" position="named" aliases="">
+        <maml:name>DefaultSubscription</maml:name>
+        <maml:description>
+          <maml:para>
+            Designates a subscription as the default subscription. A default subscription is automatically made current when the PowerShell session starts.
+          </maml:para>
+        </maml:description>
+        <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
+        <dev:type>
+          <maml:name>String</maml:name>
+          <maml:uri />
+        </dev:type>
+        <dev:defaultValue></dev:defaultValue>
+      </command:parameter>
+      <command:parameter required="true" variableLength="false" globbing="false" pipelineInput="false" position="named" aliases="">
+        <maml:name>NoDefaultSubscription</maml:name>
+        <maml:description>
+          <maml:para>
+            Specify to reset the current default subscription setting. If no default subscription is defined, you will need to execute Select-AzureSubscription to choose the current subscription.
+          </maml:para>
+        </maml:description>
+        <command:parameterValue required="false" variableLength="false">SwitchParameter</command:parameterValue>
+        <dev:type>
+          <maml:name>SwitchParameter</maml:name>
+          <maml:uri />
+        </dev:type>
+        <dev:defaultValue></dev:defaultValue>
+      </command:parameter>
+      <command:parameter required="false" variableLength="false" globbing="false" pipelineInput="true (ByPropertyName)" position="named" aliases="">
+        <maml:name>ServiceEndpoint</maml:name>
+        <maml:description>
+          <maml:para>
+            Specifies a custom service endpoint for the management service in the target environment (Advanced).
+          </maml:para>
+        </maml:description>
+        <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
+        <dev:type>
+          <maml:name>String</maml:name>
+          <maml:uri />
+        </dev:type>
+        <dev:defaultValue></dev:defaultValue>
+      </command:parameter>
+      <command:parameter required="false" variableLength="false" globbing="false" pipelineInput="true (ByPropertyName)" position="named" aliases="">
+        <maml:name>SubscriptionDataFile</maml:name>
+        <maml:description>
+          <maml:para>
+            Specifies the path to the file in which subscription data is stored. This parameter is optional. If not specified, subscription data is stored in a default subscription data file in the user's profile.
+          </maml:para>
+        </maml:description>
+        <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
+        <dev:type>
+          <maml:name>String</maml:name>
+          <maml:uri />
+        </dev:type>
+        <dev:defaultValue></dev:defaultValue>
+      </command:parameter>
+      <command:parameter required="false" variableLength="false" globbing="false" pipelineInput="true (ByPropertyName)" position="named" aliases="">
+        <maml:name>SubscriptionId</maml:name>
+        <maml:description>
+          <maml:para>
+            The ID of the subscription. Each Windows Azure subscription is uniquely identified by a subscription ID. You can retrieve this ID from the Windows Azure Management Portal.
+          </maml:para>
+        </maml:description>
+        <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
+        <dev:type>
+          <maml:name>String</maml:name>
+          <maml:uri />
+        </dev:type>
+        <dev:defaultValue></dev:defaultValue>
+      </command:parameter>
+      <command:parameter required="true" variableLength="false" globbing="false" pipelineInput="true (ByPropertyName)" position="1" aliases="">
+        <maml:name>SubscriptionName</maml:name>
+        <maml:description>
+          <maml:para>
+            The name of the subscription data set that will be updated.
+          </maml:para>
+        </maml:description>
+        <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
+        <dev:type>
+          <maml:name>String</maml:name>
+          <maml:uri />
+        </dev:type>
+        <dev:defaultValue></dev:defaultValue>
+      </command:parameter>
+    </command:parameters>
+    <command:inputTypes>
+      <command:inputType>
+        <dev:type>
+          <maml:name></maml:name>
+          <maml:uri></maml:uri>
+          <maml:description>
+            <maml:para />
+          </maml:description>
+        </dev:type>
+        <maml:description></maml:description>
+      </command:inputType>
+    </command:inputTypes>
+    <command:returnValues>
+      <command:returnValue>
+        <dev:type>
+          <maml:name></maml:name>
+          <maml:uri></maml:uri>
+          <maml:description>
+            <maml:para />
+          </maml:description>
+        </dev:type>
+        <maml:description></maml:description>
+      </command:returnValue>
+    </command:returnValues>
+    <command:terminatingErrors />
+    <command:nonTerminatingErrors />
+    <command:examples>
+      <command:example>
+        <maml:title>
+          --------------  EXAMPLE 1 --------------
+        </maml:title>
+        <maml:introduction>
+          <maml:para></maml:para>
+        </maml:introduction>
+        <dev:code>
+          C:\PS&gt;$subID = &lt;Subscription ID&gt;
+          C:\PS&gt;$thumbprint = &lt;Certificate Thumbprint&gt;
+          C:\PS&gt;$myCert = Get-Item cert:\\CurrentUser\My\$thumbprint
+          C:\PS&gt;Set-AzureSubscription –SubscriptionName "MySub" -SubscriptionId $subID -Certificate $myCert
+
+        </dev:code>
+        <dev:remarks>
+          <maml:para>
+            These commands set common parameters including a subscription ID and certificate for the "MySub" subscription.
+          </maml:para>
+        </dev:remarks>
+        <command:commandLines>
+          <command:commandLine>
+            <command:commandText />
+          </command:commandLine>
+        </command:commandLines>
+      </command:example>
+      <command:example>
+        <maml:title>
+          --------------  EXAMPLE 2 --------------
+        </maml:title>
+        <maml:introduction>
+          <maml:para></maml:para>
+        </maml:introduction>
+        <dev:code>
+          C:\PS&gt;$subID = &lt;Subscription ID&gt;
+          C:\PS&gt;$thumbprint = &lt;Certificate Thumbprint&gt;
+          C:\PS&gt;$myCert = Get-Item cert:\\CurrentUser\My\$thumbprint
+          C:\PS&gt;Set-AzureSubscription –SubscriptionName "MySub" –SubscriptionId $subID
+          C:\PS&gt;Set-AzureSubscription –SubscriptionName "MySub" –Certificate $myCert
+
+        </dev:code>
+        <dev:remarks>
+          <maml:para>
+            These commands configure first a subscription ID and then a certificate for the "MySub" subscription. It is equivalent to the previous example.
+          </maml:para>
+        </dev:remarks>
+        <command:commandLines>
+          <command:commandLine>
+            <command:commandText />
+          </command:commandLine>
+        </command:commandLines>
+      </command:example>
+      <command:example>
+        <maml:title>
+          --------------  EXAMPLE 3 --------------
+        </maml:title>
+        <maml:introduction>
+          <maml:para></maml:para>
+        </maml:introduction>
+        <dev:code>
+          C:\PS&gt;Set-AzureSubscription –SubscriptionName "MySub" -ServiceEndpoint "https://management.core.windows-internal.net"
+
+        </dev:code>
+        <dev:remarks>
+          <maml:para>
+            This command configures a custom service endpoint for the "MySub" subscription.
+          </maml:para>
+        </dev:remarks>
+        <command:commandLines>
+          <command:commandLine>
+            <command:commandText />
+          </command:commandLine>
+        </command:commandLines>
+      </command:example>
+      <command:example>
+        <maml:title>
+          --------------  EXAMPLE 4 --------------
+        </maml:title>
+        <maml:introduction>
+          <maml:para></maml:para>
+        </maml:introduction>
+        <dev:code>
+          C:\PS&gt;Set-AzureSubscription –SubscriptionName "MySub" –Certificate $null -ServiceEndpoint $null
+
+        </dev:code>
+        <dev:remarks>
+          <maml:para>
+            This command clears the settings for the certificate and custom service endpoint in the "MySub" subscription without changing other settings.
+          </maml:para>
+        </dev:remarks>
+        <command:commandLines>
+          <command:commandLine>
+            <command:commandText />
+          </command:commandLine>
+        </command:commandLines>
+      </command:example>
+      <command:example>
+        <maml:title>
+          --------------  EXAMPLE 5 --------------
+        </maml:title>
+        <maml:introduction>
+          <maml:para></maml:para>
+        </maml:introduction>
+        <dev:code>
+          C:\PS&gt;$subID = &lt;Subscription ID&gt;
+          C:\PS&gt;$thumbprint = &lt;Certificate Thumbprint&gt;
+          C:\PS&gt;$myCert = Get-Item cert:\\CurrentUser\My\$thumbprint
+          C:\PS&gt;Set-AzureSubscription –SubscriptionName "TestSub" –SubscriptionId $subID -Certificate $myCert -SubscriptionDataFile "C:\temp\mysubscriptiondatafile.xml"
+
+        </dev:code>
+        <dev:remarks>
+          <maml:para>
+            This command initializes the subscription ID and certificate for a subscription named "TestSub" and stores them in the specified subscription data file.
+          </maml:para>
+        </dev:remarks>
+        <command:commandLines>
+          <command:commandLine>
+            <command:commandText />
+          </command:commandLine>
+        </command:commandLines>
+      </command:example>
+      <command:example>
+        <maml:title>
+          --------------  EXAMPLE 6 --------------
+        </maml:title>
+        <maml:introduction>
+          <maml:para></maml:para>
+        </maml:introduction>
+        <dev:code>
+          C:\PS&gt;Set-AzureSubscription –SubscriptionName "MySub" -CurrentStorageAccount mystorage1
+
+        </dev:code>
+        <dev:remarks>
+          <maml:para>
+            This command adds a current storage account to the "MySub" subscription.
+          </maml:para>
+        </dev:remarks>
+        <command:commandLines>
+          <command:commandLine>
+            <command:commandText />
+          </command:commandLine>
+        </command:commandLines>
+      </command:example>
+      <command:example>
+        <maml:title>
+          --------------  EXAMPLE 7 --------------
+        </maml:title>
+        <maml:introduction>
+          <maml:para></maml:para>
+        </maml:introduction>
+        <dev:code>
+          C:\PS&gt;Set-AzureSubscription –DefaultSubscription "MySub"
+
+        </dev:code>
+        <dev:remarks>
+          <maml:para>
+            This command designates "MySub" as the default subscription.
+          </maml:para>
+        </dev:remarks>
+        <command:commandLines>
+          <command:commandLine>
+            <command:commandText />
+          </command:commandLine>
+        </command:commandLines>
+      </command:example>
+      <command:example>
+        <maml:title>
+          --------------  EXAMPLE 8 --------------
+        </maml:title>
+        <maml:introduction>
+          <maml:para></maml:para>
+        </maml:introduction>
+        <dev:code>
+          C:\PS&gt;Set-AzureSubscription –NoDefaultSubscription
+
+        </dev:code>
+        <dev:remarks>
+          <maml:para>
+            This command resets the default subscription setting.
+          </maml:para>
+        </dev:remarks>
+        <command:commandLines>
+          <command:commandLine>
+            <command:commandText />
+          </command:commandLine>
+        </command:commandLines>
+      </command:example>
+    </command:examples>
+    <maml:relatedLinks>
+      <maml:navigationLink>
+        <maml:linkText>Get-AzureSubscription</maml:linkText>
+        <maml:uri />
+      </maml:navigationLink>
+      <maml:navigationLink>
+        <maml:linkText>Remove-AzureSubscription</maml:linkText>
+        <maml:uri />
+      </maml:navigationLink>
+      <maml:navigationLink>
+        <maml:linkText>Select-AzureSubscription</maml:linkText>
+        <maml:uri />
+      </maml:navigationLink>
+      <maml:navigationLink>
+        <maml:linkText>Import-AzurePublishSettingsFile</maml:linkText>
+        <maml:uri />
+      </maml:navigationLink>
+    </maml:relatedLinks>
+  </command:command>
+</helpItems>

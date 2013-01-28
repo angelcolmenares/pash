@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" targetNamespace="http://schemas.microsoft.com/wbem/wsman/1/config/PluginConfiguration" xmlns="http://schemas.microsoft.com/wbem/wsman/1/config/PluginConfiguration" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:element name="PlugInConfiguration">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="InitializationParameters" minOccurs="0" maxOccurs="1">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="Param">
+                                <xs:complexType>
+                                    <xs:sequence>
+
+                                    </xs:sequence>
+                                    <xs:attribute name="Name" type="xs:string" />
+                                    <xs:attribute name="Value" type="xs:string" />
+                                </xs:complexType>
+                            </xs:element>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+
+                <xs:element name="Resources">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element minOccurs="1" maxOccurs="unbounded" name="Resource">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="Capability" minOccurs="1" maxOccurs="unbounded">
+                                            <xs:complexType>
+                                                <xs:simpleContent>
+                                                    <xs:extension base="ResourceCapabilityType">
+                                                        <xs:attribute name="SupportsFragment" type="xs:boolean" use="optional" default="false" />
+                                                        <xs:attribute name="SupportsFiltering" type="xs:boolean" use="optional" default="false" />
+                                                        <xs:attribute name="Type" type="ResourceCapabilityType" />
+                                                    </xs:extension>
+                                                </xs:simpleContent>
+                                            </xs:complexType>
+                                        </xs:element>
+
+                                        <xs:element name="Security" minOccurs="0" maxOccurs="unbounded">
+                                            <xs:complexType>
+                                                <xs:sequence>
+
+                                                </xs:sequence>
+                                                <xs:attribute name="Uri" type="xs:string" />
+                                                <xs:attribute name="Sddl" type="xs:string" />
+                                                <xs:attribute name="ExactMatch" type="xs:boolean" use="optional" default="false"/>
+                                            </xs:complexType>
+                                        </xs:element>
+                                    </xs:sequence>
+                                    <xs:attribute name="ResourceUri" type="xs:string" />
+                                    <xs:attribute name="ExactMatch" type="xs:boolean" use="optional" default="false"/>
+                                    <xs:attribute name="SupportOptions" type="xs:boolean" use="optional" default="false"/>
+                                </xs:complexType>
+                            </xs:element>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+            </xs:sequence>
+            <xs:attribute name="Filename" type="xs:token" />
+            <xs:attribute name="SDKVersion" type="xs:unsignedInt" />
+            <xs:attribute name="Name" type="xs:string" />
+            <xs:attribute name="XmlRenderingType" type="XmlRenderingTypeType" use="optional" default="text" />
+            <!--Architecture will default to 32 on x86 systems; 64 on 64-bit systems.-->
+            <xs:attribute name="Architecture" type="ArchitectureType" use="optional" default="32" />
+        </xs:complexType>
+    </xs:element>
+
+    <xs:simpleType name="ResourceCapabilityType">
+        <xs:restriction base="xs:token">
+            <xs:enumeration value="Get" />
+            <xs:enumeration value="Put" />
+            <xs:enumeration value="Create" />
+            <xs:enumeration value="Delete" />
+            <xs:enumeration value="Invoke" />
+            <xs:enumeration value="Enumerate" />
+            <xs:enumeration value="Subscribe" />
+            <xs:enumeration value="Shell" />
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:simpleType name="XmlRenderingTypeType">
+        <xs:restriction base="xs:token">
+            <xs:enumeration value="text" />
+            <xs:enumeration value="XmlReader" />
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:simpleType name="ArchitectureType">
+        <xs:restriction base="xs:token">
+            <xs:enumeration value="32" />
+            <xs:enumeration value="64" />
+        </xs:restriction>
+    </xs:simpleType>
+</xs:schema>

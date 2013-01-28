@@ -1,0 +1,4 @@
+/Users/bruno/Projects/PowerShell/External/System.ServiceProcess/bin/Debug/System.ServiceProcess.dll.mdb
+/Users/bruno/Projects/PowerShell/External/System.ServiceProcess/bin/Debug/System.ServiceProcess.dll
+/Users/bruno/Projects/PowerShell/External/System.ServiceProcess/obj/Debug/System.ServiceProcess.dll
+/Users/bruno/Projects/PowerShell/External/System.ServiceProcess/obj/Debug/System.ServiceProcess.dll.mdb

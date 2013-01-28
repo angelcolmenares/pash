@@ -1,0 +1,1486 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="ReflectionProvider_MultipleEntitySetsForSameType" xml:space="preserve">
+    <value>Property '{0}' and '{1}' are IQueryable of types '{2}' and '{3}' and type '{2}' is an ancestor for type '{3}'. Please make sure that there is only one IQueryable property for each type hierarchy.</value>
+  </data>
+  <data name="DataService_MinDSVGreaterThanMPV" xml:space="preserve">
+    <value>The MinDataServiceVersion '{0}' is greater than the MaxProtocolVersion property in configuration '{1}'.</value>
+  </data>
+  <data name="BadRequest_FullyQualifiedActionName" xml:space="preserve">
+    <value>The service action identifier '{0}' is invalid. Service action identifiers must not contain a '{1}'.</value>
+  </data>
+  <data name="HttpProcessUtility_MediaTypeRequiresSemicolonBeforeParameter" xml:space="preserve">
+    <value>Media type requires a ';' character before a parameter definition.</value>
+  </data>
+  <data name="BasicExpandProvider_ExpandedPropertiesNotInitialized" xml:space="preserve">
+    <value>Description for expanded properties has not been initialized.</value>
+  </data>
+  <data name="RequestQueryParser_AllWithoutAPredicateIsNotSupported" xml:space="preserve">
+    <value>The method 'all' without a supplied predicate is not supported at position '{0}'.</value>
+  </data>
+  <data name="DataServiceStreamProviderWrapper_MustImplementDataServiceStreamProvider2ToSupportNamedStreams" xml:space="preserve">
+    <value>To support named streams, the data service must implement IServiceProvider.GetService() to return an implementation of IDataServiceStreamProvider2 or the data source must implement IDataServiceStreamProvider2.</value>
+  </data>
+  <data name="HttpContextServiceHost_AmbiguousItemName" xml:space="preserve">
+    <value>Query parameter item '{0}' expected, but both '{1}' and '{2}' are inexact matches for it.</value>
+  </data>
+  <data name="ObjectContext_ExpandTooDeep" xml:space="preserve">
+    <value>The specified $expand option is too deep.</value>
+  </data>
+  <data name="DataServiceStreamProviderWrapper_ResolveTypeMustReturnValidResourceTypeName" xml:space="preserve">
+    <value>The method 'IDataServiceStreamProvider.ResolveType' must return a valid resource type name.</value>
+  </data>
+  <data name= "RequestUriProcessor_TooManySegments" xml:space="preserve">
+    <value>Too many segments in URI.</value>
+  </data>
+  <data name="RequestQueryParser_UnknownIdentifier" xml:space="preserve">
+    <value>The identifier '{0}' is not defined.</value>
+  </data>
+  <data name="DataServiceActionProviderWrapper_DuplicateAction" xml:space="preserve">
+    <value>A service action with the name '{0}' already exists. Please make sure that the list returned by IDataServiceActionProvider.GetServiceActionsByBindingParameterType() contains unique service action names.</value>
+  </data>
+  <data name="DataServiceProviderWrapper_DataSourceTypeMustBeAssignableToContextType" xml:space="preserve">
+    <value>IDataServiceQueryProvider.CurrentDataSource must return an object of type that is assignable to T in DataService&lt;T&gt;.</value>
+  </data>
+  <data name="EpmTargetTree_AttributeInMiddle" xml:space="preserve">
+    <value>The attribute identifier '{0}' is provided in the middle of the TargetName property of EntityPropertyMappingAttribute.</value>
+  </data>
+  <data name="BadProvider_UnsupportedPropertyType" xml:space="preserve">
+    <value>Internal Server Error. The property '{0}' is of type '{1}' which is an unsupported type.</value>
+  </data>
+  <data name="DataService_ETagSpecifiedForServiceAction" xml:space="preserve">
+    <value>If-Match or If-None-Match HTTP headers cannot be specified for service actions.</value>
+  </data>
+  <data name="ResourceType_NoKeysInDerivedTypes" xml:space="preserve">
+    <value>Key properties cannot be defined in derived types.</value>
+  </data>
+  <data name= "RequestUriProcessor_BatchedActionOnEntityCreatedInSameChangeset" xml:space="preserve">
+    <value>Batched service action '{0}' cannot be invoked because it was bound to an entity created in the same changeset.</value>
+  </data>
+  <data name="DataService_CannotUpdateKeyProperties" xml:space="preserve">
+    <value>Since '{0}' is a key property, it cannot be updated.</value>
+  </data>
+  <data name="ObjectContext_InvalidValueForTargetTextContentKindPropertyType" xml:space="preserve">
+    <value>The value for TargetTextContentKind property value of '{0}' on type '{1}' for EntityPropertyMappingAttribute is not valid.</value>
+  </data>
+  <data name="CannotCreateInstancesOfAbstractType" xml:space="preserve">
+    <value>The type '{0}' is an abstract type. For PUT, POST and DELETE operations, the type specified must be a concrete type with a constructor that accepts no parameters.</value>
+  </data>
+  <data name="ServiceOperationParameter_TypeNotSupported" xml:space="preserve">
+    <value>The service operation parameter '{0}' of type '{1}' is not supported.</value>
+  </data>
+  <data name="BadRequest_InvalidTypeSpecified" xml:space="preserve">
+    <value>Error processing request stream. The type name '{0}' is not valid for the given URI it represents. The expected type must be '{1}' or one of its derived types.</value>
+  </data>
+  <data name="BadRequest_DeepUpdateNotSupported" xml:space="preserve">
+    <value>Error processing request stream. Deep updates are not supported in PUT, MERGE, or PATCH operations.</value>
+  </data>
+  <data name="Serializer_UnsupportedTopLevelType" xml:space="preserve">
+    <value>The top-level type '{0}' for this request is not supported for serialization.</value>
+  </data>
+  <data name="BadRequest_ExpectMLEPayloadGotNonMLEPayload" xml:space="preserve">
+    <value>The resource type '{0}' is a Media Link Entry. However, in the payload of the request the &lt;m:properties&gt; element was serialized as a child of the &lt;atom:content&gt; element instead of the &lt;atom:entry&gt; element. This indicates that the client is not serializing the resource as a Media Link Entry.</value>
+  </data>
+  <data name="BasicExpandProvider_ProjectedPropertiesNotInitialized" xml:space="preserve">
+    <value>Description for projected properties has not been initialized.</value>
+  </data>
+  <data name="BaseServiceProvider_ServiceOperationMissingSingleEntitySet" xml:space="preserve">
+    <value>Service operation '{0}' produces instances of type '{1}', but having a single entity set for that type is required.</value>
+  </data>
+  <data name="DataService_InvalidContentTypeForBatchRequest" xml:space="preserve">
+    <value>The content type specified in not valid for batch requests. Content type must be 'multipart/mixed' and there must be a valid single boundary delimiter specified.</value>
+  </data>
+  <data name="ResourceType_CollectionItemCannotBeStream" xml:space="preserve">
+    <value>The ItemType of a collection resource type cannot be of type '{0}'.</value>
+  </data>
+  <data name="ObjectContext_InvalidValueForEpmPropertyMember" xml:space="preserve">
+    <value>The value of '{0}' property on member '{1}' of type '{2}' is not one of the allowed values. Allowed values are 'true' or 'false'.</value>
+  </data>
+  <data name="BadRequest_InvalidNavigationPropertyName" xml:space="preserve">
+    <value>Error processing request stream. There is no navigation property '{0}' on type '{1}'. title attribute value on related link elements must be a valid navigation property name.</value>
+  </data>
+  <data name="MetadataProviderUtils_UnsupportedPrimitiveTypeKind" xml:space="preserve">
+    <value>The primitive type kind '{0}' is not supported.</value>
+  </data>
+  <data name= "RequestUriProcessor_MissingSegmentAfterLink" xml:space="preserve">
+    <value>The request URI is not valid. There must a segment specified after the '{0}' segment and the segment must refer to a entity resource.</value>
+  </data>
+  <data name="DataServiceActionProviderWrapper_ServiceActionBindingParameterNull" xml:space="preserve">
+    <value>The binding parameter for service action '{0}' returned by IDataServiceActionProvider.GetServiceActionsByBindingParameterType() is null. The GetServiceActionsByBindingParameterType method must return service actions that are bindable to the given resource type.</value>
+  </data>
+  <data name="MetadataProviderEdmModel_UnsupportedSchemaTypeKind" xml:space="preserve">
+    <value>An attempt was made to convert a type of kind '{0}' to a schema type. This is invalid since the type kind '{0}' is not valid for schema types.</value>
+  </data>
+  <data name="BadRequest_CollectionItemTypeDoesntMatch" xml:space="preserve">
+    <value>The collection type specified on property '{1}' that contains an item type '{0}' is not of the declared collection type, which is a collection type containing items of type '{2}'.</value>
+  </data>
+  <data name="DataServiceException_GeneralError" xml:space="preserve">
+    <value>An error occurred while processing this request.</value>
+  </data>
+  <data name="MetadataSerializer_NamedStreamsOnDerivedEntityTypesNotSupported" xml:space="preserve">
+    <value>Named streams are not supported on derived entity types. Entity Set '{1}' has a instance of type '{0}', which is an derived entity type and has named streams. Please remove all named streams from type '{0}'.</value>
+  </data>
+  <data name="RequestQueryProcessor_NamedStreamMustBeLastSegmentInSelect" xml:space="preserve">
+    <value>The named stream '{0}' must be the last segment in a $select path.</value>
+  </data>
+  <data name="DataService_CannotUpdateSetReferenceLinks" xml:space="preserve">
+    <value>Update operations are not supported for '$links' end points that refer to collection properties.</value>
+  </data>
+  <data name="DataServiceProviderWrapper_ActionHasNoVisibleSetReachableFromPathExpression" xml:space="preserve">
+    <value>The service action '{0}' has the resource set path expression '{1}', but there is no visible resource set that can be reached from the binding parameter through the path expression. The service action should be made hidden or a resource set targeted by the path expression should be made visible.</value>
+  </data>
+  <data name="BadRequestStream_InvalidKeyword" xml:space="preserve">
+    <value>Error processing request stream. '{0}' is not a valid JSON literal. 'true', 'false' and 'null' are only valid JSON literals. Make sure they are all lower-case.</value>
+  </data>
+  <data name= "RequestUriProcessor_MustBeLeafSegment" xml:space="preserve">
+    <value>The request URI is not valid. The segment '{0}' must be the last segment in the URI because it is one of the following: $batch, $value, $metadata, a collection property, a named media resource, a service operation that does not return a value, or a service action.</value>
+  </data>
+  <data name="ReflectionProvider_ComplexTypeWithNavigationProperty" xml:space="preserve">
+    <value>The property '{0}' on a complex type '{1}' is not a valid property. Navigation properties are not supported on complex types.</value>
+  </data>
+  <data name="BadRequest_InvalidPropertyNameSpecified" xml:space="preserve">
+    <value>Error processing request stream. The property name '{0}' specified for type '{1}' is not valid.</value>
+  </data>
+  <data name="ObjectContext_UnsupportedStreamProperty" xml:space="preserve">
+    <value>Unsupported value '{0}' for HasStream attribute on entity type '{1}'.</value>
+  </data>
+  <data name="ServiceOperation_ResultTypeCannotBeCollectionType" xml:space="preserve">
+    <value>The '{0}' parameter cannot be an entity collection resource type.</value>
+  </data>
+  <data name="RequestQueryParser_OpenParenExpected" xml:space="preserve">
+    <value>'(' expected at position {0}.</value>
+  </data>
+  <data name="Serializer_CannotConvertValue" xml:space="preserve">
+    <value>The resource contains value '{0}' which cannot be serialized.</value>
+  </data>
+  <data name="BadRequest_PropertyMustBeArray" xml:space="preserve">
+    <value>Error processing request stream. The payload for property '{0}' must represent a valid array format for collection properties.</value>
+  </data>
+  <data name="DataService_IfNoneMatchHeaderNotSupportedInDelete" xml:space="preserve">
+    <value>If-None-Match HTTP header cannot be specified for DELETE operations.</value>
+  </data>
+  <data name="ObjectContext_InvalidValueForEpmPropertyType" xml:space="preserve">
+    <value>The value of '{0}' property on type '{1}' is not one of the allowed values. Allowed values are 'true' or 'false'.</value>
+  </data>
+  <data name="BaseServiceProvider_IEnumerableAlwaysMultiple" xml:space="preserve">
+    <value>Type '{0}' has a method '{1}' which is a generic IEnumerable but is marked with a SingleResultAttribute. Only IQueryable methods support this attribute.</value>
+  </data>
+  <data name="BadRequest_ExpectNonMLEPayloadGotMLEPayload" xml:space="preserve">
+    <value>The resource type '{0}' is not a Media Link Entry. However, in the payload of the request the &lt;m:properties&gt; element was serialized as a child of the &lt;atom:entry&gt; element instead of the &lt;atom:content&gt; element. This indicates that the client is incorrectly serializing the resource as a Media Link Entry.</value>
+  </data>
+  <data name="WebUtil_ArgumentNullOrEmpty" xml:space="preserve">
+    <value>Value cannot be null or empty.</value>
+  </data>
+  <data name= "RequestUriProcessor_ValueSegmentAfterScalarPropertySegment" xml:space="preserve">
+    <value>The segment '{1}' in the request URI is not valid. Since the segment '{0}' refers to a primitive type property, the only supported value from the next segment is '$value'.</value>
+  </data>
+  <data name="DataServiceConfiguration_ResponseVersionIsBiggerThanProtocolVersion" xml:space="preserve">
+    <value>The response requires that version {0} of the protocol be used, but the MaxProtocolVersion of the data service is set to {1}.</value>
+  </data>
+  <data name="DataServiceConfiguration_NotComplexType" xml:space="preserve">
+    <value>The given type '{0}' is not a complex type.</value>
+  </data>
+  <data name="ReflectionProvider_CollectionOfCollectionProperty" xml:space="preserve">
+    <value>The property '{0}' on a type '{1}' is not a valid property. A collection property that contains collection types is not supported.</value>
+  </data>
+  <data name="ReflectionProvider_InvalidEntitySetProperty" xml:space="preserve">
+    <value>On data context type '{1}', there is a top IQueryable property '{0}' whose element type is not an entity type. Make sure that the IQueryable property is of entity type or specify the IgnoreProperties attribute on the data context type to ignore this property.</value>
+  </data>
+  <data name="ServiceOperation_ResultSetMustBeNullForGivenResultType" xml:space="preserve">
+    <value>'{0}' must be null when '{1}' is null or not an EntityType.</value>
+  </data>
+  <data name= "RequestUriProcessor_BindingParameterNotAssignableFromPreviousSegment" xml:space="preserve">
+    <value>The binding parameter for '{0}' is not assignable from the result of the uri segment '{1}'.</value>
+  </data>
+  <data name="DataService_AuthorizationParameterNotAssignable" xml:space="preserve">
+    <value>Parameter '{0}' of method '{1}' on type '{2}' is of type '{3}' but a type assignable from '{4}' is required.</value>
+  </data>
+  <data name="BadProvider_UnsupportedType" xml:space="preserve">
+    <value>Internal Server Error. The type '{0}' is not supported.</value>
+  </data>
+  <data name="DataService_ETagValueNotValid" xml:space="preserve">
+    <value>The etag value '{0}' specified in one of the request headers is not valid. Please make sure only one etag value is specified and is valid.</value>
+  </data>
+  <data name="DataService_DSVTooLow" xml:space="preserve">
+    <value>The DataServiceVersion '{0}' is too low for the request. The lowest supported version is '{1}.{2}'.</value>
+  </data>
+  <data name="DataService_SDP_SkipTokenNotMatchingOrdering" xml:space="preserve">
+    <value>The number of keys '{0}' in skip token with value '{1}' did not match the number of ordering constraints '{2}' for the resource type.</value>
+  </data>
+  <data name="RequestQueryParser_UnrecognizedLiteral" xml:space="preserve">
+    <value>Unrecognized '{0}' literal '{1}' in '{2}'.</value>
+  </data>
+  <data name="BadProvider_UnableToGetPropertyInfo" xml:space="preserve">
+    <value>Internal Server Error. Unable to find property '{1}' on type '{0}'. Please make sure that the property name is correct.</value>
+  </data>
+  <data name="BadProvider_ResolveResourceReturnedNull" xml:space="preserve">
+    <value>Internal Server Error. ResolveResource returned null value. Please contact the provider.</value>
+  </data>
+  <data name="HttpContextServiceHost_IncomingMessagePropertyMustBeValidUriInstance" xml:space="preserve">
+    <value>The incoming message property '{0}' on the current operation context must be a System.Uri object.</value>
+  </data>
+  <data name="DataServiceConfiguration_ResourceSetNameNotFound" xml:space="preserve">
+    <value>The given name '{0}' was not found in the entity sets.</value>
+  </data>
+  <data name= "RequestUriProcessor_AbsoluteRequestUriCannotBeNull" xml:space="preserve">
+    <value>The AbsoluteRequestUri property of the data service host cannot be null.</value>
+  </data>
+  <data name="DataServiceProviderWrapper_AnnotationsBuilderCannotReturnNullModels" xml:space="preserve">
+    <value>The collection returned by DataServiceConfiguration.AnnotationsBuilder must not contain null elements.</value>
+  </data>
+  <data name="Serializer_ETagValueDoesNotMatch" xml:space="preserve">
+    <value>The etag value in the request header does not match with the current etag value of the object.</value>
+  </data>
+  <data name= "RequestUriProcessor_CountOnRoot" xml:space="preserve">
+    <value>The request URI is not valid, the segment $count cannot be applied to the root of the service.</value>
+  </data>
+  <data name="ObjectContext_PropertyNotDefinedOnType" xml:space="preserve">
+    <value>The resource type '{0}' does not define a property that is named '{1}'.</value>
+  </data>
+  <data name="DataService_ETagSpecifiedForPost" xml:space="preserve">
+    <value>If-Match or If-None-Match HTTP headers cannot be specified for POST operations.</value>
+  </data>
+  <data name="DataService_ETagNotSupportedInUnbind" xml:space="preserve">
+    <value>If-Match or If-None-Match HTTP headers cannot be specified for DELETE operations to $link end points.</value>
+  </data>
+  <data name="DataService_RegisterKnownTypeNotAllowedForIDSP" xml:space="preserve">
+    <value>Adding types through RegisterKnownType() is not supported for custom data service providers.</value>
+  </data>
+  <data name="ReflectionProvider_KeyPropertiesCannotBeIgnored" xml:space="preserve">
+    <value>Key properties cannot be ignored using the IgnoreProperties attribute. For type '{0}', please make sure that there is a key property which is not ignored.</value>
+  </data>
+  <data name="EpmTargetTree_InvalidTargetPath" xml:space="preserve">
+    <value>The TargetName property path '{0}' set in the EntityPropertyMappingAttribute is not valid.</value>
+  </data>
+  <data name="RequestQueryParser_UnknownProperty" xml:space="preserve">
+    <value>No property '{0}' exists in type '{1}' at position {2}.</value>
+  </data>
+  <data name="DataServiceProviderWrapper_MustImplementIDataServiceQueryProvider2WhenIDataServiceMetadataProvider2IsImplemented" xml:space="preserve">
+    <value>The data service or the data source must implement the IDataServiceQueryProvider2 interface when the IDataServiceMetadataProvider2 interface is implemented.</value>
+  </data>
+  <data name= "RequestUriProcessor_SegmentDoesNotSupportKeyPredicates" xml:space="preserve">
+    <value>The request URI is not valid. The segment '{0}' cannot include key predicates, however it may end with empty parenthesis.</value>
+  </data>
+  <data name="InvalidUri_OpenPropertiesCannotBeCollection" xml:space="preserve">
+    <value>The property '{0}' referred in the request URI is a open property and refers to a collection of resources. Open properties are not allowed to contain collections.</value>
+  </data>
+  <data name="BadRequest_KeyCountMismatch" xml:space="preserve">
+    <value>The number of keys specified in the URI does not match number of key properties for the resource '{0}'.</value>
+  </data>
+  <data name="ServiceOperation_MustBeBindableToUsePathExpression" xml:space="preserve">
+    <value>The operation must be bindable when '{0}' is not null.</value>
+  </data>
+  <data name="ResourceSetPathExpression_PropertyNotFound" xml:space="preserve">
+    <value>The path expression '{0}' is not a valid expression because the segment '{1}' is not a type identifier or a property on the resource type '{2}'.</value>
+  </data>
+  <data name="DataServiceHost_EmptyHttpMethod" xml:space="preserve">
+    <value>There is no HTTP method specified by the host.</value>
+  </data>
+  <data name= "RequestUriProcessor_ResourceNotFound" xml:space="preserve">
+    <value>Resource not found for the segment '{0}'.</value>
+  </data>
+  <data name="RequestQueryParser_UnaryTypeCheckOrTypeCastNotSupportedInSubScope" xml:space="preserve">
+    <value>An applicable function could not be determined for '{0}' at position {1} with the arguments specified. The unary '{0}' function is not supported inside an 'any' or 'all' function.</value>
+  </data>
+  <data name="DataService_MaxDSVTooLow" xml:space="preserve">
+    <value>The MaxDataServiceVersion '{0}' is too low for the response. The lowest supported version is '{1}.{2}'.</value>
+  </data>
+  <data name= "RequestUriProcessor_LinkSegmentMustBeFollowedByEntitySegment" xml:space="preserve">
+    <value>The request URI is not valid. The segment '{0}' must refer to a navigation property since the previous segment identifier is '{1}'.</value>
+  </data>
+  <data name="ServiceOperation_MimeTypeNotValid" xml:space="preserve">
+    <value>The MIME type '{0}' for service operation '{1}' is not in 'type/subtype' format.</value>
+  </data>
+  <data name="BadRequestStream_InvalidTypeMetadata" xml:space="preserve">
+    <value>Error processing request stream. The 'type' element value in '__metadata' must be of string type.</value>
+  </data>
+  <data name="DataServiceStreamProviderWrapper_MustImplementIDataServiceStreamProviderToSupportStreaming" xml:space="preserve">
+    <value>To support streaming, the data service must implement IServiceProvider.GetService() to return an implementation of IDataServiceStreamProvider or the data source must implement IDataServiceStreamProvider.</value>
+  </data>
+  <data name="ResourceProperty_MimeTypeAttributeOnNonPrimitive" xml:space="preserve">
+    <value>The MimeType attribute is specified for property '{0}', which is of kind '{1}'. A MimeType can only be specified on properties that are of kind ResourcePropertyKind.Primitive.</value>
+  </data>
+  <data name="DataService_ExpandDepthExceeded" xml:space="preserve">
+    <value>The request includes an $expand path with {0} segment(s), but the maximum allowed is {1}.</value>
+  </data>
+  <data name="DataServiceHost_MoreThanOneQueryParameterSpecifiedWithTheGivenName" xml:space="preserve">
+    <value>More than one query parameter specified with the name '{0}' in request URI '{1}'.</value>
+  </data>
+  <data name="DataService_ContentIdMustBeUniqueInBatch" xml:space="preserve">
+    <value>'{0}' is not a unique 'Content-ID' in the given batch requests. In batch requests, every 'Content-ID' must be a unique value.</value>
+  </data>
+  <data name="EpmSourceTree_InvalidSourcePath" xml:space="preserve">
+    <value>The PropertyName property value '{1}' of EntityPropertyMappingAttribute on type '{0}' is not valid.</value>
+  </data>
+  <data name="DataService_CannotPerformOperationWithoutETag" xml:space="preserve">
+    <value>Since entity type '{0}' has one or more etag properties, If-Match HTTP header must be specified for DELETE/PUT operations on this type.</value>
+  </data>
+  <data name="DataService_SDP_PageSizeWithMaxResultsPerCollection" xml:space="preserve">
+    <value>Specification of entity set page size is mutually exclusive with the specification of MaxResultsPerCollection property in configuration.</value>
+  </data>
+  <data name="ServiceOperation_Sealed" xml:space="preserve">
+    <value>The service operation '{0}' cannot be modified since it is already set to read-only.</value>
+  </data>
+  <data name="BadProvider_ResourceTypeMustBeDeclaringTypeForProperty" xml:space="preserve">
+    <value>The resource type '{0}' must contain the resource property instance '{1}'.</value>
+  </data>
+  <data name="DataService_DerivedExpansions_OldExpandProvider" xml:space="preserve">
+    <value>The request could not be processed because the data service implements IExpandProvider, which does not support expansions on derived navigation properties.</value>
+  </data>
+  <data name="DataService_AuthorizationParameterNotResourceAction" xml:space="preserve">
+    <value>Parameter '{0}' of method '{1}' on type '{2}' is of type '{3}' but should be of type System.Data.Web.ResourceAction.</value>
+  </data>
+  <data name="ReflectionProvider_EntityTypeHasKeyButNoEntitySet" xml:space="preserve">
+    <value>Type '{0}' has a key defined through an explicit DataServiceKeyAttribute, but it is not exposed through a top-level IQueryable property on the data context.</value>
+  </data>
+  <data name="BaseServiceProvider_UnknownResourceTypeInstance" xml:space="preserve">
+    <value>The given resource type instance for the type '{0}' is not known to the metadata provider.</value>
+  </data>
+  <data name="HttpProcessUtility_EscapeCharWithoutQuotes" xml:space="preserve">
+    <value>Value for MIME type parameter '{0}' is incorrect because it contained escape characters even though it was not quoted.</value>
+  </data>
+  <data name="DataServiceProviderWrapper_ResourceTypeNotReadonly" xml:space="preserve">
+    <value>The resource type '{0}' returned by the provider is not read-only. Please make sure that all the types are set to read-only.</value>
+  </data>
+  <data name="BadProvider_UnknownResourceSet" xml:space="preserve">
+    <value>The resource set '{0}' is not known to the provider.</value>
+  </data>
+  <data name="BadProvider_UnsupportedAncestorType" xml:space="preserve">
+    <value>Internal Server Error. The type '{0}' derives from '{1}' which is an unsupported type.</value>
+  </data>
+  <data name="BaseServiceProvider_UnsupportedReturnType" xml:space="preserve">
+    <value>Unable to load metadata for return type '{1}' of method '{0}'.</value>
+  </data>
+  <data name= "RequestUriProcessor_SyntaxError" xml:space="preserve">
+    <value>Bad Request - Error in query syntax.</value>
+  </data>
+  <data name="DataServiceStreamProviderWrapper_GetReadStreamUriMustReturnAbsoluteUriOrNull" xml:space="preserve">
+    <value>The method 'IDataServiceStreamProvider.GetReadStreamUri' must return an absolute Uri or null.</value>
+  </data>
+  <data name="DataService_AuthorizationMethodNotVoid" xml:space="preserve">
+    <value>Method '{0}' on type '{1}' us marked as an authorization method but has a return type of '{2}' when no return value is expected.</value>
+  </data>
+  <data name="HttpProcessUtility_MediaTypeMissingValue" xml:space="preserve">
+    <value>Media type is missing a parameter value.</value>
+  </data>
+  <data name="DataService_SDP_TopLevelPagedResultWithOldExpandProvider" xml:space="preserve">
+    <value>The request could not be processed because the data service implements IExpandProvider, which does not support the paging of top-level results.</value>
+  </data>
+  <data name="ServiceOperation_BindableOperationMustHaveAtLeastOneParameter" xml:space="preserve">
+    <value>Bindable actions or functions must have at least one parameter, where the first parameter is the binding parameter.</value>
+  </data>
+  <data name="DataServiceStreamProviderWrapper_MaxProtocolVersionMustBeV3OrAboveToSupportNamedStreams" xml:space="preserve">
+    <value>To support named streams, the MaxProtocolVersion of the data service must be set to DataServiceProtocolVersion.V3 or above.</value>
+  </data>
+  <data name="BadRequest_ExceedsMaxObjectCountOnInsert" xml:space="preserve">
+    <value>The request exceeds the maximum {0} resources that can be referenced in a single POST request.</value>
+  </data>
+  <data name="DataService_IfNoneMatchHeaderNotSupportedInPut" xml:space="preserve">
+    <value>If-None-Match HTTP header cannot be specified for PUT operations.</value>
+  </data>
+  <data name="BadRequest_InvalidContentTypeForOpenProperty" xml:space="preserve">
+    <value>The content type '{0} is not valid for open property '{1}'. For open properties, the content type must be 'text/plain'.</value>
+  </data>
+  <data name="ResourceType_Sealed" xml:space="preserve">
+    <value>The resource type '{0}' cannot be modified since it is already set to read-only.</value>
+  </data>
+  <data name= "RequestUriProcessor_IEnumerableServiceOperationsCannotBeFurtherComposed" xml:space="preserve">
+    <value>Resource Not Found - '{0}' refers to a service operation which does not allow further composition.</value>
+  </data>
+  <data name="ObjectContext_ResourceTypeNameNotExist" xml:space="preserve">
+    <value>A resource type named '{0}' does not exist in the metadata.</value>
+  </data>
+  <data name="MetadataProviderEdmModel_UnsupportedCollectionItemType_EntityPrimitiveOrComplex" xml:space="preserve">
+    <value>The resource type kind '{0}' is not supported as the type kind of a collection item type. Only 'Primitive', 'ComplexType' and 'EntityType' kinds are supported for collection item types.</value>
+  </data>
+  <data name="BadRequestStream_MissingNameValueSeperator" xml:space="preserve">
+    <value>Error processing request stream. Missing ':' after '{0}'.</value>
+  </data>
+  <data name="BadRequestStream_InvalidJsonUnrecognizedEscapeSequence" xml:space="preserve">
+    <value>Error processing request stream. Unrecognized escape sequence found in JSON string.</value>
+  </data>
+  <data name="ExpandSegment_FilterBodyShouldReturnBool" xml:space="preserve">
+    <value>The filter for an expand segment should return a boolean value, but the specified filter returns '{0}'.</value>
+  </data>
+  <data name="HttpContextServiceHost_UnknownQueryParameter" xml:space="preserve">
+    <value>The query parameter '{0}' begins with a system-reserved '$' character but is not recognized.</value>
+  </data>
+  <data name="DataServiceProviderWrapper_ContainerNamespaceMustNotBeNullOrEmpty" xml:space="preserve">
+    <value>The value returned by IDataServiceMetadataProvider.ContainerNamespace must not be null or empty.</value>
+  </data>
+  <data name="HttpContextServiceHost_IncomingTemplateMatchQuery" xml:space="preserve">
+    <value>Query parts are not supported in template matches but the base URI '{0}' has one.</value>
+  </data>
+  <data name="ObjectContext_PrimitiveTypeNotSupported" xml:space="preserve">
+    <value>The property '{0}' on type '{1}' is of type '{2}' which is not a supported primitive type.</value>
+  </data>
+  <data name="DataService_BatchResourceOnlySupportsPost" xml:space="preserve">
+    <value>The /$batch resource only supports POST method requests.</value>
+  </data>
+  <data name="ResourceType_MissingKeyPropertiesForEntity" xml:space="preserve">
+    <value>The entity type '{0}' does not have any key properties. Please make sure that one or more key properties are defined for this entity type.</value>
+  </data>
+  <data name="ResourceProperty_PropertyKindAndResourceTypeKindMismatch" xml:space="preserve">
+    <value>'{0}' parameter does not match with the type of the resource type in parameter '{1}'.</value>
+  </data>
+  <data name="RequestQueryProcessor_PrimitivePropertyUsedAsNavigationProperty" xml:space="preserve">
+    <value>Property {1} on type {0} is of primitive type and cannot be used as a navigation property.</value>
+  </data>
+  <data name="DataService_AuthorizationReturnedNullQuery" xml:space="preserve">
+    <value>Method '{0}' on type '{1}' returned a null expression.</value>
+  </data>
+  <data name="ObjectContext_IfNoneMatchHeaderNotSupportedInUpdateAndDelete" xml:space="preserve">
+    <value>If-None-Match HTTP header cannot be specified for update and delete operations.</value>
+  </data>
+  <data name="ServiceOperation_MimeTypeCannotBeEmpty" xml:space="preserve">
+    <value>The MIME type specified for service operation '{0}' is not valid. The MimeType property cannot be set to null or empty.</value>
+  </data>
+  <data name="DataService_AuthorizationReturnTypeNotAssignable" xml:space="preserve">
+    <value>Return type of method '{0}' on type '{1}' is of type '{2}' but a type assignable to '{3}' is required for a query interceptor.</value>
+  </data>
+  <data name="DataServiceStreamProviderWrapper_MustNotSetContentTypeAndEtag" xml:space="preserve">
+    <value>The method '{0}' must not set the HTTP response headers 'Content-Type' and 'ETag'.</value>
+  </data>
+  <data name="BadRequest_PropertyValueCannotBeSet" xml:space="preserve">
+    <value>Error processing request stream. Property '{0}' is a read-only property and cannot be updated. Please make sure that this property is not present in the request payload.</value>
+  </data>
+  <data name="ObjectContext_InvalidValueForTargetTextContentKindPropertyMember" xml:space="preserve">
+    <value>The value for TargetTextContentKind property value of '{0}' on member '{1}' of type '{2}' for EntityPropertyMappingAttribute is not valid.</value>
+  </data>
+  <data name="RequestQueryParser_NoApplicableFunction" xml:space="preserve">
+    <value>No applicable function found for '{0}' at position {1} with the specified arguments. The functions considered are: {2}.</value>
+  </data>
+  <data name="RequestQueryProcessor_InlineCountWithValueCount" xml:space="preserve">
+    <value>$inlinecount cannot be applied to the resource segment '$count'</value>
+  </data>
+  <data name="HttpContextServiceHost_MalformedHeaderValue" xml:space="preserve">
+    <value>Malformed value in request header.</value>
+  </data>
+  <data name="RequestQueryProcessor_InvalidCountOptionError" xml:space="preserve">
+    <value>Unknown $inlinecount option, only "allpages" and "none" are supported</value>
+  </data>
+  <data name="EpmSourceTree_DuplicateEpmAttrsWithSameSourceName" xml:space="preserve">
+    <value>The PropertyName property value '{0}' on more than one EntityPropertyMappingAttribute on resource type '{1}' is provided more than once.</value>
+  </data>
+  <data name="BasicExpandProvider_SDP_UnsupportedOrderingExpressionBreadth" xml:space="preserve">
+    <value>$expand does not support '{0}' ordering expressions simultaneously on the top level type. Ordering expressions include top level $orderby expressions and the key columns in the top level entity type.</value>
+  </data>
+  <data name="BadRequest_InvalidContentTypeForRequestUri" xml:space="preserve">
+    <value>The content-type '{0}' is not a valid content type for this request. The content-type must be one of the following: {1}.</value>
+  </data>
+  <data name="BadRequest_InvalidValue" xml:space="preserve">
+    <value>Error processing request stream. The value specified for element '{0}' is not valid.</value>
+  </data>
+  <data name= "RequestUriProcessor_MethodNotAllowed" xml:space="preserve">
+    <value>Method Not Allowed</value>
+  </data>
+  <data name="Serializer_NullKeysAreNotSupported" xml:space="preserve">
+    <value>The serialized resource has a null value in key member '{0}'. Null values are not supported in key members.</value>
+  </data>
+  <data name="ObjectContext_EntityTypeExpected" xml:space="preserve">
+    <value>An entity resource type is expected, however the resource type '{0}' is of type kind '{1}'.</value>
+  </data>
+  <data name="BadProvider_InconsistentEntityOrComplexTypeUsage" xml:space="preserve">
+    <value>Internal Server Error. The type '{0}' has inconsistent metadata and runtime type info.</value>
+  </data>
+  <data name= "RequestUriProcessor_AbsoluteServiceUriCannotBeNull" xml:space="preserve">
+    <value>The AbsoluteServiceUri property of the data service host cannot be null.</value>
+  </data>
+  <data name="HttpContextServiceHost_XMethodNotUsingPost" xml:space="preserve">
+    <value>The X-HTTP-Method header can only be used with POST requests.</value>
+  </data>
+  <data name="InvalidEnumValue" xml:space="preserve">
+    <value>The value for the given enum type '{0}' is not valid. Please specify a valid enum value.</value>
+  </data>
+  <data name="DataService_ParameterIsOut" xml:space="preserve">
+    <value>Type '{0}' has a method '{1}' with parameter '{2}' declared as an [Out] parameter. The parameter should be declared as [In] only.</value>
+  </data>
+  <data name="DataService_AuthorizationMethodVoid" xml:space="preserve">
+    <value>Method '{0}' on type '{1}' returns no value, but a '{2}' return type is required for a query interceptor method.</value>
+  </data>
+  <data name="DataServiceConfiguration_ServerPagingNotSupportedInV1Server" xml:space="preserve">
+    <value>Server paging cannot be used when the MaxProtocolVersion of the data service is set to DataServiceProtocolVersion.V1.</value>
+  </data>
+  <data name= "RequestUriProcessor_EmptySegmentInRequestUrl" xml:space="preserve">
+    <value>Empty segment encountered in request URL. Please make sure that a valid request URL is specified.</value>
+  </data>
+  <data name="BadRequest_InvalidTypeParameterSpecifiedInMimeType" xml:space="preserve">
+    <value>Error processing request stream. The value '{0}' of the 'type' parameter in the 'type' attribute of the link element is not valid. The value must be '{1}'.</value>
+  </data>
+  <data name="DataServiceHost_FeatureRequiresIDataServiceHost2" xml:space="preserve">
+    <value>The data service cannot access the requested information. To be able to access this information, the process that hosts the data service must implement the IDataServiceHost2 interface.</value>
+  </data>
+  <data name="DataService_InvalidMinDSV" xml:space="preserve">
+    <value>The MinDataServiceVersion '{0}' is not a valid version. The only supported versions are {1}.</value>
+  </data>
+  <data name="DataServiceStreamProviderWrapper_GetStreamETagReturnedInvalidETagFormat" xml:space="preserve">
+    <value>The method 'IDataServiceStreamProvider.GetStreamETag' returned an entity tag with invalid format.</value>
+  </data>
+  <data name="MetadataProviderUtils_ConversionError" xml:space="preserve">
+    <value>Found invalid value for facet '{0}'. Cannot convert a value of type '{1}' to the expected type '{2}'.</value>
+  </data>
+  <data name="BadProvider_CreateResourceReturnedNull" xml:space="preserve">
+    <value>Internal Server Error. CreateResource returned null value. Please contact the provider.</value>
+  </data>
+  <data name="RequestQueryParser_IdentifierExpected" xml:space="preserve">
+    <value>Identifier expected at position {0}.</value>
+  </data>
+  <data name="ObjectContext_DifferentContainerRights" xml:space="preserve">
+    <value>Entity set '{0}' has rights '{1}' applied to it, but entity set '{2}' has rights '{3}'. Entity sets of the same type must have the same rights.</value>
+  </data>
+  <data name="ResourceAssociationSetEnd_ResourcePropertyMustBeNavigationPropertyOnResourceType" xml:space="preserve">
+    <value>The resourceProperty parameter must be a navigation property on the resource type specified by the resourceType parameter.</value>
+  </data>
+  <data name="ResourceType_CollectionItemCanBeOnlyPrimitiveOrComplex" xml:space="preserve">
+    <value>Only collection properties that contain primitive types or complex types are supported.</value>
+  </data>
+  <data name="DataServiceActionProviderWrapper_MustImplementIDataServiceActionProviderToSupportActions" xml:space="preserve">
+    <value>The data service or the data source must implement the IDataServiceActionProvider interface to support service actions.</value>
+  </data>
+  <data name="DataService_CreateDataSourceNull" xml:space="preserve">
+    <value>The method CreateDataService has been overridden but it returned a null value; a valid instance is required.</value>
+  </data>
+  <data name="DataService_OnlyGetOperationSupportedOnServiceUrl" xml:space="preserve">
+    <value>The URL representing the root of the service only supports GET requests.</value>
+  </data>
+  <data name="ReflectionProvider_HasStreamAttributeOnlyAppliesToEntityType" xml:space="preserve">
+    <value>Cannot apply the HasStreamAttribute to type '{0}'. HasStreamAttribute is only applicable to entity types.</value>
+  </data>
+  <data name="RequestQueryProcessor_QueryFilterOptionNotApplicable" xml:space="preserve">
+    <value>Query option $filter cannot be applied to the requested resource.</value>
+  </data>
+  <data name="BadRequest_NullResponseStream" xml:space="preserve">
+    <value>Error in processing request - IDataServiceHost.ResponseStream cannot be null.</value>
+  </data>
+  <data name="BadRequest_CannotUpdateRelatedEntitiesInPut" xml:space="preserve">
+    <value>Error processing request stream. Binding to new entities is not supported in PUT operations.</value>
+  </data>
+  <data name="OpenNavigationPropertiesNotSupportedOnOpenTypes" xml:space="preserve">
+    <value>Open navigation properties are not supported on OpenTypes. Property name: '{0}'.</value>
+  </data>
+  <data name="NoEmptyConstructorFoundForType" xml:space="preserve">
+    <value>A constructor which accepts no parameters was not found for type '{0}'. Every entity type must have a constructor which accepts no parameters.</value>
+  </data>
+  <data name="Serializer_CollectionCanNotBeNull" xml:space="preserve">
+    <value>The collection property '{0}' has a null value. Collection properties that return a null value are not supported.</value>
+  </data>
+  <data name="BadRequest_UriMissingForUpdateForDeepUpdates" xml:space="preserve">
+    <value>Error processing request stream. In PUT operations, URI must be specified for binding operations.</value>
+  </data>
+  <data name="DataServiceConfiguration_ProjectionsNotAccepted" xml:space="preserve">
+    <value>The ability to use the $select query option to define a projection in a data service query is disabled. To enable this functionality, set the DataServiceConfiguration. AcceptProjectionRequests property to true.</value>
+  </data>
+  <data name="RequestQueryParser_DigitExpected" xml:space="preserve">
+    <value>Digit expected at position {0}.</value>
+  </data>
+  <data name="RequestQueryParser_UnterminatedStringLiteral" xml:space="preserve">
+    <value>Unterminated string literal at position {0} in '{1}'.</value>
+  </data>
+  <data name="ResourceSetPathExpression_PathCannotEndWithTypeIdentifier" xml:space="preserve">
+    <value>The path expression '{0}' is not a valid expression because it ends with the type identifier '{1}'. A valid path expression must not end in a type identifier.</value>
+  </data>
+  <data name="BadRequest_InvalidUriForPatchOperation" xml:space="preserve">
+    <value>The URI '{0}' is not valid for PATCH operation. The URI must point to a single resource for PATCH operations. PATCH operation against a media resource is not supported.</value>
+  </data>
+  <data name="BadRequest_OpenCollectionProperty" xml:space="preserve">
+    <value>An open collection property '{0}' was found. In OData, open collection properties are not supported.</value>
+  </data>
+  <data name= "RequestUriProcessor_Forbidden" xml:space="preserve">
+    <value>Forbidden</value>
+  </data>
+  <data name="BadRequest_RequestUriDoesNotHaveTheRightBaseUri" xml:space="preserve">
+    <value>The URI '{0}' is not valid since it is not based on '{1}'.</value>
+  </data>
+  <data name="ObjectContext_NavigationPropertyUnbound" xml:space="preserve">
+    <value>Navigation property '{0}' on type '{1}' cannot be used because the entity set '{2}' does not have an association set specified for it.</value>
+  </data>
+  <data name="EpmOnlyAllowedOnEntityTypes" xml:space="preserve">
+    <value>EntityPropertyMapping attributes are only allowed to be specified on entity types. The attribute specification for resource type '{0}' is not allowed.</value>
+  </data>
+  <data name="ServiceOperation_ResultSetMustBeNullForGivenReturnType" xml:space="preserve">
+    <value>'{0}' must be null when '{1}' is null, not an entity type or not an entity collection type.</value>
+  </data>
+  <data name="ResourceProperty_KeyPropertiesCannotBeNullable" xml:space="preserve">
+    <value>Key Properties cannot be of nullable type. Please make sure the type of this property is not of Nullable&lt;&gt; type.</value>
+  </data>
+  <data name="BadRequest_InvalidUriForPostOperation" xml:space="preserve">
+    <value>The URI '{0}' is not valid for POST operation. For POST operations, the URI must refer to a service operation or an entity set.</value>
+  </data>
+  <data name="CollectionCanOnlyBeEnumeratedOnce" xml:space="preserve">
+    <value>The value of a collection property can only be enumerated once.</value>
+  </data>
+  <data name="RequestQueryParser_CollectionPropertyNotSupportedInExpression" xml:space="preserve">
+    <value>The collection property '{0}' cannot be used in $filter or $orderby query expression. Collection properties are not supported with these query options.</value>
+  </data>
+  <data name= "RequestUriProcessor_KeysMustBeNamed" xml:space="preserve">
+    <value>Segments with multiple key values must specify them in 'name=value' form.</value>
+  </data>
+  <data name= "RequestUriProcessor_InvalidHttpMethodForNamedStream" xml:space="preserve">
+    <value>The URI '{0}' refers to a named stream and is not valid for '{1}' operation.</value>
+  </data>
+  <data name= "RequestUriProcessor_CannotQueryCollections" xml:space="preserve">
+    <value>The request URI is not valid. Since the segment '{0}' refers to a collection, this must be the last segment in the request URI. All intermediate segments must refer to a single resource.</value>
+  </data>
+  <data name="DataService_ETagCannotBeSpecified" xml:space="preserve">
+    <value>If-Match or If-None-Match HTTP headers cannot be specified since the URI '{0}' refers to a collection of resources or has a $count or $link segment or has a $expand as one of the query parameters.</value>
+  </data>
+  <data name="BadRequest_InvalidUriSpecified" xml:space="preserve">
+    <value>Error processing request stream. The URI specified is not valid.</value>
+  </data>
+  <data name="EpmSourceTree_SpatialTypeCannotBeMapped" xml:space="preserve">
+    <value>The property '{0}' on the type '{1}' is a spatial type. Spatial type properties cannot be mapped with an entity property mapping.</value>
+  </data>
+  <data name="RequestQueryProcessor_ComplexPropertyAsInnerSelectSegment" xml:space="preserve">
+    <value>$select doesn't support projecting properties of complex type. Type {0}, property {1}.</value>
+  </data>
+  <data name="DataServiceHost_RequestHeadersCannotBeNull" xml:space="preserve">
+    <value>The RequestHeaders property of the data service host cannot be null.</value>
+  </data>
+  <data name="DataService_ChangeInterceptorIncorrectParameterCount" xml:space="preserve">
+    <value>Method '{0}' on type '{1}' is marked as a change interceptor method but has {2} parameters. Two parameters are expected.</value>
+  </data>
+  <data name="RequestQueryParser_NotDoesNotSupportType" xml:space="preserve">
+    <value>'not' operator does not support type '{0}'.</value>
+  </data>
+  <data name= "RequestUriProcessor_CountNotSupported" xml:space="preserve">
+    <value>The request URI is not valid, $count cannot be applied to the segment '{0}' since $count can only follow a resource segment.</value>
+  </data>
+  <data name="MetadataProviderEdmModel_UnsupportedCollectionItemType_PrimitiveOrComplex" xml:space="preserve">
+    <value>The resource type kind '{0}' is not supported as the type kind of a collection item type. Only 'Primitive' and 'ComplexType' kinds are supported for collection item types.</value>
+  </data>
+  <data name="DataServiceProviderWrapper_InvalidQueryRootType" xml:space="preserve">
+    <value>The IDataServiceQueryProvider.GetQueryRootForResourceSet({0}) method must return an IQueryable instance that can be converted to the type '{1}'.</value>
+  </data>
+  <data name="RequestQueryParser_SpatialNotSupported" xml:space="preserve">
+    <value>This data service endpoint does not support spatial literal values in the URI.</value>
+  </data>
+  <data name="HttpContextServiceHost_QueryParameterMustBeSpecifiedOnce" xml:space="preserve">
+    <value>Query parameter '{0}' is specified, but it should be specified exactly once.</value>
+  </data>
+  <data name="BadRequest_DereferencingNullPropertyValue" xml:space="preserve">
+    <value>Error processing request stream. The value of the property '{0}' specified is null and hence you cannot dereference the property.</value>
+  </data>
+  <data name="ReflectionProvider_ResourceTypeHasNoPublicallyVisibleProperties" xml:space="preserve">
+    <value>The CLR Type '{0}' has no public properties and is not a supported resource type.</value>
+  </data>
+  <data name="RequestQueryProcessor_QuerySetOptionsNotApplicable" xml:space="preserve">
+    <value>Query options $orderby, $inlinecount, $skip and $top cannot be applied to the requested resource.</value>
+  </data>
+  <data name="ResourceContainer_ContainerMustBeAssociatedWithEntityType" xml:space="preserve">
+    <value>The ResourceTypeKind property of a ResourceType instance that is associated with a ResourceSet must have a value of 'EntityType'.</value>
+  </data>
+  <data name="ObjectContextServiceProvider_OSpaceTypeNotFound" xml:space="preserve">
+    <value>A corresponding ObjectSpace type was not found for the type '{0}'. Please ensure that the ObjectContext or DbContext is valid.</value>
+  </data>
+  <data name="ObjectContext_InvalidAttributeForNonSyndicationItemsType" xml:space="preserve">
+    <value>The extended attribute '{0}' on type '{1}' is not allowed for current EntityPropertyMappingAttribute.</value>
+  </data>
+  <data name="UpdatableWrapper_MaxProtocolVersionMustBeV3OrAboveToSupportServiceActions" xml:space="preserve">
+    <value>To support service actions, the MaxProtocolVersion of the data service must be set to DataServiceProtocolVersion.V3 or above.</value>
+  </data>
+  <data name="HttpProcessUtility_EscapeCharAtEnd" xml:space="preserve">
+    <value>Value for MIME type parameter '{0}' is incorrect because it terminated with escape character. Escape characters must always be followed by a character in a parameter value.</value>
+  </data>
+  <data name="DataService_QueryInterceptorIncorrectParameterCount" xml:space="preserve">
+    <value>Method '{0}' on type '{1}' is marked as a query interceptor method but has {2} parameters. Query interceptors should take no parameters.</value>
+  </data>
+  <data name="HttpContextServiceHost_IncomingTemplateMatchFragment" xml:space="preserve">
+    <value>Fragment parts are not supported in template matches but the base URI '{0}' has one.</value>
+  </data>
+  <data name="RequestQueryProcessor_SelectAndExpandCannotBeSpecifiedTogether" xml:space="preserve">
+    <value>Both the $select and $expand query options could not be specified for the '{0}' property because the type qualifiers do not match. The type qualifier specified in the $expand query option must be the same as the one specified in the $select query option.</value>
+  </data>
+  <data name="ResourceType_CollectionItemCanBeOnlyEntity" xml:space="preserve">
+    <value>Only collections of an entity type are supported.</value>
+  </data>
+  <data name="DataService_InvalidStreamFromGetReadStream" xml:space="preserve">
+    <value>IDataServiceStreamProvider.GetReadStream() must return a valid readable stream.</value>
+  </data>
+  <data name="BadRequest_InvalidUriForDeleteOperation" xml:space="preserve">
+    <value>The URI '{0}' is not valid for DELETE operation. The URI must refer to a single resource from an entity set or from a property referring to a set of resources.</value>
+  </data>
+  <data name="HttpProcessUtility_ContentTypeMissing" xml:space="preserve">
+    <value>Content-Type header value missing.</value>
+  </data>
+  <data name="OperationWrapper_TargetSetFromPathExpressionNotNotVisible" xml:space="preserve">
+    <value>The service action '{0}' has the resource set path expression '{1}'. However there is no visible target resource set when it is bind to the resource set '{2}'.</value>
+  </data>
+  <data name="BadRequest_InvalidTypeName" xml:space="preserve">
+    <value>Error processing request stream. The type name '{0}' is not valid.</value>
+  </data>
+  <data name="DataService_RequestVersionMustBeLessThanMPV" xml:space="preserve">
+    <value>Request version '{0}' is too high for the server. Please specify a request version less than or equal to '{1}'.</value>
+  </data>
+  <data name="RequestQueryProcessor_QueryParametersPathCannotEndInTypeIdentifier" xml:space="preserve">
+    <value>The {0} query option is not valid because it contains a property path which ends with the type identifier '{1}'. Property paths in query options cannot end with a type identifier. Please make sure that property paths specified in query options end with a property name.</value>
+  </data>
+  <data name="IgnorePropertiesAttribute_InvalidPropertyName" xml:space="preserve">
+    <value>The property '{0}' is not a valid property name for type '{1}'. Please specify a valid property name.</value>
+  </data>
+  <data name="Serializer_CollectionPropertyValueMustImplementIEnumerable" xml:space="preserve">
+    <value>The collection type returned by the property '{0}' does not implement IEnumerable. Collection properties must be of a type that implements IEnumerable.</value>
+  </data>
+  <data name="RequestQueryProcessor_SkipTokenNotAllowed" xml:space="preserve">
+    <value>Skip tokens can only be provided for requests that return collections of entities.</value>
+  </data>
+  <data name="ResourceSet_Sealed" xml:space="preserve">
+    <value>The resource set '{0}' cannot be modified since it is already set to read-only.</value>
+  </data>
+  <data name="ResourceAssociationSet_SelfReferencingAssociationCannotBeBiDirectional" xml:space="preserve">
+    <value>The ends of a ResourceAssociationSet cannot both have the same ResourceType and ResourceProperty values. If this is a self-referencing association, the ResourceAssociationSet must be unidirectional with the ResourceProperty on one of the ends set to null.</value>
+  </data>
+  <data name="RequestQueryParser_DeclaredRangeVariable" xml:space="preserve">
+    <value>The range variable '{0}' has already been declared.</value>
+  </data>
+  <data name="DataServiceConfiguration_ResourceTypeNameNotFound" xml:space="preserve">
+    <value>The given name '{0}' was not found in the entity types.</value>
+  </data>
+  <data name="MetadataSerializer_ModelValidationErrors" xml:space="preserve">
+    <value>An IEdmModel instance was found that failed validation. The following errors were reported:
+{0}</value>
+  </data>
+  <data name="SingleResourceExpected" xml:space="preserve">
+    <value>A single resource was expected for the result, but multiple resources were found.</value>
+  </data>
+  <data name="DataService_AttributeEntitySetNotFound" xml:space="preserve">
+    <value>Entity set '{0}' declared on attribute for method '{1}' of type '{2}' was not found.</value>
+  </data>
+  <data name="RequestQueryParser_CloseParenOrOperatorExpected" xml:space="preserve">
+    <value>')' or operator expected at position {0}.</value>
+  </data>
+  <data name="HttpProcessUtility_MediaTypeUnspecified" xml:space="preserve">
+    <value>Media type is unspecified.</value>
+  </data>
+  <data name="DataServiceProviderWrapper_ServiceOperationNotReadonly" xml:space="preserve">
+    <value>The service operation '{0}' returned by the provider is not read-only. Please make sure that all the service operations are set to read-only.</value>
+  </data>
+  <data name="ServiceOperation_ResultTypeAndResultSetMustMatch" xml:space="preserve">
+    <value>When '{0}' is an entity type, '{1}' cannot be null and the resource type of '{1}' must be assignable from '{0}'.</value>
+  </data>
+  <data name="ResourceType_InvalidResourceTypeKindInheritance" xml:space="preserve">
+    <value>A resource type of kind '{0}' cannot derive from a base resource type of kind '{1}'. Inheritance is only supported when resource types are of the same kind.</value>
+  </data>
+  <data name="BadRequest_ValuesCannotBeReturnedForSpatialTypes" xml:space="preserve">
+    <value>$value must not be specified for spatial values. </value>
+  </data>
+  <data name="ReflectionProvider_ETagPropertyNameNotValid" xml:space="preserve">
+    <value>The property name'{0}' specified in the ETagAttribute on type '{1}' is not a valid property name. Please specify a valid property name.</value>
+  </data>
+  <data name="DataServiceActionProviderWrapper_MaxProtocolVersionMustBeV3OrAboveToSupportActions" xml:space="preserve">
+    <value>To support service actions, the MaxProtocolVersion of the data service must be set to DataServiceProtocolVersion.V3 or above.</value>
+  </data>
+  <data name="BadRequest_LinkHrefMustReferToSingleResource" xml:space="preserve">
+    <value>Error processing request stream. Since the property '{0}' refers to a reference property, the URI specified in the href attribute must refer to a single resource.</value>
+  </data>
+  <data name="EpmSourceTree_InaccessiblePropertyOnType" xml:space="preserve">
+    <value>The property '{0}' on type '{1}' is not present or is inaccessible.</value>
+  </data>
+  <data name="ResourceType_PropertyWithSameNameAlreadyExists" xml:space="preserve">
+    <value>A property with same name '{0}' already exists in type '{1}'. Please make sure that there is no property with the same name defined in one of the base types.</value>
+  </data>
+  <data name="ResourceType_ETagPropertiesOnlyOnEntityTypes" xml:space="preserve">
+    <value>ETag properties can only be added to ResourceType instances with a ResourceTypeKind equal to 'EntityType'.</value>
+  </data>
+  <data name="BadRequest_ErrorInConvertingNumericValues" xml:space="preserve">
+    <value>Error processing request stream. Values for properties of type 'decimal' and 'int64' must be quoted in the payload. Make sure the value for property '{0}' is quoted.</value>
+  </data>
+  <data name="DataService_InvalidStreamFromGetWriteStream" xml:space="preserve">
+    <value>IDataServiceStreamProvider.GetWriteStream() must return a valid writable stream.</value>
+  </data>
+  <data name="BadRequestStream_MissingArrayMemberSeperator" xml:space="preserve">
+    <value>Error processing request stream. Missing ',' between array elements.</value>
+  </data>
+  <data name="BadProvider_InvalidTypeSpecified" xml:space="preserve">
+    <value>Internal Server Error. The type '{0}' is not a complex type or an entity type.</value>
+  </data>
+  <data name="BadRequest_ValuesCanBeReturnedForPrimitiveTypesOnly" xml:space="preserve">
+    <value>$value must be only specified for primitive values. Please make sure that property is a primitive type property.</value>
+  </data>
+  <data name="EpmSourceTree_NamedStreamCannotBeMapped" xml:space="preserve">
+    <value>The property '{0}' on the type '{1}' is of the type 'Edm.Stream'. Stream properties cannot be mapped with an entity property mapping.</value>
+  </data>
+  <data name= "RequestUriProcessor_CannotQuerySingletons" xml:space="preserve">
+    <value>The request URI is not valid, since the segment '{0}' refers to a singleton, and the segment '{1}' can only follow a resource collection.</value>
+  </data>
+  <data name="ObjectContext_UnknownResourceTypeForClrType" xml:space="preserve">
+    <value>The clr type '{0}' is an unknown resource type to the metadata provider.</value>
+  </data>
+  <data name="DataServiceConfiguration_NoChangesAllowed" xml:space="preserve">
+    <value>No changes are allowed to the configuration after '{0}' is invoked.</value>
+  </data>
+  <data name="ServiceOperation_NotSupportedProtocolMethod" xml:space="preserve">
+    <value>An invalid HTTP method '{0}' was specified for the service operation '{1}'. Only the HTTP 'POST' and 'GET' methods are supported for service operations.</value>
+  </data>
+  <data name="EpmTargetTree_DuplicateEpmAttrsWithSameTargetName" xml:space="preserve">
+    <value>The TargetName property '{0}' on more than one EntityPropertyMappingAttribute on resource type '{1}' have the same value. Conflicting properties are '{2}' and '{3}'.</value>
+  </data>
+  <data name="BadRequest_NullCollectionNotSupported" xml:space="preserve">
+    <value>The value of the property '{0}' is null. Properties that are a collection type of primitive or complex types cannot be null.</value>
+  </data>
+  <data name="RequestQueryProcessor_QueryExpandOptionNotApplicable" xml:space="preserve">
+    <value>Query option $expand cannot be applied to the requested resource.</value>
+  </data>
+  <data name="IgnorePropertiesAttribute_PropertyNameCannotBeNullOrEmpty" xml:space="preserve">
+    <value>The property name specified in the IgnoreProperties attribute cannot be null or empty. Please specify a valid property name.</value>
+  </data>
+  <data name="HttpContextServiceHost_WebOperationContextCurrentMissing" xml:space="preserve">
+    <value>There is no System.ServiceModel.Web.WebOperationContext.Current instance.</value>
+  </data>
+  <data name="OperationWrapper_OperationResourceSetNotVisible" xml:space="preserve">
+    <value>The operation '{0}' has the resource set '{1}' that is not visible. The operation '{0}' should be made hidden or the resource set '{1}' should be made visible.</value>
+  </data>
+  <data name="BadRequestStream_MissingMemberSeperator" xml:space="preserve">
+    <value>Error processing request stream. In JSON, every object is made up of name/value pairs and every name/value pair must be separated by ','.</value>
+  </data>
+  <data name="ResourceProperty_NamedStreamKindMustBeUsedAlone" xml:space="preserve">
+    <value>Invalid ResourcePropertyKind, ResourcePropertyKind.Stream must not be combined with any other flag.</value>
+  </data>
+  <data name= "RequestUriProcessor_MissingBindingParameter" xml:space="preserve">
+    <value>Service action '{0}' requires a binding parameter, but it was invoked unbound.</value>
+  </data>
+  <data name="General_InternalError" xml:space="preserve">
+    <value>An internal error '{0}' occurred.</value>
+  </data>
+  <data name="RequestQueryProcessor_SkipTokenSupportedOnPagedSets" xml:space="preserve">
+    <value>A skip token can only be provided in a query request against an entity set when the entity set has a paging limit set.</value>
+  </data>
+  <data name="RequestQueryParser_CloseParenOrCommaExpected" xml:space="preserve">
+    <value>')' or ',' expected at position {0}.</value>
+  </data>
+  <data name="BadRequest_OnlyEntityTypesMustBeSpecifiedInEntryElement" xml:space="preserve">
+    <value>Error processing request stream. The type name '{0}' is not an entity type and hence cannot be represented by an entry element in the payload.</value>
+  </data>
+  <data name="ResourceAssociationSet_MultipleAssociationSetsForTheSameAssociationTypeMustNotReferToSameEndSets" xml:space="preserve">
+    <value>ResourceAssociationSets '{0}' and '{1}' have a ResourceAssociationSetEnd referring to the same EntitySet '{2}' through the same AssociationType. Make sure that if two or more AssociationSets refer to the same AssociationType, the ends must not refer to the same EntitySet. For CLR context, this could happen if multiple entity sets have entity types that have a common ancestor and the ancestor has a property of derived entity types.</value>
+  </data>
+  <data name="DataService_SDP_PageSizeMustbeNonNegative" xml:space="preserve">
+    <value>The given page size {0} for entity set '{1}' should have a non-negative value.</value>
+  </data>
+  <data name="BadProvider_ResetResourceReturnedNull" xml:space="preserve">
+    <value>Internal Server Error. ResetResource returned null value. Please contact the provider.</value>
+  </data>
+  <data name= "RequestUriProcessor_AbsoluteServiceUriMustBeAbsolute" xml:space="preserve">
+    <value>The AbsoluteServiceUri property of the data service host must be an absolute URI.</value>
+  </data>
+  <data name="PlainXml_IncorrectElementName" xml:space="preserve">
+    <value>Expecting XML element '{0}', but found '{1}' instead.</value>
+  </data>
+  <data name="BadRequest_TypeInformationMustBeSpecifiedForInhertiance" xml:space="preserve">
+    <value>Error processing request stream. Type information must be specified for types that take part in inheritance.</value>
+  </data>
+  <data name="DataServiceProviderWrapper_ContainerNameMustNotBeNullOrEmpty" xml:space="preserve">
+    <value>The value returned by IDataServiceMetadataProvider.ContainerName must not be null or empty.</value>
+  </data>
+  <data name="ResourceType_NamedStreamsOnlyApplyToEntityType" xml:space="preserve">
+    <value>Adding named streams to the type '{0}' is not allowed. Named streams can only be added to entity types.</value>
+  </data>
+  <data name="ObjectContext_SyndicationMappingForComplexPropertiesNotAllowed" xml:space="preserve">
+    <value>EntityPropertyMapping for complex types is not allowed when being mapped to Syndication specific entities.</value>
+  </data>
+  <data name="BadRequestStream_InvalidResourceEntity" xml:space="preserve">
+    <value>Error processing request stream. The request should be a valid top-level resource object.</value>
+  </data>
+  <data name="ResourceAssociationSet_BidirectionalAssociationMustReturnSameResourceAssociationSetFromBothEnd" xml:space="preserve">
+    <value>When the ResourceAssociationSet is bidirectional, IDataServiceMetadataProvider.GetResourceAssociationSet() must return the same ResourceAssociationSet when call from both ends.</value>
+  </data>
+  <data name="RequestQueryParser_ExpressionTypeMismatch" xml:space="preserve">
+    <value>Expression of type '{0}' expected at position {1}.</value>
+  </data>
+  <data name="BadRequest_ErrorInSettingPropertyValue" xml:space="preserve">
+    <value>Error processing request stream. Error encountered in setting value for property '{0}'. Please verify that the value is correct.</value>
+  </data>
+  <data name="RequestQueryParser_InvalidCharacter" xml:space="preserve">
+    <value>Syntax error '{0}' at position {1}.</value>
+  </data>
+  <data name="BaseServiceProvider_ParameterNotIn" xml:space="preserve">
+    <value>Method '{0}' has a parameter '{1}' which is not an [in] parameter.</value>
+  </data>
+  <data name="DataService_BothIfMatchAndIfNoneMatchHeaderSpecified" xml:space="preserve">
+    <value>Both If-Match and If-None-Match HTTP headers cannot be specified at the same time. Please specify either one of the headers or none of them.</value>
+  </data>
+  <data name="HttpProcessUtility_MediaTypeRequiresSlash" xml:space="preserve">
+    <value>Media type requires a '/' character.</value>
+  </data>
+  <data name="BadRequest_RequestUriCannotBeBasedOnBaseUri" xml:space="preserve">
+    <value>Failed to create absolute URI. The URI '{0}' is not valid because it cannot be based on '{1}'. When the URI for an operation is relative, you must remove all preceding forward slashes.</value>
+  </data>
+  <data name="ServiceOperation_VoidFunctionNotAllowed" xml:space="preserve">
+    <value>A function that returns void is a routine with no observable result; such function is now allowed in the data service.</value>
+  </data>
+  <data name="ResourceAssociationSetEnd_ResourceTypeMustBeTheDeclaringType" xml:space="preserve">
+    <value>The resource type '{0}' specified for the ResourceAssociationSetEnd is not valid for resource property '{1}'. The resource type must be the declaring type of the property.</value>
+  </data>
+  <data name="ResourceType_InvalidValueForResourceTypeKind" xml:space="preserve">
+    <value>ResourceTypeKind.Primitive, ResourceTypeKind.Collection and ResourceTypeKind.EntityCollection are not valid values for the '{0}' parameter.</value>
+  </data>
+  <data name="RequestQueryProcessor_QuerySelectOptionNotApplicable" xml:space="preserve">
+    <value>Query option $select cannot be applied to the requested resource.</value>
+  </data>
+  <data name="BaseServiceProvider_ParameterTypeNotSupported" xml:space="preserve">
+    <value>Method '{0}' has a parameter '{1}' of type '{2}' which is not supported for service operations. Only primitive types are supported as parameters.</value>
+  </data>
+  <data name="RequestQueryProcessor_ServiceActionMustBeLastSegmentInSelect" xml:space="preserve">
+    <value>The service action '{0}' must be the last segment in a $select path.</value>
+  </data>
+  <data name="DataService_NotImplementedException" xml:space="preserve">
+    <value>Not Implemented</value>
+  </data>
+  <data name="ServiceOperation_NonBindingParametersCannotBeEntityorEntityCollection" xml:space="preserve">
+    <value>The '{0}' parameter is of resource type kind '{1}' and it is not the binding parameter. Parameter of type kind '{1}' is only supported for the binding parameter.</value>
+  </data>
+  <data name="HttpProcessUtility_EncodingNotSupported" xml:space="preserve">
+    <value>Character set '{0}' is not supported.</value>
+  </data>
+  <data name="ResourceType_TypeCannotBeValueType" xml:space="preserve">
+    <value>The CLR type for the resource type cannot be a value type.</value>
+  </data>
+  <data name="BadRequest_MimeTypeMustBeApplicationAtom" xml:space="preserve">
+    <value>Error processing request stream. The mime type '{0}' specified is not valid. The type attribute in link element must have '{1}' as the mime type.</value>
+  </data>
+  <data name="Serializer_LoopsNotAllowedInComplexTypes" xml:space="preserve">
+    <value>A circular loop was detected while serializing the property '{0}'. You must make sure that loops are not present in properties that return a collection property or complex type.</value>
+  </data>
+  <data name="ObjectContext_PublicPropertyNotDefinedOnType" xml:space="preserve">
+    <value>The CLR type '{0}' does not define a public property named '{1}'. All properties declared on types in the object model must be public.</value>
+  </data>
+  <data name="EpmSourceTree_NonStringPropertyMappedToConditionAttribute" xml:space="preserve">
+    <value>The property '{0}' on type '{1}' is mapped to '{2}'. Mapping to '{2}' is only allowed for string properties.</value>
+  </data>
+  <data name="RequestQueryParser_UnknownFunction" xml:space="preserve">
+    <value>Unknown function '{0}' at position {1}.</value>
+  </data>
+  <data name="Syndication_ErrorReadingEntry" xml:space="preserve">
+    <value>Error reading syndication item: '{0}'.</value>
+  </data>
+  <data name="DataService_BatchExceedMaxChangeSetCount" xml:space="preserve">
+    <value>The batch request operation exceeds the maximum {0} changes per change set.</value>
+  </data>
+  <data name="DataService_Projections_ProjectionsWithOldExpandProvider" xml:space="preserve">
+    <value>The request could not be processed because the data service implements IExpandProvider, which does not support projection.</value>
+  </data>
+  <data name="RequestQueryProcessor_CannotSpecifyOpenPropertyAndDeclaredPropertyAtTheSameTime" xml:space="preserve">
+    <value>The property '{0}' on type '{1}' resolves to an open property, but the same property is already a declared property on type '{2}'. In a query URI, the same property cannot belong to two different types in the same type hierarchy. You must either remove one property from the query URI or use the same type identifier.</value>
+  </data>
+  <data name="BadRequest_ResourceCanBeCrossReferencedOnlyForBindOperation" xml:space="preserve">
+    <value>Error processing request stream. In batch mode, a resource can be cross-referenced only for bind/unbind operations.</value>
+  </data>
+  <data name="RequestQueryProcessor_ProjectedPropertyWithoutMatchingExpand" xml:space="preserve">
+    <value>Only properties specified in $expand can be traversed in $select query options. Property {0}.</value>
+  </data>
+  <data name="BadRequest_CollectionOfCollectionNotSupported" xml:space="preserve">
+    <value>Collection properties of a collection type are not supported.</value>
+  </data>
+  <data name="ReflectionProvider_CollectionOfUnsupportedTypeProperty" xml:space="preserve">
+    <value>The property '{0}' on type '{1}' is a collection property with unsupported item type '{2}'. Only primitive types and complex types are valid item types for a collection property.</value>
+  </data>
+  <data name="BadRequestStream_InvalidUriMetadata" xml:space="preserve">
+    <value>Error processing request stream. 'uri' element value must be of string type.</value>
+  </data>
+  <data name="BadRequest_MissingUriForLinkOperation" xml:space="preserve">
+    <value>Missing URI element. For link operations, URI element must be specified.</value>
+  </data>
+  <data name="ObjectContext_MissingExtendedAttributeType" xml:space="preserve">
+    <value>The required extended attribute '{0}' is missing for resource type '{1}'.</value>
+  </data>
+  <data name="DataServiceActionProviderWrapper_AdvertiseServiceActionCannotReturnNullActionToSerialize" xml:space="preserve">
+    <value>The IDataServiceActionProvider.AdvertiseServiceAction() method must return a non-null value for the actionToSerialize parameter if it returns true.</value>
+  </data>
+  <data name="DataService_ContextTypeIsAbstract" xml:space="preserve">
+    <value>Unable to create data provider. Type '{0}' for data source in '{1}' is abstract.</value>
+  </data>
+  <data name="RequestQueryProcessor_RequestVerbCannotCountError" xml:space="preserve">
+    <value>$count and $inlinecount only apply to an HTTP GET request.</value>
+  </data>
+  <data name="BadRequest_CannotNullifyValueTypeProperty" xml:space="preserve">
+    <value>The request is not valid. To set a value to null, the URI must refer to a property whose type is not of value type.</value>
+  </data>
+  <data name="DataServiceProviderWrapper_MultipleEntitySetsWithSameName" xml:space="preserve">
+    <value>More than one entity set with the name '{0}' was found. Entity set names must be unique.</value>
+  </data>
+  <data name="BadRequest_InlineElementMustContainValidElement" xml:space="preserve">
+    <value>Error processing request stream. '{0}' is not a valid child element under '{1}' element. The '{1}' can only have '{2}' or '{3}' as child elements and they should live in the atom namespace.</value>
+  </data>
+  <data name="PropertyRequiresNonNegativeNumber" xml:space="preserve">
+    <value>Property '{0}' requires a non-negative value.</value>
+  </data>
+  <data name="DataServiceConfiguration_CountNotAccepted" xml:space="preserve">
+    <value>The ability of the data service to return row count information is disabled. To enable this functionality, set the DataServiceConfiguration.AcceptCountRequests property to true.</value>
+  </data>
+  <data name="ExpandSegment_FilterShouldBeLambda" xml:space="preserve">
+    <value>The filter for an expand segment should be a lambda type, but the specified filter is of type '{0}'.</value>
+  </data>
+  <data name="DataService_VersionCannotBeParsed" xml:space="preserve">
+    <value>Request version '{0}' specified for header '{1}' is not valid. Please specify a valid version value.</value>
+  </data>
+  <data name="HttpContextServiceHost_XMethodIncorrectValue" xml:space="preserve">
+    <value>The X-HTTP-Method header should be 'PUT', 'MERGE', 'PATCH' or 'DELETE', but is '{0}' instead.</value>
+  </data>
+  <data name="BadRequest_CannotSpecifyValueOrChildElementsForNullElement" xml:space="preserve">
+    <value>Error processing request stream. Element '{0}' cannot have child elements or a value specified if it has a null attribute with true value.</value>
+  </data>
+  <data name="HttpContextServiceHost_XMethodIncorrectCount" xml:space="preserve">
+    <value>The X-HTTP-Method header should have a single value, but has '{0}' instead.</value>
+  </data>
+  <data name="BadRequest_MoreThanOneUriElementSpecified" xml:space="preserve">
+    <value>Error processing request stream. Exactly one URI must be specified for link operations.</value>
+  </data>
+  <data name="BadRequest_InvalidUriForMediaResource" xml:space="preserve">
+    <value>The URI '{0}' is not valid. The segment before '$value' must be a Media Link Entry or a primitive property.</value>
+  </data>
+  <data name="DataService_HostNotAttached" xml:space="preserve">
+    <value>There is no host attached to this service. Call AttachHost to provide a valid host that can provide a request to process.</value>
+  </data>
+  <data name="MetadataSerializer_NoResourceAssociationSetForNavigationProperty" xml:space="preserve">
+    <value>No visible ResourceAssociationSet found for navigation property '{0}' on type '{1}'. There must be at least one ResourceAssociationSet for each navigation property.</value>
+  </data>
+  <data name="BadRequestStream_MissingMemberName" xml:space="preserve">
+    <value>Error processing request stream. In JSON, every object is made up of name/value pairs and the name must be specified.</value>
+  </data>
+  <data name="MetadataProviderUtils_PropertiesMustNotContainReservedChars" xml:space="preserve">
+    <value>The name '{0}' of a property is invalid; property names must not contain any of the reserved characters {1}.</value>
+  </data>
+  <data name="ALinq_UnsupportedExpression" xml:space="preserve">
+    <value>The expression type {0} is not supported.</value>
+  </data>
+  <data name="ObjectContext_InvalidAttributeForNonSyndicationItemsMember" xml:space="preserve">
+    <value>The extended attribute '{0}' on member '{1}' of type '{2}' is not allowed for current EntityPropertyMappingAttribute.</value>
+  </data>
+  <data name="ResourceProperty_MimeTypeAttributeEmpty" xml:space="preserve">
+    <value>MimeType for property '{0}' is not valid. Please make sure that the mime type is not empty.</value>
+  </data>
+  <data name="DataServiceProviderWrapper_ActionHasNoBindableSet" xml:space="preserve">
+    <value>The service action '{0}' has the binding parameter of type '{1}', but there is no visible resource set for that type. The service action should be made hidden or a resource set for type '{1}' should be made visible.</value>
+  </data>
+  <data name="DataServiceConfiguration_ServiceNameNotFound" xml:space="preserve">
+    <value>The given name '{0}' was not found in the service operations.</value>
+  </data>
+  <data name="UpdatableWrapper_MissingUpdateProviderInterface" xml:space="preserve">
+    <value>The data source must implement IDataServiceUpdateProvider or IDataServiceUpdateProvider2 to support updates.</value>
+  </data>
+  <data name="BadRequestStream_CollectionMissingResults" xml:space="preserve">
+    <value>Error processing request stream. The 'results' element could not be found in the collection property '{0}'.</value>
+  </data>
+  <data name="BadRequest_InvalidUriForPutOperation" xml:space="preserve">
+    <value>The URI '{0}' is not valid for PUT operation. The URI must point to a single resource for PUT operations.</value>
+  </data>
+  <data name="BadRequest_InvalidContentType" xml:space="preserve">
+    <value>The content type '{0}' is not valid for type '{1}'.</value>
+  </data>
+  <data name="BadRequestStream_InvalidContent" xml:space="preserve">
+    <value>Error processing request stream. JSON text specified is not valid.</value>
+  </data>
+  <data name="DataServiceActionProviderWrapper_ResourceTypeMustBeAssignableToBindingParameterResourceType" xml:space="preserve">
+    <value>The service action '{0}' returned by IDataServiceActionProvider.GetServiceActionsByBindingParameterType() has a binding parameter of type '{1}' that is not bindable to the resource type '{2}'. The GetServiceActionsByBindingParameterType method must return service actions that are bindable to the given resource type.</value>
+  </data>
+  <data name="ExpandSegment_FilterBodyShouldTakeOneParameter" xml:space="preserve">
+    <value>The filter for an expand segment should take a single parameter, but the specified filter takes '{0}'.</value>
+  </data>
+  <data name= "RequestUriProcessor_AbsoluteRequestUriMustBeAbsolute" xml:space="preserve">
+    <value>The AbsoluteRequestUri property of the data service host must be an absolute URI.</value>
+  </data>
+  <data name= "RequestUriProcessor_CannotSpecifyAfterPostLinkSegment" xml:space="preserve">
+    <value>The request URI is not valid. The segment '{0}' is not valid. Since the uri contains the '{1}' segment, there must be only one segment specified after that.</value>
+  </data>
+  <data name="BadRequest_DeepRecursion" xml:space="preserve">
+    <value>Recursion reached allowed limit: '{0}'.</value>
+  </data>
+  <data name="TargetElementTypeOfTheUriSpecifiedDoesNotMatchWithTheExpectedType" xml:space="preserve">
+    <value>The entity type '{0}' that the URI refers to does not match with the expected entity type '{1}'.</value>
+  </data>
+  <data name= "RequestUriProcessor_UnbindableOperationsMustBeCalledAtRootLevel" xml:space="preserve">
+    <value>The operation '{0}' is not bindable and must be called at the root level.</value>
+  </data>
+  <data name="RequestQueryProcessor_QueryNoOptionsApplicable" xml:space="preserve">
+    <value>Query options $select, $expand, $filter, $orderby, $inlinecount, $skip, $skiptoken and $top are not supported by this request method or cannot be applied to the requested resource.</value>
+  </data>
+  <data name="ResourceProperty_NamedStreamCannotReflect" xml:space="preserve">
+    <value>The property 'CanReflectOnInstanceTypeProperty' on a NamedStream property is not settable.</value>
+  </data>
+  <data name="UpdatableWrapper_MissingIUpdatableForV1Provider" xml:space="preserve">
+    <value>The data source must implement IUpdatable, IDataServiceUpdateProvider or IDataServiceUpdateProvider2 to support updates.</value>
+  </data>
+  <data name="DataService_InvalidRequestVersion" xml:space="preserve">
+    <value>Request version '{0}' is not a valid request version. The only supported versions are {1}.</value>
+  </data>
+  <data name="ReflectionProvider_InvalidProperty" xml:space="preserve">
+    <value>The property '{0}' on type '{1}' is not a valid property. Make sure that the type of the property is a public type and a supported primitive type or a entity type with a valid key or a complex type.</value>
+  </data>
+  <data name="BasicExpandProvider_UnsupportedExpandBreadth" xml:space="preserve">
+    <value>$expand does not support '{0}' properties expanded simultaneously on the same segment.</value>
+  </data>
+  <data name="RequsetQueryParser_ExpectingLiteralInSkipToken" xml:space="preserve">
+    <value>Skip token values are expected to be literals. Unrecognized literal '{0}' found.</value>
+  </data>
+  <data name="ResourceSetPathExpression_PathExpressionMustStartWithBindingParameterName" xml:space="preserve">
+    <value>The path expression '{0}' is not a valid path expression. A valid path expression must start with the binding parameter name '{1}'.</value>
+  </data>
+  <data name="BadRequest_ErrorInConvertingPropertyValue" xml:space="preserve">
+    <value>Error processing request stream. Error encountered in converting the value from request payload for property '{0}' to type '{1}', which is the property's expected type. See inner exception for more detail.</value>
+  </data>
+  <data name="OperationWrapper_PathExpressionRequiresBindingSet" xml:space="preserve">
+    <value>The operation '{0}' contains a path expression and cannot be invoked as a top level operation.</value>
+  </data>
+  <data name="BadProvider_UnknownResourceType" xml:space="preserve">
+    <value>The resource type '{0}' is not known to the provider.</value>
+  </data>
+  <data name="ObjectContext_InvalidDefaultEntityContainerName" xml:space="preserve">
+    <value>Default entity set name '{0}' is not valid. Please make sure that the entity set name is valid.</value>
+  </data>
+  <data name="ServiceOperation_ActionBindingMustBeEntityOrEntityCollection" xml:space="preserve">
+    <value>An action's binding parameter must be of type Entity or EntityCollection.</value>
+  </data>
+  <data name="ServiceOperation_InvalidReturnType" xml:space="preserve">
+    <value>The resource type '{0}' is not a type that can be returned by a function or action. A function or action can only return values of an entity type, an entity collection type, a complex type, a collection type or any primitive type, other than the stream type.</value>
+  </data>
+  <data name="ServiceOperation_DuplicateParameterName" xml:space="preserve">
+    <value>A parameter with the name '{0}' already exists. Please make sure that every parameter has a unique name.</value>
+  </data>
+  <data name="BadRequest_InvalidTypeParameterSpecified_MustBeFeedOrEntry" xml:space="preserve">
+    <value>Error processing request stream. The value '{0}' of the 'type' parameter in the 'type' attribute of the link element is not valid. The value must be '{1}' or '{2}.</value>
+  </data>
+  <data name= "RequestUriProcessor_PropertyNotFound" xml:space="preserve">
+    <value>Type '{0}' does not have a property named '{1}'; there is no service action named '{1}' that is bindable to the type '{0}'; and there is no type with the name '{1}'.</value>
+  </data>
+  <data name="DataServiceProviderWrapper_ResourceContainerNotReadonly" xml:space="preserve">
+    <value>The resource set '{0}' returned by the provider is not read-only. Please make sure that all the resource sets are set to read-only.</value>
+  </data>
+  <data name="ResourceAssociationSetEnd_ResourceTypeMustBeAssignableToResourceSet" xml:space="preserve">
+    <value>The resourceType parameter must be a type that is assignable to the resource set specified by the resourceSet parameter.</value>
+  </data>
+  <data name="ServiceOperation_BindingParameterMustBeEntityToUsePathExpression" xml:space="preserve">
+    <value>The binding parameter type must be an entity type or an entity collection type when '{0}' is not null.</value>
+  </data>
+  <data name="DataServiceProviderWrapper_CollectionOfComplexTypeWithDerivedTypes" xml:space="preserve">
+    <value>Complex type '{0}' has derived types and is used as the item type in a collection property. Only collection properties containing complex types without derived types are supported.</value>
+  </data>
+  <data name="RequestQueryProcessor_IncorrectArgumentFormat" xml:space="preserve">
+    <value>Incorrect format for {0} argument '{1}'.</value>
+  </data>
+  <data name="RequestQueryParser_NullOperatorUnsupported" xml:space="preserve">
+    <value>The operator '{0}' at position {1} of expression '{2}' is not supported for the 'null' literal; only equality checks are supported.</value>
+  </data>
+  <data name="RequestQueryParser_SyntaxError" xml:space="preserve">
+    <value>Syntax error at position {0}.</value>
+  </data>
+  <data name="DataService_ExpandCountExceeded" xml:space="preserve">
+    <value>The request includes {0} $expand segment(s), but the maximum allowed is {1}.</value>
+  </data>
+  <data name="RequestQueryParser_UnknownResourceType" xml:space="preserve">
+    <value>A resource type named '{0}' does not exist at position {1}.</value>
+  </data>
+  <data name="Syndication_InvalidOpenPropertyName" xml:space="preserve">
+    <value>One or more open properties of the given instance of type '{0}' has a null or empty name specified.</value>
+  </data>
+  <data name="Syndication_InvalidOpenPropertyType" xml:space="preserve">
+    <value>The open property '{0}' has an value which is not of valid type.. Please make sure that the property type is supported.</value>
+  </data>
+  <data name="BaseServiceProvider_OverloadingNotSupported" xml:space="preserve">
+    <value>Overloading is not supported but type '{0}' has an overloaded method '{1}'.</value>
+  </data>
+  <data name="BadRequestStream_MissingTypeInformationForOpenTypeProperties" xml:space="preserve">
+    <value>Error processing request stream. Type information is not specified for open property.</value>
+  </data>
+  <data name="RequestQueryParser_ExpressionExpected" xml:space="preserve">
+    <value>Expression expected at position {0}.</value>
+  </data>
+  <data name="BasicExpandProvider_ExpandNotSupportedForOpenProperties" xml:space="preserve">
+    <value>$expand does not support open properties.</value>
+  </data>
+  <data name= "RequestUriProcessor_ActionComposedWithWebInvokeServiceOperationNotAllowed" xml:space="preserve">
+    <value>An action cannot be composed with a service operation that uses the WebInvokeAttribute.</value>
+  </data>
+  <data name="DataService_IDataServiceQueryProviderNull" xml:space="preserve">
+    <value>For custom providers, if GetService returns non-null for IDataServiceMetadataProvider, it must not return null for IDataServiceQueryProvider.</value>
+  </data>
+  <data name="DataServiceHost_ResponseHeadersCannotBeNull" xml:space="preserve">
+    <value>The ResponseHeaders property of the data service host cannot be null.</value>
+  </data>
+  <data name="BadRequest_InvalidUriForMergeOperation" xml:space="preserve">
+    <value>The URI '{0}' is not valid for MERGE operation. The URI must point to a single resource for MERGE operations. MERGE operation against a media resource is not supported.</value>
+  </data>
+  <data name="ETagAttribute_MustSpecifyAtleastOnePropertyName" xml:space="preserve">
+    <value>ETag attribute must specify at least one property name.</value>
+  </data>
+  <data name="BadRequest_CollectionTypeExpected" xml:space="preserve">
+    <value>The type '{0}' specified on collection property '{1}' is not a collection type. Only a collection type can be specified on a collection property.</value>
+  </data>
+  <data name="HttpProcessUtility_ClosingQuoteNotFound" xml:space="preserve">
+    <value>Value for MIME type parameter '{0}' is incorrect because the closing quote character could not be found while the parameter value started with a quote character.</value>
+  </data>
+  <data name="HttpProcessUtility_MediaTypeRequiresSubType" xml:space="preserve">
+    <value>Media type requires a subtype definition.</value>
+  </data>
+  <data name= "RequestUriProcessor_SegmentDoesNotSupportQueryPortion" xml:space="preserve">
+    <value>The request URI is not valid. The segment '{0}' cannot include key predicates or empty parenthesis.</value>
+  </data>
+  <data name="UpdatableWrapper_MustImplementDataServiceUpdateProvider2ToSupportServiceActions" xml:space="preserve">
+    <value>To support service actions, the data service must implement IServiceProvider.GetService() to return an implementation of IDataServiceUpdateProvider2 or the data source must implement IDataServiceUpdateProvider2.</value>
+  </data>
+  <data name= "RequestUriProcessor_InvalidTypeIdentifier_MustBeASubType" xml:space="preserve">
+    <value>The type name '{0}' specified in the URI is not a valid type. Please make sure that the type name is valid and that it derives from the type '{1}'.</value>
+  </data>
+  <data name="RequestQueryProcessor_CollectionPropertyAsInnerSelectSegment" xml:space="preserve">
+    <value>The projection from property '{1}' of type '{0}' is not valid. The $select query option does not support projecting items from a collection property.</value>
+  </data>
+  <data name="ObjectContext_PropertyMustBeNavigationProperty" xml:space="preserve">
+    <value>The property '{0}' must be a navigation property defined on the resource type '{1}'.</value>
+  </data>
+  <data name="RequestQueryParser_IncompatibleOperands" xml:space="preserve">
+    <value>Operator '{0}' incompatible with operand types '{1}' and '{2}' at position {3}.</value>
+  </data>
+  <data name="RequestQueryParser_OrderByDoesNotSupportType" xml:space="preserve">
+    <value>Ordering does not support expressions of type '{0}'.</value>
+  </data>
+  <data name="BadRequest_CannotSetCollectionsToNull" xml:space="preserve">
+    <value>Error processing request stream. The property '{0}' represents a collection of resources and hence cannot be set to null.</value>
+  </data>
+  <data name="EpmSourceTree_CollectionPropertyCannotBeMapped" xml:space="preserve">
+    <value>The property '{0}' on the type '{1}' is a collection. Collection properties cannot be mapped with an entity property mapping.</value>
+  </data>
+  <data name="DataServiceProviderWrapper_MultipleServiceOperationsWithSameName" xml:space="preserve">
+    <value>More than one service operation with the name '{0}' was found. Service operation names must be unique.</value>
+  </data>
+  <data name="BadRequestStream_UriMetadataNotAllowedOnComplexType" xml:space="preserve">
+    <value>Error processing request stream. The '__metadata' for complex type '{0}' may not specify an element named 'uri'.</value>
+  </data>
+  <data name="ResourceProperty_Sealed" xml:space="preserve">
+    <value>The resource property '{0}' cannot be modified since it is already set to read-only.</value>
+  </data>
+  <data name="ObjectContext_ComplexTypeExpected" xml:space="preserve">
+    <value>A complex resource type is expected, however the resource type '{0}' is of type kind '{1}'.</value>
+  </data>
+  <data name="BadRequest_NullRequestStream" xml:space="preserve">
+    <value>Error in processing request - there is no request body available.</value>
+  </data>
+  <data name="BadRequest_CannotSetTopLevelResourceToNull" xml:space="preserve">
+    <value>Error processing request stream. Since URI '{0}' points directly to a top level resource, it cannot be set to null.</value>
+  </data>
+  <data name="Serializer_NoETagPropertiesForType" xml:space="preserve">
+    <value>If-Match or If-None-Match headers cannot be specified if the target type does not have etag properties defined.</value>
+  </data>
+  <data name="ResourceType_ComplexTypeCannotBeOpen" xml:space="preserve">
+    <value>Complex types can not be marked as 'Open'. Error occurred for type '{0}'.</value>
+  </data>
+  <data name="DataService_MaxDSVLowerThanMinDSV" xml:space="preserve">
+    <value>The MaxDataServiceVersion '{0}' is lower than the MinDataServiceVersion '{1}'.</value>
+  </data>
+  <data name="DataService_ContentIdMustBeAnInteger" xml:space="preserve">
+    <value>'{0}' is not a valid value for the 'Content-ID' header. In batch requests, the 'Content-ID' header must be an integer value.</value>
+  </data>
+  <data name="ResourceSetPathExpression_PropertyMustBeEntityType" xml:space="preserve">
+    <value>The path expression '{0}' is not a valid expression because the segment '{1}' is a property of type '{2}'. A valid path expression must only contain properties of entity type.</value>
+  </data>
+  <data name="BadRequest_CollectionItemCanNotBeNull" xml:space="preserve">
+    <value>An item in the collection property '{0}' has a null value. Collection properties that contain a null item are not supported.</value>
+  </data>
+  <data name="RequestQueryParser_IncompatibleOperand" xml:space="preserve">
+    <value>Operator '{0}' incompatible with operand type '{1}' at position {2}.</value>
+  </data>
+  <data name="BadRequest_CollectionItemWrongType" xml:space="preserve">
+    <value>An item in the collection property '{0}' is not of the correct type. All items in this collection property must be of type '{1}'.</value>
+  </data>
+  <data name= "RequestUriProcessor_TypeIdentifierCannotBeSpecifiedAfterTypeIdentifier" xml:space="preserve">
+    <value>Type identifier '{0}' in the URI cannot be specified immediately after '{1}' type identifier. There must be a property name specified between 2 type identifiers.</value>
+  </data>
+  <data name="EpmSourceTree_EndsWithNonPrimitiveType" xml:space="preserve">
+    <value>The property '{0}' provided at the end of the PropertyName property of the EntityPropertyMappingAttribute on a resource type is not a primitive type.</value>
+  </data>
+  <data name="ResourceType_KeyPropertiesOnlyOnEntityTypes" xml:space="preserve">
+    <value>Key properties can only be added to ResourceType instances with a ResourceTypeKind equal to 'EntityType'.</value>
+  </data>
+  <data name="MetadataProviderEdmModel_UnsupportedResourceTypeKind" xml:space="preserve">
+    <value>The resource type kind '{0}' is not supported.</value>
+  </data>
+  <data name="Serializer_ResultsExceedMax" xml:space="preserve">
+    <value>The response exceeds the maximum {0} results per collection.</value>
+  </data>
+  <data name="RequestQueryParser_UnterminatedLiteral" xml:space="preserve">
+    <value>Unterminated literal at position {0} in '{1}'.</value>
+  </data>
+  <data name="BadRequestStream_InvalidJsonNameSpecifiedOrExtraComma" xml:space="preserve">
+    <value>Error processing request stream. Either an extra comma is specified at the end or name is an empty string.</value>
+  </data>
+  <data name="ServiceOperation_ReturnTypeAndResultSetMustMatch" xml:space="preserve">
+    <value>When '{0}' is an entity type or an entity collection type, '{1}' and '{2}' cannot be both null and the resource type of the result set must be assignable from '{0}'.</value>
+  </data>
+  <data name="ResourceAssociationSet_ResourcePropertyCannotBeBothNull" xml:space="preserve">
+    <value>The ResourceProperty of the ResourceAssociationEnds cannot both be null.</value>
+  </data>
+  <data name="MetadataSerializer_AccessEnabledTypeNoLongerExists" xml:space="preserve">
+    <value>Resource type '{0}' was registered by DataServiceConfiguration.EnableAccess(), however it no longer exists in the data service provider.</value>
+  </data>
+  <data name="RequestQueryParser_DisallowMemberAccessForResourceSetReference" xml:space="preserve">
+    <value>The '{0}' is not allowed at position {1}. Member access or specifying a type identifier on a resource set reference is not allowed.</value>
+  </data>
+  <data name="DataService_BatchExceedMaxBatchCount" xml:space="preserve">
+    <value>The batch request exceeds the maximum {0} operations per request.</value>
+  </data>
+  <data name="BadRequest_UnsupportedRequestContentType" xml:space="preserve">
+    <value>The content type '{0}' is not supported.</value>
+  </data>
+  <data name="BadProvider_PropertyMustBeNavigationPropertyOnType" xml:space="preserve">
+    <value>The resource property '{0}' must be a navigation property on the resource type '{1}'.</value>
+  </data>
+  <data name="ObjectContext_HasStreamAttributeEmpty" xml:space="preserve">
+    <value>HasStream attribute for entity type '{0}' cannot be empty.</value>
+  </data>
+  <data name="DataServiceStreamProviderWrapper_GetStreamContentTypeReturnsEmptyOrNull" xml:space="preserve">
+    <value>The method 'IDataServiceStreamProvider.GetStreamContentType' must not return a null or empty string.</value>
+  </data>
+  <data name="ResourceSetPathExpression_EmptySegment" xml:space="preserve">
+    <value>The path expression '{0}' is not a valid expression because it contains an empty segment or it ends with '/'.</value>
+  </data>
+  <data name="ObjectContext_UnableToLoadMetadataForType" xml:space="preserve">
+    <value>Unable to load metadata for type '{0}'. The mapped OSpace type was not found. Please make sure you register the mapped OSpace type.</value>
+  </data>
+  <data name="ResourceProperty_MimeTypeNotValid" xml:space="preserve">
+    <value>MIME type '{0}' for property '{1}' is not in 'type/subtype' format. Please specify a valid value for mime type.</value>
+  </data>
+  <data name="BadRequestStream_InvalidMetadataContent" xml:space="preserve">
+    <value>Error processing request stream. '__metadata' element must be a valid JSON object.</value>
+  </data>
+  <data name="ServiceOperation_InvalidResultType" xml:space="preserve">
+    <value>The resource type '{0}' is not a type that can be returned by a service operation. A service operation can only return values of an entity type, a complex type or any primitive type, other than the stream type.</value>
+  </data>
+  <data name="ObjectContext_UnknownPropertyNameInEpmAttributes" xml:space="preserve">
+    <value>The property path '{0}' specified for the EntityPropertyMappingAttribute does not correspond to any property in type '{1}' or one of its base types.</value>
+  </data>
+  <data name="ReflectionProvider_EntityPropertyWithNoEntitySet" xml:space="preserve">
+    <value>Type '{0}' has property '{1}' of entity type. Either this property has no corresponding entity set in the data context or one of its inherited types has a corresponding entity set. Specify IgnoreProperties attribute on the entity type for this property or use a property type that has a corresponding entity set in the data context.</value>
+  </data>
+  <data name="ResourceType_SpatialKeyOrETag" xml:space="preserve">
+    <value>A spatial property '{0}' cannot be used as key or ETag for the entity type '{1}'.</value>
+  </data>
+  <data name="MetadataProviderEdmModel_UnsupportedResourcePropertyKind" xml:space="preserve">
+    <value>The resource property kind '{0}' is not supported.</value>
+  </data>
+  <data name="DataServiceProviderWrapper_MultipleResourceTypesWithSameName" xml:space="preserve">
+    <value>More than one resource type with the name '{0}' was found. Resource type names must be unique.</value>
+  </data>
+  <data name="DataServiceException_UnsupportedMediaType" xml:space="preserve">
+    <value>Unsupported media type requested.</value>
+  </data>
+  <data name="ServiceOperation_ResultTypeAndKindMustMatch" xml:space="preserve">
+    <value>The '{1}' parameter must be null when the '{0}' parameter value is '{2}', however the '{1}' parameter cannot be null when the '{0}' parameter is of any value other than '{2}'. Please make sure that the '{0}' parameter value is set according to the '{1}' parameter value.</value>
+  </data>
+  <data name="BadRequest_DeepRecursion_General" xml:space="preserve">
+    <value>Recursion reached allowed limit.</value>
+  </data>
+</root>

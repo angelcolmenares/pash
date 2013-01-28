@@ -1,0 +1,151 @@
+TOPIC
+    about_OData_Query
+
+OVERVIEW
+	The OData PowerShell provider supports custom formatting of entities.
+
+DETAILS
+	OData entities can include an optional category element.  According to the
+	specification, the term value of this element indicates the entity type of 
+	the entry.  For example, entries returned from the NuGet package feed include
+	this category term:
+
+	<?xml version="1.0" encoding="iso-8859-1" standalone="yes"?>
+	<feed xml:base="http://packages.nuget.org/v1/FeedService.svc/" xmlns:d="http://schemas.microsoft.com/ado/2007/08/dataservices" xmlns:m="http://schemas.microsoft.com/ado/2007/08/dataservices/metadata" xmlns="http://www.w3.org/2005/Atom">
+	  ...
+	  <entry>
+		<id>http://packages.nuget.org/v1/FeedService.svc/Packages(Id='StudioShell',Version='1.2')</id>
+		...
+		<category term="NuGetGallery.V1FeedPackage" scheme="http://schemas.microsoft.com/ado/2007/08/dataservices/scheme" />
+		
+	When this category term is present, the OData PowerShell provider uses it
+	as the typename of the objects returned from the feed.  In the case above, 
+	the entry is returned to the pipe as a generic object with a typename of
+	"NuGetGallery.V1FeedPackage":
+
+	> get-item nuget:/packages -filter "Id eq 'StudioShell'" | get-member
+
+	   TypeName: NuGetGallery.V1FeedPackage
+
+	Name                     MemberType   Definition                                                                           
+	----                     ----------   ----------                                                                           
+	Equals                   Method       bool Equals(System.Object value)                                                     
+	GetHashCode              Method       int GetHashCode()                                                                    
+	GetType                  Method       type GetType()                                                                       
+	ToString                 Method       string ToString()                                                                    
+	Authors                  NoteProperty System.String ...
+	Categories               NoteProperty System.String ...
+	Copyright                NoteProperty System.String ...
+	...
+
+	This allows you to include custom formats for different OData feeds.  For
+	instance, you can create a custom format file for the NuGet OData entities:
+
+	<?xml version="1.0" encoding="utf-8" ?>
+	<Configuration>
+		<Controls>
+			<Control>
+				<Name>NuGet-GroupingFormat</Name>
+						<CustomControl>
+							<CustomEntries>
+								<CustomEntry>
+									<CustomItem>
+										<Frame>
+											<LeftIndent>4</LeftIndent>
+											<CustomItem>
+												<Text>Container: </Text>
+												<ExpressionBinding>
+													<PropertyName>PSParentPath</PropertyName>
+												</ExpressionBinding>                                            
+											  <NewLine/>
+											</CustomItem> 
+										</Frame>
+									</CustomItem>
+								</CustomEntry>
+							</CustomEntries>
+				</CustomControl>
+			</Control>
+		</Controls>
+
+		<ViewDefinitions>
+			<View>
+				<Name>NuGet-Entity</Name>
+				<ViewSelectedBy>
+					<TypeName>NuGetGallery.V1FeedPackage</TypeName>
+				</ViewSelectedBy>
+				<GroupBy>
+					<PropertyName>PSParentPath</PropertyName>
+					<CustomControlName>NuGet-GroupingFormat</CustomControlName>  
+				</GroupBy>
+				<TableControl>
+					<TableHeaders>
+					  <TableColumnHeader>
+							<Label>Name</Label>
+							<Alignment>Left</Alignment>
+						</TableColumnHeader>
+					  <TableColumnHeader>
+							<Label>Version</Label>
+							<Alignment>Left</Alignment>
+						</TableColumnHeader>
+					  <TableColumnHeader>
+						<Label>Downloads</Label>
+						<Alignment>Right</Alignment>
+					  </TableColumnHeader>
+					</TableHeaders>
+					<TableRowEntries>
+					  <TableRowEntry>
+							<TableColumnItems>
+							  <TableColumnItem>
+								<PropertyName>Id</PropertyName>
+							  </TableColumnItem>
+							  <TableColumnItem>
+									<PropertyName>Version</PropertyName>
+								</TableColumnItem>
+							  <TableColumnItem>
+									<PropertyName>DownloadCount</PropertyName>
+								</TableColumnItem>
+							</TableColumnItems>
+						</TableRowEntry>
+					</TableRowEntries>
+				</TableControl>
+			</View>
+		</ViewDefinitions>
+	</Configuration>
+
+	By importing this format file into your session along with the OData 
+	provider, you can customize the output of the NuGet feed:
+
+	> import-module OData
+	> new-psdrive -psp odata -name n -root 'http://packages.nuget.org';
+
+	Name           Used (GB)     Free (GB) Provider      ...
+	----           ---------     --------- --------      ...
+	n                                      OData         ...
+
+	> get-item n:\packages -filter "Id eq 'StudioShell'"
+	
+	PSPath                   : OData::http:\\packages.nuget.org\packages
+	PSParentPath             : OData::http:\\packages.nuget.org
+	PSChildName              : packages
+	PSDrive                  : nf
+	PSProvider               : OData
+	PSIsContainer            : True
+	Id                       : StudioShell
+	Version                  : 1.2
+	...
+
+	> Update-FormatData .\NuGet.Formats.ps1xml
+	> get-item n:\packages -filter "Id eq 'StudioShell'"
+
+		Container: OData::http:\\packages.nuget.org
+
+	Name                     Version                      Downloads
+	----                     -------                      ---------
+	StudioShell              1.2                                 51
+
+	
+SEE ALSO
+	http://o.codeplex.com
+	http://www.odata.org
+	about_OData
+	about_Format

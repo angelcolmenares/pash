@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<PowerShell>
+	<PowerShellEngine>
+		<ApplicationBase></ApplicationBase>
+	</PowerShellEngine>
+	<ModuleLogging>
+		<EnableModuleLogging>0</EnableModuleLogging>
+		<ModuleNames>
+			
+		</ModuleNames>
+	</ModuleLogging>
+	<Policy>
+		<PipelineMaxStackSizeMB>10</PipelineMaxStackSizeMB>
+		<WSManLocal>False</WSManLocal>
+	</Policy>
+</PowerShell>

@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>10.0.0</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{CB2AC207-FC8C-4EEF-9B7D-A81A34E00636}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>System.Runtime.DurableInstancing</RootNamespace>
+    <AssemblyName>System.Runtime.DurableInstancing</AssemblyName>
+    <SignAssembly>True</SignAssembly>
+    <AssemblyOriginatorKeyFile>..\..\mono.snk</AssemblyOriginatorKeyFile>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>True</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>False</Optimize>
+    <OutputPath>bin\Debug</OutputPath>
+    <DefineConstants>DEBUG;NET_4_5</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>False</ConsolePause>
+    <AllowUnsafeBlocks>True</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>none</DebugType>
+    <Optimize>True</Optimize>
+    <OutputPath>bin\Release</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>False</ConsolePause>
+    <AllowUnsafeBlocks>True</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Core" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <ItemGroup>
+    <Folder Include="Assembly\" />
+    <Folder Include="System.Runtime.DurableInstancing\" />
+    <Folder Include="System.Runtime\" />
+    <Folder Include="System.Runtime.Diagnostics\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Assembly\AssemblyInfo.cs" />
+    <Compile Include="System.Runtime.DurableInstancing\AllEnums.cs" />
+    <Compile Include="System.Runtime.DurableInstancing\AllExceptions.cs" />
+    <Compile Include="System.Runtime.DurableInstancing\InstanceHandle.cs" />
+    <Compile Include="System.Runtime.DurableInstancing\InstanceKey.cs" />
+    <Compile Include="System.Runtime.DurableInstancing\InstanceKeyView.cs" />
+    <Compile Include="System.Runtime.DurableInstancing\InstanceLockQueryResult.cs" />
+    <Compile Include="System.Runtime.DurableInstancing\InstanceOwner.cs" />
+    <Compile Include="System.Runtime.DurableInstancing\InstanceOwnerQueryResult.cs" />
+    <Compile Include="System.Runtime.DurableInstancing\InstancePersistenceCommand.cs" />
+    <Compile Include="System.Runtime.DurableInstancing\InstancePersistenceContext.cs" />
+    <Compile Include="System.Runtime.DurableInstancing\InstancePersistenceEvent.cs" />
+    <Compile Include="System.Runtime.DurableInstancing\InstanceStore.cs" />
+    <Compile Include="System.Runtime.DurableInstancing\InstanceStoreQueryResult.cs" />
+    <Compile Include="System.Runtime.DurableInstancing\InstanceValue.cs" />
+    <Compile Include="System.Runtime.DurableInstancing\InstanceView.cs" />
+    <Compile Include="Consts.cs" />
+    <Compile Include="Locale.cs" />
+    <Compile Include="MonoTODOAttribute.cs" />
+    <Compile Include="System.Runtime\IPersistencePipelineModule.cs" />
+    <Compile Include="System.Runtime\ReadOnlyDictionaryInternal`2.cs" />
+    <Compile Include="System.Runtime\ReadOnlyKeyedCollection`2.cs" />
+    <Compile Include="System.Runtime\CallbackException.cs" />
+    <Compile Include="System.Runtime\FatalException.cs" />
+    <Compile Include="System.Runtime\Fx.cs" />
+    <Compile Include="System.Runtime\SRCore.Designer.cs" />
+    <Compile Include="System.Runtime\InternalSR.Designer.cs" />
+    <Compile Include="System.Runtime\ExceptionTrace.cs" />
+    <Compile Include="System.Runtime.Diagnostics\ActivityControl.cs" />
+    <Compile Include="System.Runtime.Diagnostics\ComputerNameFormat.cs" />
+    <Compile Include="System.Runtime.Diagnostics\DiagnosticsEventProvider.cs" />
+    <Compile Include="System.Runtime.Diagnostics\DiagnosticTraceBase.cs" />
+    <Compile Include="System.Runtime.Diagnostics\DiagnosticTraceSource.cs" />
+    <Compile Include="System.Runtime.Diagnostics\DictionaryTraceRecord.cs" />
+    <Compile Include="System.Runtime.Diagnostics\EtwDiagnosticTrace.cs" />
+    <Compile Include="System.Runtime.Diagnostics\EtwProvider.cs" />
+    <Compile Include="System.Runtime.Diagnostics\EventDescriptor.cs" />
+    <Compile Include="System.Runtime.Diagnostics\EventFacility.cs" />
+    <Compile Include="System.Runtime.Diagnostics\EventLogCategory.cs" />
+    <Compile Include="System.Runtime.Diagnostics\EventLogEventId.cs" />
+    <Compile Include="System.Runtime.Diagnostics\EventLogger.cs" />
+    <Compile Include="System.Runtime.Diagnostics\EventSeverity.cs" />
+    <Compile Include="System.Runtime.Diagnostics\EventTraceActivity.cs" />
+    <Compile Include="System.Runtime.Diagnostics\PerformanceCounterNameAttribute.cs" />
+    <Compile Include="System.Runtime.Diagnostics\SafeEventLogWriteHandle.cs" />
+    <Compile Include="System.Runtime.Diagnostics\StringTraceRecord.cs" />
+    <Compile Include="System.Runtime.Diagnostics\TraceChannel.cs" />
+    <Compile Include="System.Runtime.Diagnostics\TraceCore.Designer.cs" />
+    <Compile Include="System.Runtime.Diagnostics\TraceEventLevel.cs" />
+    <Compile Include="System.Runtime.Diagnostics\TraceRecord.cs" />
+    <Compile Include="System.Runtime.Diagnostics\UnsafeNativeMethods.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Assembly\ChangeLog" />
+    <None Include="System.Runtime.DurableInstancing\ChangeLog" />
+    <None Include="ChangeLog" />
+    <None Include="System.Runtime\SRCore.resx" />
+    <None Include="System.Runtime\InternalSR.resx" />
+    <None Include="System.Runtime.Diagnostics\TraceCore.resx" />
+  </ItemGroup>
+</Project>

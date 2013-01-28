@@ -1,0 +1,33 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+<head>
+	<meta charset="UTF-8"/>
+	<title>PowerShell OData Query Tester</title>
+	<link rel="stylesheet" type="text/css" href="xv.css" media="all" />
+	<script type="text/javascript" src="xv.js"></script>
+</head>
+<body>
+	<div class="xv-search-panel">
+		<input type="search" class="xv-load-field" id="urlinput" value="/Microsoft.Management.Odata.svc/" style="width:640px" style="padding:3px" />
+		<input type="button" onclick="loadDocument();" value="Load" style="padding:3px" /><br />
+		<input type="search" class="xv-search-field" spellcheck="false" placeholder="Search by name or XPath" />
+		<span class="xv-search-xpath-result"></span>
+	</div>
+	<div class="xv-source-pane">
+		<div class="xv-source-pane-inner"></div>
+	</div>
+	
+	<script type="text/javascript">
+		function loadDocument() {
+			var xhr = new XMLHttpRequest();
+			xhr.open('GET', document.getElementById("urlinput").value, true);
+			xhr.onreadystatechange = function(){
+				if (xhr.readyState == 4) {
+					xv_controller.process(xhr.responseXML);
+				}
+			}
+			xhr.send();
+		}
+	</script>
+</body>
+</html>

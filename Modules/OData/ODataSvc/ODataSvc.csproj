@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>10.0.0</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{03CE8C7E-1027-481C-B805-90C6D33E47BA}</ProjectGuid>
+    <ProjectTypeGuids>{349C5851-65DF-11DA-9384-00065B846F21};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <RootNamespace>ODataSvc</RootNamespace>
+    <AssemblyName>ODataSvc</AssemblyName>
+    <SignAssembly>True</SignAssembly>
+    <AssemblyOriginatorKeyFile>..\..\..\mono.snk</AssemblyOriginatorKeyFile>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>True</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>False</Optimize>
+    <OutputPath>bin</OutputPath>
+    <DefineConstants>DEBUG;</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>False</ConsolePause>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>none</DebugType>
+    <Optimize>True</Optimize>
+    <OutputPath>bin</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>False</ConsolePause>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="EntityFramework" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.Linq" />
+    <Reference Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="web.config" />
+    <Content Include="setup\Web.config" />
+    <Content Include="Global.asax" />
+    <Content Include="default.htm" />
+    <Content Include="xv.js" />
+    <Content Include="xv.css" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(MSBuildExtensionsPath)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" />
+  <ProjectExtensions>
+    <MonoDevelop>
+      <Properties VerifyCodeBehindFields="True" VerifyCodeBehindEvents="True">
+        <XspParameters Port="7000" Address="127.0.0.1" SslMode="None" SslProtocol="Default" KeyType="None" CertFile="" KeyFile="" PasswordOptions="None" Password="" Verbose="True" />
+      </Properties>
+    </MonoDevelop>
+  </ProjectExtensions>
+  <ItemGroup>
+    <Compile Include="AssemblyInfo.cs" />
+    <Compile Include="CustomAuthorization.cs" />
+    <Compile Include="SessionConfiguration.cs" />
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="setup\.DS_Store" />
+    <None Include="setup\InstallModata.ps1" />
+    <None Include="setup\Microsoft.Management.Odata.svc" />
+    <None Include="setup\Readme.txt" />
+    <None Include="setup\Schema.mof" />
+    <None Include="setup\Schema.xml" />
+    <None Include="setup\SetupEndpoint.ps1" />
+    <None Include="setup\SetupIISConfig.ps1" />
+    <None Include="Microsoft.Management.Odata.svc" />
+    <None Include="Schema.mof" />
+    <None Include="Schema.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Microsoft.Data.Edm.PowerShell\Microsoft.Data.Edm.PowerShell.csproj">
+      <Project>{72D167B9-C5C7-44A6-9C1B-A3D925153411}</Project>
+      <Name>Microsoft.Data.Edm.PowerShell</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Microsoft.Data.OData.PowerShell\Microsoft.Data.OData.PowerShell.csproj">
+      <Project>{6E31202F-874A-440B-AD71-209FFB503EC7}</Project>
+      <Name>Microsoft.Data.OData.PowerShell</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Microsoft.Data.Services.Client.PowerShell\Microsoft.Data.Services.Client.PowerShell.csproj">
+      <Project>{236F5B85-FC0A-4D8D-B5A8-7FAB95B27E87}</Project>
+      <Name>Microsoft.Data.Services.Client.PowerShell</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Microsoft.Data.Services.PowerShell\Microsoft.Data.Services.PowerShell.csproj">
+      <Project>{26F36111-8EC2-485E-BCAD-B99F5BDCBAC9}</Project>
+      <Name>Microsoft.Data.Services.PowerShell</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Microsoft.Management.Odata\Microsoft.Management.Odata.csproj">
+      <Project>{F65CDE28-4AF6-44C0-B729-EE71496C64F5}</Project>
+      <Name>Microsoft.Management.Odata</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\System.Management.Automation\System.Management.Automation.csproj">
+      <Project>{3AA23D43-1616-4C39-95D6-D26E63E7D5AB}</Project>
+      <Name>System.Management.Automation</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\System.Spatial.PowerShell\System.Spatial.PowerShell.csproj">
+      <Project>{16E74297-50B6-44A4-A3EB-6DD23F27884B}</Project>
+      <Name>System.Spatial.PowerShell</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\External\System.ServiceModel\System.ServiceModel.Web\System.ServiceModel.Web-net_4_0.csproj">
+      <Project>{154AEF28-C81F-405D-9072-9F52580E3E7D}</Project>
+      <Name>System.ServiceModel.Web-net_4_0</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\External\System.ServiceModel\System.ServiceModel\System.ServiceModel-net_4_0.csproj">
+      <Project>{155AEF28-C81F-405D-9072-9D52780E3E70}</Project>
+      <Name>System.ServiceModel-net_4_0</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="ServiceModel\" />
+  </ItemGroup>
+</Project>

@@ -1,0 +1,8 @@
+2010-06-30  Atsushi Enomoto  <atsushi@ximian.com>
+
+	* ChangeLog, Makefile, System.Activities.dll.sources: initial checkin.
+	* System.Activities.Validation.cs : ditto (they are stubs without
+	  members; I didn't do it yet.)
+
+	  (It does not build in olive tree yet; you can copy the dir under
+	  /mcs/class so far.)

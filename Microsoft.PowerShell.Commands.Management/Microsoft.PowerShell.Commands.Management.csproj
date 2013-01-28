@@ -1,0 +1,394 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{85FF5EDC-B108-4683-A8AC-BBC9D13B9009}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Microsoft.PowerShell.Commands.Management</RootNamespace>
+    <AssemblyName>Microsoft.PowerShell.Commands.Management</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <ProductVersion>10.0.0</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>True</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>False</Optimize>
+    <OutputPath>..\v1.0\</OutputPath>
+    <DefineConstants>DEBUG;TRACE;MONO</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>True</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>True</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AssemblyOriginatorKeyFile>..\mono.snk</AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="CustomMarshalers" />
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Configuration.Install" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.DirectoryServices" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Transactions" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="..\GlobalAssemblyInfo.cs">
+      <Link>Properties\GlobalAssemblyInfo.cs</Link>
+    </Compile>
+    <Compile Include="CmdletizationResources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CmdletizationResources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="ComputerResources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ComputerResources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="ControlPanelResources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ControlPanelResources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="EventlogResources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>EventlogResources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="HotFixResources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>HotFixResources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="ManagementMshSnapInResources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ManagementMshSnapInResources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Microsoft.PowerShell\Cim\CimValueConverter.cs" />
+    <Compile Include="Microsoft.PowerShell\Cmdletization\Cim\CimChildJobBase`1.cs" />
+    <Compile Include="Microsoft.PowerShell\Cmdletization\Cim\CimCmdletAdapter.cs" />
+    <Compile Include="Microsoft.PowerShell\Cmdletization\Cim\CimCmdletDefinitionContext.cs" />
+    <Compile Include="Microsoft.PowerShell\Cmdletization\Cim\CimCmdletInvocationContext.cs" />
+    <Compile Include="Microsoft.PowerShell\Cmdletization\Cim\CimCustomOptionsDictionary.cs" />
+    <Compile Include="Microsoft.PowerShell\Cmdletization\Cim\CimJobContext.cs" />
+    <Compile Include="Microsoft.PowerShell\Cmdletization\Cim\CimJobException.cs" />
+    <Compile Include="Microsoft.PowerShell\Cmdletization\Cim\CimOperationOptionsHelper.cs" />
+    <Compile Include="Microsoft.PowerShell\Cmdletization\Cim\CimQuery.cs" />
+    <Compile Include="Microsoft.PowerShell\Cmdletization\Cim\ClientSideQuery.cs" />
+    <Compile Include="Microsoft.PowerShell\Cmdletization\Cim\CreateInstanceJob.cs" />
+    <Compile Include="Microsoft.PowerShell\Cmdletization\Cim\DeleteInstanceJob.cs" />
+    <Compile Include="Microsoft.PowerShell\Cmdletization\Cim\EnumerateAssociatedInstancesJob.cs" />
+    <Compile Include="Microsoft.PowerShell\Cmdletization\Cim\ExtrinsicMethodInvocationJob.cs" />
+    <Compile Include="Microsoft.PowerShell\Cmdletization\Cim\InstanceMethodInvocationJob.cs" />
+    <Compile Include="Microsoft.PowerShell\Cmdletization\Cim\MethodInvocationJobBase`1.cs" />
+    <Compile Include="Microsoft.PowerShell\Cmdletization\Cim\ModifyInstanceJob.cs" />
+    <Compile Include="Microsoft.PowerShell\Cmdletization\Cim\PropertySettingJob`1.cs" />
+    <Compile Include="Microsoft.PowerShell\Cmdletization\Cim\QueryInstancesJob.cs" />
+    <Compile Include="Microsoft.PowerShell\Cmdletization\Cim\QueryJobBase.cs" />
+    <Compile Include="Microsoft.PowerShell\Cmdletization\Cim\StaticMethodInvocationJob.cs" />
+    <Compile Include="Microsoft.PowerShell\Cmdletization\Cim\TerminatingErrorTracker.cs" />
+    <Compile Include="Microsoft.PowerShell\Cmdletization\ISessionBoundQueryBuilder`1.cs" />
+    <Compile Include="Microsoft.PowerShell\Cmdletization\SessionBasedCmdletAdapter`2.cs" />
+    <Compile Include="Microsoft.PowerShell\Commands\AddComputerCommand.cs" />
+    <Compile Include="Microsoft.PowerShell\Commands\AddContentCommand.cs" />
+    <Compile Include="Microsoft.PowerShell\Commands\AsyncCmdletHelper.cs" />
+    <Compile Include="Microsoft.PowerShell\Commands\CheckpointComputerCommand.cs" />
+    <Compile Include="Microsoft.PowerShell\Commands\ClearContentCommand.cs" />
+    <Compile Include="Microsoft.PowerShell\Commands\ClearEventLogCommand.cs" />
+    <Compile Include="Microsoft.PowerShell\Commands\ClearItemCommand.cs" />
+    <Compile Include="Microsoft.PowerShell\Commands\ClearItemPropertyCommand.cs" />
+    <Compile Include="Microsoft.PowerShell\Commands\CommandsCommon.cs" />
+    <Compile Include="Microsoft.PowerShell\Commands\CompleteTransactionCommand.cs" />
+    <Compile Include="Microsoft.PowerShell\Commands\ComputerChangeInfo.cs" />
+    <Compile Include="Microsoft.PowerShell\Commands\ComputerWMIHelper.cs" />
+    <Compile Include="Microsoft.PowerShell\Commands\ContentCommandBase.cs" />
+    <Compile Include="Microsoft.PowerShell\Commands\ControlPanelItem.cs" />
+    <Compile Include="Microsoft.PowerShell\Commands\ControlPanelItemBaseCommand.cs" />
+    <Compile Include="Microsoft.PowerShell\Commands\ConvertPathCommand.cs" />
+    <Compile Include="Microsoft.PowerShell\Commands\CopyItemCommand.cs" />
+    <Compile Include="Microsoft.PowerShell\Commands\CopyItemPropertyCommand.cs" />
+    <Compile Include="Microsoft.PowerShell\Commands\CoreCommandBase.cs" />
+    <Compile Include="Microsoft.PowerShell\Commands\CoreCommandWithCredentialsBase.cs" />
+    <Compile Include="Microsoft.PowerShell\Commands\DebugProcessCommand.cs" />
+    <Compile Include="Microsoft.PowerShell\Commands\DisableComputerRestoreCommand.cs" />
+    <Compile Include="Microsoft.PowerShell\Commands\DriveMatchingCoreCommandBase.cs" />
+    <Compile Include="Microsoft.PowerShell\Commands\EnableComputerRestoreCommand.cs" />
+    <Compile Include="Microsoft.PowerShell\Commands\GetChildItemCommand.cs" />
+    <Compile Include="Microsoft.PowerShell\Commands\GetComputerRestorePointCommand.cs" />
+    <Compile Include="Microsoft.PowerShell\Commands\GetContentCommand.cs" />
+    <Compile Include="Microsoft.PowerShell\Commands\GetControlPanelItemCommand.cs" />
+    <Compile Include="Microsoft.PowerShell\Commands\GetEventLogCommand.cs" />
+    <Compile Include="Microsoft.PowerShell\Commands\GetHotFixCommand.cs" />
+    <Compile Include="Microsoft.PowerShell\Commands\GetItemCommand.cs" />
+    <Compile Include="Microsoft.PowerShell\Commands\GetItemPropertyCommand.cs" />
+    <Compile Include="Microsoft.PowerShell\Commands\GetLocationCommand.cs" />
+    <Compile Include="Microsoft.PowerShell\Commands\GetProcessCommand.cs" />
+    <Compile Include="Microsoft.PowerShell\Commands\GetPSDriveCommand.cs" />
+    <Compile Include="Microsoft.PowerShell\Commands\GetPSProviderCommand.cs" />
+    <Compile Include="Microsoft.PowerShell\Commands\GetServiceCommand.cs" />
+    <Compile Include="Microsoft.PowerShell\Commands\GetTransactionCommand.cs" />
+    <Compile Include="Microsoft.PowerShell\Commands\GetWmiObjectCommand.cs" />
+    <Compile Include="Microsoft.PowerShell\Commands\InvokeItemCommand.cs" />
+    <Compile Include="Microsoft.PowerShell\Commands\InvokeWmiMethod.cs" />
+    <Compile Include="Microsoft.PowerShell\Commands\ItemPropertyCommandBase.cs" />
+    <Compile Include="Microsoft.PowerShell\Commands\JOBOBJECT_BASIC_PROCESS_ID_LIST.cs" />
+    <Compile Include="Microsoft.PowerShell\Commands\JoinOptions.cs" />
+    <Compile Include="Microsoft.PowerShell\Commands\JoinPathCommand.cs" />
+    <Compile Include="Microsoft.PowerShell\Commands\LimitEventLogCommand.cs" />
+    <Compile Include="Microsoft.PowerShell\Commands\MoveItemCommand.cs" />
+    <Compile Include="Microsoft.PowerShell\Commands\MoveItemPropertyCommand.cs" />
+    <Compile Include="Microsoft.PowerShell\Commands\MultipleServiceCommandBase.cs" />
+    <Compile Include="Microsoft.PowerShell\Commands\NativeMethods.cs" />
+    <Compile Include="Microsoft.PowerShell\Commands\NewEventLogCommand.cs" />
+    <Compile Include="Microsoft.PowerShell\Commands\NewItemCommand.cs" />
+    <Compile Include="Microsoft.PowerShell\Commands\NewItemPropertyCommand.cs" />
+    <Compile Include="Microsoft.PowerShell\Commands\NewPSDriveCommand.cs" />
+    <Compile Include="Microsoft.PowerShell\Commands\NewServiceCommand.cs" />
+    <Compile Include="Microsoft.PowerShell\Commands\NewWebServiceProxy.cs" />
+    <Compile Include="Microsoft.PowerShell\Commands\PassThroughContentCommandBase.cs" />
+    <Compile Include="Microsoft.PowerShell\Commands\PassThroughItemPropertyCommandBase.cs" />
+    <Compile Include="Microsoft.PowerShell\Commands\PopLocationCommand.cs" />
+    <Compile Include="Microsoft.PowerShell\Commands\ProcessBaseCommand.cs" />
+    <Compile Include="Microsoft.PowerShell\Commands\ProcessCollection.cs" />
+    <Compile Include="Microsoft.PowerShell\Commands\ProcessCommandException.cs" />
+    <Compile Include="Microsoft.PowerShell\Commands\ProcessNativeMethods.cs" />
+    <Compile Include="Microsoft.PowerShell\Commands\PSWmiChildJob.cs" />
+    <Compile Include="Microsoft.PowerShell\Commands\PSWmiJob.cs" />
+    <Compile Include="Microsoft.PowerShell\Commands\PushLocationCommand.cs" />
+    <Compile Include="Microsoft.PowerShell\Commands\RegisterWmiEventCommand.cs" />
+    <Compile Include="Microsoft.PowerShell\Commands\RemoveComputerCommand.cs" />
+    <Compile Include="Microsoft.PowerShell\Commands\RemoveEventLogCommand.cs" />
+    <Compile Include="Microsoft.PowerShell\Commands\RemoveItemCommand.cs" />
+    <Compile Include="Microsoft.PowerShell\Commands\RemoveItemPropertyCommand.cs" />
+    <Compile Include="Microsoft.PowerShell\Commands\RemovePSDriveCommand.cs" />
+    <Compile Include="Microsoft.PowerShell\Commands\RemoveWmiObject.cs" />
+    <Compile Include="Microsoft.PowerShell\Commands\RenameComputerChangeInfo.cs" />
+    <Compile Include="Microsoft.PowerShell\Commands\RenameComputerCommand.cs" />
+    <Compile Include="Microsoft.PowerShell\Commands\RenameItemCommand.cs" />
+    <Compile Include="Microsoft.PowerShell\Commands\RenameItemPropertyCommand.cs" />
+    <Compile Include="Microsoft.PowerShell\Commands\ResetComputerMachinePasswordCommand.cs" />
+    <Compile Include="Microsoft.PowerShell\Commands\ResolvePathCommand.cs" />
+    <Compile Include="Microsoft.PowerShell\Commands\RestartComputerCommand.cs" />
+    <Compile Include="Microsoft.PowerShell\Commands\RestartComputerTimeoutException.cs" />
+    <Compile Include="Microsoft.PowerShell\Commands\RestartServiceCommand.cs" />
+    <Compile Include="Microsoft.PowerShell\Commands\RestoreComputerCommand.cs" />
+    <Compile Include="Microsoft.PowerShell\Commands\ResumeServiceCommand.cs" />
+    <Compile Include="Microsoft.PowerShell\Commands\SafeNativeMethods.cs" />
+    <Compile Include="Microsoft.PowerShell\Commands\SafeProcessHandle.cs" />
+    <Compile Include="Microsoft.PowerShell\Commands\SafeThreadHandle.cs" />
+    <Compile Include="Microsoft.PowerShell\Commands\SAMAPI.cs" />
+    <Compile Include="Microsoft.PowerShell\Commands\ServiceBaseCommand.cs" />
+    <Compile Include="Microsoft.PowerShell\Commands\ServiceCommandException.cs" />
+    <Compile Include="Microsoft.PowerShell\Commands\ServiceOperationBaseCommand.cs" />
+    <Compile Include="Microsoft.PowerShell\Commands\SetContentCommand.cs" />
+    <Compile Include="Microsoft.PowerShell\Commands\SetItemCommand.cs" />
+    <Compile Include="Microsoft.PowerShell\Commands\SetItemPropertyCommand.cs" />
+    <Compile Include="Microsoft.PowerShell\Commands\SetLocationCommand.cs" />
+    <Compile Include="Microsoft.PowerShell\Commands\SetServiceCommand.cs" />
+    <Compile Include="Microsoft.PowerShell\Commands\SetWmiInstance.cs" />
+    <Compile Include="Microsoft.PowerShell\Commands\ShowControlPanelItemCommand.cs" />
+    <Compile Include="Microsoft.PowerShell\Commands\ShowEventLogCommand.cs" />
+    <Compile Include="Microsoft.PowerShell\Commands\SplitPathCommand.cs" />
+    <Compile Include="Microsoft.PowerShell\Commands\StartProcessCommand.cs" />
+    <Compile Include="Microsoft.PowerShell\Commands\StartServiceCommand.cs" />
+    <Compile Include="Microsoft.PowerShell\Commands\StartTransactionCommand.cs" />
+    <Compile Include="Microsoft.PowerShell\Commands\StopComputerCommand.cs" />
+    <Compile Include="Microsoft.PowerShell\Commands\StopProcessCommand.cs" />
+    <Compile Include="Microsoft.PowerShell\Commands\StopServiceCommand.cs" />
+    <Compile Include="Microsoft.PowerShell\Commands\SuspendServiceCommand.cs" />
+    <Compile Include="Microsoft.PowerShell\Commands\TestComputerSecureChannelCommand.cs" />
+    <Compile Include="Microsoft.PowerShell\Commands\TestConnectionCommand.cs" />
+    <Compile Include="Microsoft.PowerShell\Commands\TestPathCommand.cs" />
+    <Compile Include="Microsoft.PowerShell\Commands\TestPathType.cs" />
+    <Compile Include="Microsoft.PowerShell\Commands\UndoTransactionCommand.cs" />
+    <Compile Include="Microsoft.PowerShell\Commands\UseTransactionCommand.cs" />
+    <Compile Include="Microsoft.PowerShell\Commands\WaitForServiceTypes.cs" />
+    <Compile Include="Microsoft.PowerShell\Commands\WaitProcessCommand.cs" />
+    <Compile Include="Microsoft.PowerShell\Commands\WmiAsyncCmdletHelper.cs" />
+    <Compile Include="Microsoft.PowerShell\Commands\WmiBaseCmdlet.cs" />
+    <Compile Include="Microsoft.PowerShell\Commands\WMIHelper.cs" />
+    <Compile Include="Microsoft.PowerShell\Commands\WmiJobStateEventArgs.cs" />
+    <Compile Include="Microsoft.PowerShell\Commands\WmiState.cs" />
+    <Compile Include="Microsoft.PowerShell\Commands\WriteContentCommandBase.cs" />
+    <Compile Include="Microsoft.PowerShell\Commands\WriteEventLogCommand.cs" />
+    <Compile Include="Microsoft.PowerShell\PSManagementPSSnapIn.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="NavigationResources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>NavigationResources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="ProcessResources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ProcessResources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ServiceResources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ServiceResources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Shell32\Folder.cs" />
+    <Compile Include="Shell32\Folder2.cs" />
+    <Compile Include="Shell32\FolderItem.cs" />
+    <Compile Include="Shell32\FolderItem2.cs" />
+    <Compile Include="Shell32\FolderItems.cs" />
+    <Compile Include="Shell32\FolderItems2.cs" />
+    <Compile Include="Shell32\FolderItems3.cs" />
+    <Compile Include="Shell32\FolderItemVerb.cs" />
+    <Compile Include="Shell32\FolderItemVerbs.cs" />
+    <Compile Include="Shell32\IShellDispatch.cs" />
+    <Compile Include="Shell32\IShellDispatch2.cs" />
+    <Compile Include="Shell32\IShellDispatch3.cs" />
+    <Compile Include="Shell32\IShellDispatch4.cs" />
+    <Compile Include="Shell32\IShellDispatch5.cs" />
+    <Compile Include="Shell32\IShellDispatch6.cs" />
+    <Compile Include="Shell32\Shell.cs" />
+    <Compile Include="Shell32\ShellFolderItem.cs" />
+    <Compile Include="TransactionResources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>TransactionResources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="WebServiceResources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>WebServiceResources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="WmiResources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>WmiResources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="_PrivateImplementationDetails_{3225938A-30FC-4205-BBBC-3466BFEDF741}.cs" />
+    <Compile Include="Microsoft.PowerShell\Commands\AddEventLogSourceCommand.cs" />
+    <Compile Include="ShellOSX\OSXShell.cs" />
+    <Compile Include="ShellOSX\OSXFolder.cs" />
+    <Compile Include="ShellOSX\OSXFolderItems.cs" />
+    <Compile Include="ShellOSX\OSXShellFolderItem.cs" />
+    <Compile Include="ShellOSX\OSXFolderItemVerb.cs" />
+    <Compile Include="ShellOSX\OSXFolderItemVerbs.cs" />
+    <Compile Include="ShellOSX\OSXCategoryFolder.cs" />
+    <Compile Include="ShellOSX\OSXCategoryFolderItems.cs" />
+    <Compile Include="ShellOSX\OSXCategoryFolderItem.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Microsoft.PowerShell.Security\Microsoft.PowerShell.Security.csproj">
+      <Project>{D740AD94-548E-4FB9-9A37-1C1ADE8DDC50}</Project>
+      <Name>Microsoft.PowerShell.Security</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Microsoft.WSMan.Management\Microsoft.WSMan.Management.csproj">
+      <Project>{B98E9E12-1D3D-4E24-AA57-D3EF51E42C85}</Project>
+      <Name>Microsoft.WSMan.Management</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\System.Management.Automation\System.Management.Automation.csproj">
+      <Project>{3AA23D43-1616-4C39-95D6-D26E63E7D5AB}</Project>
+      <Name>System.Management.Automation</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\External\System.Management\System.Management.csproj">
+      <Project>{FDC0FF3F-39C6-4837-937B-877497B41A34}</Project>
+      <Name>System.Management</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\External\System.ServiceProcess\System.ServiceProcess.csproj">
+      <Project>{3FC67CBE-D5F2-4CE6-A9E0-8322D04F7DCE}</Project>
+      <Name>System.ServiceProcess</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="CmdletizationResources.en.resx" />
+    <EmbeddedResource Include="CmdletizationResources.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>CmdletizationResources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ComputerResources.en.resx" />
+    <EmbeddedResource Include="ComputerResources.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>ComputerResources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ControlPanelResources.en.resx" />
+    <EmbeddedResource Include="ControlPanelResources.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>ControlPanelResources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EventlogResources.en.resx" />
+    <EmbeddedResource Include="EventlogResources.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>EventlogResources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HotFixResources.en.resx" />
+    <EmbeddedResource Include="HotFixResources.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>HotFixResources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ManagementMshSnapInResources.en.resx" />
+    <EmbeddedResource Include="ManagementMshSnapInResources.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>ManagementMshSnapInResources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NavigationResources.en.resx" />
+    <EmbeddedResource Include="NavigationResources.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>NavigationResources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ProcessResources.en.resx" />
+    <EmbeddedResource Include="ProcessResources.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>ProcessResources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ServiceResources.en.resx" />
+    <EmbeddedResource Include="ServiceResources.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>ServiceResources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TransactionResources.en.resx" />
+    <EmbeddedResource Include="TransactionResources.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>TransactionResources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WebServiceResources.en.resx" />
+    <EmbeddedResource Include="WebServiceResources.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>WebServiceResources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WmiResources.en.resx" />
+    <EmbeddedResource Include="WmiResources.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>WmiResources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <ItemGroup>
+    <Folder Include="ShellOSX\" />
+  </ItemGroup>
+</Project>

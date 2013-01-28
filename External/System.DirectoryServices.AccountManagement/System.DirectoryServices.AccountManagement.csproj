@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>10.0.0</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{5A61C98F-5660-4A60-B1C8-C94623FB1D92}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>System.DirectoryServices.AccountManagement</RootNamespace>
+    <AssemblyName>System.DirectoryServices.AccountManagement</AssemblyName>
+    <SignAssembly>True</SignAssembly>
+    <AssemblyOriginatorKeyFile>..\..\mono.snk</AssemblyOriginatorKeyFile>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>True</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>False</Optimize>
+    <OutputPath>bin\Debug</OutputPath>
+    <DefineConstants>DEBUG;</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>False</ConsolePause>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>none</DebugType>
+    <Optimize>True</Optimize>
+    <OutputPath>bin\Release</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>False</ConsolePause>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <ItemGroup>
+    <ProjectReference Include="..\System.DirectoryServices\System.DirectoryServices.csproj">
+      <Project>{44EA805B-4769-4511-9D3F-212CFEFF5A99}</Project>
+      <Name>System.DirectoryServices</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\System.DirectoryServices.Protocols\System.DirectoryServices.Protocols.csproj">
+      <Project>{fae22cf8-e105-44f8-a56f-9d3329808e31}</Project>
+      <Name>System.DirectoryServices.Protocols</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AssemblyRef.cs" />
+    <Compile Include="FXAssembly.cs" />
+    <Compile Include="ThisAssembly.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="System\ExternDll.cs" />
+    <Compile Include="System\SR.cs" />
+    <Compile Include="System\SRCategoryAttribute.cs" />
+    <Compile Include="System\SRDescriptionAttribute.cs" />
+    <Compile Include="System\DirectoryServices.AccountManagement\ADAMStoreCtx.cs" />
+    <Compile Include="System\DirectoryServices.AccountManagement\ADDNConstraintLinkedAttrSet.cs" />
+    <Compile Include="System\DirectoryServices.AccountManagement\ADDNLinkedAttrSet.cs" />
+    <Compile Include="System\DirectoryServices.AccountManagement\ADDNLinkedAttrSetBookmark.cs" />
+    <Compile Include="System\DirectoryServices.AccountManagement\ADEntriesSet.cs" />
+    <Compile Include="System\DirectoryServices.AccountManagement\ADGroupScope.cs" />
+    <Compile Include="System\DirectoryServices.AccountManagement\ADStoreCtx.cs" />
+    <Compile Include="System\DirectoryServices.AccountManagement\ADStoreKey.cs" />
+    <Compile Include="System\DirectoryServices.AccountManagement\ADUtils.cs" />
+    <Compile Include="System\DirectoryServices.AccountManagement\AccountInfo.cs" />
+    <Compile Include="System\DirectoryServices.AccountManagement\AdvancedFilters.cs" />
+    <Compile Include="System\DirectoryServices.AccountManagement\AllowReversiblePasswordEncryptionFilter.cs" />
+    <Compile Include="System\DirectoryServices.AccountManagement\AuthPrincEnabledFilter.cs" />
+    <Compile Include="System\DirectoryServices.AccountManagement\AuthZSet.cs" />
+    <Compile Include="System\DirectoryServices.AccountManagement\AuthenticablePrincipal.cs" />
+    <Compile Include="System\DirectoryServices.AccountManagement\BadLogonCountFilter.cs" />
+    <Compile Include="System\DirectoryServices.AccountManagement\BadPasswordAttemptFilter.cs" />
+    <Compile Include="System\DirectoryServices.AccountManagement\BookmarkableResultSet.cs" />
+    <Compile Include="System\DirectoryServices.AccountManagement\CannotChangePasswordFilter.cs" />
+    <Compile Include="System\DirectoryServices.AccountManagement\CapabilityMap.cs" />
+    <Compile Include="System\DirectoryServices.AccountManagement\CertificateFilter.cs" />
+    <Compile Include="System\DirectoryServices.AccountManagement\ComputerPrincipal.cs" />
+    <Compile Include="System\DirectoryServices.AccountManagement\ConfigSettings.cs" />
+    <Compile Include="System\DirectoryServices.AccountManagement\ConfigurationHandler.cs" />
+    <Compile Include="System\DirectoryServices.AccountManagement\Constants.cs" />
+    <Compile Include="System\DirectoryServices.AccountManagement\ContextOptions.cs" />
+    <Compile Include="System\DirectoryServices.AccountManagement\ContextType.cs" />
+    <Compile Include="System\DirectoryServices.AccountManagement\CredentialTypes.cs" />
+    <Compile Include="System\DirectoryServices.AccountManagement\CredentialValidator.cs" />
+    <Compile Include="System\DirectoryServices.AccountManagement\DebugLevel.cs" />
+    <Compile Include="System\DirectoryServices.AccountManagement\DefaultContextOptions.cs" />
+    <Compile Include="System\DirectoryServices.AccountManagement\DelegationPermittedFilter.cs" />
+    <Compile Include="System\DirectoryServices.AccountManagement\DescriptionFilter.cs" />
+    <Compile Include="System\DirectoryServices.AccountManagement\DirectoryObjectClassAttribute.cs" />
+    <Compile Include="System\DirectoryServices.AccountManagement\DirectoryPropertyAttribute.cs" />
+    <Compile Include="System\DirectoryServices.AccountManagement\DirectoryRdnPrefixAttribute.cs" />
+    <Compile Include="System\DirectoryServices.AccountManagement\DisplayNameFilter.cs" />
+    <Compile Include="System\DirectoryServices.AccountManagement\DistinguishedNameFilter.cs" />
+    <Compile Include="System\DirectoryServices.AccountManagement\DomainControllerMode.cs" />
+    <Compile Include="System\DirectoryServices.AccountManagement\EmailAddressFilter.cs" />
+    <Compile Include="System\DirectoryServices.AccountManagement\EmployeeIDFilter.cs" />
+    <Compile Include="System\DirectoryServices.AccountManagement\EmptySet.cs" />
+    <Compile Include="System\DirectoryServices.AccountManagement\EmptySetBookmark.cs" />
+    <Compile Include="System\DirectoryServices.AccountManagement\ExceptionHelper.cs" />
+    <Compile Include="System\DirectoryServices.AccountManagement\ExpansionMode.cs" />
+    <Compile Include="System\DirectoryServices.AccountManagement\ExpirationDateFilter.cs" />
+    <Compile Include="System\DirectoryServices.AccountManagement\ExpiredAccountFilter.cs" />
+    <Compile Include="System\DirectoryServices.AccountManagement\ExtensionCache.cs" />
+    <Compile Include="System\DirectoryServices.AccountManagement\ExtensionCacheFilter.cs" />
+    <Compile Include="System\DirectoryServices.AccountManagement\ExtensionCacheValue.cs" />
+    <Compile Include="System\DirectoryServices.AccountManagement\ExtensionHelper.cs" />
+    <Compile Include="System\DirectoryServices.AccountManagement\FilterBase.cs" />
+    <Compile Include="System\DirectoryServices.AccountManagement\FilterFactory.cs" />
+    <Compile Include="System\DirectoryServices.AccountManagement\FindByDateMatcher.cs" />
+    <Compile Include="System\DirectoryServices.AccountManagement\FindResultEnumerator`1.cs" />
+    <Compile Include="System\DirectoryServices.AccountManagement\GivenNameFilter.cs" />
+    <Compile Include="System\DirectoryServices.AccountManagement\GlobalConfig.cs" />
+    <Compile Include="System\DirectoryServices.AccountManagement\GlobalDebug.cs" />
+    <Compile Include="System\DirectoryServices.AccountManagement\GroupIsSecurityGroupFilter.cs" />
+    <Compile Include="System\DirectoryServices.AccountManagement\GroupMemberMatcher.cs" />
+    <Compile Include="System\DirectoryServices.AccountManagement\GroupPrincipal.cs" />
+    <Compile Include="System\DirectoryServices.AccountManagement\GroupScope.cs" />
+    <Compile Include="System\DirectoryServices.AccountManagement\GroupScopeFilter.cs" />
+    <Compile Include="System\DirectoryServices.AccountManagement\GuidFilter.cs" />
+    <Compile Include="System\DirectoryServices.AccountManagement\HomeDirectoryFilter.cs" />
+    <Compile Include="System\DirectoryServices.AccountManagement\HomeDriveFilter.cs" />
+    <Compile Include="System\DirectoryServices.AccountManagement\IdentMap.cs" />
+    <Compile Include="System\DirectoryServices.AccountManagement\IdentityClaim.cs" />
+    <Compile Include="System\DirectoryServices.AccountManagement\IdentityClaimFilter.cs" />
+    <Compile Include="System\DirectoryServices.AccountManagement\IdentityReference.cs" />
+    <Compile Include="System\DirectoryServices.AccountManagement\IdentityType.cs" />
+    <Compile Include="System\DirectoryServices.AccountManagement\IdentityTypeStringMap.cs" />
+    <Compile Include="System\DirectoryServices.AccountManagement\LastLogonTimeFilter.cs" />
+    <Compile Include="System\DirectoryServices.AccountManagement\LdapConstants.cs" />
+    <Compile Include="System\DirectoryServices.AccountManagement\LoadState.cs" />
+    <Compile Include="System\DirectoryServices.AccountManagement\LockoutTimeFilter.cs" />
+    <Compile Include="System\DirectoryServices.AccountManagement\MatchType.cs" />
+    <Compile Include="System\DirectoryServices.AccountManagement\MiddleNameFilter.cs" />
+    <Compile Include="System\DirectoryServices.AccountManagement\MultipleMatchesException.cs" />
+    <Compile Include="System\DirectoryServices.AccountManagement\NameFilter.cs" />
+    <Compile Include="System\DirectoryServices.AccountManagement\NetCred.cs" />
+    <Compile Include="System\DirectoryServices.AccountManagement\NoMatchingPrincipalException.cs" />
+    <Compile Include="System\DirectoryServices.AccountManagement\Pair`2.cs" />
+    <Compile Include="System\DirectoryServices.AccountManagement\PasswordException.cs" />
+    <Compile Include="System\DirectoryServices.AccountManagement\PasswordInfo.cs" />
+    <Compile Include="System\DirectoryServices.AccountManagement\PasswordNeverExpiresFilter.cs" />
+    <Compile Include="System\DirectoryServices.AccountManagement\PasswordNotRequiredFilter.cs" />
+    <Compile Include="System\DirectoryServices.AccountManagement\PasswordSetTimeFilter.cs" />
+    <Compile Include="System\DirectoryServices.AccountManagement\PermittedLogonTimesFilter.cs" />
+    <Compile Include="System\DirectoryServices.AccountManagement\PermittedWorkstationFilter.cs" />
+    <Compile Include="System\DirectoryServices.AccountManagement\Principal.cs" />
+    <Compile Include="System\DirectoryServices.AccountManagement\PrincipalAccessMask.cs" />
+    <Compile Include="System\DirectoryServices.AccountManagement\PrincipalCollection.cs" />
+    <Compile Include="System\DirectoryServices.AccountManagement\PrincipalCollectionEnumerator.cs" />
+    <Compile Include="System\DirectoryServices.AccountManagement\PrincipalContext.cs" />
+    <Compile Include="System\DirectoryServices.AccountManagement\PrincipalException.cs" />
+    <Compile Include="System\DirectoryServices.AccountManagement\PrincipalExistsException.cs" />
+    <Compile Include="System\DirectoryServices.AccountManagement\PrincipalOperationException.cs" />
+    <Compile Include="System\DirectoryServices.AccountManagement\PrincipalSearchResult`1.cs" />
+    <Compile Include="System\DirectoryServices.AccountManagement\PrincipalSearcher.cs" />
+    <Compile Include="System\DirectoryServices.AccountManagement\PrincipalServerDownException.cs" />
+    <Compile Include="System\DirectoryServices.AccountManagement\PrincipalValueCollection`1.cs" />
+    <Compile Include="System\DirectoryServices.AccountManagement\PropertyNames.cs" />
+    <Compile Include="System\DirectoryServices.AccountManagement\PropertyNamesExternal.cs" />
+    <Compile Include="System\DirectoryServices.AccountManagement\QbeFilterDescription.cs" />
+    <Compile Include="System\DirectoryServices.AccountManagement\QbeMatchType.cs" />
+    <Compile Include="System\DirectoryServices.AccountManagement\QbeMatcher.cs" />
+    <Compile Include="System\DirectoryServices.AccountManagement\RangeRetriever.cs" />
+    <Compile Include="System\DirectoryServices.AccountManagement\ReferentialProperties.cs" />
+    <Compile Include="System\DirectoryServices.AccountManagement\RejectedClaimChange.cs" />
+    <Compile Include="System\DirectoryServices.AccountManagement\ResultSet.cs" />
+    <Compile Include="System\DirectoryServices.AccountManagement\ResultSetBookmark.cs" />
+    <Compile Include="System\DirectoryServices.AccountManagement\SAMGroupsSet.cs" />
+    <Compile Include="System\DirectoryServices.AccountManagement\SAMMatcher.cs" />
+    <Compile Include="System\DirectoryServices.AccountManagement\SAMMembersSet.cs" />
+    <Compile Include="System\DirectoryServices.AccountManagement\SAMMembersSetBookmark.cs" />
+    <Compile Include="System\DirectoryServices.AccountManagement\SAMQuerySet.cs" />
+    <Compile Include="System\DirectoryServices.AccountManagement\SAMStoreCtx.cs" />
+    <Compile Include="System\DirectoryServices.AccountManagement\SAMStoreKey.cs" />
+    <Compile Include="System\DirectoryServices.AccountManagement\SAMUtils.cs" />
+    <Compile Include="System\DirectoryServices.AccountManagement\SDSCache.cs" />
+    <Compile Include="System\DirectoryServices.AccountManagement\SDSUtils.cs" />
+    <Compile Include="System\DirectoryServices.AccountManagement\SafeNativeMethods.cs" />
+    <Compile Include="System\DirectoryServices.AccountManagement\SamAccountNameFilter.cs" />
+    <Compile Include="System\DirectoryServices.AccountManagement\ScriptPathFilter.cs" />
+    <Compile Include="System\DirectoryServices.AccountManagement\ServerProperties.cs" />
+    <Compile Include="System\DirectoryServices.AccountManagement\ServicePrincipalNameFilter.cs" />
+    <Compile Include="System\DirectoryServices.AccountManagement\SidFilter.cs" />
+    <Compile Include="System\DirectoryServices.AccountManagement\SidList.cs" />
+    <Compile Include="System\DirectoryServices.AccountManagement\SidListEntry.cs" />
+    <Compile Include="System\DirectoryServices.AccountManagement\SidType.cs" />
+    <Compile Include="System\DirectoryServices.AccountManagement\SmartcardLogonRequiredFilter.cs" />
+    <Compile Include="System\DirectoryServices.AccountManagement\StoreCtx.cs" />
+    <Compile Include="System\DirectoryServices.AccountManagement\StoreKey.cs" />
+    <Compile Include="System\DirectoryServices.AccountManagement\StringResources.Designer.cs" />
+    <Compile Include="System\DirectoryServices.AccountManagement\StructuralObjectClassFilter.cs" />
+    <Compile Include="System\DirectoryServices.AccountManagement\SurnameFilter.cs" />
+    <Compile Include="System\DirectoryServices.AccountManagement\TokenGroupSet.cs" />
+    <Compile Include="System\DirectoryServices.AccountManagement\TrackedCollectionEnumerator`1.cs" />
+    <Compile Include="System\DirectoryServices.AccountManagement\TrackedCollection`1.cs" />
+    <Compile Include="System\DirectoryServices.AccountManagement\UnsafeNativeMethods.cs" />
+    <Compile Include="System\DirectoryServices.AccountManagement\UrnScheme.cs" />
+    <Compile Include="System\DirectoryServices.AccountManagement\UserPrincipal.cs" />
+    <Compile Include="System\DirectoryServices.AccountManagement\UserPrincipalNameFilter.cs" />
+    <Compile Include="System\DirectoryServices.AccountManagement\Utils.cs" />
+    <Compile Include="System\DirectoryServices.AccountManagement\ValueCollectionEnumerator`1.cs" />
+    <Compile Include="System\DirectoryServices.AccountManagement\VoiceTelephoneNumberFilter.cs" />
+    <Compile Include="System\DirectoryServices.AccountManagement\dSPropertyCollection.cs" />
+    <Compile Include="System\DirectoryServices.AccountManagement\dSPropertyValueCollection.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Properties\" />
+    <Folder Include="System\" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="System\DirectoryServices.AccountManagement\StringResources.resx" />
+  </ItemGroup>
+</Project>

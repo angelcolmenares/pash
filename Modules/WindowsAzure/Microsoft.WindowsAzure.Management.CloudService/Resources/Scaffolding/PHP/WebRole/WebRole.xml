@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ServiceDefinition name="DummyName" xmlns="http://schemas.microsoft.com/ServiceHosting/2008/10/ServiceDefinition">
+  <WebRole name="$RoleName$" vmsize="ExtraSmall">
+    <Sites>
+      <Site name="Web">
+        <Bindings>
+          <Binding name="Endpoint1" endpointName="Endpoint1" />
+        </Bindings>
+      </Site>
+    </Sites>
+    <Endpoints>
+      <InputEndpoint name="Endpoint1" protocol="http" port="$Port$" />
+    </Endpoints>
+    <Imports>
+    </Imports>
+    <Startup>
+      <Task executionContext="elevated" commandLine="setup_web.cmd > log.txt">
+        <Environment>
+          <Variable name="EMULATED">
+            <RoleInstanceValue xpath="/RoleEnvironment/Deployment/@emulated" />
+          </Variable>
+          <Variable name="VERSION" value="5.3.13"/>
+          <Variable name="DATACENTER" value=""/>
+          <Variable name="RUNTIMEURL" value=""/>
+          <Variable name="MANIFESTURL" value="http://azurertscu.blob.core.windows.net/php/runtimemanifest.xml"/>
+        </Environment>
+      </Task>
+    </Startup>
+  </WebRole>
+</ServiceDefinition>

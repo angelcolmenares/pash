@@ -1,0 +1,285 @@
+<?xml version="1.0" encoding="utf-8"?>
+<VisualStudioProject ToolsVersion="4.0">
+  <CSHARP ProjectType="Local" ProductVersion="7.10.3077" SchemaVersion="2.0" ProjectGuid="FEACFE6B-778E-4BAC-92AC-1233277A92E6">
+    <Build>
+      <Settings ApplicationIcon="" AssemblyKeyContainerName="" AssemblyName="System.Spatial.PowerShell" AssemblyOriginatorKeyFile="" DefaultClientScript="JScript" DefaultHTMLPageLayout="Grid" DefaultTargetSchema="IE50" DelaySign="false" OutputType="Library" PreBuildEvent="" PostBuildEvent="" RootNamespace="System.Spatial.PowerShell" RunPostBuildEvent="OnBuildSuccess" StartupObject="">
+        <Config Name="Debug" AllowUnsafeBlocks="false" BaseAddress="285212672" CheckForOverflowUnderflow="false" ConfigurationOverrideFile="" DefineConstants="DEBUG;TRACE" DocumentationFile="" DebugSymbols="true" FileAlignment="4096" IncrementalBuild="false" NoStdLib="false" NoWarn="" Optimize="false" OutputPath="bin\Debug\" RegisterForComInterop="false" RemoveIntegerChecks="false" TreatWarningsAsErrors="false" WarningLevel="4" />
+        <Config Name="Release" AllowUnsafeBlocks="false" BaseAddress="285212672" CheckForOverflowUnderflow="false" ConfigurationOverrideFile="" DefineConstants="TRACE" DocumentationFile="" DebugSymbols="false" FileAlignment="4096" IncrementalBuild="false" NoStdLib="false" NoWarn="" Optimize="true" OutputPath="bin\Release\" RegisterForComInterop="false" RemoveIntegerChecks="false" TreatWarningsAsErrors="false" WarningLevel="4" />
+      </Settings>
+      <References>
+        <Reference Name="mscorlib" AssemblyName="mscorlib" HintPath="mscorlib.dll" />
+        <Reference Name="System.Xml" AssemblyName="System.Xml" HintPath="System.Xml.dll" />
+        <Reference Name="System" AssemblyName="System" HintPath="System.dll" />
+        <Reference Name="System.Core" AssemblyName="System.Core" HintPath="System.Core.dll" />
+      </References>
+    </Build>
+    <Files>
+      <Include>
+        <File RelPath="AssemblyInfo.cs" SubType="Code" BuildAction="Compile" />
+        <File RelPath="System.Spatial\PlatformHelper.cs" SubType="Code" BuildAction="Compile" />
+        <File RelPath="System.Spatial\GeoJsonObjectFormatter.cs" SubType="Code" BuildAction="Compile" />
+        <File RelPath="System.Spatial\SpatialImplementation.cs" SubType="Code" BuildAction="Compile" />
+        <File RelPath="System.Spatial\ISpatial.cs" SubType="Code" BuildAction="Compile" />
+        <File RelPath="Microsoft.Data.Spatial\GeoJsonObjectFormatterImplementation.cs" SubType="Code" BuildAction="Compile" />
+        <File RelPath="System.Spatial\SpatialBuilder.cs" SubType="Code" BuildAction="Compile" />
+        <File RelPath="System.Spatial\SpatialPipeline.cs" SubType="Code" BuildAction="Compile" />
+        <File RelPath="System.Spatial\Geometry.cs" SubType="Code" BuildAction="Compile" />
+        <File RelPath="Microsoft.Data.Spatial\GeoJsonObjectReader.cs" SubType="Code" BuildAction="Compile" />
+        <File RelPath="System.Spatial\SpatialReader!1.cs" SubType="Code" BuildAction="Compile" />
+        <File RelPath="System.Spatial\Geography.cs" SubType="Code" BuildAction="Compile" />
+        <File RelPath="Microsoft.Data.Spatial\GeoJsonObjectWriter.cs" SubType="Code" BuildAction="Compile" />
+        <File RelPath="Microsoft.Data.Spatial\DrawBoth.cs" SubType="Code" BuildAction="Compile" />
+        <File RelPath="Microsoft.Data.Spatial\ForwardingSegment.cs" SubType="Code" BuildAction="Compile" />
+        <File RelPath="System.Spatial\SpatialTypeExtensions.cs" SubType="Code" BuildAction="Compile" />
+        <File RelPath="System.Spatial\GeographyPipeline.cs" SubType="Code" BuildAction="Compile" />
+        <File RelPath="System.Spatial\GeometryPipeline.cs" SubType="Code" BuildAction="Compile" />
+        <File RelPath="System.Spatial\GeographyPosition.cs" SubType="Code" BuildAction="Compile" />
+        <File RelPath="System.Spatial\SpatialType.cs" SubType="Code" BuildAction="Compile" />
+        <File RelPath="System.Spatial\CoordinateSystem.cs" SubType="Code" BuildAction="Compile" />
+        <File RelPath="System.Spatial\GeometryPosition.cs" SubType="Code" BuildAction="Compile" />
+        <File RelPath="Microsoft.Data.Spatial\GeoJsonWriterBase.cs" SubType="Code" BuildAction="Compile" />
+        <File RelPath="Microsoft.Data.Spatial\TypeWashedPipeline.cs" SubType="Code" BuildAction="Compile" />
+        <File RelPath="Microsoft.Data.Spatial\TypeWashedToGeographyLatLongPipeline.cs" SubType="Code" BuildAction="Compile" />
+        <File RelPath="Microsoft.Data.Spatial\TypeWashedToGeographyLongLatPipeline.cs" SubType="Code" BuildAction="Compile" />
+        <File RelPath="System.Spatial\Util.cs" SubType="Code" BuildAction="Compile" />
+        <File RelPath="System.Spatial\ParseErrorException.cs" SubType="Code" BuildAction="Compile" />
+        <File RelPath="System.Spatial\Strings.cs" SubType="Code" BuildAction="Compile" />
+        <File RelPath="_PrivateImplementationDetails_{B4FEEE59-4A64-409C-BBC0-F69A37872B78}.cs" SubType="Code" BuildAction="Compile" />
+        <File RelPath="Microsoft.Data.Spatial\TypeWashedToGeometryPipeline.cs" SubType="Code" BuildAction="Compile" />
+        <File RelPath="System.Spatial\CompositeKey!2.cs" SubType="Code" BuildAction="Compile" />
+        <File RelPath="System.Spatial\FormatterExtensions.cs" SubType="Code" BuildAction="Compile" />
+        <File RelPath="System.Spatial\SpatialFormatter!2.cs" SubType="Code" BuildAction="Compile" />
+        <File RelPath="System.Spatial\GeographySurface.cs" SubType="Code" BuildAction="Compile" />
+        <File RelPath="System.Spatial\GeographyFullGlobe.cs" SubType="Code" BuildAction="Compile" />
+        <File RelPath="System.Spatial\GeographyCurve.cs" SubType="Code" BuildAction="Compile" />
+        <File RelPath="System.Spatial\GeographyLineString.cs" SubType="Code" BuildAction="Compile" />
+        <File RelPath="System.Spatial\GeographyPoint.cs" SubType="Code" BuildAction="Compile" />
+        <File RelPath="System.Spatial\GeographyCollection.cs" SubType="Code" BuildAction="Compile" />
+        <File RelPath="System.Spatial\GeographyMultiCurve.cs" SubType="Code" BuildAction="Compile" />
+        <File RelPath="System.Spatial\GeographyMultiLineString.cs" SubType="Code" BuildAction="Compile" />
+        <File RelPath="System.Spatial\GeographyMultiPoint.cs" SubType="Code" BuildAction="Compile" />
+        <File RelPath="System.Spatial\GeographyMultiSurface.cs" SubType="Code" BuildAction="Compile" />
+        <File RelPath="System.Spatial\GeographyMultiPolygon.cs" SubType="Code" BuildAction="Compile" />
+        <File RelPath="System.Spatial\GeographyPolygon.cs" SubType="Code" BuildAction="Compile" />
+        <File RelPath="System.Spatial\GeometryCollection.cs" SubType="Code" BuildAction="Compile" />
+        <File RelPath="System.Spatial\GeometryCurve.cs" SubType="Code" BuildAction="Compile" />
+        <File RelPath="System.Spatial\GeometryLineString.cs" SubType="Code" BuildAction="Compile" />
+        <File RelPath="System.Spatial\GeometryPoint.cs" SubType="Code" BuildAction="Compile" />
+        <File RelPath="System.Spatial\GeometryMultiCurve.cs" SubType="Code" BuildAction="Compile" />
+        <File RelPath="System.Spatial\GeometryMultiLineString.cs" SubType="Code" BuildAction="Compile" />
+        <File RelPath="System.Spatial\GeometryMultiPoint.cs" SubType="Code" BuildAction="Compile" />
+        <File RelPath="System.Spatial\GeometryMultiSurface.cs" SubType="Code" BuildAction="Compile" />
+        <File RelPath="System.Spatial\GeometryMultiPolygon.cs" SubType="Code" BuildAction="Compile" />
+        <File RelPath="System.Spatial\GeometryPolygon.cs" SubType="Code" BuildAction="Compile" />
+        <File RelPath="System.Spatial\GeometrySurface.cs" SubType="Code" BuildAction="Compile" />
+        <File RelPath="System.Spatial\IGeographyProvider.cs" SubType="Code" BuildAction="Compile" />
+        <File RelPath="System.Spatial\IGeometryProvider.cs" SubType="Code" BuildAction="Compile" />
+        <File RelPath="System.Spatial\IShapeProvider.cs" SubType="Code" BuildAction="Compile" />
+        <File RelPath="System.Spatial\ActionOnDispose.cs" SubType="Code" BuildAction="Compile" />
+        <File RelPath="System.Spatial\GmlFormatter.cs" SubType="Code" BuildAction="Compile" />
+        <File RelPath="System.Spatial\WellKnownTextSqlFormatter.cs" SubType="Code" BuildAction="Compile" />
+        <File RelPath="System.Spatial\SpatialValidator.cs" SubType="Code" BuildAction="Compile" />
+        <File RelPath="System.Spatial\GeographyOperationsExtensions.cs" SubType="Code" BuildAction="Compile" />
+        <File RelPath="System.Spatial\SpatialOperations.cs" SubType="Code" BuildAction="Compile" />
+        <File RelPath="Microsoft.Data.Spatial\ExtensionMethods.cs" SubType="Code" BuildAction="Compile" />
+        <File RelPath="System.Spatial\GeometryOperationsExtensions.cs" SubType="Code" BuildAction="Compile" />
+        <File RelPath="System.Spatial\PriorityQueue!1.cs" SubType="Code" BuildAction="Compile" />
+        <File RelPath="Microsoft.Data.Spatial\DataServicesSpatialImplementation.cs" SubType="Code" BuildAction="Compile" />
+        <File RelPath="System.Spatial\OrcasExtensions.cs" SubType="Code" BuildAction="Compile" />
+        <File RelPath="Microsoft.Data.Spatial\WellKnownTextSqlFormatterImplementation.cs" SubType="Code" BuildAction="Compile" />
+        <File RelPath="Microsoft.Data.Spatial\WellKnownTextSqlWriter.cs" SubType="Code" BuildAction="Compile" />
+        <File RelPath="Microsoft.Data.Spatial\WellKnownTextSqlReader.cs" SubType="Code" BuildAction="Compile" />
+        <File RelPath="Microsoft.Data.Spatial\GmlWriter.cs" SubType="Code" BuildAction="Compile" />
+        <File RelPath="Microsoft.Data.Spatial\GmlFormatterImplementation.cs" SubType="Code" BuildAction="Compile" />
+        <File RelPath="Microsoft.Data.Spatial\GmlReader.cs" SubType="Code" BuildAction="Compile" />
+        <File RelPath="Microsoft.Data.Spatial\TextLexerBase.cs" SubType="Code" BuildAction="Compile" />
+        <File RelPath="Microsoft.Data.Spatial\LexerToken.cs" SubType="Code" BuildAction="Compile" />
+        <File RelPath="Microsoft.Data.Spatial\WellKnownTextLexer.cs" SubType="Code" BuildAction="Compile" />
+        <File RelPath="Microsoft.Data.Spatial\WellKnownTextTokenType.cs" SubType="Code" BuildAction="Compile" />
+        <File RelPath="Microsoft.Data.Spatial\GeographyBuilderImplementation.cs" SubType="Code" BuildAction="Compile" />
+        <File RelPath="Microsoft.Data.Spatial\GeometryBuilderImplementation.cs" SubType="Code" BuildAction="Compile" />
+        <File RelPath="Microsoft.Data.Spatial\SpatialValidatorImplementation.cs" SubType="Code" BuildAction="Compile" />
+        <File RelPath="Microsoft.Data.Spatial\SpatialTreeBuilder!1.cs" SubType="Code" BuildAction="Compile" />
+        <File RelPath="Microsoft.Data.Spatial\GeographyPointImplementation.cs" SubType="Code" BuildAction="Compile" />
+        <File RelPath="Microsoft.Data.Spatial\GeographyLineStringImplementation.cs" SubType="Code" BuildAction="Compile" />
+        <File RelPath="Microsoft.Data.Spatial\GeographyPolygonImplementation.cs" SubType="Code" BuildAction="Compile" />
+        <File RelPath="Microsoft.Data.Spatial\GeographyMultiPointImplementation.cs" SubType="Code" BuildAction="Compile" />
+        <File RelPath="Microsoft.Data.Spatial\GeographyMultiLineStringImplementation.cs" SubType="Code" BuildAction="Compile" />
+        <File RelPath="Microsoft.Data.Spatial\GeographyMultiPolygonImplementation.cs" SubType="Code" BuildAction="Compile" />
+        <File RelPath="Microsoft.Data.Spatial\GeographyCollectionImplementation.cs" SubType="Code" BuildAction="Compile" />
+        <File RelPath="Microsoft.Data.Spatial\GeographyFullGlobeImplementation.cs" SubType="Code" BuildAction="Compile" />
+        <File RelPath="Microsoft.Data.Spatial\GeometryPointImplementation.cs" SubType="Code" BuildAction="Compile" />
+        <File RelPath="Microsoft.Data.Spatial\GeometryLineStringImplementation.cs" SubType="Code" BuildAction="Compile" />
+        <File RelPath="Microsoft.Data.Spatial\GeometryPolygonImplementation.cs" SubType="Code" BuildAction="Compile" />
+        <File RelPath="Microsoft.Data.Spatial\GeometryMultiPointImplementation.cs" SubType="Code" BuildAction="Compile" />
+        <File RelPath="Microsoft.Data.Spatial\GeometryMultiLineStringImplementation.cs" SubType="Code" BuildAction="Compile" />
+        <File RelPath="Microsoft.Data.Spatial\GeometryMultiPolygonImplementation.cs" SubType="Code" BuildAction="Compile" />
+        <File RelPath="Microsoft.Data.Spatial\GeometryCollectionImplementation.cs" SubType="Code" BuildAction="Compile" />
+        <File RelPath="Microsoft.Data.Spatial\GeographyHelperMethods.cs" SubType="Code" BuildAction="Compile" />
+        <File RelPath="Microsoft.Data.Spatial\GeometryHelperMethods.cs" SubType="Code" BuildAction="Compile" />
+        <File RelPath="Microsoft.Data.Spatial\DebugUtils.cs" SubType="Code" BuildAction="Compile" />
+        <File RelPath="Microsoft.Data.Spatial\GmlConstants.cs" SubType="Code" BuildAction="Compile" />
+        <File RelPath="Microsoft.Data.Spatial\WellKnownTextConstants.cs" SubType="Code" BuildAction="Compile" />
+        <File RelPath="Microsoft.Data.Spatial\GeoJsonMember.cs" SubType="Code" BuildAction="Compile" />
+        <File RelPath="Microsoft.Data.Spatial\GeoJsonConstants.cs" SubType="Code" BuildAction="Compile" />
+        <File RelPath="Microsoft.Data.Spatial\XmlConstants.cs" SubType="Code" BuildAction="Compile" />
+        <File RelPath="System.Spatial\TextResDescriptionAttribute.cs" SubType="Code" BuildAction="Compile" />
+        <File RelPath="System.Spatial\TextRes.cs" SubType="Code" BuildAction="Compile" />
+        <File RelPath="System.Spatial\TextResCategoryAttribute.cs" SubType="Code" BuildAction="Compile" />
+        <File RelPath="System.Spatial\Error.cs" SubType="Code" BuildAction="Compile" />
+        <File RelPath="System.Spatial.resx" BuildAction="EmbeddedResource" />
+      </Include>
+    </Files>
+  </CSHARP>
+  <PropertyGroup xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>10.0.0</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{16E74297-50B6-44A4-A3EB-6DD23F27884B}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>System.Spatial.PowerShell</RootNamespace>
+    <AssemblyName>System.Spatial.PowerShell</AssemblyName>
+    <SignAssembly>True</SignAssembly>
+    <AssemblyOriginatorKeyFile>..\..\..\mono.snk</AssemblyOriginatorKeyFile>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' " xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <DebugSymbols>True</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>False</Optimize>
+    <OutputPath>bin\Debug</OutputPath>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>False</ConsolePause>
+    <DefineConstants>DEBUG;</DefineConstants>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' " xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <DebugType>none</DebugType>
+    <Optimize>True</Optimize>
+    <OutputPath>bin\Release</OutputPath>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>False</ConsolePause>
+  </PropertyGroup>
+  <ItemGroup xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <Reference Include="System" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+  </ItemGroup>
+  <ItemGroup xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <Compile Include="Microsoft.Data.Spatial\DataServicesSpatialImplementation.cs" />
+    <Compile Include="Microsoft.Data.Spatial\DebugUtils.cs" />
+    <Compile Include="Microsoft.Data.Spatial\DrawBoth.cs" />
+    <Compile Include="Microsoft.Data.Spatial\ExtensionMethods.cs" />
+    <Compile Include="Microsoft.Data.Spatial\ForwardingSegment.cs" />
+    <Compile Include="Microsoft.Data.Spatial\GeographyBuilderImplementation.cs" />
+    <Compile Include="Microsoft.Data.Spatial\GeographyCollectionImplementation.cs" />
+    <Compile Include="Microsoft.Data.Spatial\GeographyFullGlobeImplementation.cs" />
+    <Compile Include="Microsoft.Data.Spatial\GeographyHelperMethods.cs" />
+    <Compile Include="Microsoft.Data.Spatial\GeographyLineStringImplementation.cs" />
+    <Compile Include="Microsoft.Data.Spatial\GeographyMultiLineStringImplementation.cs" />
+    <Compile Include="Microsoft.Data.Spatial\GeographyMultiPointImplementation.cs" />
+    <Compile Include="Microsoft.Data.Spatial\GeographyMultiPolygonImplementation.cs" />
+    <Compile Include="Microsoft.Data.Spatial\GeographyPointImplementation.cs" />
+    <Compile Include="Microsoft.Data.Spatial\GeographyPolygonImplementation.cs" />
+    <Compile Include="Microsoft.Data.Spatial\GeoJsonConstants.cs" />
+    <Compile Include="Microsoft.Data.Spatial\GeoJsonMember.cs" />
+    <Compile Include="Microsoft.Data.Spatial\GeoJsonObjectFormatterImplementation.cs" />
+    <Compile Include="Microsoft.Data.Spatial\GeoJsonObjectReader.cs" />
+    <Compile Include="Microsoft.Data.Spatial\GeoJsonObjectWriter.cs" />
+    <Compile Include="Microsoft.Data.Spatial\GeoJsonWriterBase.cs" />
+    <Compile Include="Microsoft.Data.Spatial\GeometryBuilderImplementation.cs" />
+    <Compile Include="Microsoft.Data.Spatial\GeometryCollectionImplementation.cs" />
+    <Compile Include="Microsoft.Data.Spatial\GeometryHelperMethods.cs" />
+    <Compile Include="Microsoft.Data.Spatial\GeometryLineStringImplementation.cs" />
+    <Compile Include="Microsoft.Data.Spatial\GeometryMultiLineStringImplementation.cs" />
+    <Compile Include="Microsoft.Data.Spatial\GeometryMultiPointImplementation.cs" />
+    <Compile Include="Microsoft.Data.Spatial\GeometryMultiPolygonImplementation.cs" />
+    <Compile Include="Microsoft.Data.Spatial\GeometryPointImplementation.cs" />
+    <Compile Include="Microsoft.Data.Spatial\GeometryPolygonImplementation.cs" />
+    <Compile Include="Microsoft.Data.Spatial\GmlConstants.cs" />
+    <Compile Include="Microsoft.Data.Spatial\GmlFormatterImplementation.cs" />
+    <Compile Include="Microsoft.Data.Spatial\GmlReader.cs" />
+    <Compile Include="Microsoft.Data.Spatial\GmlWriter.cs" />
+    <Compile Include="Microsoft.Data.Spatial\LexerToken.cs" />
+    <Compile Include="Microsoft.Data.Spatial\SpatialTreeBuilder!1.cs" />
+    <Compile Include="Microsoft.Data.Spatial\SpatialValidatorImplementation.cs" />
+    <Compile Include="Microsoft.Data.Spatial\TextLexerBase.cs" />
+    <Compile Include="Microsoft.Data.Spatial\TypeWashedPipeline.cs" />
+    <Compile Include="Microsoft.Data.Spatial\TypeWashedToGeographyLatLongPipeline.cs" />
+    <Compile Include="Microsoft.Data.Spatial\TypeWashedToGeographyLongLatPipeline.cs" />
+    <Compile Include="Microsoft.Data.Spatial\TypeWashedToGeometryPipeline.cs" />
+    <Compile Include="Microsoft.Data.Spatial\WellKnownTextConstants.cs" />
+    <Compile Include="Microsoft.Data.Spatial\WellKnownTextLexer.cs" />
+    <Compile Include="Microsoft.Data.Spatial\WellKnownTextSqlFormatterImplementation.cs" />
+    <Compile Include="Microsoft.Data.Spatial\WellKnownTextSqlReader.cs" />
+    <Compile Include="Microsoft.Data.Spatial\WellKnownTextSqlWriter.cs" />
+    <Compile Include="Microsoft.Data.Spatial\WellKnownTextTokenType.cs" />
+    <Compile Include="Microsoft.Data.Spatial\XmlConstants.cs" />
+    <Compile Include="System.Spatial\ActionOnDispose.cs" />
+    <Compile Include="System.Spatial\CompositeKey!2.cs" />
+    <Compile Include="System.Spatial\CoordinateSystem.cs" />
+    <Compile Include="System.Spatial\Error.cs" />
+    <Compile Include="System.Spatial\FormatterExtensions.cs" />
+    <Compile Include="System.Spatial\Geography.cs" />
+    <Compile Include="System.Spatial\GeographyCollection.cs" />
+    <Compile Include="System.Spatial\GeographyCurve.cs" />
+    <Compile Include="System.Spatial\GeographyFullGlobe.cs" />
+    <Compile Include="System.Spatial\GeographyLineString.cs" />
+    <Compile Include="System.Spatial\GeographyMultiCurve.cs" />
+    <Compile Include="System.Spatial\GeographyMultiLineString.cs" />
+    <Compile Include="System.Spatial\GeographyMultiPoint.cs" />
+    <Compile Include="System.Spatial\GeographyMultiPolygon.cs" />
+    <Compile Include="System.Spatial\GeographyMultiSurface.cs" />
+    <Compile Include="System.Spatial\GeographyOperationsExtensions.cs" />
+    <Compile Include="System.Spatial\GeographyPipeline.cs" />
+    <Compile Include="System.Spatial\GeographyPoint.cs" />
+    <Compile Include="System.Spatial\GeographyPolygon.cs" />
+    <Compile Include="System.Spatial\GeographyPosition.cs" />
+    <Compile Include="System.Spatial\GeographySurface.cs" />
+    <Compile Include="System.Spatial\GeoJsonObjectFormatter.cs" />
+    <Compile Include="System.Spatial\Geometry.cs" />
+    <Compile Include="System.Spatial\GeometryCollection.cs" />
+    <Compile Include="System.Spatial\GeometryCurve.cs" />
+    <Compile Include="System.Spatial\GeometryLineString.cs" />
+    <Compile Include="System.Spatial\GeometryMultiCurve.cs" />
+    <Compile Include="System.Spatial\GeometryMultiLineString.cs" />
+    <Compile Include="System.Spatial\GeometryMultiPoint.cs" />
+    <Compile Include="System.Spatial\GeometryMultiPolygon.cs" />
+    <Compile Include="System.Spatial\GeometryMultiSurface.cs" />
+    <Compile Include="System.Spatial\GeometryOperationsExtensions.cs" />
+    <Compile Include="System.Spatial\GeometryPipeline.cs" />
+    <Compile Include="System.Spatial\GeometryPoint.cs" />
+    <Compile Include="System.Spatial\GeometryPolygon.cs" />
+    <Compile Include="System.Spatial\GeometryPosition.cs" />
+    <Compile Include="System.Spatial\GeometrySurface.cs" />
+    <Compile Include="System.Spatial\GmlFormatter.cs" />
+    <Compile Include="System.Spatial\IGeographyProvider.cs" />
+    <Compile Include="System.Spatial\IGeometryProvider.cs" />
+    <Compile Include="System.Spatial\IShapeProvider.cs" />
+    <Compile Include="System.Spatial\ISpatial.cs" />
+    <Compile Include="System.Spatial\OrcasExtensions.cs" />
+    <Compile Include="System.Spatial\ParseErrorException.cs" />
+    <Compile Include="System.Spatial\PlatformHelper.cs" />
+    <Compile Include="System.Spatial\PriorityQueue!1.cs" />
+    <Compile Include="System.Spatial\SpatialBuilder.cs" />
+    <Compile Include="System.Spatial\SpatialFormatter!2.cs" />
+    <Compile Include="System.Spatial\SpatialImplementation.cs" />
+    <Compile Include="System.Spatial\SpatialOperations.cs" />
+    <Compile Include="System.Spatial\SpatialPipeline.cs" />
+    <Compile Include="System.Spatial\SpatialReader!1.cs" />
+    <Compile Include="System.Spatial\SpatialType.cs" />
+    <Compile Include="System.Spatial\SpatialTypeExtensions.cs" />
+    <Compile Include="System.Spatial\SpatialValidator.cs" />
+    <Compile Include="System.Spatial\Strings.cs" />
+    <Compile Include="System.Spatial\TextRes.cs" />
+    <Compile Include="System.Spatial\TextResCategoryAttribute.cs" />
+    <Compile Include="System.Spatial\TextResDescriptionAttribute.cs" />
+    <Compile Include="System.Spatial\Util.cs" />
+    <Compile Include="System.Spatial\WellKnownTextSqlFormatter.cs" />
+    <Compile Include="_PrivateImplementationDetails_{B4FEEE59-4A64-409C-BBC0-F69A37872B78}.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <None Include="System.Spatial.resx" />
+  </ItemGroup>
+</VisualStudioProject>

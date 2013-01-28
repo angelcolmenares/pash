@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{155AEF28-C81F-405D-9072-9D52780E3E70}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <NoWarn>1699</NoWarn>
+    <OutputPath>./../../class/lib/net_4_5</OutputPath>
+    <NoStdLib>true</NoStdLib>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <AssemblyName>System.Runtime.DurableInstancing</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <!-- Filter out System.Core added by: Microsoft.NETFramework.props  -->
+    <AddAdditionalExplicitAssemblyReferences>false</AddAdditionalExplicitAssemblyReferences>
+    <SignAssembly>True</SignAssembly>
+    <AssemblyOriginatorKeyFile>..\..\mono.snk</AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>True</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>False</Optimize>
+    <DefineConstants>DEBUG;TRACE;NET_1_1;NET_2_0;NET_3_0;NET_3_5;NET_4_0;NET_4_5</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AdditionalLibPaths>./../../class/lib/net_4_5</AdditionalLibPaths>
+    <OutputPath>..\..\class\lib\net_4_5</OutputPath>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>True</Optimize>
+    <DefineConstants>NET_1_1;NET_2_0;NET_3_0;NET_3_5;NET_4_0;NET_4_5</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AdditionalLibPaths>./../../class/lib/net_4_5</AdditionalLibPaths>
+    <OutputPath>..\..\class\lib\net_4_5</OutputPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <ItemGroup>
+    <Compile Include="Assembly\AssemblyInfo.cs" />
+    <Compile Include="System.Runtime.DurableInstancing\AllEnums.cs" />
+    <Compile Include="System.Runtime.DurableInstancing\AllExceptions.cs" />
+    <Compile Include="System.Runtime.DurableInstancing\InstanceHandle.cs" />
+    <Compile Include="System.Runtime.DurableInstancing\InstanceKey.cs" />
+    <Compile Include="System.Runtime.DurableInstancing\InstanceKeyView.cs" />
+    <Compile Include="System.Runtime.DurableInstancing\InstanceLockQueryResult.cs" />
+    <Compile Include="System.Runtime.DurableInstancing\InstanceOwner.cs" />
+    <Compile Include="System.Runtime.DurableInstancing\InstanceOwnerQueryResult.cs" />
+    <Compile Include="System.Runtime.DurableInstancing\InstancePersistenceCommand.cs" />
+    <Compile Include="System.Runtime.DurableInstancing\InstancePersistenceContext.cs" />
+    <Compile Include="System.Runtime.DurableInstancing\InstancePersistenceEvent.cs" />
+    <Compile Include="System.Runtime.DurableInstancing\InstanceStore.cs" />
+    <Compile Include="System.Runtime.DurableInstancing\InstanceStoreQueryResult.cs" />
+    <Compile Include="System.Runtime.DurableInstancing\InstanceValue.cs" />
+    <Compile Include="System.Runtime.DurableInstancing\InstanceView.cs" />
+    <Compile Include="Consts.cs" />
+    <Compile Include="Locale.cs" />
+    <Compile Include="MonoTODOAttribute.cs" />
+  </ItemGroup>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <PropertyGroup>
+    <PreBuildEvent>
+    </PreBuildEvent>
+  </PropertyGroup>
+  <ItemGroup>
+    <Folder Include="Properties\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq" />
+  </ItemGroup>
+</Project>

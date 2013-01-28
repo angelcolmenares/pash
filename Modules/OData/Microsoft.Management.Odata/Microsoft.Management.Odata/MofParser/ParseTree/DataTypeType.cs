@@ -1,0 +1,37 @@
+namespace Microsoft.Management.Odata.MofParser.ParseTree
+{
+	internal enum DataTypeType
+	{
+		ObjectReference,
+		ObjectReferenceArray,
+		ClassName,
+		Bool,
+		BoolArray,
+		Char16,
+		Char16Array,
+		DateTime,
+		DateTimeArray,
+		Real32,
+		Real32Array,
+		Real64,
+		Real64Array,
+		SInt8,
+		SInt8Array,
+		SInt16,
+		SInt16Array,
+		SInt32,
+		SInt32Array,
+		SInt64,
+		SInt64Array,
+		String,
+		StringArray,
+		UInt8,
+		UInt8Array,
+		UInt16,
+		UInt16Array,
+		UInt32,
+		UInt32Array,
+		UInt64,
+		UInt64Array
+	}
+}

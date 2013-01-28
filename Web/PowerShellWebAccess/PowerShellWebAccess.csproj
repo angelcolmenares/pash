@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>10.0.0</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{B5D1EC62-8AB3-4F03-8C6F-7B2B024F8AF6}</ProjectGuid>
+    <ProjectTypeGuids>{349C5851-65DF-11DA-9384-00065B846F21};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <RootNamespace>PowerShellWebAccess</RootNamespace>
+    <AssemblyName>PowerShellWebAccess</AssemblyName>
+    <SignAssembly>True</SignAssembly>
+    <AssemblyOriginatorKeyFile>..\..\mono.snk</AssemblyOriginatorKeyFile>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>True</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>False</Optimize>
+    <OutputPath>bin</OutputPath>
+    <DefineConstants>DEBUG;</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>False</ConsolePause>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>none</DebugType>
+    <Optimize>True</Optimize>
+    <OutputPath>bin</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>False</ConsolePause>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.ServiceModel" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(MSBuildExtensionsPath)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" />
+  <ProjectExtensions>
+    <MonoDevelop>
+      <Properties VerifyCodeBehindFields="True" VerifyCodeBehindEvents="True">
+        <XspParameters Port="8080" Address="127.0.0.1" SslMode="None" SslProtocol="Default" KeyType="None" CertFile="" KeyFile="" PasswordOptions="None" Password="" Verbose="True" />
+      </Properties>
+    </MonoDevelop>
+  </ProjectExtensions>
+  <ItemGroup>
+    <ProjectReference Include="..\Microsoft.Management.UI.PowWA.Host\Microsoft.Management.UI.PowWA.Host.csproj">
+      <Project>{651D0468-D31B-418C-8F50-8DC3C07A205E}</Project>
+      <Name>Microsoft.Management.UI.PowWA.Host</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Microsoft.Management.UI.PowWA.Web\Microsoft.Management.UI.PowWA.Web.csproj">
+      <Project>{1575E100-9D63-4F78-8B87-1121C7EC48BF}</Project>
+      <Name>Microsoft.Management.UI.PowWA.Web</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Microsoft.Management.UI.PowWA.Management\Microsoft.Management.UI.PowWA.Management.csproj">
+      <Project>{EB37BDB5-A572-4991-BD5A-F4018CBC866E}</Project>
+      <Name>Microsoft.Management.UI.PowWA.Management</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\System.Management.Automation\System.Management.Automation.csproj">
+      <Project>{3AA23D43-1616-4C39-95D6-D26E63E7D5AB}</Project>
+      <Name>System.Management.Automation</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="default.aspx" />
+    <Content Include="FormLayout.Master" />
+    <Content Include="Global.asax" />
+    <Content Include="Web.config" />
+    <Content Include="css\site.css" />
+    <Content Include="en-US\Web.config" />
+    <Content Include="en-US\console.aspx" />
+    <Content Include="en-US\error.aspx" />
+    <Content Include="en-US\logon.aspx" />
+    <Content Include="en-US\logout.aspx" />
+    <Content Include="en-US\powershell.console.ui.resources.js" />
+    <Content Include="en-US\session.aspx" />
+    <Content Include="en-US\timeout.aspx" />
+    <Content Include="images\POWA_MSLogo.png" />
+    <Content Include="images\POWA_PageBkgr_24bit.png" />
+    <Content Include="images\POWA_PageBkgr_24bit_transparent.png" />
+    <Content Include="images\POWA_WSLogo.png" />
+    <Content Include="images\Wait.gif" />
+    <Content Include="images\bar.png" />
+    <Content Include="images\down.png" />
+    <Content Include="images\down_arrow.png" />
+    <Content Include="images\down_disabled.png" />
+    <Content Include="images\form_layout_bg.png" />
+    <Content Include="images\help_16.png" />
+    <Content Include="images\play_disabled.png" />
+    <Content Include="images\play_enabled.png" />
+    <Content Include="images\powershell_banner.png" />
+    <Content Include="images\powershell_ico16.png" />
+    <Content Include="images\powershell_ico32.png" />
+    <Content Include="images\powershell_ico48.png" />
+    <Content Include="images\separator.png" />
+    <Content Include="images\stop_disabled.png" />
+    <Content Include="images\stop_enabled.png" />
+    <Content Include="images\tab_completion.png" />
+    <Content Include="images\up.png" />
+    <Content Include="images\up_arrow.png" />
+    <Content Include="images\up_disabled.png" />
+    <Content Include="images\ui\ui-bg_flat_0_aaaaaa_40x100.png" />
+    <Content Include="images\ui\ui-bg_glass_55_fbf9ee_1x400.png" />
+    <Content Include="images\ui\ui-bg_glass_65_ffffff_1x400.png" />
+    <Content Include="images\ui\ui-bg_glass_75_dadada_1x400.png" />
+    <Content Include="images\ui\ui-bg_glass_75_e6e6e6_1x400.png" />
+    <Content Include="images\ui\ui-bg_glass_75_ffffff_1x400.png" />
+    <Content Include="images\ui\ui-bg_highlight-soft_75_cccccc_1x100.png" />
+    <Content Include="images\ui\ui-bg_inset-soft_95_fef1ec_1x100.png" />
+    <Content Include="scripts\powershell.console.ui.extentions.js" />
+    <Content Include="scripts\powershell.console.ui.js" />
+    <Content Include="scripts\powershell.console.ui.types.js" />
+    <Content Include="scripts\system.common.js" />
+    <Content Include="images\POWA_XamarinLogo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="README.txt" />
+    <None Include="images\powershell_ico.ico" />
+    <None Include="powershell.pfx">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="css\" />
+    <Folder Include="en-US\" />
+    <Folder Include="images\" />
+    <Folder Include="scripts\" />
+    <Folder Include="scripts\en-US\" />
+  </ItemGroup>
+</Project>

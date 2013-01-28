@@ -1,0 +1,1087 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>1.3</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="NoMatchingResultsForTarget" xml:space="preserve">
+    <value>No matching servers for Target {0} and Scope {1}.</value>
+  </data>
+  <data name="NewADDCCloneConfigFileLocatingWin8PDCMessage" xml:space="preserve">
+    <value>Starting PDC test: Verifying that the domain controller hosting the PDC FSMO role is running Windows Server 2012 or later...</value>
+  </data>
+  <data name="NewADDCCloneConfigFileNotExistingMessage" xml:space="preserve">
+    <value>No valid clone configuration files were found at any of the supported locations.</value>
+  </data>
+  <data name="DisplayNameNotUniqueError" xml:space="preserve">
+    <value>Cannot create the object with display name "{0}". Display name is already used by some other object. Please specify a unique display name.</value>
+  </data>
+  <data name="RemoveADPrincipalGroupMembershipShouldProcessWarning" xml:space="preserve">
+    <value>Do you want to remove all the specified member(s) from the specified group(s)?</value>
+  </data>
+  <data name="CannotTestServiceAccount" xml:space="preserve">
+    <value>Cannot test service account {0}. Error Message: '{1}'.</value>
+  </data>
+  <data name="ServerInvalidExpirationTime" xml:space="preserve">
+    <value>The server has returned the following error: invalid expiration time.</value>
+  </data>
+  <data name="ADProviderPropertiesToClearNotSpecified" xml:space="preserve">
+    <value>Properties to be cleared are not specified.</value>
+  </data>
+  <data name="NoConversionExists" xml:space="preserve">
+    <value>Cannot set value for property '{0}'. Unable to convert from type '{1}' to type '{2}'.</value>
+  </data>
+  <data name="CannotUninstallServiceAccount" xml:space="preserve">
+    <value>Cannot uninstall service account. Error Message: '{0}'.</value>
+  </data>
+  <data name="ADWSXmlParserWSRTGetInvalidExpressionList" xml:space="preserve">
+    <value>WSRT-Get does not support an empty attribute list. Use WS-T Get instead.</value>
+  </data>
+  <data name="DefaultADWSServerNotFound" xml:space="preserve">
+    <value>Unable to find a default server with Active Directory Web Services running.</value>
+  </data>
+  <data name="ResourceIDValidationError" xml:space="preserve">
+    <value>The specified ID is invalid. The ID must 
+(1) start with 1 to 15 characters, 
+(2) be followed by an underscore, 
+(3) be followed by 1 to 16 characters, and 
+(4) not contain word spaces, \, /, :, *, ?, ", &lt;, &gt;, |. 
+ 
+An example is "BusinessImpact_MS". 
+ </value>
+  </data>
+  <data name="ServerDoesNotHaveFriendlyPartition" xml:space="preserve">
+    <value>Server {0} does not have a {1} partition.</value>
+  </data>
+  <data name="TranslateNameError" xml:space="preserve">
+    <value>Unable to translate name: '{0}'.</value>
+  </data>
+  <data name="ADProviderPropertiesNotSpecified" xml:space="preserve">
+    <value>Properties to be retrieved are not specified.</value>
+  </data>
+  <data name="InvalidTypeInCollection" xml:space="preserve">
+    <value>All values in the argument collection should be of the same type.</value>
+  </data>
+  <data name="MethodNotSupportedForObjectType" xml:space="preserve">
+    <value>Method: '{0}' is not supported for object type: '{1}'.</value>
+  </data>
+  <data name="ServerInvalidInstance" xml:space="preserve">
+    <value>Server instance not found on the given port.</value>
+  </data>
+  <data name="InvalidHashtableKeyType" xml:space="preserve">
+    <value>Hashtable can only contain keys of type System.String.</value>
+  </data>
+  <data name="PromptForRecursiveRemove" xml:space="preserve">
+    <value>Are you sure you want to remove the item and all its children?</value>
+  </data>
+  <data name="CannotOverwriteNextVersionXml" xml:space="preserve">
+    <value>The suggested values for {0} contains data in a newer format. The cmdlet will not edit the suggested values.
+To edit suggested values in the newer format, update the cmdlet to a later version. To view the raw attribute content, run the Get cmdlet with -Properties {1}.</value>
+  </data>
+  <data name="ChangePasswordErrorMessage" xml:space="preserve">
+    <value>The new password does not meet complexity requirements or the old password does not match.</value>
+  </data>
+  <data name="ADOUFilterHM" xml:space="preserve">
+    <value>A filter, such as 'Name -like "*Users*"', which is used to search the directory for matching OUs.</value>
+  </data>
+  <data name="InvalidProperty" xml:space="preserve">
+    <value>One or more properties are invalid.</value>
+  </data>
+  <data name="ResouceConditionValidationFailed" xml:space="preserve">
+    <value>Validation failed for Resource Condition {0}.</value>
+  </data>
+  <data name="SourceServerObjNotFoundOrObjToReplicateNotFound" xml:space="preserve">
+    <value>Unable to synchronize the specified object. Either the Source server '{0}' and destination server '{1}' do not share the same configuration partition or the object being synchronized was not found on the source server. </value>
+  </data>
+  <data name="SearchConverterRHSInvalidType" xml:space="preserve">
+    <value>Type: '{0}' is not supported for extended attribute '{1}'.</value>
+  </data>
+  <data name="ADDCCloningExcludedApplicationListNoAppsFound" xml:space="preserve">
+    <value>No excluded applications were detected.</value>
+  </data>
+  <data name="SearchConverterSupportedOperatorListErrorMessage" xml:space="preserve">
+    <value>Operator(s): The following: '{0}' are the only operator(s) supported for searching on extended attribute: '{1}'.</value>
+  </data>
+  <data name="ServerActionNotSupportedFault" xml:space="preserve">
+    <value>The server has returned the following error: action not supported.</value>
+  </data>
+  <data name="ADProviderGCInvalidForADLDS" xml:space="preserve">
+    <value>GlobalCatalog cannot be specified for AD LDS.</value>
+  </data>
+  <data name="UnsupportedOptionSpecified" xml:space="preserve">
+    <value>Unsupported option: '{0}' specified.</value>
+  </data>
+  <data name="ServerIsNotDirectoryServer" xml:space="preserve">
+    <value>The specified server represents a domain or forest name '{0}'.It should instead target a domain controller or an ADLDS instance.</value>
+  </data>
+  <data name="DistinguishedNameCannotBeNull" xml:space="preserve">
+    <value>Distinguished name on the identity cannot be null.</value>
+  </data>
+  <data name="ADInvalidQuantizationHours" xml:space="preserve">
+    <value>This parameter requires a span expressed as whole hours with no remainder.</value>
+  </data>
+  <data name="TimeoutError" xml:space="preserve">
+    <value>The operation returned because the timeout limit was exceeded.</value>
+  </data>
+  <data name="XmlFormattingError" xml:space="preserve">
+    <value>Incorrect Xml formatting in Rule {0}. Extended error message: {1}.</value>
+  </data>
+  <data name="NotSupportedGCPort" xml:space="preserve">
+    <value>The operation is not supported on Global Catalog port.</value>
+  </data>
+  <data name="CouldNotDetermineLoggedOnUserDomain" xml:space="preserve">
+    <value>Could not determine the logged on user's domain.</value>
+  </data>
+  <data name="ServerCannotProcessFilter" xml:space="preserve">
+    <value>The server failed to process the filter.</value>
+  </data>
+  <data name="InvalidACEInSecDesc" xml:space="preserve">
+    <value>For the object {0}, there were unexpected ACE in the Security Descriptor of attribute {1}.</value>
+  </data>
+  <data name="ADProviderExecuteItemNotSupported" xml:space="preserve">
+    <value>Execute-Item is not supported by the ActiveDirectory PowerShell provider.</value>
+  </data>
+  <data name="ADWSXmlParserEmptyMessageReceived" xml:space="preserve">
+    <value>Client received an invalid empty message from the server.</value>
+  </data>
+  <data name="ADDCCloningExcludedApplicationListErrorMessage" xml:space="preserve">
+    <value>Search local domain controller for cloning excluded application list failed with error code: '{0}' Error Message: '{1}'.</value>
+  </data>
+  <data name="DNSHostNameAttrNotFoundOnServer" xml:space="preserve">
+    <value>Could not find DNSHostName attribute value on server object: '{0}'.</value>
+  </data>
+  <data name="UnsupportedObjectClass" xml:space="preserve">
+    <value>The specified objectClass is not supported for this operation: '{0}'.</value>
+  </data>
+  <data name="MoveOperationMasterRoleNotApplicableForADLDS" xml:space="preserve">
+    <value>Role: '{0}' not applicable for AD LDS instance.</value>
+  </data>
+  <data name="FailedAddingMembersToOneOrMoreGroup" xml:space="preserve">
+    <value>Could not add member(s) to one or more ADGroup.</value>
+  </data>
+  <data name="SessionRequired" xml:space="preserve">
+    <value>SessionInfo must be set on the factory.</value>
+  </data>
+  <data name="PasswordChangeSuccessful" xml:space="preserve">
+    <value>Change successful.</value>
+  </data>
+  <data name="ConfigSetNotFound" xml:space="preserve">
+    <value>The specified ConfigurationSet '{0}' cannot be found.</value>
+  </data>
+  <data name="FSMORoleNotFoundInForest" xml:space="preserve">
+    <value>Could not find Operation Master role: {0} in forest: {1}</value>
+  </data>
+  <data name="CAPIDCreationFailure" xml:space="preserve">
+    <value>Unable to create the CAPID by calling Native method GenerateNewCAPID of authz.dll.</value>
+  </data>
+  <data name="ServerMultipleMatchingSecurityPrincipals" xml:space="preserve">
+    <value>The server has returned a multiple matching security principals error.</value>
+  </data>
+  <data name="ADDCCloningExcludedApplicationListNewAllowList" xml:space="preserve">
+    <value>The inclusion list was written to '{0}'.</value>
+  </data>
+  <data name="ADWSXmlParserInvalidelement" xml:space="preserve">
+    <value>Element '{0}':'{1}' Must be present.</value>
+  </data>
+  <data name="SPCTInvalidAppliesToClassWarning" xml:space="preserve">
+    <value>{0} doesn't derive from one of User, Computer, InetOrgPerson or MSA classes.</value>
+  </data>
+  <data name="ServerEncodingLimit" xml:space="preserve">
+    <value>The server has returned the following error: encoding limit exceeded.</value>
+  </data>
+  <data name="DirectoryServerNotFound" xml:space="preserve">
+    <value>Cannot find directory server with identity: '{0}'.</value>
+  </data>
+  <data name="ADProviderClearItemNotSupported" xml:space="preserve">
+    <value>Clear-Item is not supported by the ActiveDirectory PowerShell provider.</value>
+  </data>
+  <data name="NullOrEmptyIdentityPropertyArgument" xml:space="preserve">
+    <value>The Identity property on the argument is null or empty.</value>
+  </data>
+  <data name="SearchConverterUseSearchADAccount" xml:space="preserve">
+    <value>Searching on extended attribute '{0}' is not supported with this cmdlet. Use Search-ADAccount instead.</value>
+  </data>
+  <data name="ADProviderOperationNotSupportedForRootDSEUnlessGC" xml:space="preserve">
+    <value>A recursive search at RootDSE is not supported unless connected to a GlobalCatalog.</value>
+  </data>
+  <data name="CTSourceAttributeValueTypeError" xml:space="preserve">
+    <value>AttributeSyntax of SourceAttribtue must match with current ValueType. ValueType cannot be modified after creation.</value>
+  </data>
+  <data name="ObjectToReplicateNotFoundOnSource" xml:space="preserve">
+    <value>Object being synchronized is not present on source directory server : '{0}'. Object to replicate must either exist on the source server or must be a recently deleted object on the source server which is still present on the destination server. </value>
+  </data>
+  <data name="RCTSuggestedValueNotPresentError" xml:space="preserve">
+    <value>SuggestedValues must be present if IsSuggestedValuesPresent is true in ResourcePropertyValueType.</value>
+  </data>
+  <data name="CouldNotFindForestIdentity" xml:space="preserve">
+    <value>Could not find a forest identified by: '{0}'.</value>
+  </data>
+  <data name="NewADDCCloneConfigFileInvalidIpv4StaticMessage" xml:space="preserve">
+    <value>The IPV4 static settings are invalid. Valid IPV4 static settings must include all of the following: IPV4 addresses, IPV4 Subnet mask, and one or more IPV4 DNS resolvers. The -Static cmdlet flag must also be specified.</value>
+  </data>
+  <data name="FSMORoleNotFoundInDomain" xml:space="preserve">
+    <value>Could not find Operation Master role: {0} in domain: {1}</value>
+  </data>
+  <data name="SuggestedValueNotUniqueError" xml:space="preserve">
+    <value>Values passed in the SuggestedValues are not unique. {0} is repeated more than once.</value>
+  </data>
+  <data name="ForestIdDoesNotMatch" xml:space="preserve">
+    <value>Forest Id does not match.</value>
+  </data>
+  <data name="DelegatePipelineEmptyError" xml:space="preserve">
+    <value>Delegate pipelines is empty</value>
+  </data>
+  <data name="RuleValidationFailure" xml:space="preserve">
+    <value>Validation failed for Rule {0}. Extended error message: {1}.</value>
+  </data>
+  <data name="UnsupportedParameterType" xml:space="preserve">
+    <value>Type {0} is not supported for parameter {1}.</value>
+  </data>
+  <data name="ClaimTypeRestrictValueError" xml:space="preserve">
+    <value>RestrictValues cannot be true if SuggestedValues is null or empty.</value>
+  </data>
+  <data name="DestinationDoesNotTargetDirectoryServer" xml:space="preserve">
+    <value>Destination directory server represents a domain or forest name '{0}'.It should instead target a domain controller or an ADLDS instance.</value>
+  </data>
+  <data name="ADProviderPathNotFound" xml:space="preserve">
+    <value>Object at path '{0}' not found.</value>
+  </data>
+  <data name="NoMixedType" xml:space="preserve">
+    <value>An AD Property Value Collection may only contain values of the same type. Specified value of type '{0}' does not match the existing type of '{1}'.</value>
+  </data>
+  <data name="AcctChangePwdNotWorksWhenPwdNotExpires" xml:space="preserve">
+    <value>'{0}' for this account is set to true. The account will not be required to change the password at next logon.</value>
+  </data>
+  <data name="AsqResponseError" xml:space="preserve">
+    <value>Attribute scoped query for object '{0}' on attribute '{1}' failed with error: '{2}'.</value>
+  </data>
+  <data name="SPCTBlockedSourceAttribute" xml:space="preserve">
+    <value>Attribute passed can't be used as SourceAttribute.</value>
+  </data>
+  <data name="ParameterRequiredOnlyOne" xml:space="preserve">
+    <value>Only one of the following parameters may be specified '{0}'.</value>
+  </data>
+  <data name="DestinationServerDoesNotSupportSynchronizingObject" xml:space="preserve">
+    <value>Active Directory Web Services running on destination server '{0}' does not support synchronizing a directory object. Please specify a different destination server that supports it.  </value>
+  </data>
+  <data name="NewADDCCloneConfigFileTestWhiteListMessage" xml:space="preserve">
+    <value>Starting test: Validating the cloning allow list.</value>
+  </data>
+  <data name="MultipleKeywords" xml:space="preserve">
+    <value>Only one keyword is allowed in the property list parameter.</value>
+  </data>
+  <data name="SPCTRODCFilteredSourceAttr" xml:space="preserve">
+    <value>A RODC filtered attribute can't be used as SourceAttribute.</value>
+  </data>
+  <data name="NewADDCCloneConfigFileNoDitLocationMessage" xml:space="preserve">
+    <value>Failed to find the path to the Directory Service database.</value>
+  </data>
+  <data name="IdentityInWrongPartition" xml:space="preserve">
+    <value>Object with identity '{0}' was found, but exists in partition '{1}' rather than the specified partition '{2}'.</value>
+  </data>
+  <data name="ADProviderErrorInitializingDefaultDrive" xml:space="preserve">
+    <value>Error initializing default drive: '{0}'.</value>
+  </data>
+  <data name="ADOFFilterHM" xml:space="preserve">
+    <value>A filter, such as '*', which is used to search the directory for matching optional features.</value>
+  </data>
+  <data name="ParameterValueNotSearchResult" xml:space="preserve">
+    <value>Object passed in parameter: '{0}' must be the output of an ActiveDirectory PowerShell cmdlet.</value>
+  </data>
+  <data name="ADProviderSetItemNotSupported" xml:space="preserve">
+    <value>Set-Item is not supported by the ActiveDirectory PowerShell provider.</value>
+  </data>
+  <data name="SharesValueWithIdentityError" xml:space="preserve">
+    <value>The specified ClaimType identity cannot be located.
+{0}</value>
+  </data>
+  <data name="CustomAttributeCollision" xml:space="preserve">
+    <value>Custom attribute '{0}' and extended attribute '{1}' cannot both be specified. They apply to the same directory attribute.</value>
+  </data>
+  <data name="DestinationServerDown" xml:space="preserve">
+    <value>Unable to contact the destination server '{0}'. This may be because this server does not exist, it is currently down, or it does not have the Active Directory Web Services running.</value>
+  </data>
+  <data name="DelegatePipelineReferenceDelegateNotFoundError" xml:space="preserve">
+    <value>Reference delegate not found. Target: {0} Method: {1}</value>
+  </data>
+  <data name="ADAccountRPRPDomainControllerHM" xml:space="preserve">
+    <value>The GUID, IP address, DNS host name, name, NTDS settings DN, or NTDS settings GUID of an RODC to query for password replication policies.</value>
+  </data>
+  <data name="ADProviderOperationNotSupportedForRootDSE" xml:space="preserve">
+    <value>This operation is not supported for RootDSE.</value>
+  </data>
+  <data name="ADFilterVariableNotDefinedMessage" xml:space="preserve">
+    <value>Variable: '{0}' found in expression: ${1} is not defined.</value>
+  </data>
+  <data name="ExceedMax" xml:space="preserve">
+    <value>The value exceeds the maximum allowed.</value>
+  </data>
+  <data name="ServerNoMatchingSecurityPrincipal" xml:space="preserve">
+    <value>The server has returned a no matching security principal error.</value>
+  </data>
+  <data name="MoveOperationMasterRoleCaption" xml:space="preserve">
+    <value>Move Operation Master Role</value>
+  </data>
+  <data name="ADPrincipalGMIdentityHM" xml:space="preserve">
+    <value>The DN, GUID, SID, or SAM account name of a security principal to get the group membership of.</value>
+  </data>
+  <data name="WarningPolicyUsageNotAccurateOnRODC" xml:space="preserve">
+    <value>You are currently connected to a Read Only domain controller(RODC) : '{0}'. Policy usage data fetched from RODCs may not be accurate.</value>
+  </data>
+  <data name="WarningResultantPRPNotAccurateOnRODC" xml:space="preserve">
+    <value>You are currently connected to a Read Only domain controller(RODC) : '{0}'. Resultant password replication policy data fetched from RODCs may not be accurate.</value>
+  </data>
+  <data name="MoveOperationMasterRoleWarning" xml:space="preserve">
+    <value>Do you want to move role '{0}' to server '{1}' ?</value>
+  </data>
+  <data name="CTBothPossibleValuesShareValueWarning" xml:space="preserve">
+    <value>Only one of SharesValuesWith and SuggestedValues can be specified.</value>
+  </data>
+  <data name="SearchConverterNotBinaryNode" xml:space="preserve">
+    <value>Filter expression passed for conversion is NOT a binary node.</value>
+  </data>
+  <data name="EmptySearchBaseNotSupported" xml:space="preserve">
+    <value>An empty SearchBase is only supported while connected to a GlobalCatalog.</value>
+  </data>
+  <data name="NewADDCCloneConfigFileLocalModeNoLocalDCMessage" xml:space="preserve">
+    <value>The cmdlet is running in local mode because the -Offline cmdlet flag was not specified. However, the local machine is either not a domain controller or the directory service is currently unavailable. To run the cmdlet in local mode, please run it directly on the domain controller you intend to use as the cloning source machine. Otherwise, please specify the -Offline cmdlet flag to run the cmdlet in offline mode.</value>
+  </data>
+  <data name="FailedAddingMembersToGroup" xml:space="preserve">
+    <value>Could not add member(s) to ADGroup: '{0}'. Error is: '{1}'.</value>
+  </data>
+  <data name="ResourcePropertySharesValueWithValueTypeError" xml:space="preserve">
+    <value>ResourcePropertyValueType must be present in the list of CompitableResourceTypes of SharesValueWith ClaimType.</value>
+  </data>
+  <data name="ClaimIDValidationError" xml:space="preserve">
+    <value>The ID must:
+(1) start with "ad://ext/", 
+(2) be followed by 1 to 32 characters, 
+(3) not contain word spaces, \, *, ?, ", &lt;, &gt;, |, and 
+(4) if a "/" is introduced after "ad://ext/", then the "/" must be surrounded by a character on each side. The surrounding character must not be ":", "/", or in the list specified in (3). 
+ 
+An example is "ad://ext/BusinessImpact". 
+ </value>
+  </data>
+  <data name="RCTSuggestedValuePresentError" xml:space="preserve">
+    <value>SuggestedValues cannot be present if IsSuggestedValuesPresent is false in ResourcePropertyValueType.</value>
+  </data>
+  <data name="SPCTSourceAttributeLdapDisplayNameError" xml:space="preserve">
+    <value>Unable to find the ldap displayName for the SourceAttribute {0}. We need that information to verify if SourceAttribute belongs to AppliesToClasses.</value>
+  </data>
+  <data name="SearchConverterRHSNotDataNode" xml:space="preserve">
+    <value>Right-hand side expression of the filter is not a data node.</value>
+  </data>
+  <data name="InvalidType" xml:space="preserve">
+    <value>Invalid type '{0}'.</value>
+  </data>
+  <data name="InvalidYear" xml:space="preserve">
+    <value>Invalid year.</value>
+  </data>
+  <data name="NoNegativeTime" xml:space="preserve">
+    <value>A negative value is not permitted for the time limit.</value>
+  </data>
+  <data name="FailedRemovingMembersFromGroup" xml:space="preserve">
+    <value>Could not remove member(s) from ADGroup: '{0}'. Error is: '{1}'.</value>
+  </data>
+  <data name="InsufficientPermissionsToProtectObject" xml:space="preserve">
+    <value>Insufficient permissions to protect object '{0}'.</value>
+  </data>
+  <data name="NewADDCCloneConfigFileGeneratingContentMessage" xml:space="preserve">
+    <value>Generating the clone configuration file content...</value>
+  </data>
+  <data name="ADUserResultantPPIdentityHM" xml:space="preserve">
+    <value>The DN, GUID, SID, or SAM account name of a user to get the resultant fine-grained password policy of. If the user is only subject to the domain default password policy, no policy will be returned: use 'Get-ADDefaultDomainPasswordPolicy &lt;identity of the user's domain&gt;' to retrieve that policy.</value>
+  </data>
+  <data name="ADComputerServiceAccountIdentityHM" xml:space="preserve">
+    <value>The DN, GUID, SID, or SAM account name of a computer account which is used to retrieve the hosted service accounts.</value>
+  </data>
+  <data name="ADDCCloningExcludedApplicationListLocalMachineNotADCMessage" xml:space="preserve">
+    <value>The local machine is not a domain controller. Please run this cmdlet on either a source domain controller or a clone VM that is booted into DSRM.</value>
+  </data>
+  <data name="ServerTargetParameterNotSpecified" xml:space="preserve">
+    <value>Please enter a server name as the target parameter and run the cmdlet again.</value>
+  </data>
+  <data name="PropertyIsReadonly" xml:space="preserve">
+    <value>Cannot write to property '{0}' because it is read only.</value>
+  </data>
+  <data name="ServerFilterDialectRequestedUnavailable" xml:space="preserve">
+    <value>The server has returned the following error: unavailable filter dialect.</value>
+  </data>
+  <data name="ServerEnumerationContextLimitExceeded" xml:space="preserve">
+    <value>The server has returned the following error: enumeration context limit exceeded.</value>
+  </data>
+  <data name="SPCTBothSourceOIDPossibleValuesWarning" xml:space="preserve">
+    <value>SuggestedValues can't be used with SourceOID.</value>
+  </data>
+  <data name="ADFilterOperatorNotSupported" xml:space="preserve">
+    <value>Unknown or unsupported operator: '{0}'.</value>
+  </data>
+  <data name="NoNegativeSizeLimit" xml:space="preserve">
+    <value>A negative value is not permitted for the size limit.</value>
+  </data>
+  <data name="ADDCCloningExcludedApplicationListFilePriority" xml:space="preserve">
+    <value>'{0}' is not currently a valid location for an inclusion list: priority is given to the existing file '{1}'. </value>
+  </data>
+  <data name="ServerOutOfMemory" xml:space="preserve">
+    <value>Server returned out of memory error.</value>
+  </data>
+  <data name="MsaStandloneNotLinked" xml:space="preserve">
+    <value>The Managed Service Account {0} is not linked with any computer object in the directory.</value>
+  </data>
+  <data name="MsaStandaloneLinkedToAlternateComputer" xml:space="preserve">
+    <value>Test failed for Managed Service Account {0}. If standalone Managed Service Account, the account is linked to another computer object in the Active Directory. If group Managed Service Account, either this computer does not have permission to use the group MSA or this computer does not support all the Kerberos encryption types required for the gMSA. See the MSA operational log for more information.</value>
+  </data>
+  <data name="ADGroupFilterHM" xml:space="preserve">
+    <value>A filter, such as 'samAccountName -like "Domain*"', which is used to search the directory for matching groups.</value>
+  </data>
+  <data name="ConnectedToWrongForest" xml:space="preserve">
+    <value>You are trying to search within forest '{1}' but are currently connected to forest '{0}'. Re-check that the value specified in the -Server parameter is correct and try again.</value>
+  </data>
+  <data name="PasswordRestrictionErrorMessage" xml:space="preserve">
+    <value>The password does not meet the length, complexity, or history requirement of the domain.</value>
+  </data>
+  <data name="InvalidFilter" xml:space="preserve">
+    <value>Invalid filter.</value>
+  </data>
+  <data name="NewADDCCloneConfigFileWhiteListCompleteMessage" xml:space="preserve">
+    <value>Pass: No excluded applications were detected.</value>
+  </data>
+  <data name="NoNegativePageSize" xml:space="preserve">
+    <value>A negative value is not permitted for the page size.</value>
+  </data>
+  <data name="SPCTInvalidSourceAttribute" xml:space="preserve">
+    <value>Unable to retrieve ldap Displayname or Attribute Syntax for schema attribute {0}. So, {0} can't be set as SourceAttribute.</value>
+  </data>
+  <data name="CannotResetPasswordOfServiceAccount" xml:space="preserve">
+    <value>Cannot reset password of the service account. Error Message: '{0}'.</value>
+  </data>
+  <data name="ADInvalidAttributeValueCount" xml:space="preserve">
+    <value>{0} must contain at least {1} {2} in the attribute {3}. Please supply proper values in parameter {3}.</value>
+  </data>
+  <data name="ADObjectFilterHM" xml:space="preserve">
+    <value>A filter, such as 'objectClass -like "*"', which is used to search the directory for matching objects.</value>
+  </data>
+  <data name="ADDCPRPIdentityHM" xml:space="preserve">
+    <value>The GUID, IP address, DNS host name, name, NTDS settings DN, or NTDS settings GUID of an RODC to retrieve the allowed or denied account list from.</value>
+  </data>
+  <data name="DelegatePipelineMulticastDelegatesNotAllowedError" xml:space="preserve">
+    <value>Multicast delegates are not allowed in the pipeline</value>
+  </data>
+  <data name="SearchConverterUnrecognizedObjectType" xml:space="preserve">
+    <value>Unrecognized object of Type: '{0}' passed.</value>
+  </data>
+  <data name="MsaNotServiceAccount" xml:space="preserve">
+    <value>The {0} is not a Managed Service Account.  Verify the identity and call the cmdlet again.</value>
+  </data>
+  <data name="IdentityResolutionPartitionRequired" xml:space="preserve">
+    <value>Search partition not set.</value>
+  </data>
+  <data name="UnableToFindSiteForLocalMachine" xml:space="preserve">
+    <value>Unable to get the Site for the local machine. Please provide the target Site.</value>
+  </data>
+  <data name="NewADDCCloneConfigFileGetCloneableGroupMessage" xml:space="preserve">
+    <value>Querying the 'Cloneable Domain Controllers' group... </value>
+  </data>
+  <data name="NotSupportedSessionOption" xml:space="preserve">
+    <value>The session option '{0}' is not supported.</value>
+  </data>
+  <data name="IdentityNotFound" xml:space="preserve">
+    <value>Cannot find an object with identity: '{0}' under: '{1}'.</value>
+  </data>
+  <data name="ServiceAccountIsNotInstalled" xml:space="preserve">
+    <value>Referenced service account is not installed on this computer.</value>
+  </data>
+  <data name="InvalidClaimValueType" xml:space="preserve">
+    <value>The value of ValueType attribute for the object {0} is not valid. Value returned from directory for ValueType is {1}.</value>
+  </data>
+  <data name="ServerInvalidEnumerationContext" xml:space="preserve">
+    <value>The server has returned the following error: invalid enumeration context.</value>
+  </data>
+  <data name="NewADDCCloneConfigFileWhiteListNotCompleteMessage" xml:space="preserve">
+    <value>Validation of the cloning allow list failed. Please run the Get-ADDCCloningExcludedApplicationList cmdlet and evaluate the listed applications for cloning impact; then either remove them from the source domain controller or add them to the CustomDCCloneAllowList.xml file.</value>
+  </data>
+  <data name="UseSetADForestMode" xml:space="preserve">
+    <value>This operation must be performed via Set-ADForestMode.</value>
+  </data>
+  <data name="UserPressedBreakDuringPasswordEntry" xml:space="preserve">
+    <value>User pressed CTRL+C, aborting password prompt.</value>
+  </data>
+  <data name="CAPMemberMaximumExceeded" xml:space="preserve">
+    <value>Central Access Policy objects cannot contain more than {0} rules.</value>
+  </data>
+  <data name="MsaDoesNotExist" xml:space="preserve">
+    <value>Cannot find Managed Service Account {0} in the directory. Verify the Managed Service Account identity and call the cmdlet again.</value>
+  </data>
+  <data name="PromptForRemove" xml:space="preserve">
+    <value>Are you sure you want to remove?</value>
+  </data>
+  <data name="RCTNoResourcePropertyValueTypeError" xml:space="preserve">
+    <value>ResourcePropertyValueType must be specified.</value>
+  </data>
+  <data name="NewADDCCloneConfigFileFoundLocalDCMessage" xml:space="preserve">
+    <value>Located the local domain controller: ({0}).</value>
+  </data>
+  <data name="ADInvalidQuantizationDays" xml:space="preserve">
+    <value>This parameter requires a span expressed as whole days with no remainder.</value>
+  </data>
+  <data name="PromptForNewPassword" xml:space="preserve">
+    <value>Please enter the desired password for '{0}'
+Password:</value>
+  </data>
+  <data name="NewADDCCloneConfigFileNoLocalDCMembershipMessage" xml:space="preserve">
+    <value>The local domain controller is not a member of any groups.</value>
+  </data>
+  <data name="PromptForRepeatPassword" xml:space="preserve">
+    <value>Repeat Password:</value>
+  </data>
+  <data name="SearchConverterInvalidValue" xml:space="preserve">
+    <value>Invalid value: '{0}' specified for extended attribute: '{1}'.</value>
+  </data>
+  <data name="ADTrustNoDirectionAndPolicyError" xml:space="preserve">
+    <value>Either trust direction or trust policy must be specified.</value>
+  </data>
+  <data name="CouldNotDetermineLocalComputerDomain" xml:space="preserve">
+    <value>Could not determine the local computer's domain.</value>
+  </data>
+  <data name="ParameterRequired" xml:space="preserve">
+    <value>Parameter: '{0}' is required for this operation.</value>
+  </data>
+  <data name="ADUserFilterHM" xml:space="preserve">
+    <value>A filter, such as 'samAccountName -like "admin*"', which is used to search the directory for matching users.</value>
+  </data>
+  <data name="InstanceMustBeOfType" xml:space="preserve">
+    <value>The instance parameter object must be of type: '{0}'.</value>
+  </data>
+  <data name="ADGroupMemberIdentityHM" xml:space="preserve">
+    <value>The DN, GUID, SID, or SAM account name of a group to get the members of.</value>
+  </data>
+  <data name="NewADDCCloneConfigFileNoCloneableGroupMessage" xml:space="preserve">
+    <value>Unable to query the 'Cloneable Domain Controllers' group.</value>
+  </data>
+  <data name="ValidateRangeGreaterThanMaxValue" xml:space="preserve">
+    <value>{0}is greater than the maximum allowed range of {1}. Supply an argument that is less than {1} and then try the command again.</value>
+  </data>
+  <data name="SPCTNonREPLSourceAttrError" xml:space="preserve">
+    <value>A non-replicated attribute can't be used as SourceAttribute.</value>
+  </data>
+  <data name="ADDCPRPUIdentityHM" xml:space="preserve">
+    <value>The GUID, IP address, DNS host name, name, NTDS settings DN, or NTDS settings GUID of an RODC to query for revealed or authenticated accounts.</value>
+  </data>
+  <data name="NewADDCCloneConfigFileAtWrongLocationMessage" xml:space="preserve">
+    <value>The generated clone configuration file ({0}) is not at a supported location and therefore cannot be used by the cloning process. The generated file is being removed.</value>
+  </data>
+  <data name="EnablingIsIrreversible" xml:space="preserve">
+    <value>Enabling '{0}' on '{1}' is an irreversible action! You will not be able to disable '{0}' on '{1}' if you proceed.</value>
+  </data>
+  <data name="InvalidObjectClasses" xml:space="preserve">
+    <value>The object class of the instance object must contain '{0}' or '{1}'.</value>
+  </data>
+  <data name="SearchSizeLimitExceeded" xml:space="preserve">
+    <value>The size limit was exceeded.</value>
+  </data>
+  <data name="TypeAdapterForADEntityOnly" xml:space="preserve">
+    <value>Type Adapter '{0}' may only be used for '{1}' and derived classes.</value>
+  </data>
+  <data name="ObjectTypeNotEqualToExpectedType" xml:space="preserve">
+    <value>Values in the argument collection should be of Type: '{0}'</value>
+  </data>
+  <data name="InvalidUriFormat" xml:space="preserve">
+    <value>Invalid URI: The server name '{0}' could not be parsed. You might need to enable internationalized domain name support for class System.Uri. See help of class System.Uri for more details.</value>
+  </data>
+  <data name="DelegatePipelineUnsupportedTypeError" xml:space="preserve">
+    <value>This pipeline only supports delegates of type: {0}</value>
+  </data>
+  <data name="NewADDCCloneConfigFileCheckCloningPrivilegeMessage" xml:space="preserve">
+    <value>Verifying authorization: Checking if this domain controller is a member of the 'Cloneable Domain Controllers' group...</value>
+  </data>
+  <data name="SPCTDefuctSourceAttr" xml:space="preserve">
+    <value>A defunct attribute can't be used as SourceAttribute.</value>
+  </data>
+  <data name="InvalidDNMustBelongToValidPartitionSet" xml:space="preserve">
+    <value>The supplied distinguishedName must belong to one of the following partition(s): '{0}'.</value>
+  </data>
+  <data name="NewADDCCloneConfigFileNoWin8PDCMessage" xml:space="preserve">
+    <value>The domain controller hosting the PDC FSMO role either could not be located, or was not running Windows Server 2012 or later.  Virtual domain controller cloning requires the PDC FSMO role to be hosted on a domain controller running Windows Server 2012 or later.</value>
+  </data>
+  <data name="ADProviderCopyItemNotSupported" xml:space="preserve">
+    <value>Copy-Item is not supported by the ActiveDirectory PowerShell provider.</value>
+  </data>
+  <data name="ADDCCloningExcludedApplicationListCustomerAllowListFileNameMessage" xml:space="preserve">
+    <value>NOTE: {0} is being used as the defined inclusion list.</value>
+  </data>
+  <data name="NewADDCCloneConfigFileGeneratedMessage" xml:space="preserve">
+    <value>The clone configuration file has been created.</value>
+  </data>
+  <data name="OnlySearchResultsSupported" xml:space="preserve">
+    <value>Objects provided to this cmdlet must be search results.</value>
+  </data>
+  <data name="InvalidValueTypeForPossibleValueXml" xml:space="preserve">
+    <value>Unable to get a valid ValueType. It is required to create SuggestedValues Xml.</value>
+  </data>
+  <data name="ADProviderUnableToGetPartition" xml:space="preserve">
+    <value>Unable to determine the naming context that contains the path '{0}'.</value>
+  </data>
+  <data name="ADProviderInvalidPropertyName" xml:space="preserve">
+    <value>The specified property name is invalid.</value>
+  </data>
+  <data name="ServerParameterNotSupported" xml:space="preserve">
+    <value>Server parameter cannot be specified if ADDomain or ADForest object is passed as InputObject.</value>
+  </data>
+  <data name="ValidateRangeLessThanMinValue" xml:space="preserve">
+    <value>{0} is less than the minimum allowed range of {1}. Supply an argument that is greater than {1} and then try the command again.</value>
+  </data>
+  <data name="InvalidParameterType" xml:space="preserve">
+    <value>Parameter: '{0}' must be of type '{1}'.</value>
+  </data>
+  <data name="ServerUnsupportedSelectOrSortDialectFault" xml:space="preserve">
+    <value>The server has returned the following error: unsupported select or sort dialect.</value>
+  </data>
+  <data name="SourceServerDown" xml:space="preserve">
+    <value>Unable to contact the source server '{0}'. This may be because this server does not exist, it is currently down, or it does not have the Active Directory Web Services running.</value>
+  </data>
+  <data name="NewADDCCloneConfigFileFullNameMessage" xml:space="preserve">
+    <value>The clone configuration file was generated at:
+{0}</value>
+  </data>
+  <data name="AttributeConverterUnrecognizedObjectType" xml:space="preserve">
+    <value>Unrecognized object of Type: '{0}' passed for '{1}'.</value>
+  </data>
+  <data name="RemoveADPrincipalGroupMembershipShouldProcessCaption" xml:space="preserve">
+    <value>Remove members from group</value>
+  </data>
+  <data name="NoSchemaClassInSchemaCache" xml:space="preserve">
+    <value>Unable to find the schema class {0} in the schema cache.</value>
+  </data>
+  <data name="EmptyStringParameter" xml:space="preserve">
+    <value>The specified string parameter is empty.</value>
+  </data>
+  <data name="InvalidNullValue" xml:space="preserve">
+    <value>The argument is null or an element of the argument collection contains a null value.</value>
+  </data>
+  <data name="NewADDCCloneConfigFileGenerateFileMessage" xml:space="preserve">
+    <value>All preliminary validation checks passed.</value>
+  </data>
+  <data name="ProviderUtilInvalidDrivePath" xml:space="preserve">
+    <value>Invalid drive path: '{0}'.</value>
+  </data>
+  <data name="ADAccountAuthGroupIdentityHM" xml:space="preserve">
+    <value>The DN, GUID, SID, or SAM account name of an account to get the security group membership of.</value>
+  </data>
+  <data name="ADProviderPropertyValueCannotBeNull" xml:space="preserve">
+    <value>Property value to be added cannot be null.</value>
+  </data>
+  <data name="InvalidPossibleValuesXml" xml:space="preserve">
+    <value>The xml data for SuggestedValues attribute doesn't match the schema definition for the ClaimType object {0}.</value>
+  </data>
+  <data name="LoadingDriveProgressMessage" xml:space="preserve">
+    <value>Loading Active Directory module for Windows PowerShell with default drive '{0}:'</value>
+  </data>
+  <data name="ServerAnonymousNotAllowed" xml:space="preserve">
+    <value>Anonymous access to the server is not permitted.</value>
+  </data>
+  <data name="ServerSchemaValidationError" xml:space="preserve">
+    <value>The server has returned a schema validation error.</value>
+  </data>
+  <data name="ErrorResultantPRPSpecifyWindows2008OrAbove" xml:space="preserve">
+    <value>You must specify a Windows Server 2008 or higher Domain Controller to get Resultant password replication policy data.</value>
+  </data>
+  <data name="RemoveClaimTypeSharesValueWithError" xml:space="preserve">
+    <value>Fail to delete {0}. The following resource properties are currently referencing it. Please remove the references and try again.
+</value>
+  </data>
+  <data name="NewADDCCloneConfigFileNoLocalDCMessage" xml:space="preserve">
+    <value>The local machine is either not a domain controller or the directory service is currently unavailable.</value>
+  </data>
+  <data name="ADInvalidQuantizationFifteenMinuteIntervals" xml:space="preserve">
+    <value>This parameter requires a span expressible as fifteen-minute intervals with no remainder.</value>
+  </data>
+  <data name="NewADDCCloneConfigFileHasCloningPrivilegeMessage" xml:space="preserve">
+    <value>Pass: The local domain controller is a member of the 'Cloneable Domain Controllers' group.</value>
+  </data>
+  <data name="NewADDCCloneConfigFileNoGenerateFileMessage" xml:space="preserve">
+    <value>One or more preliminary validation checks failed. The clone configuration file will not be generated.</value>
+  </data>
+  <data name="SiteLinkAndSiteLinkBridgeDoNotShareSameTransportType" xml:space="preserve">
+    <value>Specified site link '{0}' and site link bridge '{1}' do not share the same transport type. To create or update a site link bridge, please specify site links of same transport type.</value>
+  </data>
+  <data name="GetGroupMembershipResourceContextParameterCheck" xml:space="preserve">
+    <value>Parameter -ResourceContextServer must be specified along with -ResourceContextPartition.</value>
+  </data>
+  <data name="PasswordsDidNotMatch" xml:space="preserve">
+    <value>Passwords do not match. Please try again.</value>
+  </data>
+  <data name="DefaultServerNotFound" xml:space="preserve">
+    <value>Unable to find a default server with flags: '{0}'.</value>
+  </data>
+  <data name="ADFilterParsingErrorMessage" xml:space="preserve">
+    <value>Error parsing query: '{0}' Error Message: '{1}' at position: '{2}'.</value>
+  </data>
+  <data name="PromptForCurrentPassword" xml:space="preserve">
+    <value>Please enter the current password for '{0}'
+Password:</value>
+  </data>
+  <data name="PerformingRecursiveRemove" xml:space="preserve">
+    <value>Performing recursive remove on Target: '{0}'.</value>
+  </data>
+  <data name="RemoveADPrincipalGroupMembershipShouldProcessDescription" xml:space="preserve">
+    <value>Removes all the specified member(s) from the specified group(s).</value>
+  </data>
+  <data name="SearchConverterRHSNotMatchEnumValue" xml:space="preserve">
+    <value>Right-hand side expression of the filter doesn't match to a value for the enum {0}.</value>
+  </data>
+  <data name="ADWSXmlParserInvalidAttribute" xml:space="preserve">
+    <value>Encountered attribute '{0}' which could not be understood.</value>
+  </data>
+  <data name="WarningSamAccountNameClauseLacksDollarSign" xml:space="preserve">
+    <value>Valid values for attribute '{0}' should end with '{1}'; the filter clause '{2}' may not work as intended.</value>
+  </data>
+  <data name="NewADDCCloneConfigFileLocalModeMessage" xml:space="preserve">
+    <value>Running in 'Local' mode.</value>
+  </data>
+  <data name="CTParameterValidationFailure" xml:space="preserve">
+    <value>There were few invalid parameters to the cmdlet. Please see the warnings to see the specific errors.</value>
+  </data>
+  <data name="ADAccountRPRPIdentityHM" xml:space="preserve">
+    <value>The DN, GUID, SID, or SAM account name of an account to get the resultant password replication policy of.</value>
+  </data>
+  <data name="InvalidHashtableKey" xml:space="preserve">
+    <value>Hashtable can only contain ADD, REMOVE, or REPLACE as keys.</value>
+  </data>
+  <data name="SearchConverterAttributeNotSupported" xml:space="preserve">
+    <value>Searching on extended attribute '{0}' is not supported.</value>
+  </data>
+  <data name="PasswordOnlySwitchAllowedOnlyOnRODC" xml:space="preserve">
+    <value>Specified destination server is either a writable DC or ADLDS instance : '{0}'. PasswordOnly switch is applicable only to RODC.</value>
+  </data>
+  <data name="ADFGPPSubjectIdentityHM" xml:space="preserve">
+    <value>The DN, GUID, or name of a fine-grained password policy object to list the users and groups it applies to.</value>
+  </data>
+  <data name="TypeConversionError" xml:space="preserve">
+    <value>Error converting from '{0}' to '{1}': '{2}'.</value>
+  </data>
+  <data name="NewADDCCloneConfigFileFoundWin8PDCMessage" xml:space="preserve">
+    <value>Passed: The domain controller hosting the PDC FSMO role ({0}) was located and running Windows Server 2012 or later.</value>
+  </data>
+  <data name="TargetParameterHM" xml:space="preserve">
+    <value>Please enter a server name.</value>
+  </data>
+  <data name="NewADDCCloneConfigFileOfflineModeMessage" xml:space="preserve">
+    <value>Running in 'Offline' mode.</value>
+  </data>
+  <data name="UseSetADDomainMode" xml:space="preserve">
+    <value>This operation must be performed via Set-ADDomainMode.</value>
+  </data>
+  <data name="ClaimPolicyXmlNodeError" xml:space="preserve">
+    <value>Unable to find node or value {0}.</value>
+  </data>
+  <data name="AddADPrincipalGroupMembershipShouldProcessWarning" xml:space="preserve">
+    <value>Do you want to add all the specified member(s) to the specified group(s)?</value>
+  </data>
+  <data name="AddADPrincipalGroupMembershipShouldProcessDescription" xml:space="preserve">
+    <value>Adds all the specified member(s) to the specified group(s).</value>
+  </data>
+  <data name="ADProviderGCInvalidWithAppendedPort" xml:space="preserve">
+    <value>GlobalCatalog cannot be specified with a server parameter that contains an appended port number which is not equal to the GlobalCatalog port.</value>
+  </data>
+  <data name="AddADPrincipalGroupMembershipShouldProcessCaption" xml:space="preserve">
+    <value>Add members to group</value>
+  </data>
+  <data name="InvalidObjectClass" xml:space="preserve">
+    <value>The object class of the instance object must contain '{0}'.</value>
+  </data>
+  <data name="ADDCCloningExcludedApplicationListPathPriority" xml:space="preserve">
+    <value>'{0}' is not currently a valid location for an inclusion list: priority is given to the path '{1}'. </value>
+  </data>
+  <data name="InvalidPartitionMustBelongToValidSet" xml:space="preserve">
+    <value>The supplied partition distinguishedName should have one of the following value(s): '{0}'.</value>
+  </data>
+  <data name="ADFilterExprListLessThanTwo" xml:space="preserve">
+    <value>You must pass at least two or more IADOPathNode as input.</value>
+  </data>
+  <data name="ADInvalidQuantizationMinutes" xml:space="preserve">
+    <value>This parameter requires a span expressed as whole minutes with no remainder.</value>
+  </data>
+  <data name="OperationSuccessful" xml:space="preserve">
+    <value>The current operation has succeeded.</value>
+  </data>
+  <data name="AttributeNotFoundOnObject" xml:space="preserve">
+    <value>Could not find attribute: '{0}' on object: '{1}'.</value>
+  </data>
+  <data name="NewADDCCloneConfigFileMoreDnsMessage" xml:space="preserve">
+    <value>No more than {0} DNS servers are allowed in the clone configuration file.</value>
+  </data>
+  <data name="CannotInstallServiceAccount" xml:space="preserve">
+    <value>Cannot install service account. Error Message: '{0}'.</value>
+  </data>
+  <data name="SourceDoesNotTargetDirectoryServer" xml:space="preserve">
+    <value>Source directory server represents a domain or forest name '{0}'.It should instead target a domain controller or an ADLDS instance.</value>
+  </data>
+  <data name="ADProviderSDNotSet" xml:space="preserve">
+    <value>A security descriptor for the specified object does not exist or you do not have sufficient permissions to access it.</value>
+  </data>
+  <data name="ServerFragmentDialectNotSupported" xml:space="preserve">
+    <value>The server has returned the following error: unsupported fragment dialect.</value>
+  </data>
+  <data name="ADWSXmlParserInvalidActionForMessage" xml:space="preserve">
+    <value>Message contains action not supported by this parser.</value>
+  </data>
+  <data name="MultipleMatches" xml:space="preserve">
+    <value>Multiple objects were found matching the supplied identity. Please use the DN or ObjectGuid as the identifier or use Filter Parameter to retrieve all the objects.</value>
+  </data>
+  <data name="ADServiceAccountFilterHM" xml:space="preserve">
+    <value>A filter, such as 'samAccountName -like "*service*"', which is used to search the directory for matching service accounts.</value>
+  </data>
+  <data name="OtherBackLinkDescription" xml:space="preserve">
+    <value>The service account '{0}' has backlinks to computer '{1}'. This add operation will potentially disable service accounts installed on the other computer: '{1}'.</value>
+  </data>
+  <data name="DuplicateValuesSpecified" xml:space="preserve">
+    <value>Duplicate values specified: '{0}'.</value>
+  </data>
+  <data name="InvalidEmptyCollection" xml:space="preserve">
+    <value>The argument collection is empty.</value>
+  </data>
+  <data name="ServerContainerNotEmpty" xml:space="preserve">
+    <value>The site {0} cannot be deleted because server objects are present in the site. Please remove these server objects from the site and attempt the deletion again.</value>
+  </data>
+  <data name="FailedRemovingMembersFromOneOrMoreGroup" xml:space="preserve">
+    <value>Could not remove member(s) to one or more ADGroup.</value>
+  </data>
+  <data name="ADProviderUnableToReadProperty" xml:space="preserve">
+    <value>Unable to read property '{0}' on object '{1}'.</value>
+  </data>
+  <data name="SPCTNoSourceWarning" xml:space="preserve">
+    <value>User should specify either SourceAttribute or SourceOID to create ADClaimType.</value>
+  </data>
+  <data name="InsufficientPermissionsToProtectObjectParent" xml:space="preserve">
+    <value>Insufficient permissions on parent '{0}' to protect object '{1}'.</value>
+  </data>
+  <data name="SPCTInvalidAttributeSyntax" xml:space="preserve">
+    <value>Attribute Syntax of the SourceAttribute is not allowed to be used in Claims.</value>
+  </data>
+  <data name="ParameterRequiredMultiple" xml:space="preserve">
+    <value>One of the following parameters is required '{0}'.</value>
+  </data>
+  <data name="SDDLValidationFailed" xml:space="preserve">
+    <value>String passed in Attribute {0} is not a valid SDDL string.</value>
+  </data>
+  <data name="OtherBackLinkCaption" xml:space="preserve">
+    <value>Duplicate Backlink</value>
+  </data>
+  <data name="ADWSXmlParserUnexpectedElement" xml:space="preserve">
+    <value>Unexpected XML element found: '{0}'.</value>
+  </data>
+  <data name="SPCTInvalidSourceAttributeName" xml:space="preserve">
+    <value>Source Attribute is not a valid attribute in the directory.</value>
+  </data>
+  <data name="SearchConverterIdentityAttributeNotSet" xml:space="preserve">
+    <value>There must be at least one identity attribute set on the object.</value>
+  </data>
+  <data name="InvalidNullInCollection" xml:space="preserve">
+    <value>Parameter: '{0}' does not accept multiple values where one is a null.</value>
+  </data>
+  <data name="NewADDCCloneConfigFileGenerationMessage" xml:space="preserve">
+    <value>Starting creation of the clone configuration file...</value>
+  </data>
+  <data name="NextVersionPossibleValuesXml" xml:space="preserve">
+    <value>The suggested values for {0} contains data in a newer format. The cmdlet will attempt to parse the suggested values, but data in the newer format will not be retrieved.
+To retrieve data in the newer format, update the cmdlet to a later version. To view the raw attribute content, run the Get cmdlet with -Properties {1}.</value>
+  </data>
+  <data name="ClaimPolicyXmlWarning" xml:space="preserve">
+    <value>Unable to parse xml rule for object {0}. The supplied format is not supported or is invalid. Parse error: 
+{1}
+ Supplied XML rule: 
+{2}</value>
+  </data>
+  <data name="SPCTBothSourceWarning" xml:space="preserve">
+    <value>Only one of SourceAttribute and SourceOID can be specified in ADClaimType.</value>
+  </data>
+  <data name="CannotReachHostingDC" xml:space="preserve">
+    <value>Cannot reach a Domain Controller that hosts this account. Error Message: '{0}'.</value>
+  </data>
+  <data name="NetAddServiceAccountFailed" xml:space="preserve">
+    <value>The call to function NetAddServiceAccount failed with error: '{0}'.</value>
+  </data>
+  <data name="CTSourceOIDValueTypeError" xml:space="preserve">
+    <value>Cannot set SourceOID as current ValueType is not boolean. ValueType cannot be modified after creation.</value>
+  </data>
+  <data name="SPCTAttributeNotFoundInSchemaClass" xml:space="preserve">
+    <value>SchemaClass {0} doesn't contain the ldap attribute {1}.</value>
+  </data>
+  <data name="InvalidParameterValue" xml:space="preserve">
+    <value>Parameter: '{0}' contains an invalid value.</value>
+  </data>
+  <data name="ADComputerFilterHM" xml:space="preserve">
+    <value>A filter, such as 'samAccountName -like "*DC*"', which is used to search the directory for matching computer accounts.</value>
+  </data>
+  <data name="IdentityInExtendedAttributeCannotBeResolved" xml:space="preserve">
+    <value>Identity info provided in the extended attribute: '{0}' could not be resolved. Reason: '{1}'.</value>
+  </data>
+  <data name="ServiceAccountNameLengthInvalid" xml:space="preserve">
+    <value>The service account has a samAccountName attribute of '{0}' which is too long; the samAccountName attribute must not be longer than 15 characters.</value>
+  </data>
+  <data name="ServerDown" xml:space="preserve">
+    <value>Unable to contact the server. This may be because this server does not exist, it is currently down, or it does not have the Active Directory Web Services running.</value>
+  </data>
+  <data name="UnspecifiedError" xml:space="preserve">
+    <value>An unspecified error has occurred</value>
+  </data>
+  <data name="NewADDCCloneConfigFileNoCloningPrivilegeMessage" xml:space="preserve">
+    <value>The local domain controller is not a member of the 'Cloneable Domain Controllers' group. Please ensure that the local domain controller has the necessary permission to clone itself, either through membership in the 'Cloneable Domain Controllers' group or by granting the local domain controller the control access right 'Allow a DC to create a clone of itself' on the domain NC.</value>
+  </data>
+  <data name="NewADDCCloneConfigFileExistingMessage" xml:space="preserve">
+    <value>Found one or more existing clone configuration files at:
+{0}</value>
+  </data>
+  <data name="EnumConversionError" xml:space="preserve">
+    <value>Value '{0}' is not valid for enumeration: '{1}'.</value>
+  </data>
+  <data name="ADFineGrainedPPFilterHM" xml:space="preserve">
+    <value>A filter, such as 'name -like "*"', which is used to search the directory for matching fine grained password policy objects.</value>
+  </data>
+  <data name="CannotResolveIPAddressToHostName" xml:space="preserve">
+    <value>No host found matching IP address: '{0}'.</value>
+  </data>
+  <data name="NewADDCCloneConfigFileFoundMessage" xml:space="preserve">
+    <value>Found one or more existing clone configuration files. A new clone configuration file cannot be generated. To prevent cloning with an incorrect file please move or delete the existing file(s) before generating a new file using this cmdlet.</value>
+  </data>
+  <data name="CouldNotSetForestMode" xml:space="preserve">
+    <value>Set-ADForestMode has failed to change the forest functional level to '{1}'. If raising the level, please ensure that all domains in the forest have already been raised to '{0}' or higher. If lowering the level, please ensure that no features are enabled that require a higher level than '{1}'.</value>
+  </data>
+  <data name="RequiresDomainCredentials" xml:space="preserve">
+    <value>This operation requires domain credentials.</value>
+  </data>
+  <data name="MoveOperationMasterRoleDescription" xml:space="preserve">
+    <value>Moves the specified operation master (FSMO) role to the specified directory server.</value>
+  </data>
+  <data name="ADWSXmlParserMandatoryHeaderNotUnderstood" xml:space="preserve">
+    <value>The server sent a MustUnderstand header which was not understood by the Client.</value>
+  </data>
+  <data name="ObjectNotFound" xml:space="preserve">
+    <value>The object could not be found on the server.</value>
+  </data>
+  <data name="NewADDCCloneConfigFileGetDitLocationMessage" xml:space="preserve">
+    <value>Finding the path to the Directory Service database...</value>
+  </data>
+  <data name="ADDCCloningExcludedApplicationListInvalidPath" xml:space="preserve">
+    <value>'{0}' is not a valid location for an inclusion list.</value>
+  </data>
+  <data name="ADDCCloningExcludedApplicationListFileExists" xml:space="preserve">
+    <value>'{0}' already exists. Specify the -Force parameter to overwrite the existing file.</value>
+  </data>
+  <data name="ADFilterPropertyNotFoundInObject" xml:space="preserve">
+    <value>Property: '{0}' not found in object of type: '{1}'.</value>
+  </data>
+</root>

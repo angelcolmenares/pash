@@ -1,0 +1,271 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{B023085C-5EFE-413F-A664-D1701FCAD87B}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Microsoft.JScript</RootNamespace>
+    <AssemblyName>Microsoft.JScript</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <ProductVersion>10.0.0</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>True</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>False</Optimize>
+    <OutputPath>..\..\v1.0\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>True</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>True</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AssemblyOriginatorKeyFile>..\..\mono.snk</AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ActivationObject.cs" />
+    <Compile Include="ActiveXObjectConstructor.cs" />
+    <Compile Include="ArgumentsObject.cs" />
+    <Compile Include="ArrayConstructor.cs" />
+    <Compile Include="ArrayLiteral.cs" />
+    <Compile Include="ArrayObject.cs" />
+    <Compile Include="ArrayPrototype.cs" />
+    <Compile Include="ArrayWrapper.cs" />
+    <Compile Include="AssemblyCustomAttributeList.cs" />
+    <Compile Include="ast.cs" />
+    <Compile Include="ASTList.cs" />
+    <Compile Include="BaseVsaEngine.cs" />
+    <Compile Include="BinaryOp.cs" />
+    <Compile Include="Binding.cs" />
+    <Compile Include="BitwiseBinary.cs" />
+    <Compile Include="Block.cs" />
+    <Compile Include="BlockScope.cs" />
+    <Compile Include="BooleanConstructor.cs" />
+    <Compile Include="BooleanObject.cs" />
+    <Compile Include="BooleanPrototype.cs" />
+    <Compile Include="BreakOutOfFinally.cs" />
+    <Compile Include="Closure.cs" />
+    <Compile Include="CmdLineError.cs" />
+    <Compile Include="CmdLineException.cs" />
+    <Compile Include="CmdLineOptionParser.cs" />
+    <Compile Include="CodeGenerator.cs" />
+    <Compile Include="COMFieldInfo.cs" />
+    <Compile Include="COMMemberInfo.cs" />
+    <Compile Include="COMMethodInfo.cs" />
+    <Compile Include="Context.cs" />
+    <Compile Include="ContinueOutOfFinally.cs" />
+    <Compile Include="Convert.cs" />
+    <Compile Include="DateConstructor.cs" />
+    <Compile Include="DateObject.cs" />
+    <Compile Include="DatePrototype.cs" />
+    <Compile Include="DebugBreak.cs" />
+    <Compile Include="Decompiler.cs" />
+    <Compile Include="DocumentContext.cs" />
+    <Compile Include="Empty.cs" />
+    <Compile Include="Enum.cs" />
+    <Compile Include="EnumeratorConstructor.cs" />
+    <Compile Include="EnumeratorObject.cs" />
+    <Compile Include="EnumeratorPrototype.cs" />
+    <Compile Include="Equality.cs" />
+    <Compile Include="ErrorConstructor.cs" />
+    <Compile Include="ErrorObject.cs" />
+    <Compile Include="ErrorPrototype.cs" />
+    <Compile Include="Eval.cs" />
+    <Compile Include="EvalErrorObject.cs" />
+    <Compile Include="Expando.cs" />
+    <Compile Include="expression.cs" />
+    <Compile Include="FieldAccessor.cs" />
+    <Compile Include="ForIn.cs" />
+    <Compile Include="FormalParameterList.cs" />
+    <Compile Include="FunctionConstructor.cs" />
+    <Compile Include="FunctionDeclaration.cs" />
+    <Compile Include="FunctionExpression.cs" />
+    <Compile Include="FunctionObject.cs" />
+    <Compile Include="FunctionPrototype.cs" />
+    <Compile Include="FunctionWrapper.cs" />
+    <Compile Include="GlobalObject.cs" />
+    <Compile Include="Globals.cs" />
+    <Compile Include="GlobalScope.cs" />
+    <Compile Include="IActivationObject.cs" />
+    <Compile Include="IAuthorServices.cs" />
+    <Compile Include="IColorizeText.cs" />
+    <Compile Include="IDebugConvert.cs" />
+    <Compile Include="IDebuggerObject.cs" />
+    <Compile Include="IDebugScriptScope.cs" />
+    <Compile Include="IDebugType.cs" />
+    <Compile Include="IDebugVsaScriptCodeItem.cs" />
+    <Compile Include="IDefineEvent.cs" />
+    <Compile Include="IdentificationTable.cs" />
+    <Compile Include="IEngine2.cs" />
+    <Compile Include="IErrorHandler.cs" />
+    <Compile Include="IMethodsCompletionInfo.cs" />
+    <Compile Include="Import.cs" />
+    <Compile Include="In.cs" />
+    <Compile Include="INeedEngine.cs" />
+    <Compile Include="InstanceOf.cs" />
+    <Compile Include="IObjectCompletionInfo.cs" />
+    <Compile Include="IParseText.cs" />
+    <Compile Include="IRedirectOutput.cs" />
+    <Compile Include="ISite2.cs" />
+    <Compile Include="ITokenColorInfo.cs" />
+    <Compile Include="ITokenEnumerator.cs" />
+    <Compile Include="IVsaFullErrorInfo.cs" />
+    <Compile Include="IVsaScriptCodeItem.cs" />
+    <Compile Include="IVsaScriptScope.cs" />
+    <Compile Include="IWrappedMember.cs" />
+    <Compile Include="JSBuiltIn.cs" />
+    <Compile Include="JSConstructor.cs" />
+    <Compile Include="JScriptCodeCompiler.cs" />
+    <Compile Include="JScriptCodeGenerator.cs" />
+    <Compile Include="JScriptCodeProvider.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="JScriptException.cs" />
+    <Compile Include="JSError.cs" />
+    <Compile Include="JSField.cs" />
+    <Compile Include="JSFieldInfo.cs" />
+    <Compile Include="JSFunctionAttribute.cs" />
+    <Compile Include="JSFunctionAttributeEnum.cs" />
+    <Compile Include="JSLocalField.cs" />
+    <Compile Include="JSMethod.cs" />
+    <Compile Include="JSMethodInfo.cs" />
+    <Compile Include="JSObject.cs" />
+    <Compile Include="JSParser.cs" />
+    <Compile Include="JSPropertyInfo.cs" />
+    <Compile Include="JSPrototypeObject.cs" />
+    <Compile Include="JSScanner.cs" />
+    <Compile Include="JSToken.cs" />
+    <Compile Include="JSVariableField.cs" />
+    <Compile Include="LateBinding.cs" />
+    <Compile Include="LenientArrayPrototype.cs" />
+    <Compile Include="LenientBooleanPrototype.cs" />
+    <Compile Include="LenientDateConstructor.cs" />
+    <Compile Include="LenientDatePrototype.cs" />
+    <Compile Include="LenientEnumeratorPrototype.cs" />
+    <Compile Include="LenientErrorPrototype.cs" />
+    <Compile Include="LenientFunctionPrototype.cs" />
+    <Compile Include="LenientGlobalObject.cs" />
+    <Compile Include="LenientMathObject.cs" />
+    <Compile Include="LenientNumberPrototype.cs" />
+    <Compile Include="LenientObjectPrototype.cs" />
+    <Compile Include="LenientRegExpPrototype.cs" />
+    <Compile Include="LenientStringConstructor.cs" />
+    <Compile Include="LenientStringPrototype.cs" />
+    <Compile Include="LenientVBArrayPrototype.cs" />
+    <Compile Include="Literal.cs" />
+    <Compile Include="MathObject.cs" />
+    <Compile Include="MemberInfoInitializer.cs" />
+    <Compile Include="MemberInfoList.cs" />
+    <Compile Include="MethodInvoker.cs" />
+    <Compile Include="Missing.cs" />
+    <Compile Include="Namespace.cs" />
+    <Compile Include="NotRecommendedAttribute.cs" />
+    <Compile Include="NumberConstructor.cs" />
+    <Compile Include="NumberObject.cs" />
+    <Compile Include="NumberPrototype.cs" />
+    <Compile Include="NumericBinary.cs" />
+    <Compile Include="NumericUnary.cs" />
+    <Compile Include="ObjectConstructor.cs" />
+    <Compile Include="ObjectPrototype.cs" />
+    <Compile Include="Package.cs" />
+    <Compile Include="Parser.cs" />
+    <Compile Include="Plus.cs" />
+    <Compile Include="PostOrPrefixOperator.cs" />
+    <Compile Include="Print.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RangeErrorObject.cs" />
+    <Compile Include="ReferenceAttribute.cs" />
+    <Compile Include="ReferenceErrorObject.cs" />
+    <Compile Include="RegExpConstructor.cs" />
+    <Compile Include="RegExpMatch.cs" />
+    <Compile Include="RegExpObject.cs" />
+    <Compile Include="RegExpPrototype.cs" />
+    <Compile Include="Relational.cs" />
+    <Compile Include="ResInfo.cs" />
+    <Compile Include="ReturnOutOfFinally.cs" />
+    <Compile Include="ScriptBlock.cs" />
+    <Compile Include="ScriptFunction.cs" />
+    <Compile Include="ScriptObject.cs" />
+    <Compile Include="ScriptStream.cs" />
+    <Compile Include="SemanticAnalizer.cs" />
+    <Compile Include="SimpleHashtable.cs" />
+    <Compile Include="SourceState.cs" />
+    <Compile Include="StackFrame.cs" />
+    <Compile Include="Statement.cs" />
+    <Compile Include="StrictEquality.cs" />
+    <Compile Include="StringConstructor.cs" />
+    <Compile Include="StringLiteral.cs" />
+    <Compile Include="StringObject.cs" />
+    <Compile Include="StringPrototype.cs" />
+    <Compile Include="SuperTypeMembersSorter.cs" />
+    <Compile Include="SyntaxErrorObject.cs" />
+    <Compile Include="Throw.cs" />
+    <Compile Include="Token.cs" />
+    <Compile Include="TokenColor.cs" />
+    <Compile Include="TokenStream.cs" />
+    <Compile Include="Try.cs" />
+    <Compile Include="TypedArray.cs" />
+    <Compile Include="TypeErrorObject.cs" />
+    <Compile Include="TypeManager.cs" />
+    <Compile Include="TypeOf.cs" />
+    <Compile Include="TypeReflector.cs" />
+    <Compile Include="UnaryOp.cs" />
+    <Compile Include="URIErrorObject.cs" />
+    <Compile Include="VariableDeclaration.cs" />
+    <Compile Include="VariableStatement.cs" />
+    <Compile Include="VBArrayConstructor.cs" />
+    <Compile Include="VBArrayObject.cs" />
+    <Compile Include="VBArrayPrototype.cs" />
+    <Compile Include="VersionableAttribute.cs" />
+    <Compile Include="VsaCodeItem.cs" />
+    <Compile Include="VsaEngine.cs" />
+    <Compile Include="VsaGlobalItem.cs" />
+    <Compile Include="VsaItem.cs" />
+    <Compile Include="VsaItems.cs" />
+    <Compile Include="VSAITEMTYPE2.cs" />
+    <Compile Include="VsaReferenceItem.cs" />
+    <Compile Include="VsaScriptScope.cs" />
+    <Compile Include="With.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ChangeLog" />
+    <None Include="jscript-lexer-parser.g" />
+    <None Include="README" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Microsoft.Vsa\Microsoft.Vsa.csproj">
+      <Project>{C2C9C8F8-F726-46C3-A2B0-DB338B0833B4}</Project>
+      <Name>Microsoft.Vsa</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

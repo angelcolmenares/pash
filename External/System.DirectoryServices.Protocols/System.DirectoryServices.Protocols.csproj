@@ -1,0 +1,862 @@
+<?xml version="1.0"?>
+<Project xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <ProjectGuid>{FAE22CF8-E105-44F8-A56F-9D3329808E31}</ProjectGuid>
+    <SchemaVersion>2.0</SchemaVersion>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
+    <OutputType>Library</OutputType>
+    <ProductVersion>10.0.0</ProductVersion>
+    <SignAssembly>True</SignAssembly>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <AssemblyOriginatorKeyFile>..\..\mono.snk</AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugType>full</DebugType>
+    <Optimize>False</Optimize>
+    <OutputPath>bin\Debug</OutputPath>
+    <WarningLevel>4</WarningLevel>
+    <AllowUnsafeBlocks>True</AllowUnsafeBlocks>
+    <DebugSymbols>True</DebugSymbols>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>none</DebugType>
+    <Optimize>False</Optimize>
+    <OutputPath>bin\Release</OutputPath>
+    <WarningLevel>4</WarningLevel>
+    <AllowUnsafeBlocks>True</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System.Xml" />
+    <Reference Include="System" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Core" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="System\DirectoryServices.Protocols\AuthType.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="System\DirectoryServices.Protocols\PartialResultProcessing.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="System\DirectoryServices.Protocols\BerConverter.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="System\DirectoryServices.Protocols\DereferenceAlias.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="System\DirectoryServices.Protocols\DirectoryAttribute.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="System\DirectoryServices.Protocols\DirectoryAttributeModification.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="System\DirectoryServices.Protocols\SearchResultAttributeCollection.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="System\DirectoryServices.Protocols\DirectoryAttributeCollection.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="System\DirectoryServices.Protocols\DirectoryAttributeModificationCollection.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="System\DirectoryServices.Protocols\DirectoryAttributeOperation.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="System\DirectoryServices.Protocols\DirectoryConnection.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="System\DirectoryServices.Protocols\ExtendedDNFlag.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="System\DirectoryServices.Protocols\SecurityMasks.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="System\DirectoryServices.Protocols\DirectorySynchronizationOptions.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="System\DirectoryServices.Protocols\SearchOption.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="System\DirectoryServices.Protocols\SortKey.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="System\DirectoryServices.Protocols\DirectoryControl.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="System\DirectoryServices.Protocols\AsqRequestControl.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="System\DirectoryServices.Protocols\AsqResponseControl.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="System\DirectoryServices.Protocols\CrossDomainMoveControl.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="System\DirectoryServices.Protocols\DomainScopeControl.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="System\DirectoryServices.Protocols\ExtendedDNControl.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="System\DirectoryServices.Protocols\LazyCommitControl.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="System\DirectoryServices.Protocols\DirectoryNotificationControl.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="System\DirectoryServices.Protocols\PermissiveModifyControl.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="System\DirectoryServices.Protocols\SecurityDescriptorFlagControl.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="System\DirectoryServices.Protocols\SearchOptionsControl.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="System\DirectoryServices.Protocols\ShowDeletedControl.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="System\DirectoryServices.Protocols\TreeDeleteControl.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="System\DirectoryServices.Protocols\VerifyNameControl.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="System\DirectoryServices.Protocols\DirSyncRequestControl.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="System\DirectoryServices.Protocols\DirSyncResponseControl.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="System\DirectoryServices.Protocols\PageResultRequestControl.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="System\DirectoryServices.Protocols\PageResultResponseControl.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="System\DirectoryServices.Protocols\SortRequestControl.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="System\DirectoryServices.Protocols\SortResponseControl.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="System\DirectoryServices.Protocols\VlvRequestControl.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="System\DirectoryServices.Protocols\VlvResponseControl.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="System\DirectoryServices.Protocols\QuotaControl.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="System\DirectoryServices.Protocols\DirectoryControlCollection.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="System\DirectoryServices.Protocols\DirectoryException.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="System\DirectoryServices.Protocols\DirectoryOperationException.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="System\DirectoryServices.Protocols\BerConversionException.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="System\DirectoryServices.Protocols\DirectoryIdentifier.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="System\DirectoryServices.Protocols\DirectoryOperation.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="System\DirectoryServices.Protocols\DirectoryRequest.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="System\DirectoryServices.Protocols\DeleteRequest.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="System\DirectoryServices.Protocols\AddRequest.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="System\DirectoryServices.Protocols\ModifyRequest.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="System\DirectoryServices.Protocols\CompareRequest.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="System\DirectoryServices.Protocols\ModifyDNRequest.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="System\DirectoryServices.Protocols\ExtendedRequest.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="System\DirectoryServices.Protocols\SearchRequest.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="System\DirectoryServices.Protocols\DsmlAuthRequest.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="System\DirectoryServices.Protocols\DirectoryResponse.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="System\DirectoryServices.Protocols\DeleteResponse.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="System\DirectoryServices.Protocols\AddResponse.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="System\DirectoryServices.Protocols\ModifyResponse.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="System\DirectoryServices.Protocols\ModifyDNResponse.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="System\DirectoryServices.Protocols\CompareResponse.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="System\DirectoryServices.Protocols\ExtendedResponse.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="System\DirectoryServices.Protocols\SearchResponse.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="System\DirectoryServices.Protocols\DsmlErrorResponse.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="System\DirectoryServices.Protocols\DsmlAuthResponse.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="System\DirectoryServices.Protocols\PartialResultsCollection.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="System\DirectoryServices.Protocols\ReferralChasingOptions.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="System\DirectoryServices.Protocols\ResultCode.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="System\DirectoryServices.Protocols\LdapOperation.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="System\DirectoryServices.Protocols\SearchResultReference.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="System\DirectoryServices.Protocols\SearchResultReferenceCollection.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="System\DirectoryServices.Protocols\SearchResultEntry.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="System\DirectoryServices.Protocols\SearchResultEntryCollection.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="System\DirectoryServices.Protocols\SearchScope.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="System\DirectoryServices.Protocols\DsmlDirectoryIdentifier.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="System\DirectoryServices.Protocols\DsmlDocument.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="System\DirectoryServices.Protocols\DsmlRequestDocument.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="System\DirectoryServices.Protocols\DsmlResponseDocument.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="System\DirectoryServices.Protocols\DsmlDocumentProcessing.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="System\DirectoryServices.Protocols\DsmlResponseOrder.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="System\DirectoryServices.Protocols\DsmlErrorProcessing.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="System\DirectoryServices.Protocols\ErrorResponseCategory.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="System\DirectoryServices.Protocols\DsmlInvalidDocumentException.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="System\DirectoryServices.Protocols\ErrorResponseException.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="System\DirectoryServices.Protocols\DsmlSoapConnection.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="System\DirectoryServices.Protocols\DsmlSoapHttpConnection.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="System\DirectoryServices.Protocols\LdapAsyncResult.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="System\DirectoryServices.Protocols\LdapRequestState.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="System\DirectoryServices.Protocols\ResultsStatus.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="System\DirectoryServices.Protocols\LdapPartialAsyncResult.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="System\DirectoryServices.Protocols\GetLdapResponseCallback.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="System\DirectoryServices.Protocols\QUERYCLIENTCERT.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="System\DirectoryServices.Protocols\LdapConnection.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="System\DirectoryServices.Protocols\LdapDirectoryIdentifier.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="System\DirectoryServices.Protocols\LdapException.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="System\DirectoryServices.Protocols\TlsOperationException.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="System\DirectoryServices.Protocols\LdapPartialResultsProcessor.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="System\DirectoryServices.Protocols\PartialResultsRetriever.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="System\DirectoryServices.Protocols\QueryForConnectionCallback.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="System\DirectoryServices.Protocols\NotifyOfNewConnectionCallback.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="System\DirectoryServices.Protocols\DereferenceConnectionCallback.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="System\DirectoryServices.Protocols\QueryClientCertificateCallback.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="System\DirectoryServices.Protocols\VerifyServerCertificateCallback.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="System\DirectoryServices.Protocols\QUERYFORCONNECTIONInternal.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="System\DirectoryServices.Protocols\NOTIFYOFNEWCONNECTIONInternal.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="System\DirectoryServices.Protocols\DEREFERENCECONNECTIONInternal.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="System\DirectoryServices.Protocols\VERIFYSERVERCERT.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="System\DirectoryServices.Protocols\LocatorFlags.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="System\DirectoryServices.Protocols\SecurityProtocol.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="System\DirectoryServices.Protocols\SecurityPackageContextConnectionInformation.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="System\DirectoryServices.Protocols\ReferralCallback.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="System\DirectoryServices.Protocols\LdapSessionOptions.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="System\DirectoryServices.Protocols\ConnectionHandle.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="System\DirectoryServices.Protocols\Luid.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="System\DirectoryServices.Protocols\SEC_WINNT_AUTH_IDENTITY_EX.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="System\DirectoryServices.Protocols\LdapOption.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="System\DirectoryServices.Protocols\ResultAll.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="System\ExternDll.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="System\DirectoryServices.Protocols\UtilityHandle.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="System\DirectoryServices.Protocols\OperationErrorMappings.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="System\DirectoryServices.Protocols\ADFilter.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="System\DirectoryServices.Protocols\ADExtenMatchFilter.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="System\DirectoryServices.Protocols\ADSubstringFilter.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="System\DirectoryServices.Protocols\ADAttribute.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="System\DirectoryServices.Protocols\ADValue.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="System\DirectoryServices.Protocols\DsmlAsyncResult.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="System\DirectoryServices.Protocols\RequestState.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="System\DirectoryServices.Protocols\DsmlConstants.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="System\DirectoryServices.Protocols\DSMLFilterWriter.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="System\DirectoryServices.Protocols\FilterParser.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="System\DirectoryServices.Protocols\NamespaceUtils.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="System\DirectoryServices.Protocols\Utility.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="System\DirectoryServices.Protocols\LdapError.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="System\DirectoryServices.Protocols\LdapErrorMappings.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="System\DirectoryServices.Protocols\ErrorChecking.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="System\DirectoryServices.Protocols\SecurityHandle.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="System\DirectoryServices.Protocols\BerSafeHandle.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="System\DirectoryServices.Protocols\HGlobalMemHandle.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="System\DirectoryServices.Protocols\BindMethod.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="System\DirectoryServices.Protocols\LDAP_TIMEVAL.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="System\DirectoryServices.Protocols\berval.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="System\DirectoryServices.Protocols\SafeBerval.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="System\DirectoryServices.Protocols\LdapControl.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="System\DirectoryServices.Protocols\LdapReferralCallback.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="System\DirectoryServices.Protocols\CRYPTOAPI_BLOB.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="System\DirectoryServices.Protocols\SecPkgContext_IssuerListInfoEx.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="System\DirectoryServices.Protocols\LdapMod.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="System\DirectoryServices.Protocols\LdapVlvInfo.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="System\DirectoryServices.Protocols\Wldap32.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="System\DirectoryServices.Protocols\ResDescriptionAttribute.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="System\DirectoryServices.Protocols\ResCategoryAttribute.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="System\DirectoryServices.Protocols\Res.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="System\DirectoryServices\ActiveDirectoryRights.cs" />
+    <Compile Include="System\DirectoryServices\ActiveDirectorySecurity.cs" />
+    <Compile Include="System\DirectoryServices\ActiveDirectoryAccessRule.cs" />
+    <Compile Include="System\DirectoryServices\ActiveDirectoryAuditRule.cs" />
+    <Compile Include="System\DirectoryServices\ActiveDirectoryRightsTranslator.cs" />
+    <Compile Include="System\DirectoryServices\ActiveDirectoryInheritanceTranslator.cs" />
+    <Compile Include="System\DirectoryServices\ActiveDirectorySecurityInheritance.cs" />
+    <Compile Include="System\DirectoryServices.ActiveDirectory\ADSearcher.cs" />
+    <Compile Include="System\DirectoryServices.ActiveDirectory\ActiveDirectoryInterSiteTransport.cs" />
+    <Compile Include="System\DirectoryServices.ActiveDirectory\ActiveDirectoryObjectExistsException.cs" />
+    <Compile Include="System\DirectoryServices.ActiveDirectory\ActiveDirectoryObjectNotFoundException.cs" />
+    <Compile Include="System\DirectoryServices.ActiveDirectory\ActiveDirectoryOperationException.cs" />
+    <Compile Include="System\DirectoryServices.ActiveDirectory\ActiveDirectoryPartition.cs" />
+    <Compile Include="System\DirectoryServices.ActiveDirectory\ActiveDirectoryReplicationMetadata.cs" />
+    <Compile Include="System\DirectoryServices.ActiveDirectory\ActiveDirectoryRole.cs" />
+    <Compile Include="System\DirectoryServices.ActiveDirectory\ActiveDirectoryRoleCollection.cs" />
+    <Compile Include="System\DirectoryServices.ActiveDirectory\ActiveDirectorySchedule.cs" />
+    <Compile Include="System\DirectoryServices.ActiveDirectory\ActiveDirectorySchema.cs" />
+    <Compile Include="System\DirectoryServices.ActiveDirectory\ActiveDirectorySchemaClass.cs" />
+    <Compile Include="System\DirectoryServices.ActiveDirectory\ActiveDirectorySchemaClassCollection.cs" />
+    <Compile Include="System\DirectoryServices.ActiveDirectory\ActiveDirectorySchemaProperty.cs" />
+    <Compile Include="System\DirectoryServices.ActiveDirectory\ActiveDirectorySchemaPropertyCollection.cs" />
+    <Compile Include="System\DirectoryServices.ActiveDirectory\ActiveDirectoryServerDownException.cs" />
+    <Compile Include="System\DirectoryServices.ActiveDirectory\ActiveDirectorySite.cs" />
+    <Compile Include="System\DirectoryServices.ActiveDirectory\ActiveDirectorySiteCollection.cs" />
+    <Compile Include="System\DirectoryServices.ActiveDirectory\ActiveDirectorySiteLink.cs" />
+    <Compile Include="System\DirectoryServices.ActiveDirectory\ActiveDirectorySiteLinkBridge.cs" />
+    <Compile Include="System\DirectoryServices.ActiveDirectory\ActiveDirectorySiteLinkCollection.cs" />
+    <Compile Include="System\DirectoryServices.ActiveDirectory\ActiveDirectorySiteOptions.cs" />
+    <Compile Include="System\DirectoryServices.ActiveDirectory\ActiveDirectorySubnet.cs" />
+    <Compile Include="System\DirectoryServices.ActiveDirectory\ActiveDirectorySubnetCollection.cs" />
+    <Compile Include="System\DirectoryServices.ActiveDirectory\ActiveDirectorySyntax.cs" />
+    <Compile Include="System\DirectoryServices.ActiveDirectory\ActiveDirectoryTransportType.cs" />
+    <Compile Include="System\DirectoryServices.ActiveDirectory\AdamInstance.cs" />
+    <Compile Include="System\DirectoryServices.ActiveDirectory\AdamInstanceCollection.cs" />
+    <Compile Include="System\DirectoryServices.ActiveDirectory\AdamRole.cs" />
+    <Compile Include="System\DirectoryServices.ActiveDirectory\AdamRoleCollection.cs" />
+    <Compile Include="System\DirectoryServices.ActiveDirectory\ApplicationPartition.cs" />
+    <Compile Include="System\DirectoryServices.ActiveDirectory\ApplicationPartitionCollection.cs" />
+    <Compile Include="System\DirectoryServices.ActiveDirectory\ApplicationPartitionType.cs" />
+    <Compile Include="System\DirectoryServices.ActiveDirectory\AttributeMetadata.cs" />
+    <Compile Include="System\DirectoryServices.ActiveDirectory\AttributeMetadataCollection.cs" />
+    <Compile Include="System\DirectoryServices.ActiveDirectory\Capability.cs" />
+    <Compile Include="System\DirectoryServices.ActiveDirectory\Component.cs" />
+    <Compile Include="System\DirectoryServices.ActiveDirectory\ConfigurationSet.cs" />
+    <Compile Include="System\DirectoryServices.ActiveDirectory\DSROLE_MACHINE_ROLE.cs" />
+    <Compile Include="System\DirectoryServices.ActiveDirectory\DSROLE_PRIMARY_DOMAIN_INFO_BASIC.cs" />
+    <Compile Include="System\DirectoryServices.ActiveDirectory\DSROLE_PRIMARY_DOMAIN_INFO_LEVEL.cs" />
+    <Compile Include="System\DirectoryServices.ActiveDirectory\DS_DOMAINTRUST_FLAG.cs" />
+    <Compile Include="System\DirectoryServices.ActiveDirectory\DS_DOMAIN_TRUSTS.cs" />
+    <Compile Include="System\DirectoryServices.ActiveDirectory\DS_NAME_ERROR.cs" />
+    <Compile Include="System\DirectoryServices.ActiveDirectory\DS_NAME_RESULT.cs" />
+    <Compile Include="System\DirectoryServices.ActiveDirectory\DS_NAME_RESULT_ITEM.cs" />
+    <Compile Include="System\DirectoryServices.ActiveDirectory\DS_REPL_ATTR_META_DATA.cs" />
+    <Compile Include="System\DirectoryServices.ActiveDirectory\DS_REPL_ATTR_META_DATA_2.cs" />
+    <Compile Include="System\DirectoryServices.ActiveDirectory\DS_REPL_CURSOR.cs" />
+    <Compile Include="System\DirectoryServices.ActiveDirectory\DS_REPL_CURSORS.cs" />
+    <Compile Include="System\DirectoryServices.ActiveDirectory\DS_REPL_CURSORS_3.cs" />
+    <Compile Include="System\DirectoryServices.ActiveDirectory\DS_REPL_CURSOR_3.cs" />
+    <Compile Include="System\DirectoryServices.ActiveDirectory\DS_REPL_INFO_TYPE.cs" />
+    <Compile Include="System\DirectoryServices.ActiveDirectory\DS_REPL_KCC_DSA_FAILURE.cs" />
+    <Compile Include="System\DirectoryServices.ActiveDirectory\DS_REPL_KCC_DSA_FAILURES.cs" />
+    <Compile Include="System\DirectoryServices.ActiveDirectory\DS_REPL_NEIGHBOR.cs" />
+    <Compile Include="System\DirectoryServices.ActiveDirectory\DS_REPL_NEIGHBORS.cs" />
+    <Compile Include="System\DirectoryServices.ActiveDirectory\DS_REPL_OBJ_META_DATA.cs" />
+    <Compile Include="System\DirectoryServices.ActiveDirectory\DS_REPL_OBJ_META_DATA_2.cs" />
+    <Compile Include="System\DirectoryServices.ActiveDirectory\DS_REPL_OP.cs" />
+    <Compile Include="System\DirectoryServices.ActiveDirectory\DS_REPL_PENDING_OPS.cs" />
+    <Compile Include="System\DirectoryServices.ActiveDirectory\DS_REPSYNCALL_ERRINFO.cs" />
+    <Compile Include="System\DirectoryServices.ActiveDirectory\DS_REPSYNCALL_SYNC.cs" />
+    <Compile Include="System\DirectoryServices.ActiveDirectory\DS_REPSYNCALL_UPDATE.cs" />
+    <Compile Include="System\DirectoryServices.ActiveDirectory\DcEnumFlag.cs" />
+    <Compile Include="System\DirectoryServices.ActiveDirectory\DirectoryContext.cs" />
+    <Compile Include="System\DirectoryServices.ActiveDirectory\DirectoryContextType.cs" />
+    <Compile Include="System\DirectoryServices.ActiveDirectory\DirectoryEntryManager.cs" />
+    <Compile Include="System\DirectoryServices.ActiveDirectory\DirectoryServer.cs" />
+    <Compile Include="System\DirectoryServices.ActiveDirectory\DirectoryServerCollection.cs" />
+    <Compile Include="System\DirectoryServices.ActiveDirectory\DistinguishedName.cs" />
+    <Compile Include="System\DirectoryServices.ActiveDirectory\DnsRecord.cs" />
+    <Compile Include="System\DirectoryServices.ActiveDirectory\DnsSrvData.cs" />
+    <Compile Include="System\DirectoryServices.ActiveDirectory\Domain.cs" />
+    <Compile Include="System\DirectoryServices.ActiveDirectory\DomainCollection.cs" />
+    <Compile Include="System\DirectoryServices.ActiveDirectory\DomainCollisionOptions.cs" />
+    <Compile Include="System\DirectoryServices.ActiveDirectory\DomainController.cs" />
+    <Compile Include="System\DirectoryServices.ActiveDirectory\DomainControllerCollection.cs" />
+    <Compile Include="System\DirectoryServices.ActiveDirectory\DomainControllerInfo.cs" />
+    <Compile Include="System\DirectoryServices.ActiveDirectory\DomainMode.cs" />
+    <Compile Include="System\DirectoryServices.ActiveDirectory\DsDomainControllerInfo2.cs" />
+    <Compile Include="System\DirectoryServices.ActiveDirectory\DsDomainControllerInfo3.cs" />
+    <Compile Include="System\DirectoryServices.ActiveDirectory\DsNameResult.cs" />
+    <Compile Include="System\DirectoryServices.ActiveDirectory\DsNameResultItem.cs" />
+    <Compile Include="System\DirectoryServices.ActiveDirectory\ExceptionHelper.cs" />
+    <Compile Include="System\DirectoryServices.ActiveDirectory\FileTime.cs" />
+    <Compile Include="System\DirectoryServices.ActiveDirectory\Forest.cs" />
+    <Compile Include="System\DirectoryServices.ActiveDirectory\ForestMode.cs" />
+    <Compile Include="System\DirectoryServices.ActiveDirectory\ForestTrustCollisionException.cs" />
+    <Compile Include="System\DirectoryServices.ActiveDirectory\ForestTrustCollisionType.cs" />
+    <Compile Include="System\DirectoryServices.ActiveDirectory\ForestTrustDomainInfoCollection.cs" />
+    <Compile Include="System\DirectoryServices.ActiveDirectory\ForestTrustDomainInformation.cs" />
+    <Compile Include="System\DirectoryServices.ActiveDirectory\ForestTrustDomainStatus.cs" />
+    <Compile Include="System\DirectoryServices.ActiveDirectory\ForestTrustRelationshipCollision.cs" />
+    <Compile Include="System\DirectoryServices.ActiveDirectory\ForestTrustRelationshipCollisionCollection.cs" />
+    <Compile Include="System\DirectoryServices.ActiveDirectory\ForestTrustRelationshipInformation.cs" />
+    <Compile Include="System\DirectoryServices.ActiveDirectory\GlobalCatalog.cs" />
+    <Compile Include="System\DirectoryServices.ActiveDirectory\GlobalCatalogCollection.cs" />
+    <Compile Include="System\DirectoryServices.ActiveDirectory\HourOfDay.cs" />
+    <Compile Include="System\DirectoryServices.ActiveDirectory\LARGE_INTEGER.cs" />
+    <Compile Include="System\DirectoryServices.ActiveDirectory\LSA_AUTH_INFORMATION.cs" />
+    <Compile Include="System\DirectoryServices.ActiveDirectory\LSA_FOREST_TRUST_BINARY_DATA.cs" />
+    <Compile Include="System\DirectoryServices.ActiveDirectory\LSA_FOREST_TRUST_COLLISION_INFORMATION.cs" />
+    <Compile Include="System\DirectoryServices.ActiveDirectory\LSA_FOREST_TRUST_COLLISION_RECORD.cs" />
+    <Compile Include="System\DirectoryServices.ActiveDirectory\LSA_FOREST_TRUST_DOMAIN_INFO.cs" />
+    <Compile Include="System\DirectoryServices.ActiveDirectory\LSA_FOREST_TRUST_INFORMATION.cs" />
+    <Compile Include="System\DirectoryServices.ActiveDirectory\LSA_FOREST_TRUST_RECORD.cs" />
+    <Compile Include="System\DirectoryServices.ActiveDirectory\LSA_FOREST_TRUST_RECORD_TYPE.cs" />
+    <Compile Include="System\DirectoryServices.ActiveDirectory\LSA_OBJECT_ATTRIBUTES.cs" />
+    <Compile Include="System\DirectoryServices.ActiveDirectory\LSA_UNICODE_STRING.cs" />
+    <Compile Include="System\DirectoryServices.ActiveDirectory\LUID.cs" />
+    <Compile Include="System\DirectoryServices.ActiveDirectory\LoadLibrarySafeHandle.cs" />
+    <Compile Include="System\DirectoryServices.ActiveDirectory\Locator.cs" />
+    <Compile Include="System\DirectoryServices.ActiveDirectory\LocatorOptions.cs" />
+    <Compile Include="System\DirectoryServices.ActiveDirectory\LsaLogonProcessSafeHandle.cs" />
+    <Compile Include="System\DirectoryServices.ActiveDirectory\MinuteOfHour.cs" />
+    <Compile Include="System\DirectoryServices.ActiveDirectory\NCFlags.cs" />
+    <Compile Include="System\DirectoryServices.ActiveDirectory\NETLOGON_INFO_2.cs" />
+    <Compile Include="System\DirectoryServices.ActiveDirectory\NativeComInterfaces.cs" />
+    <Compile Include="System\DirectoryServices.ActiveDirectory\NativeMethods.cs" />
+    <Compile Include="System\DirectoryServices.ActiveDirectory\NegotiateCallerNameRequest.cs" />
+    <Compile Include="System\DirectoryServices.ActiveDirectory\NegotiateCallerNameResponse.cs" />
+    <Compile Include="System\DirectoryServices.ActiveDirectory\NotificationStatus.cs" />
+    <Compile Include="System\DirectoryServices.ActiveDirectory\OMObjectClass.cs" />
+    <Compile Include="System\DirectoryServices.ActiveDirectory\OSVersionInfoEx.cs" />
+    <Compile Include="System\DirectoryServices.ActiveDirectory\POLICY_ACCOUNT_DOMAIN_INFO.cs" />
+    <Compile Include="System\DirectoryServices.ActiveDirectory\POLICY_DNS_DOMAIN_INFO.cs" />
+    <Compile Include="System\DirectoryServices.ActiveDirectory\PartialDnsRecord.cs" />
+    <Compile Include="System\DirectoryServices.ActiveDirectory\PolicySafeHandle.cs" />
+    <Compile Include="System\DirectoryServices.ActiveDirectory\PrivateLocatorFlags.cs" />
+    <Compile Include="System\DirectoryServices.ActiveDirectory\PropertyManager.cs" />
+    <Compile Include="System\DirectoryServices.ActiveDirectory\PropertyTypes.cs" />
+    <Compile Include="System\DirectoryServices.ActiveDirectory\ReadOnlyActiveDirectorySchemaClassCollection.cs" />
+    <Compile Include="System\DirectoryServices.ActiveDirectory\ReadOnlyActiveDirectorySchemaPropertyCollection.cs" />
+    <Compile Include="System\DirectoryServices.ActiveDirectory\ReadOnlyDirectoryServerCollection.cs" />
+    <Compile Include="System\DirectoryServices.ActiveDirectory\ReadOnlySiteCollection.cs" />
+    <Compile Include="System\DirectoryServices.ActiveDirectory\ReadOnlySiteLinkBridgeCollection.cs" />
+    <Compile Include="System\DirectoryServices.ActiveDirectory\ReadOnlySiteLinkCollection.cs" />
+    <Compile Include="System\DirectoryServices.ActiveDirectory\ReadOnlyStringCollection.cs" />
+    <Compile Include="System\DirectoryServices.ActiveDirectory\ReplicationConnection.cs" />
+    <Compile Include="System\DirectoryServices.ActiveDirectory\ReplicationConnectionCollection.cs" />
+    <Compile Include="System\DirectoryServices.ActiveDirectory\ReplicationCursor.cs" />
+    <Compile Include="System\DirectoryServices.ActiveDirectory\ReplicationCursorCollection.cs" />
+    <Compile Include="System\DirectoryServices.ActiveDirectory\ReplicationFailure.cs" />
+    <Compile Include="System\DirectoryServices.ActiveDirectory\ReplicationFailureCollection.cs" />
+    <Compile Include="System\DirectoryServices.ActiveDirectory\ReplicationNeighbor.cs" />
+    <Compile Include="System\DirectoryServices.ActiveDirectory\ReplicationNeighborCollection.cs" />
+    <Compile Include="System\DirectoryServices.ActiveDirectory\ReplicationOperation.cs" />
+    <Compile Include="System\DirectoryServices.ActiveDirectory\ReplicationOperationCollection.cs" />
+    <Compile Include="System\DirectoryServices.ActiveDirectory\ReplicationOperationInformation.cs" />
+    <Compile Include="System\DirectoryServices.ActiveDirectory\ReplicationOperationType.cs" />
+    <Compile Include="System\DirectoryServices.ActiveDirectory\ReplicationSecurityLevel.cs" />
+    <Compile Include="System\DirectoryServices.ActiveDirectory\ReplicationSpan.cs" />
+    <Compile Include="System\DirectoryServices.ActiveDirectory\SID_AND_ATTR.cs" />
+    <Compile Include="System\DirectoryServices.ActiveDirectory\SID_IDENTIFIER_AUTHORITY.cs" />
+    <Compile Include="System\DirectoryServices.ActiveDirectory\SchemaClassType.cs" />
+    <Compile Include="System\DirectoryServices.ActiveDirectory\SearchFlags.cs" />
+    <Compile Include="System\DirectoryServices.ActiveDirectory\SidType.cs" />
+    <Compile Include="System\DirectoryServices.ActiveDirectory\SupportedCapability.cs" />
+    <Compile Include="System\DirectoryServices.ActiveDirectory\SyncFromAllServersErrorCategory.cs" />
+    <Compile Include="System\DirectoryServices.ActiveDirectory\SyncFromAllServersErrorInformation.cs" />
+    <Compile Include="System\DirectoryServices.ActiveDirectory\SyncFromAllServersEvent.cs" />
+    <Compile Include="System\DirectoryServices.ActiveDirectory\SyncFromAllServersOperationException.cs" />
+    <Compile Include="System\DirectoryServices.ActiveDirectory\SyncFromAllServersOptions.cs" />
+    <Compile Include="System\DirectoryServices.ActiveDirectory\SyncReplicaFromAllServersCallback.cs" />
+    <Compile Include="System\DirectoryServices.ActiveDirectory\SyncUpdateCallback.cs" />
+    <Compile Include="System\DirectoryServices.ActiveDirectory\Syntax.cs" />
+    <Compile Include="System\DirectoryServices.ActiveDirectory\SystemFlag.cs" />
+    <Compile Include="System\DirectoryServices.ActiveDirectory\SystemTime.cs" />
+    <Compile Include="System\DirectoryServices.ActiveDirectory\TOKEN_USER.cs" />
+    <Compile Include="System\DirectoryServices.ActiveDirectory\TRUSTED_DOMAIN_AUTH_INFORMATION.cs" />
+    <Compile Include="System\DirectoryServices.ActiveDirectory\TRUSTED_DOMAIN_FULL_INFORMATION.cs" />
+    <Compile Include="System\DirectoryServices.ActiveDirectory\TRUSTED_DOMAIN_INFORMATION_EX.cs" />
+    <Compile Include="System\DirectoryServices.ActiveDirectory\TRUSTED_INFORMATION_CLASS.cs" />
+    <Compile Include="System\DirectoryServices.ActiveDirectory\TRUSTED_POSIX_OFFSET_INFO.cs" />
+    <Compile Include="System\DirectoryServices.ActiveDirectory\TRUST_ATTRIBUTE.cs" />
+    <Compile Include="System\DirectoryServices.ActiveDirectory\TopLevelName.cs" />
+    <Compile Include="System\DirectoryServices.ActiveDirectory\TopLevelNameCollection.cs" />
+    <Compile Include="System\DirectoryServices.ActiveDirectory\TopLevelNameCollisionOptions.cs" />
+    <Compile Include="System\DirectoryServices.ActiveDirectory\TopLevelNameStatus.cs" />
+    <Compile Include="System\DirectoryServices.ActiveDirectory\TrustDirection.cs" />
+    <Compile Include="System\DirectoryServices.ActiveDirectory\TrustHelper.cs" />
+    <Compile Include="System\DirectoryServices.ActiveDirectory\TrustObject.cs" />
+    <Compile Include="System\DirectoryServices.ActiveDirectory\TrustRelationshipInformation.cs" />
+    <Compile Include="System\DirectoryServices.ActiveDirectory\TrustRelationshipInformationCollection.cs" />
+    <Compile Include="System\DirectoryServices.ActiveDirectory\TrustType.cs" />
+    <Compile Include="System\DirectoryServices.ActiveDirectory\UnsafeNativeMethods.cs" />
+    <Compile Include="System\DirectoryServices.ActiveDirectory\Utils.cs" />
+    <Compile Include="System\DirectoryServices.ActiveDirectory\WellKnownDN.cs" />
+    <Compile Include="System\Res.cs" />
+    <Compile Include="System\DirectoryServices\ExtendedRightAccessRule.cs" />
+    <Compile Include="System\DirectoryServices\NativeEntryFactory.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <ItemGroup>
+    <EmbeddedResource Include="System.DirectoryServices.Protocols.resx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="System\DirectoryServices\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Novell.Directory.Ldap\Novell.Directory.Ldap.csproj">
+      <Project>{13D90459-D9DA-4ADC-B77B-A99F95B07871}</Project>
+      <Name>Novell.Directory.Ldap</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\System.DirectoryServices\System.DirectoryServices.csproj">
+      <Project>{44EA805B-4769-4511-9D3F-212CFEFF5A99}</Project>
+      <Name>System.DirectoryServices</Name>
+    </ProjectReference>
+  </ItemGroup>
+</Project>

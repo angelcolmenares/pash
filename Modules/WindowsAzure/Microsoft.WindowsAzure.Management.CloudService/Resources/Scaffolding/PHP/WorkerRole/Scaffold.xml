@@ -1,0 +1,19 @@
+﻿<Scaffold>
+  <ScaffoldFile Path="index.php" />
+  <ScaffoldFile Path="php_entry.cmd" />
+  <ScaffoldFile Path="setup_worker.cmd" />
+  <ScaffoldFile Path="Microsoft.Web.Deployment.dll" />
+  <ScaffoldFile Path="Microsoft.Web.PlatformInstaller.dll" />
+  <ScaffoldFile Path="Microsoft.Web.PlatformInstaller.UI.dll" />
+  <ScaffoldFile Path="setup.cmd" />
+  <ScaffoldFile Path="setup.ps1" />
+  <ScaffoldFile Path="WebpiCmdLine.exe" />
+  <ScaffoldFile Path="RoleSettings.xml" Copy="false">
+    <Scaffold.ReplaceParameterRule />
+    <PHPRules.AddRoleToConfig />
+  </ScaffoldFile>
+  <ScaffoldFile Path="WorkerRole.xml" Copy="false">
+    <Scaffold.ReplaceParameterRule />
+    <PHPRules.AddWorkerRoleToDef />
+  </ScaffoldFile>
+</Scaffold>

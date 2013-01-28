@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>10.0.0</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{44EA805B-4769-4511-9D3F-212CFEFF5A99}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <NoWarn>1699</NoWarn>
+    <OutputPath>./../../class/lib/net_4_5</OutputPath>
+    <NoStdLib>true</NoStdLib>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>System.DirectoryServices</RootNamespace>
+    <AssemblyName>System.DirectoryServices</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <!-- Filter out System.Core added by: Microsoft.NETFramework.props  -->
+    <AddAdditionalExplicitAssemblyReferences>false</AddAdditionalExplicitAssemblyReferences>
+    <SignAssembly>True</SignAssembly>
+    <AssemblyOriginatorKeyFile>..\..\mono.snk</AssemblyOriginatorKeyFile>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>True</DebugSymbols>
+    <DebugType>full</DebugType>
+    <NoWarn>
+    </NoWarn>
+    <Optimize>False</Optimize>
+    <DefineConstants>DEBUG;NET_4_5</DefineConstants>
+    <WarningLevel>4</WarningLevel>
+    <AdditionalLibPaths>./../../class/lib/net_4_5</AdditionalLibPaths>
+    <OutputPath>bin\Debug</OutputPath>
+    <ConsolePause>False</ConsolePause>
+    <NoStdLib>False</NoStdLib>
+    <AllowUnsafeBlocks>True</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>none</DebugType>
+    <NoWarn>
+    </NoWarn>
+    <Optimize>True</Optimize>
+    <WarningLevel>4</WarningLevel>
+    <AdditionalLibPaths>./../../class/lib/net_4_5</AdditionalLibPaths>
+    <OutputPath>bin\Release</OutputPath>
+    <ConsolePause>False</ConsolePause>
+    <NoStdLib>False</NoStdLib>
+    <AllowUnsafeBlocks>True</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <PropertyGroup>
+    <PreBuildEvent>
+    </PreBuildEvent>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="Mono.Security" />
+    <Reference Include="System.Core" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+    <None Include="Secure.config" />
+    <None Include="Assembly\ChangeLog" />
+    <None Include="System.DirectoryServices\ChangeLog" />
+    <None Include="System.DirectoryServices.Design\ChangeLog" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Assembly\" />
+    <Folder Include="System.DirectoryServices\" />
+    <Folder Include="System.DirectoryServices.Design\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Assembly\AssemblyInfo.cs" />
+    <Compile Include="System.DirectoryServices\AuthenticationTypes.cs" />
+    <Compile Include="System.DirectoryServices\DSDescriptionAttribute.cs" />
+    <Compile Include="System.DirectoryServices\DirectoryEntries.cs" />
+    <Compile Include="System.DirectoryServices\DirectoryEntry.cs" />
+    <Compile Include="System.DirectoryServices\DirectorySearcher.cs" />
+    <Compile Include="System.DirectoryServices\DirectoryServicesPermission.cs" />
+    <Compile Include="System.DirectoryServices\DirectoryServicesPermissionAccess.cs" />
+    <Compile Include="System.DirectoryServices\DirectoryServicesPermissionAttribute.cs" />
+    <Compile Include="System.DirectoryServices\DirectoryServicesPermissionEntry.cs" />
+    <Compile Include="System.DirectoryServices\DirectoryServicesPermissionEntryCollection.cs" />
+    <Compile Include="System.DirectoryServices\PropertyCollection.cs" />
+    <Compile Include="System.DirectoryServices\PropertyValueCollection.cs" />
+    <Compile Include="System.DirectoryServices\ReferralChasingOption.cs" />
+    <Compile Include="System.DirectoryServices\ResultPropertyCollection.cs" />
+    <Compile Include="System.DirectoryServices\ResultPropertyValueCollection.cs" />
+    <Compile Include="System.DirectoryServices\SchemaNameCollection.cs" />
+    <Compile Include="System.DirectoryServices\SearchResult.cs" />
+    <Compile Include="System.DirectoryServices\SearchResultCollection.cs" />
+    <Compile Include="System.DirectoryServices\SearchScope.cs" />
+    <Compile Include="System.DirectoryServices\SortDirection.cs" />
+    <Compile Include="System.DirectoryServices\SortOption.cs" />
+    <Compile Include="System.DirectoryServices.Design\DirectoryEntryConverter.cs" />
+    <Compile Include="Consts.cs" />
+    <Compile Include="Locale.cs" />
+    <Compile Include="MonoTODOAttribute.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Novell.Directory.Ldap\Novell.Directory.Ldap.csproj">
+      <Project>{13D90459-D9DA-4ADC-B77B-A99F95B07871}</Project>
+      <Name>Novell.Directory.Ldap</Name>
+    </ProjectReference>
+  </ItemGroup>
+</Project>

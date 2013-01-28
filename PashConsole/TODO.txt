@@ -1,0 +1,18 @@
+
+
+
+Update-Help
+
+Missing en-US for ActiveDirectory
+
+Scan all Win32_ WMI classes used and create UNIX versions.
+
+Implement SSHSession as PSSession
+
+
+Fix Win32 Compatibility
+
+
+Retarget all Microsoft/ Registry key to Xamarin
+
+Fork Restart-Computer

@@ -1,0 +1,8 @@
+namespace System.Management
+{
+	internal enum tag_WBEM_LIMITATION_FLAG_TYPE
+	{
+		WBEM_FLAG_EXCLUDE_OBJECT_QUALIFIERS = 16,
+		WBEM_FLAG_EXCLUDE_PROPERTY_QUALIFIERS = 32
+	}
+}

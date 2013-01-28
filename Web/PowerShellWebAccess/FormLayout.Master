@@ -1,0 +1,88 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" Inherits="System.Web.UI.MasterPage" %>
+<%@ Import Namespace="Microsoft.Management.PowerShellWebAccess.Primitives" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
+	"http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+
+<head>
+    <title></title>  
+	<meta http-equiv="Content-type" content="application/xhtml+xml"/> 
+	<meta content="text/html; charset=UTF-8" http-equiv="Content-Type"/> 
+	<meta content="en" name="language"/> 
+	<meta content="en" http-equiv="Content-Language"/> 
+    <meta http-equiv="X-UA-Compatible" content="IE=8"/> 
+    <meta http-equiv="X-XSS-Protection" content="0"/> 
+    <link rel="shortcut icon" href="../images/powershell_ico.ico" type="image/x-icon" /> 
+    <link rel="apple-touch-icon" href="../images/powershell_ico.ico" type="image/x-icon" /> 
+    <link rel="stylesheet" href="../css/site.css" type="text/css" media="screen" charset="utf-8"/>
+    <meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=false" />
+    
+    <style type="text/css" id="antiClickjack">body { display:none !important; }</style> 
+    <script type="text/javascript">
+        if (self === top) {
+            var antiClickjack = document.getElementById("antiClickjack")
+            antiClickjack.parentNode.removeChild(antiClickjack);
+        } else {
+            top.location = self.location; 
+        }
+    </script>
+</head>
+
+<script type="text/javascript">
+    // content pages use onContentPageLoad to initialize themselves
+    var onContentPageLoad = undefined
+</script>
+
+<body class="form-layout login" onload="bootstrap();">
+    <div class="background">
+        <div id="maincontainer">
+            <img id="windowsServerLogo" class="wslogo" src="../images/POWA_XamarinLogo.png" />
+            <!-- <img id="windowsServerLogo" class="wslogo" src="../images/POWA_WSLogo.png" /> -->
+            <img id="microsoftLogo" class="mslogo" src="../images/POWA_MSLogo.png" />
+            <br />
+            <div class="container">
+                <button id="helpButton" type="button">
+                    <img id="helpIcon" src="../images/Help_16.png" alt="help"/>
+                </button>
+                <br />
+                <h1 id="topHeader"></h1>
+                <div class="pushSmall"></div>
+                <div class="innerContainer">
+                        <hr/>
+                        <br />
+                        <asp:ContentPlaceHolder ID="MainContent" runat="server"></asp:ContentPlaceHolder>        
+                        <div class="push"></div>
+                        <br />
+                        <p class="copyRight" id="copyRightLabel"></p>
+                </div>
+                <div class="pushSmall"></div>
+            </div>
+        </div>
+    </div>
+
+    <script type="text/javascript" src="./powershell.console.ui.resources.js"></script>
+    <script type="text/javascript" src="../scripts/system.common.js"></script>
+    <script type="text/javascript" src="../scripts/powershell.console.ui.extentions.js"></script>
+
+    <script type="text/javascript">
+        function bootstrap() {
+            // if the content page defines an onContentPageLoad function, execute it 
+            if (onContentPageLoad !== undefined) {
+                onContentPageLoad();
+            }
+
+            // the logon and logout buttons are common to several content pages
+            S("#sign-in").click(function () { window.location.href = './logon.aspx'; });
+            S("#log-off").click(function () { window.location.href = './logout.aspx'; });
+
+            // load the localizable strings
+            this.document.title = L_FeatureName_Text;
+            S("#topHeader").html(L_FeatureName_Text);
+            S("#copyRightLabel").html(L_Copyright_HTMLText);
+
+            S("#helpButton").click(function () { window.open('http://go.microsoft.com/fwlink/?LinkID=221050') });
+        }
+    </script>
+</body>
+</html>

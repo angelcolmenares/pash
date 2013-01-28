@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!-- *******************************************************************
+These sample files contain formatting information used by the Windows 
+PowerShell engine. Do not edit or change the contents of this file 
+directly. Please see the Windows PowerShell documentation or type 
+Get-Help Update-TypeData for more information.
+
+Copyright (c) Microsoft Corporation.  All rights reserved.
+ 
+THIS SAMPLE CODE AND INFORMATION IS PROVIDED "AS IS" WITHOUT WARRANTY 
+OF ANY KIND,WHETHER EXPRESSED OR IMPLIED, INCLUDING BUT NOT LIMITED TO 
+THE IMPLIED WARRANTIES OF MERCHANTABILITY AND/OR FITNESS FOR A PARTICULAR
+PURPOSE. IF THIS CODE AND INFORMATION IS MODIFIED, THE ENTIRE RISK OF USE
+OR RESULTS IN CONNECTION WITH THE USE OF THIS CODE AND INFORMATION 
+REMAINS WITH THE USER.
+******************************************************************** -->
+<Types>
+    <Type>
+        <Name>Microsoft.Management.Infrastructure.CimInstance#DnsClientNrptRule</Name>
+        <Members>
+            <AliasProperty>
+                <Name>DA</Name>
+                <ReferencedMemberName>DirectAccessEnabled</ReferencedMemberName>
+            </AliasProperty>
+            <AliasProperty>
+                <Name>DADnsServers</Name>
+                <ReferencedMemberName>DirectAccessDnsServers</ReferencedMemberName>
+            </AliasProperty>
+            <AliasProperty>
+                <Name>DnsSec</Name>
+                <ReferencedMemberName>DnsSecEnabled</ReferencedMemberName>
+            </AliasProperty>            
+            <ScriptProperty>
+                <Name>DirectAccessDnsServers</Name>
+                <GetScriptBlock>
+                    [OutputType([System.Net.IPAddress[]])]
+                    param()
+                    [System.Net.IPAddress[]]($this.PSBase.CimInstanceProperties['DirectAccessDnsServers'].Value)
+                </GetScriptBlock>
+                <SetScriptBlock>
+                    param([System.Net.IPAddress[]]$value)
+                    $this.PSBase.CimInstanceProperties['DirectAccessDnsServers'].Value = [System.String[]]$value
+                </SetScriptBlock>
+            </ScriptProperty>
+            <ScriptProperty>
+                <Name>NameServers</Name>
+                <GetScriptBlock>
+                    [OutputType([System.Net.IPAddress[]])]
+                    param()
+                    [System.Net.IPAddress[]]($this.PSBase.CimInstanceProperties['NameServers'].Value)
+                </GetScriptBlock>
+                <SetScriptBlock>
+                    param([System.Net.IPAddress[]]$value)
+                    $this.PSBase.CimInstanceProperties['NameServers'].Value = [System.String[]]$value
+                </SetScriptBlock>
+            </ScriptProperty>
+        </Members>
+    </Type>
+    <Type>
+        <Name>Microsoft.Management.Infrastructure.CimInstance#DnsClientPolicyConfiguration</Name>
+        <Members>
+            <AliasProperty>
+                <Name>DA</Name>
+                <ReferencedMemberName>DirectAccessEnabled</ReferencedMemberName>
+            </AliasProperty>
+            <AliasProperty>
+                <Name>DADnsServers</Name>
+                <ReferencedMemberName>DirectAccessDnsServers</ReferencedMemberName>
+            </AliasProperty>
+            <AliasProperty>
+                <Name>DnsSec</Name>
+                <ReferencedMemberName>DnsSecValidationRequired</ReferencedMemberName>
+            </AliasProperty>        
+            <ScriptProperty>            
+                <Name>DirectAccessDnsServers</Name>
+                <GetScriptBlock>
+                    [OutputType([System.Net.IPAddress[]])]
+                    param()
+                    [System.Net.IPAddress[]]($this.PSBase.CimInstanceProperties['DirectAccessDnsServers'].Value)
+                </GetScriptBlock>
+                <SetScriptBlock>
+                    param([System.Net.IPAddress[]]$value)
+                    $this.PSBase.CimInstanceProperties['DirectAccessDnsServers'].Value = [System.String[]]$value
+                </SetScriptBlock>
+            </ScriptProperty>
+            <ScriptProperty>
+                <Name>NameServers</Name>
+                <GetScriptBlock>
+                    [OutputType([System.Net.IPAddress[]])]
+                    param()
+                    [System.Net.IPAddress[]]($this.PSBase.CimInstanceProperties['NameServers'].Value)
+                </GetScriptBlock>
+                <SetScriptBlock>
+                    param([System.Net.IPAddress[]]$value)
+                    $this.PSBase.CimInstanceProperties['NameServers'].Value = [System.String[]]$value
+                </SetScriptBlock>
+            </ScriptProperty>
+        </Members>
+    </Type>
+</Types>

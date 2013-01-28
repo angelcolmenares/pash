@@ -1,0 +1,927 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>1.3</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="EqualsNotSupported" xml:space="preserve">
+    <value>You can only use the '=' operator when assigning to a list of variables.</value>
+  </data>
+  <data name="MissingFinallyStatementBlock" xml:space="preserve">
+    <value>The Finally block is missing its statement block.</value>
+  </data>
+  <data name="TraceEnteringFunction" xml:space="preserve">
+    <value>    ! CALL function '{0}'</value>
+  </data>
+  <data name="MissingCurlyBraceInSwitchStatement" xml:space="preserve">
+    <value>Missing '{' in switch statement.</value>
+  </data>
+  <data name="VerboseStream" xml:space="preserve">
+    <value>verbose stream</value>
+  </data>
+  <data name="ContinueHelpMessage" xml:space="preserve">
+    <value>Report the error then continue with the next script statement.</value>
+  </data>
+  <data name="AsOperatorRequiresType" xml:space="preserve">
+    <value>The right operand of '-as' must be a type.</value>
+  </data>
+  <data name="CantActivateDocumentInPipeline" xml:space="preserve">
+    <value>Cannot run a document in the middle of a pipeline: {0}.</value>
+  </data>
+  <data name="MissingExpressionInNamedArgument" xml:space="preserve">
+    <value>Missing statement after '=' in named argument.</value>
+  </data>
+  <data name="WarningStream" xml:space="preserve">
+    <value>Warning stream</value>
+  </data>
+  <data name="InvalidParameterForDataSectionStatement" xml:space="preserve">
+    <value>The "{0}" parameter of the Data section is not valid. The valid Data section parameter is SupportedCommand.</value>
+  </data>
+  <data name="SwitchStatementNotSupportedInDataSection" xml:space="preserve">
+    <value>The switch statement is not allowed in restricted language mode or a Data section.</value>
+  </data>
+  <data name="ReferenceNeedsToBeByItselfInTypeConstraint" xml:space="preserve">
+    <value>Cannot use [ref] with other types in a type constraint.</value>
+  </data>
+  <data name="InvalidNullKey" xml:space="preserve">
+    <value>A null key is not allowed in a hash literal.</value>
+  </data>
+  <data name="MissingPropertyReference" xml:space="preserve">
+    <value>Property reference or expression is missing or not valid.</value>
+  </data>
+  <data name="ScriptsNotAllowed" xml:space="preserve">
+    <value>The syntax is not supported by this runspace. This might be because it is in no-language mode.</value>
+  </data>
+  <data name="StringMultiplyToolongInDataSection" xml:space="preserve">
+    <value>String multiplication results with more than "{0}" characters are not allowed in restricted language mode or a Data section.</value>
+  </data>
+  <data name="ForeachStatementNotSupportedInDataSection" xml:space="preserve">
+    <value>Foreach statements are not allowed in restricted language mode or a Data section.</value>
+  </data>
+  <data name="SplattingNotPermittedInArgumentList" xml:space="preserve">
+    <value>Splatted variables like '@{0}' cannot be part of a comma-separated list of arguments.</value>
+  </data>
+  <data name="MissingEqualsInNamedArgument" xml:space="preserve">
+    <value>The "=" operator is missing after a named argument.</value>
+  </data>
+  <data name="ExpressionsMustBeFirstInPipeline" xml:space="preserve">
+    <value>Expressions are only allowed as the first element of a pipeline.</value>
+  </data>
+  <data name="SilentlyContinueLabel" xml:space="preserve">
+    <value>S&amp;ilently Continue</value>
+  </data>
+  <data name="EndSquareBracketExpectedAtEndOfAttribute" xml:space="preserve">
+    <value>Missing ] at end of attribute or type literal.</value>
+  </data>
+  <data name="EndBracketExpectedAtEndOfSubExpression" xml:space="preserve">
+    <value>Missing ) at end of subexpression.</value>
+  </data>
+  <data name="CantInvokeInBinaryModule" xml:space="preserve">
+    <value>Cannot use '&amp;' to invoke in the context of binary module '{0}'. Specify a non-binary module after the '&amp;' and try the operation again.</value>
+  </data>
+  <data name="InvalidVariableReferenceWithDrive" xml:space="preserve">
+    <value>Variable reference is not valid. ':' was not followed by a valid variable name character. Consider using ${} to delimit the name.</value>
+  </data>
+  <data name="CustomAttributeTypeNotFound" xml:space="preserve">
+    <value>Cannot find the type for custom attribute '{0}'. Make sure that the assembly that contains this type is loaded.</value>
+  </data>
+  <data name="InvalidFilenameOption" xml:space="preserve">
+    <value>Filename argument to -file in switch statement is not valid.</value>
+  </data>
+  <data name="ReferenceNeedsToBeByItselfInTypeSequence" xml:space="preserve">
+    <value>Cannot have two [ref] in a type sequence.</value>
+  </data>
+  <data name="CantInvokeInNonImportedModule" xml:space="preserve">
+    <value>Cannot use '&amp;' to invoke in the context of module '{0}' because it is not imported. Import the module '{0}' and try the operation again.</value>
+  </data>
+  <data name="TypeNotFound" xml:space="preserve">
+    <value>Unable to find type [{0}]: make sure that the assembly containing this type is loaded.</value>
+  </data>
+  <data name="DataSectionNameHasAlreadyBeenUsed" xml:space="preserve">
+    <value>The Data section variable "{0}" has already been used for an existing variable or another Data section.</value>
+  </data>
+  <data name="TextForWordLine" xml:space="preserve">
+    <value>line</value>
+  </data>
+  <data name="EndBraceExpectedAtEndOfVariableName" xml:space="preserve">
+    <value>Missing } at end of variable name.</value>
+  </data>
+  <data name="SplattingNotPermitted" xml:space="preserve">
+    <value>The splatting operator '@' cannot be used to reference variables in an expression. '@{0}' can be used only as an argument to a command. To reference variables in an expression use '${0}'.</value>
+  </data>
+  <data name="ParameterAttributeArgumentNeedsToBeConstantOrScriptBlock" xml:space="preserve">
+    <value>Parameter attributes need to be a constant or a script block.</value>
+  </data>
+  <data name="EmptyVariableReference" xml:space="preserve">
+    <value>Empty ${} variable reference, there should be a name between the braces.</value>
+  </data>
+  <data name="InvalidFunctionParameter" xml:space="preserve">
+    <value>Parameter declarations are a comma-separated list of variable names with optional initializer expressions.</value>
+  </data>
+  <data name="BadNumericConstant" xml:space="preserve">
+    <value>Bad numeric constant: {0}.</value>
+  </data>
+  <data name="StreamAlreadyRedirected" xml:space="preserve">
+    <value>The {0} for this command is already redirected.</value>
+  </data>
+  <data name="ParameterDeclarationNotSupportedInDataSection" xml:space="preserve">
+    <value>Parameter declarations are not allowed in restricted language mode or a Data section.</value>
+  </data>
+  <data name="OrderedAttributeOnlyOnHashLiteralNode" xml:space="preserve">
+    <value>The {0} attribute can be specified only on a hash literal node.</value>
+  </data>
+  <data name="InvalidSplitOptionCombination" xml:space="preserve">
+    <value>Combination of options to -split are not valid</value>
+  </data>
+  <data name="InvalidScriptBlockInDataSection" xml:space="preserve">
+    <value>A Begin statement block, Process statement block, or parameter statement is not allowed in a Data section.</value>
+  </data>
+  <data name="MissingExpressionAfterOperator" xml:space="preserve">
+    <value>Missing expression after unary operator '{0}'.</value>
+  </data>
+  <data name="KeyTypeMismatch" xml:space="preserve">
+    <value>Unable to assign to a dictionary of type {0} when the key is of type {1}.</value>
+  </data>
+  <data name="MissingPropertyName" xml:space="preserve">
+    <value>Missing property name after reference operator.</value>
+  </data>
+  <data name="ArrayMultiplyToolongInDataSection" xml:space="preserve">
+    <value>Array multiplication resulting in more than {0} elements is not allowed in restricted language mode or a Data section.</value>
+  </data>
+  <data name="NeedMultidimensionalIndex" xml:space="preserve">
+    <value>You cannot index into a {0} dimensional array with index [{1}].</value>
+  </data>
+  <data name="AmbiguousParameterBaseMessage" xml:space="preserve">
+    <value>Ambiguous parameter '-{0}'
+Possible matches are</value>
+  </data>
+  <data name="MissingArgument" xml:space="preserve">
+    <value>Missing argument in parameter list.</value>
+  </data>
+  <data name="AmbiguousParameterExtendMessage" xml:space="preserve">
+    <value>
+	{0} ({1})</value>
+  </data>
+  <data name="OutputStream" xml:space="preserve">
+    <value>output stream</value>
+  </data>
+  <data name="InvalidSplitOptionWithPredicate" xml:space="preserve">
+    <value>Options are not allowed on -split operator with a predicate</value>
+  </data>
+  <data name="MissingFilenameOption" xml:space="preserve">
+    <value>Cannot process 'switch' statement because of missing filename argument to -file option.</value>
+  </data>
+  <data name="BadReplaceArgument" xml:space="preserve">
+    <value>The {0} operator only permits 2 elements on the right-hand side, not {1}.</value>
+  </data>
+  <data name="TraceSetMultipleRemaining" xml:space="preserve">
+    <value>    ! SET-MULTIPLE ${0} assigned remaining {1} values.</value>
+  </data>
+  <data name="FileNotFound" xml:space="preserve">
+    <value>No files matching '{0}' were found.</value>
+  </data>
+  <data name="HostStream" xml:space="preserve">
+    <value>host stream</value>
+  </data>
+  <data name="InvalidForeachFlag" xml:space="preserve">
+    <value>The parameter {0} is not valid for the foreach statement.</value>
+  </data>
+  <data name="TraceEnteringScriptBlock" xml:space="preserve">
+    <value>    ! CALL scriptblock.</value>
+  </data>
+  <data name="RequiresArgumentMustBeConstant" xml:space="preserve">
+    <value>Argument must be constant.</value>
+  </data>
+  <data name="TypeNotAllowedBeforeParam" xml:space="preserve">
+    <value>Unexpected type [{0}] on the parameter statement.</value>
+  </data>
+  <data name="SuspendLabel" xml:space="preserve">
+    <value>&amp;Suspend</value>
+  </data>
+  <data name="MissingEndParenthesisInFunctionParameterList" xml:space="preserve">
+    <value>Missing ')' in function parameter list.</value>
+  </data>
+  <data name="SuspendHelpMessage" xml:space="preserve">
+    <value>Pause the current pipeline and return to the command prompt. Type exit to resume operation when you are done.</value>
+  </data>
+  <data name="MissingTryStatementBlock" xml:space="preserve">
+    <value>The Try statement is missing its statement block.</value>
+  </data>
+  <data name="ArrayReferenceNotSupportedInDataSection" xml:space="preserve">
+    <value>Array references are not allowed in restricted language mode or a Data section.</value>
+  </data>
+  <data name="TextForPositionMessage" xml:space="preserve">
+    <value>At {0}:{1} char:{2}
++ {3}</value>
+  </data>
+  <data name="NotADefinedOperationForType" xml:space="preserve">
+    <value>The operation '[{0}] {1} [{2}]' is not defined.</value>
+  </data>
+  <data name="MissingSwitchConditionExpression" xml:space="preserve">
+    <value>Missing condition in switch statement clause.</value>
+  </data>
+  <data name="MissingTryStatement" xml:space="preserve">
+    <value>Incomplete 'try' statement. A try statement requires a body.</value>
+  </data>
+  <data name="IncompleteString" xml:space="preserve">
+    <value>Incomplete string token.</value>
+  </data>
+  <data name="BadEnumeration" xml:space="preserve">
+    <value>An error occurred while enumerating through a collection: {0}.</value>
+  </data>
+  <data name="UnexpectedUnaryOperator" xml:space="preserve">
+    <value>Internal error - unexpected unary operator {0}.</value>
+  </data>
+  <data name="ReservedKeywordNotAllowed" xml:space="preserve">
+    <value>The '{0}' keyword is not supported in this version of the language.</value>
+  </data>
+  <data name="ExpectedEndOfLine" xml:space="preserve">
+    <value>Expected ';', '}}' or end-of-line, not {0}.</value>
+  </data>
+  <data name="MissingAssemblyNameSpecification" xml:space="preserve">
+    <value>The type name is missing the assembly name specification.</value>
+  </data>
+  <data name="MissingTerminatorMultiLineComment" xml:space="preserve">
+    <value>The terminator '#&gt;' is missing from the multiline comment.</value>
+  </data>
+  <data name="TerminatorExpectedAtEndOfString" xml:space="preserve">
+    <value>The string is missing the terminator: {0}.</value>
+  </data>
+  <data name="PropertyNotFound" xml:space="preserve">
+    <value>Property '{0}' cannot be found on this object; make sure it exists and is settable.</value>
+  </data>
+  <data name="MissingStatementBlock" xml:space="preserve">
+    <value>Missing statement block after {0} ( condition ).</value>
+  </data>
+  <data name="EmptyCatchNotLast" xml:space="preserve">
+    <value>Catch block must be the last catch block.</value>
+  </data>
+  <data name="DotSourcingNotSupportedInDataSection" xml:space="preserve">
+    <value>Dot sourcing is not allowed in restricted language mode or a Data section.</value>
+  </data>
+  <data name="MissingExpressionAfterToken" xml:space="preserve">
+    <value>Missing expression after '{0}'.</value>
+  </data>
+  <data name="MissingValueForSupportedCommandInDataSectionStatement" xml:space="preserve">
+    <value>The SupportedCommand parameter of the Data section is missing a value. Supply a cmdlet or function name to the parameter.</value>
+  </data>
+  <data name="ScriptBlockDelegateInvokedFromWrongThread" xml:space="preserve">
+    <value>There is no Runspace available to run scripts in this thread. You can provide one in the DefaultRunspace property of the System.Management.Automation.Runspaces.Runspace type. The script block you attempted to invoke was: {0}</value>
+  </data>
+  <data name="CannotIndex" xml:space="preserve">
+    <value>Unable to index into an object of type {0}.</value>
+  </data>
+  <data name="ParallelAndSequenceBlockNotSupportedInDataSection" xml:space="preserve">
+    <value>Parallel and sequence blocks are not allowed in restricted language mode or a Data section.</value>
+  </data>
+  <data name="IncompleteDollarSubexpressionReference" xml:space="preserve">
+    <value>$(subexpression) is missing the closing ')'.</value>
+  </data>
+  <data name="VariableIsUndefined" xml:space="preserve">
+    <value>The variable '${0}' cannot be retrieved because it has not been set.</value>
+  </data>
+  <data name="ScriptTooComplicated" xml:space="preserve">
+    <value>Processing halted; script was too complicated</value>
+  </data>
+  <data name="MissingNamedStatementBlock" xml:space="preserve">
+    <value>Missing statement block after '{0}'.</value>
+  </data>
+  <data name="InvalidDataSectionBody" xml:space="preserve">
+    <value>The body of the Data section is not valid. The Data section body can be only a convert-* command invocation optionally enclosed by an If statement.</value>
+  </data>
+  <data name="NumberBothLongAndFloatingPoint" xml:space="preserve">
+    <value>A number cannot be both a long and floating point.</value>
+  </data>
+  <data name="OperatorNotSupportedInDataSection" xml:space="preserve">
+    <value>The '{0}' operator is not allowed in restricted language mode or a Data section.</value>
+  </data>
+  <data name="RequiresInvalidStringArgument" xml:space="preserve">
+    <value>The argument for the {0} parameter is not valid. Specify a valid string argument.</value>
+  </data>
+  <data name="NullArrayIndex" xml:space="preserve">
+    <value>Index operation failed; the array index evaluated to null.</value>
+  </data>
+  <data name="MissingVariableNameAfterForeach" xml:space="preserve">
+    <value>Missing variable name after foreach.</value>
+  </data>
+  <data name="ArraySliceAssignmentFailed" xml:space="preserve">
+    <value>Array assignment to [{0}] failed because assignment to slices is not supported.</value>
+  </data>
+  <data name="RequiresVersionInvalid" xml:space="preserve">
+    <value>The argument for the Version parameter is not valid. Specify a valid Windows PowerShell version, in the format major.minor version.</value>
+  </data>
+  <data name="BackupParserMessageWithException" xml:space="preserve">
+    <value>An error '{0}' occurred while processing this script. Text describing this error could not be loaded due to error '{1}'.</value>
+  </data>
+  <data name="ExpandableStringsNotSupportedInDataSectionCmdletList" xml:space="preserve">
+    <value>Expandable strings are not allowed in the list of supported commands for the Data section.</value>
+  </data>
+  <data name="ParameterRequiresArgument" xml:space="preserve">
+    <value>Parameter {0} requires an argument.</value>
+  </data>
+  <data name="UnexpectedToken" xml:space="preserve">
+    <value>Unexpected token '{0}' in expression or statement.</value>
+  </data>
+  <data name="HashtableToObjectConversionNotSupportedInDataSection" xml:space="preserve">
+    <value>Cannot convert hashtable to an object of the following type: {0}. Hashtable-to-Object conversion is not supported in restricted language mode or a Data section.</value>
+  </data>
+  <data name="UnexpectedCharactersAfterHereStringHeader" xml:space="preserve">
+    <value>The character is not allowed after a here string header but before the end of the line.</value>
+  </data>
+  <data name="ReferenceNeedsToBeLastTypeInTypeConversion" xml:space="preserve">
+    <value>[ref] can only be the final type in type conversion sequence.</value>
+  </data>
+  <data name="PropertyIsReadOnly" xml:space="preserve">
+    <value>'{0}' is a ReadOnly property.</value>
+  </data>
+  <data name="BadlyFormedCmdlet" xml:space="preserve">
+    <value>Could not process combined Begin/Process/End clauses with command text. A script or function can either have begin/process/end clauses or command text but not both.</value>
+  </data>
+  <data name="TraceScriptLineMessage" xml:space="preserve">
+    <value>{0,4}+ {1}</value>
+  </data>
+  <data name="AssignmentStatementNotSupportedInDataSection" xml:space="preserve">
+    <value>Assignment statements are not allowed in restricted language mode or a Data section.</value>
+  </data>
+  <data name="TraceSetMultipleIndex" xml:space="preserve">
+    <value>    ! SET-MULTIPLE ${0} = '{1}'.</value>
+  </data>
+  <data name="MissingEndParenthesisAfterForeach" xml:space="preserve">
+    <value>Missing closing ')' after expression part of foreach loop.</value>
+  </data>
+  <data name="AmpersandNotAllowed" xml:space="preserve">
+    <value>Ampersand not allowed. The &amp; operator is reserved for future use; use "&amp;" to pass ampersand as a string.</value>
+  </data>
+  <data name="MissingArrayIndexExpression" xml:space="preserve">
+    <value>Array index expression is missing or not valid.</value>
+  </data>
+  <data name="FileReadError" xml:space="preserve">
+    <value>The file could not be read: {0}.</value>
+  </data>
+  <data name="MethodNotFound" xml:space="preserve">
+    <value>Method invocation failed because [{0}] doesn't contain a method named '{1}'.</value>
+  </data>
+  <data name="UsingWithoutInvokeCommand" xml:space="preserve">
+    <value>A Using variable cannot be retrieved. A Using variable can be used only with Invoke-Command, Start-Job, or InlineScript in the script workflow. When it is used with Invoke-Command, the Using variable is valid only if the script block is invoked on a remote computer.</value>
+  </data>
+  <data name="MissingNameAfterFunctionKeyword" xml:space="preserve">
+    <value>Missing name after {0} keyword.</value>
+  </data>
+  <data name="IndexOutOfRange" xml:space="preserve">
+    <value>Array assignment failed because index '{0}' was out of range.</value>
+  </data>
+  <data name="ExpectedValueExpression" xml:space="preserve">
+    <value>You must provide a value expression on the right-hand side of the '{0}' operator.</value>
+  </data>
+  <data name="DebugStream" xml:space="preserve">
+    <value>Debug stream</value>
+  </data>
+  <data name="ExpandableStringNotSupportedInDataSection" xml:space="preserve">
+    <value>Expandable strings are not allowed in restricted language mode or a Data section.</value>
+  </data>
+  <data name="OnlyOneParameterListAllowed" xml:space="preserve">
+    <value>The param statement cannot be used if arguments were specified in the function declaration.</value>
+  </data>
+  <data name="PropertyNotFoundStrict" xml:space="preserve">
+    <value>Property '{0}' cannot be found on this object. Make sure that it exists.</value>
+  </data>
+  <data name="TooManyErrors" xml:space="preserve">
+    <value>Not all parse errors were reported.  Correct the reported errors and try again.</value>
+  </data>
+  <data name="RequiresModuleInvalid" xml:space="preserve">
+    <value>The argument for the Module parameter is not valid. {0}</value>
+  </data>
+  <data name="InvalidComObjectException" xml:space="preserve">
+    <value>A COM object was accessed after it was already released: {0}</value>
+  </data>
+  <data name="RedirectionNotSupportedInDataSection" xml:space="preserve">
+    <value>Redirection is not allowed in restricted language mode or a Data section.</value>
+  </data>
+  <data name="InvalidParameter" xml:space="preserve">
+    <value>Parameter '{0}' is not valid</value>
+  </data>
+  <data name="TokenAfterEndOfValidScriptText" xml:space="preserve">
+    <value>Executable script code found in signature block.</value>
+  </data>
+  <data name="MissingInInForeach" xml:space="preserve">
+    <value>Missing 'in' after variable in foreach loop.</value>
+  </data>
+  <data name="MissingStatementInHashLiteral" xml:space="preserve">
+    <value>Missing statement after '=' in hash literal.</value>
+  </data>
+  <data name="AllStream" xml:space="preserve">
+    <value>* stream</value>
+  </data>
+  <data name="ScriptBlockNotSupportedInDataSection" xml:space="preserve">
+    <value>Script block literals are not allowed in restricted language mode or a Data section.</value>
+  </data>
+  <data name="PropertySetConstrainedLanguage" xml:space="preserve">
+    <value>Cannot set property. Property setting is supported only on core types in this language mode.</value>
+  </data>
+  <data name="TypeNotFoundWithMessage" xml:space="preserve">
+    <value>Unable to find type [{0}]: Make sure that the assembly containing this type is loaded. Details: {1}</value>
+  </data>
+  <data name="AmbiguousPath" xml:space="preserve">
+    <value>Path cannot be processed because it resolved to more than one file; can process only one file at a time.</value>
+  </data>
+  <data name="MissingEndParenthesisAfterStatement" xml:space="preserve">
+    <value>Missing closing ')' after expression in '{0}' statement.</value>
+  </data>
+  <data name="MissingEqualsInHashLiteral" xml:space="preserve">
+    <value>Missing '=' operator after key in hash literal.</value>
+  </data>
+  <data name="TraceEnteringFunctionDefinedInFile" xml:space="preserve">
+    <value>    ! CALL function '{0}'  (defined in file '{1}')</value>
+  </data>
+  <data name="BadExpression" xml:space="preserve">
+    <value>The expression after '{0}' in a pipeline element produced a object that was not valid. It must result in a command name, script block or CommandInfo object.</value>
+  </data>
+  <data name="MissingOpenBraceInDataSectionStatement" xml:space="preserve">
+    <value>Missing the opening brace "{" in the Data section.</value>
+  </data>
+  <data name="RedirectionNotSupported" xml:space="preserve">
+    <value>The '{0}' operator is reserved for future use.</value>
+  </data>
+  <data name="InvokeMethodOnNull" xml:space="preserve">
+    <value>You cannot call a method on a null-valued expression.</value>
+  </data>
+  <data name="COMException" xml:space="preserve">
+    <value>An unhandled COM interop exception occurred: {0}</value>
+  </data>
+  <data name="BadRegularExpression" xml:space="preserve">
+    <value>Bad regular expression supplied to '{0}': {1}.</value>
+  </data>
+  <data name="InvalidVariableReference" xml:space="preserve">
+    <value>Variable reference is not valid. '$' was not followed by a valid variable name character. Consider using ${} to delimit the name.</value>
+  </data>
+  <data name="OpenBraceNeedsToBeBackTickedInVariableName" xml:space="preserve">
+    <value>Use `{ instead of { in variable names.</value>
+  </data>
+  <data name="InvalidRegularExpression" xml:space="preserve">
+    <value>Regular expression pattern is not valid: {0}.</value>
+  </data>
+  <data name="NotADictionary" xml:space="preserve">
+    <value>Unable to assign to an index into an object of type {0}.</value>
+  </data>
+  <data name="BreakLabel" xml:space="preserve">
+    <value>&amp;Break</value>
+  </data>
+  <data name="MissingCatchHandlerBlock" xml:space="preserve">
+    <value>The Catch block is missing its statement block.</value>
+  </data>
+  <data name="TypeNotAllowedInDataSection" xml:space="preserve">
+    <value>The type {0} is not allowed in restricted language mode or a Data section.</value>
+  </data>
+  <data name="MissingTrapStatement" xml:space="preserve">
+    <value>The 'trap' statement was incomplete. A trap statement requires a body.</value>
+  </data>
+  <data name="MissingStatementAfterKeyword" xml:space="preserve">
+    <value>Missing statement body after keyword '{0}'.</value>
+  </data>
+  <data name="MissingKeyInHashLiteral" xml:space="preserve">
+    <value>Missing key before '=' in hash literal.</value>
+  </data>
+  <data name="EmptyPipeElement" xml:space="preserve">
+    <value>An empty pipe element is not allowed.</value>
+  </data>
+  <data name="MissingOpenParenthesisAfterKeyword" xml:space="preserve">
+    <value>Missing opening '(' after keyword '{0}'.</value>
+  </data>
+  <data name="TraceEnteringScript" xml:space="preserve">
+    <value>    ! CALL script '{0}'</value>
+  </data>
+  <data name="FunctionDeclarationNotSupportedInDataSection" xml:space="preserve">
+    <value>Function declarations are not allowed in restricted language mode or a Data section.</value>
+  </data>
+  <data name="MethodCallNotSupportedInDataSection" xml:space="preserve">
+    <value>Method calls are not allowed in restricted language mode or a Data section.</value>
+  </data>
+  <data name="WhitespaceBeforeHereStringFooter" xml:space="preserve">
+    <value>White space is not allowed before the string terminator.</value>
+  </data>
+  <data name="OnlyConvertFromCmdletsAreSupportedInDataSection" xml:space="preserve">
+    <value>A command is referenced that is not allowed. Only convertfrom-* commands are supported in restricted language mode or a Data section.</value>
+  </data>
+  <data name="MissingOpenParenthesisInIfStatement" xml:space="preserve">
+    <value>Missing '(' after '{0}' in if statement.</value>
+  </data>
+  <data name="MissingStatementBlockForDataSection" xml:space="preserve">
+    <value>The Data section is missing its statement block.</value>
+  </data>
+  <data name="TraceVariableAssignment" xml:space="preserve">
+    <value>    ! SET ${0} = '{1}'.</value>
+  </data>
+  <data name="UnrecoverableParserError" xml:space="preserve">
+    <value>Unrecoverable error in Windows PowerShell.</value>
+  </data>
+  <data name="TraceParameterizedPropertySet" xml:space="preserve">
+    <value>   ! Setting parameterized property '{0}'</value>
+  </data>
+  <data name="InvokeMethodConstrainedLanguage" xml:space="preserve">
+    <value>Cannot invoke method. Method invocation is supported only on core types in this language mode.</value>
+  </data>
+  <data name="FormatError" xml:space="preserve">
+    <value>Error formatting a string: {0}.</value>
+  </data>
+  <data name="NullArray" xml:space="preserve">
+    <value>Cannot index into a null array.</value>
+  </data>
+  <data name="TraceMethodCall" xml:space="preserve">
+    <value>    ! CALL method '{0}'</value>
+  </data>
+  <data name="CannotFindConstructorForCustomAttribute" xml:space="preserve">
+    <value>Cannot find an appropriate constructor to instantiate the custom attribute object for type '{0}'.</value>
+  </data>
+  <data name="ErrorStream" xml:space="preserve">
+    <value>error stream</value>
+  </data>
+  <data name="MissingLoopStatement" xml:space="preserve">
+    <value>Missing statement body in {0} loop.</value>
+  </data>
+  <data name="ParameterizedPropertyAssignmentFailed" xml:space="preserve">
+    <value>Assignment failed because [{0}] doesn't contain a settable property '{1}()'.</value>
+  </data>
+  <data name="IncompleteVariableReference" xml:space="preserve">
+    <value>Incomplete variable reference token.</value>
+  </data>
+  <data name="MissingForeachStatement" xml:space="preserve">
+    <value>Missing statement body in foreach loop.</value>
+  </data>
+  <data name="UnknownAssignmentOperator" xml:space="preserve">
+    <value>Unknown assignment operator '{0}'.</value>
+  </data>
+  <data name="ForWhileStatementNotSupportedInDataSection" xml:space="preserve">
+    <value>For and While statements are not allowed in restricted language mode or a Data section.</value>
+  </data>
+  <data name="PropertyNotFoundForType" xml:space="preserve">
+    <value>Property '{0}' cannot be found for type '{1}'.</value>
+  </data>
+  <data name="TextForCharPositionMessage" xml:space="preserve">
+    <value>At char:{0}</value>
+  </data>
+  <data name="InvalidSwitchFlag" xml:space="preserve">
+    <value>The parameter {0} is not valid for the switch statement.</value>
+  </data>
+  <data name="MissingFileSpecification" xml:space="preserve">
+    <value>Missing file specification after redirection operator.</value>
+  </data>
+  <data name="UnexpectedKeyword" xml:space="preserve">
+    <value>Unexpected keyword '{0}'.</value>
+  </data>
+  <data name="EmptyBracedVariableName" xml:space="preserve">
+    <value>Braced variable name cannot be empty.</value>
+  </data>
+  <data name="MissingEndMultiLineComment" xml:space="preserve">
+    <value>The terminator '{0}' is missing from the multiline comment.</value>
+  </data>
+  <data name="TrapOnExceptionMatch" xml:space="preserve">
+    <value>    ! Trap or Catch on matching exception [{0}]</value>
+  </data>
+  <data name="DuplicateKeyInHashLiteral" xml:space="preserve">
+    <value>Duplicate keys '{0}' are not allowed in hash literals.</value>
+  </data>
+  <data name="VoidTypeConstraintNotAllowed" xml:space="preserve">
+    <value>[void] cannot be used as a parameter type, or on the left side of an assignment.</value>
+  </data>
+  <data name="IncompleteDollarVariableReference" xml:space="preserve">
+    <value>${{variable}} reference starting is missing the closing '}}'.</value>
+  </data>
+  <data name="DataSectionStatementNotSupportedInDataSection" xml:space="preserve">
+    <value>The data statement is not allowed in restricted language mode or another Data section.</value>
+  </data>
+  <data name="InvalidBracedVariableReference" xml:space="preserve">
+    <value>Variable reference is not valid. The variable name is missing.</value>
+  </data>
+  <data name="MissingEndParenthesisInSwitchStatement" xml:space="preserve">
+    <value>Missing ')' after expression in switch statement.</value>
+  </data>
+  <data name="ControlLeavingFinally" xml:space="preserve">
+    <value>Control cannot leave a finally block.</value>
+  </data>
+  <data name="MultipleSwitchDefaultClauses" xml:space="preserve">
+    <value>A switch statement can have only one default clause.</value>
+  </data>
+  <data name="ParallelNotSupported" xml:space="preserve">
+    <value>The '-parallel' parameter can be used only within a workflow.</value>
+  </data>
+  <data name="IndexOperationFailed" xml:space="preserve">
+    <value>Assigning to array element at index [{0}] failed: {1}.</value>
+  </data>
+  <data name="AstIsReused" xml:space="preserve">
+    <value>An ast cannot be used as the child of more than one ast.</value>
+  </data>
+  <data name="MissingTypename" xml:space="preserve">
+    <value>Missing type name after '['.</value>
+  </data>
+  <data name="OperatorFailed" xml:space="preserve">
+    <value>The '{0}' operator failed: {1}.</value>
+  </data>
+  <data name="TryStatementNotSupportedInDataSection" xml:space="preserve">
+    <value>The Try statement is not allowed in restricted language mode or a Data section.</value>
+  </data>
+  <data name="IncompleteHashLiteral" xml:space="preserve">
+    <value>The hash literal was incomplete.</value>
+  </data>
+  <data name="IncompleteSwitchStatement" xml:space="preserve">
+    <value>The switch statement was incomplete.</value>
+  </data>
+  <data name="MissingExpression" xml:space="preserve">
+    <value>Missing expression after '{0}' in pipeline element.</value>
+  </data>
+  <data name="InvalidLeftHandSide" xml:space="preserve">
+    <value>Assignment expression is not valid. The left hand side of an assignment operator needs to be something that can be assigned to like a variable or a property.</value>
+  </data>
+  <data name="TrapOnGenericException" xml:space="preserve">
+    <value>    ! Trap or Catch generic; caught [{0}]</value>
+  </data>
+  <data name="InvalidTokenForDataSectionCmdletList" xml:space="preserve">
+    <value>A token that is not valid was found in the list of supported commands for the Data section.</value>
+  </data>
+  <data name="ExceptionTypeAlreadyCaught" xml:space="preserve">
+    <value>Exception type {0} is already handled by a previous handler.</value>
+  </data>
+  <data name="BreakHelpMessage" xml:space="preserve">
+    <value>Do not continue processing, throw the exception instead.</value>
+  </data>
+  <data name="IsOperatorRequiresType" xml:space="preserve">
+    <value>The right operand of '-is' must be a type.</value>
+  </data>
+  <data name="CmdletNotInAllowedListForDataSection" xml:space="preserve">
+    <value>The command '{0}' is not allowed in restricted language mode or a Data section.</value>
+  </data>
+  <data name="FlowControlStatementNotSupportedInDataSection" xml:space="preserve">
+    <value>Flow control statements such as Break, Continue, Return, Exit, and Throw are not allowed in restricted language mode or a Data section.</value>
+  </data>
+  <data name="StrictModeFunctionCallWithParens" xml:space="preserve">
+    <value>The function or command was called as if it were a method. Parameters should be separated by spaces. For information about parameters, see the about_Parameters Help topic.</value>
+  </data>
+  <data name="MissingFunctionBody" xml:space="preserve">
+    <value>Missing function body in function declaration.</value>
+  </data>
+  <data name="SilentlyContinueHelpMessage" xml:space="preserve">
+    <value>Do not report this error, just continue with the next script statement.</value>
+  </data>
+  <data name="MissingExpressionAfterKeyword" xml:space="preserve">
+    <value>Missing expression after '{0}' in loop.</value>
+  </data>
+  <data name="PipelineValueRequired" xml:space="preserve">
+    <value>A switch statement must have one of '-file filename' or '( expression )'.</value>
+  </data>
+  <data name="VariableReferenceNotSupportedInDataSection" xml:space="preserve">
+    <value>A variable that cannot be referenced in restricted language mode or a Data section is being referenced. Variables that can be referenced include the following: $PSCulture, $PSUICulture, $true, $false, and  $null.</value>
+  </data>
+  <data name="MissingStatementBlockAfterElse" xml:space="preserve">
+    <value>Missing statement block after 'else' keyword.</value>
+  </data>
+  <data name="InvalidUsingExpression" xml:space="preserve">
+    <value>Expression is not allowed in a Using expression.</value>
+  </data>
+  <data name="MissingCatchOrFinally" xml:space="preserve">
+    <value>The Try statement is missing its Catch or Finally block.</value>
+  </data>
+  <data name="BackupParserMessage" xml:space="preserve">
+    <value>An error '{0}' occurred while processing this script. Text describing this error could not be loaded.</value>
+  </data>
+  <data name="MissingTypeLiteralToken" xml:space="preserve">
+    <value>Missing type literal.</value>
+  </data>
+  <data name="MissingSwitchStatementClause" xml:space="preserve">
+    <value>Missing statement block in switch statement clause.</value>
+  </data>
+  <data name="MissingEndSquareBracket" xml:space="preserve">
+    <value>Missing ']' after array index expression.</value>
+  </data>
+  <data name="EndSquareBracketExpectedAtEndOfType" xml:space="preserve">
+    <value>Missing ] at end of type token.</value>
+  </data>
+  <data name="InvalidLabelCharacter" xml:space="preserve">
+    <value>Character '{0}' is not valid, labels can only contain characters, numbers and '_'.</value>
+  </data>
+  <data name="AddHashTableToNonHashTable" xml:space="preserve">
+    <value>A hash table can only be added to another hash table.</value>
+  </data>
+  <data name="MissingEndParenthesisInSubexpression" xml:space="preserve">
+    <value>Missing closing ')' in subexpression.</value>
+  </data>
+  <data name="DuplicateNamedArgument" xml:space="preserve">
+    <value>Duplicate named arguments '{0}' are not allowed.</value>
+  </data>
+  <data name="DuplicateFormalParameter" xml:space="preserve">
+    <value>Duplicate parameter ${0} in parameter list.</value>
+  </data>
+  <data name="MissingCloseBraceInDataSectionStatement" xml:space="preserve">
+    <value>Missing close brace in data section statement.</value>
+  </data>
+  <data name="MissingEndParenthesisInMethodCall" xml:space="preserve">
+    <value>Missing ')' in method call.</value>
+  </data>
+  <data name="UnrecognizedToken" xml:space="preserve">
+    <value>Unrecognized token in source text.</value>
+  </data>
+  <data name="MissingForeachExpression" xml:space="preserve">
+    <value>Missing expression in foreach loop.</value>
+  </data>
+  <data name="TrapStatementNotSupportedInDataSection" xml:space="preserve">
+    <value>The Trap statement is not allowed in restricted language mode or a Data section.</value>
+  </data>
+  <data name="DuplicateScriptCommandClause" xml:space="preserve">
+    <value>Script command clause '{0}' has already been defined.</value>
+  </data>
+  <data name="ContinueLabel" xml:space="preserve">
+    <value>&amp;Continue</value>
+  </data>
+  <data name="AttributeNotSupportedInDataSection" xml:space="preserve">
+    <value>Attributes are not allowed in restricted language mode or a Data section.</value>
+  </data>
+  <data name="RedirectionFailed" xml:space="preserve">
+    <value>Redirection to '{0}' failed: {1}</value>
+  </data>
+  <data name="OperatorRequiresVariableOrProperty" xml:space="preserve">
+    <value>The '{0}' operator works only on variables or on properties.</value>
+  </data>
+  <data name="InvalidEndOfLine" xml:space="preserve">
+    <value>The token '{0}' is not a valid statement separator in this version.</value>
+  </data>
+  <data name="MissingEndParenthesisInExpression" xml:space="preserve">
+    <value>Missing closing ')' in expression.</value>
+  </data>
+  <data name="UnexpectedAttribute" xml:space="preserve">
+    <value>Unexpected attribute '{0}'.</value>
+  </data>
+  <data name="FromKeywordNotAllowed" xml:space="preserve">
+    <value>The 'from' keyword is not supported in this version of the language.</value>
+  </data>
+  <data name="ExceptionActionPromptCaption" xml:space="preserve">
+    <value>Action to take for this exception:</value>
+  </data>
+  <data name="MissingWhileOrUntilInDoWhile" xml:space="preserve">
+    <value>Missing while or until keyword in do loop.</value>
+  </data>
+  <data name="PropertyReferenceNotSupportedInDataSection" xml:space="preserve">
+    <value>Property references are not allowed in restricted language mode or a Data section.</value>
+  </data>
+  <data name="NoPropertiesInSplatting" xml:space="preserve">
+    <value>Cannot expand the splatted variable '@{0}'. Splatted variables cannot be used as part of a property or array expression. Assign the result of the expression to a temporary variable then splat the temporary variable instead.</value>
+  </data>
+  <data name="InValidCustomAttributeType" xml:space="preserve">
+    <value>The custom attribute type '{0}' is not derived from System.Attribute.</value>
+  </data>
+  <data name="NonExistingVariableReference" xml:space="preserve">
+    <value>[ref] cannot be applied to a variable that does not exist.</value>
+  </data>
+  <data name="DoWhileStatementNotSupportedInDataSection" xml:space="preserve">
+    <value>The Do and While statements are not allowed in restricted language mode or a Data section.</value>
+  </data>
+  <data name="ExpectedExpression" xml:space="preserve">
+    <value>An expression was expected after '('.</value>
+  </data>
+  <data name="IfStatementMissingCondition" xml:space="preserve">
+    <value>Missing condition in if statement after '{0} ('.</value>
+  </data>
+  <data name="TrapOnSubclassMatch" xml:space="preserve">
+    <value>    ! Trap or Catch on [{0}]; subclass of exception [{1}]</value>
+  </data>
+  <data name="ProgramFailedToExecute" xml:space="preserve">
+    <value>Program '{0}' failed to run: {1}{2}.</value>
+  </data>
+  <data name="CannotInvoke" xml:space="preserve">
+    <value>The method cannot be invoked.</value>
+  </data>
+  <data name="OperatorRequiresNumber" xml:space="preserve">
+    <value>The '{0}' operator works only on numbers. The operand is a '{1}'.</value>
+  </data>
+  <data name="BadOperatorArgument" xml:space="preserve">
+    <value>Bad argument to operator '{0}': {1}.</value>
+  </data>
+  <data name="MissingSwitchValueExpression" xml:space="preserve">
+    <value>Missing expression after '(' in switch statement.</value>
+  </data>
+  <data name="ErrorCollection" xml:space="preserve">
+    <value>Parser errors were detected.</value>
+  </data>
+  <data name="FileOpenError" xml:space="preserve">
+    <value>The current provider ({0}) cannot open a file.</value>
+  </data>
+  <data name="OperatorNotSupportedForType" xml:space="preserve">
+    <value>Operator '{0}' is not supported for type '{1}'.</value>
+  </data>
+  <data name="ArrayAssignmentFailed" xml:space="preserve">
+    <value>Array assignment to [{0}] failed: {1}.</value>
+  </data>
+  <data name="MissingEndCurlyBrace" xml:space="preserve">
+    <value>Missing closing '}' in statement block.</value>
+  </data>
+</root>

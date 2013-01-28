@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="Rules">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="unbounded" name="Rule">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Id" type="xs:int" />
+              <xs:element name="Name" type="xs:string" />
+              <xs:element name="UserCanonicalForm" type="xs:string" />
+              <xs:element name="UserType">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:enumeration value="User" />
+                    <xs:enumeration value="UserGroup" />
+                    <xs:enumeration value="All" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="DestinationCanonicalForm" type="xs:string" />
+              <xs:element name="DestinationType">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:enumeration value="Computer" />
+                    <xs:enumeration value="ComputerGroup" />
+                    <xs:enumeration value="All" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="ConfigurationName" type="xs:string" />
+              <xs:element name="IsUserGroupLocal" type="xs:boolean" />
+              <xs:element name="IsComputerGroupLocal" type="xs:boolean" />
+              <xs:element name="IsCanonicalDestinationSid" type="xs:boolean" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

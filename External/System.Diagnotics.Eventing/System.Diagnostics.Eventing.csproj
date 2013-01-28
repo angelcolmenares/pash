@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>10.0.0</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{A57E0533-0FE8-4176-8463-88C80D6A25CF}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>System.Diagnotics.Eventing</RootNamespace>
+    <AssemblyName>System.Diagnostics.Eventing</AssemblyName>
+    <SignAssembly>True</SignAssembly>
+    <AssemblyOriginatorKeyFile>..\..\mono.snk</AssemblyOriginatorKeyFile>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>True</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>False</Optimize>
+    <OutputPath>bin\Debug</OutputPath>
+    <DefineConstants>DEBUG;</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>False</ConsolePause>
+    <AllowUnsafeBlocks>True</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>none</DebugType>
+    <Optimize>True</Optimize>
+    <OutputPath>bin\Release</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>False</ConsolePause>
+    <AllowUnsafeBlocks>True</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AssemblyInfo.cs" />
+    <Compile Include="Eventing\Reader\CoTaskMemSafeHandle.cs" />
+    <Compile Include="Eventing\Reader\CoTaskMemUnicodeSafeHandle.cs" />
+    <Compile Include="Eventing\Reader\EventBookmark.cs" />
+    <Compile Include="Eventing\Reader\EventKeyword.cs" />
+    <Compile Include="Eventing\Reader\EventLevel.cs" />
+    <Compile Include="Eventing\Reader\EventLogConfiguration.cs" />
+    <Compile Include="Eventing\Reader\EventLogException.cs" />
+    <Compile Include="Eventing\Reader\EventLogHandle.cs" />
+    <Compile Include="Eventing\Reader\EventLogInformation.cs" />
+    <Compile Include="Eventing\Reader\EventLogInvalidDataException.cs" />
+    <Compile Include="Eventing\Reader\EventLogIsolation.cs" />
+    <Compile Include="Eventing\Reader\EventLogLink.cs" />
+    <Compile Include="Eventing\Reader\EventLogMode.cs" />
+    <Compile Include="Eventing\Reader\EventLogNotFoundException.cs" />
+    <Compile Include="Eventing\Reader\EventLogPermissionHolder.cs" />
+    <Compile Include="Eventing\Reader\EventLogPropertySelector.cs" />
+    <Compile Include="Eventing\Reader\EventLogProviderDisabledException.cs" />
+    <Compile Include="Eventing\Reader\EventLogQuery.cs" />
+    <Compile Include="Eventing\Reader\EventLogReader.cs" />
+    <Compile Include="Eventing\Reader\EventLogReadingException.cs" />
+    <Compile Include="Eventing\Reader\EventLogRecord.cs" />
+    <Compile Include="Eventing\Reader\EventLogSession.cs" />
+    <Compile Include="Eventing\Reader\EventLogStatus.cs" />
+    <Compile Include="Eventing\Reader\EventLogType.cs" />
+    <Compile Include="Eventing\Reader\EventLogWatcher.cs" />
+    <Compile Include="Eventing\Reader\EventMetadata.cs" />
+    <Compile Include="Eventing\Reader\EventOpcode.cs" />
+    <Compile Include="Eventing\Reader\EventProperty.cs" />
+    <Compile Include="Eventing\Reader\EventRecord.cs" />
+    <Compile Include="Eventing\Reader\EventRecordWrittenEventArgs.cs" />
+    <Compile Include="Eventing\Reader\EventTask.cs" />
+    <Compile Include="Eventing\Reader\NativeWrapper.cs" />
+    <Compile Include="Eventing\Reader\PathType.cs" />
+    <Compile Include="Eventing\Reader\ProviderMetadata.cs" />
+    <Compile Include="Eventing\Reader\ProviderMetadataCachedInformation.cs" />
+    <Compile Include="Eventing\Reader\SessionAuthentication.cs" />
+    <Compile Include="Eventing\Reader\StandardEventKeywords.cs" />
+    <Compile Include="Eventing\Reader\StandardEventLevel.cs" />
+    <Compile Include="Eventing\Reader\StandardEventOpcode.cs" />
+    <Compile Include="Eventing\Reader\StandardEventTask.cs" />
+    <Compile Include="Eventing\EventDescriptor.cs" />
+    <Compile Include="Eventing\EventProvider.cs" />
+    <Compile Include="Eventing\EventProviderTraceListener.cs" />
+    <Compile Include="PerformanceData\CounterData.cs" />
+    <Compile Include="PerformanceData\CounterSet.cs" />
+    <Compile Include="PerformanceData\CounterSetInstance.cs" />
+    <Compile Include="PerformanceData\CounterSetInstanceCounterDataSet.cs" />
+    <Compile Include="PerformanceData\CounterSetInstanceType.cs" />
+    <Compile Include="PerformanceData\CounterType.cs" />
+    <Compile Include="PerformanceData\PerfProvider.cs" />
+    <Compile Include="PerformanceData\PerfProviderCollection.cs" />
+    <Compile Include="EventSchemaTraceListener.cs" />
+    <Compile Include="TraceLogRetentionOption.cs" />
+    <Compile Include="UnescapedXmlDiagnosticData.cs" />
+    <Compile Include="Microsoft.Win32\SafeHandles\SafePerfProviderHandle.cs" />
+    <Compile Include="Microsoft.Win32\SafeLibraryHandle.cs" />
+    <Compile Include="Microsoft.Win32\UnsafeNativeMethods.cs" />
+    <Compile Include="SR.cs" />
+    <Compile Include="CompatibilityExtensions.cs" />
+    <Compile Include="System.IO\__Error.cs" />
+    <Compile Include="System.IO\BufferedStream2.cs" />
+    <Compile Include="System.IO\LogRetentionOption.cs" />
+    <Compile Include="System.IO\LogStream.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <ItemGroup>
+    <None Include="Microsoft.Win32\.DS_Store" />
+  </ItemGroup>
+</Project>

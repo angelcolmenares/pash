@@ -1,0 +1,204 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>1.3</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="LogonError_InvalidAuthenticationTypeBasicOrDigest" xml:space="preserve">
+    <value>Verify that you are using the correct authentication type. For Basic and Digest authentication types, the session configuration must allow unencrypted traffic.</value>
+  </data>
+  <data name="EventLog_ASPNET_SessionTimeout" xml:space="preserve">
+    <value>ASP.NET Session Time-out</value>
+  </data>
+  <data name="InternalError_InvalidAuthenticationMechanism" xml:space="preserve">
+    <value>An internal error in Windows PowerShell Web Access occurred because the authentication type specified for the connection is not valid.</value>
+  </data>
+  <data name="LogonError_InvalidUri" xml:space="preserve">
+    <value>Verify the Connection URI for errors. {0}</value>
+  </data>
+  <data name="EventLog_Logout" xml:space="preserve">
+    <value>User Signoff</value>
+  </data>
+  <data name="LogonError_ConnectionErrorExtended" xml:space="preserve">
+    <value>The Windows PowerShell Web Access gateway cannot establish a connection to the destination computer. Contact the gateway administrator. The error at the gateway is: {0}</value>
+  </data>
+  <data name="LogonError_InvalidCredentials" xml:space="preserve">
+    <value>The credentials provided for the destination computer are not valid.</value>
+  </data>
+  <data name="LogonError_InvalidEndpoint" xml:space="preserve">
+    <value>Windows PowerShell Web Access cannot connect to the destination computer. Verify that the correct values are specified for computer name, SSL, port and application name. This could also be caused by a network or  configuration problem.  Contact the gateway administrator, if applicable.</value>
+  </data>
+  <data name="LogonError_ConnectionError" xml:space="preserve">
+    <value>The Windows PowerShell Web Access gateway cannot establish a connection to the destination computer. Contact the gateway administrator.</value>
+  </data>
+  <data name="LogonError_UnknownError" xml:space="preserve">
+    <value>An unexpected error occurred during the sign-in process. Try signing in again, or contact your system administrator.</value>
+  </data>
+  <data name="LogonError_LogMessage" xml:space="preserve">
+    <value>An error occurred during the sign-in process. Error details: {0}</value>
+  </data>
+  <data name="LogonError_InvalidComputer" xml:space="preserve">
+    <value>Windows PowerShell Web Access cannot connect to the destination computer. Verify that you entered the destination computer name correctly.</value>
+  </data>
+  <data name="LogonError_InvalidAuthenticationTypeCredSPP" xml:space="preserve">
+    <value>Verify that the correct authentication type is specified. For CredSSP, both the Windows PowerShell Web Access gateway and the destination computer must be configured correctly.</value>
+  </data>
+  <data name="LogonError_RemotingNotEnabled" xml:space="preserve">
+    <value>The Windows PowerShell Web Access gateway cannot establish a connection to the destination computer. This can happen if Windows PowerShell remote management is not enabled on the destination computer. Consult the event log on the gateway server for more information.</value>
+  </data>
+  <data name="LogonError_InvalidComputerNameUriFormat" xml:space="preserve">
+    <value>The computer name is not valid. If you provided a URI, verify that the Connection Type is set accordingly.</value>
+  </data>
+  <data name="LogonError_ThreadAborted" xml:space="preserve">
+    <value>The web server interrupted the request. This may be caused by a time-out while trying to establish a connection to the destination computer.</value>
+  </data>
+  <data name="EventLog_IdleSessionTimeout" xml:space="preserve">
+    <value>Idle Session Time-out</value>
+  </data>
+  <data name="LogonError_NoLogonServers" xml:space="preserve">
+    <value>The Windows PowerShell Web Access gateway cannot establish a connection to the destination computer. The account that was provided could not be authenticated. This can happen if Kerberos authentication is used with a local account, or the gateway server and destination computer are in different domains, and there is no trust relationship between the domains. Contact the gateway administrator.</value>
+  </data>
+  <data name="LogonError_InvalidConfigurationName" xml:space="preserve">
+    <value>Windows PowerShell Web Access cannot find the session configuration on the destination computer. Verify that the configuration name is correct.</value>
+  </data>
+  <data name="UnknownIpAddress" xml:space="preserve">
+    <value>&lt;none&gt;</value>
+  </data>
+  <data name="LogonError_UnknownErrorAdminMessage" xml:space="preserve">
+    <value>An unexpected error occurred while signing in. Error details: {0}</value>
+  </data>
+  <data name="EventLog_BrowserInitiated" xml:space="preserve">
+    <value>Initiated by the Browser</value>
+  </data>
+  <data name="HttpsRequired" xml:space="preserve">
+    <value>This website uses the Secure Sockets Layer (SSL) protocol, and requires an HTTPS address. Please update the URL in your browser.</value>
+  </data>
+  <data name="LogonError_AccessDenied" xml:space="preserve">
+    <value>Access to the destination computer has been denied. Verify that you have access to the destination Windows PowerShell session configuration. This error can also occur if Windows PowerShell remote management has been disabled on the destination computer.</value>
+  </data>
+  <data name="LogonButton_Text" xml:space="preserve">
+    <value>Sign In</value>
+  </data>
+  <data name="EventLog_UnknownError" xml:space="preserve">
+    <value>Internal Server Error</value>
+  </data>
+  <data name="LogonError_InvalidPort" xml:space="preserve">
+    <value>The Port field contains a value that is not a valid port number. Valid port numbers are integers.</value>
+  </data>
+  <data name="LogonError_InvalidCharacterFormat" xml:space="preserve">
+    <value>One of the input fields contains a character that is not allowed: '\u{0:x}'</value>
+  </data>
+</root>

@@ -1,0 +1,473 @@
+<?xml version="1.0" encoding="utf-8"?>
+<VisualStudioProject ToolsVersion="4.0">
+  <CSHARP ProjectType="Local" ProductVersion="7.10.3077" SchemaVersion="2.0" ProjectGuid="4D683AAF-C137-4A7B-AB3A-17653F09963D">
+    <Build>
+      <Settings ApplicationIcon="" AssemblyKeyContainerName="" AssemblyName="Microsoft.Data.Services.Client.PowerShell" AssemblyOriginatorKeyFile="" DefaultClientScript="JScript" DefaultHTMLPageLayout="Grid" DefaultTargetSchema="IE50" DelaySign="false" OutputType="Library" PreBuildEvent="" PostBuildEvent="" RootNamespace="Microsoft.Data.Services.Client.PowerShell" RunPostBuildEvent="OnBuildSuccess" StartupObject="">
+        <Config Name="Debug" AllowUnsafeBlocks="false" BaseAddress="285212672" CheckForOverflowUnderflow="false" ConfigurationOverrideFile="" DefineConstants="DEBUG;TRACE" DocumentationFile="" DebugSymbols="true" FileAlignment="4096" IncrementalBuild="false" NoStdLib="false" NoWarn="" Optimize="false" OutputPath="bin\Debug\" RegisterForComInterop="false" RemoveIntegerChecks="false" TreatWarningsAsErrors="false" WarningLevel="4" />
+        <Config Name="Release" AllowUnsafeBlocks="false" BaseAddress="285212672" CheckForOverflowUnderflow="false" ConfigurationOverrideFile="" DefineConstants="TRACE" DocumentationFile="" DebugSymbols="false" FileAlignment="4096" IncrementalBuild="false" NoStdLib="false" NoWarn="" Optimize="true" OutputPath="bin\Release\" RegisterForComInterop="false" RemoveIntegerChecks="false" TreatWarningsAsErrors="false" WarningLevel="4" />
+      </Settings>
+      <References>
+        <Reference Name="mscorlib" AssemblyName="mscorlib" HintPath="mscorlib.dll" />
+        <Reference Name="Microsoft.Data.Edm.PowerShell" AssemblyName="Microsoft.Data.Edm.PowerShell" HintPath="Microsoft.Data.Edm.PowerShell.dll" />
+        <Reference Name="System" AssemblyName="System" HintPath="System.dll" />
+        <Reference Name="Microsoft.Data.OData.PowerShell" AssemblyName="Microsoft.Data.OData.PowerShell" HintPath="Microsoft.Data.OData.PowerShell.dll" />
+        <Reference Name="System.Core" AssemblyName="System.Core" HintPath="System.Core.dll" />
+        <Reference Name="System.Xml" AssemblyName="System.Xml" HintPath="System.Xml.dll" />
+        <Reference Name="System.Xml.Linq" AssemblyName="System.Xml.Linq" HintPath="System.Xml.Linq.dll" />
+        <Reference Name="System.Spatial.PowerShell" AssemblyName="System.Spatial.PowerShell" HintPath="System.Spatial.PowerShell.dll" />
+      </References>
+    </Build>
+    <Files>
+      <Include>
+        <File RelPath="AssemblyInfo.cs" SubType="Code" BuildAction="Compile" />
+        <File RelPath="System.Data.Services.Client\CommonUtil.cs" SubType="Code" BuildAction="Compile" />
+        <File RelPath="System.Data.Services.Client\PlatformHelper.cs" SubType="Code" BuildAction="Compile" />
+        <File RelPath="System.Data.Services.Client\Strings.cs" SubType="Code" BuildAction="Compile" />
+        <File RelPath="System.Data.Services.Client\Error.cs" SubType="Code" BuildAction="Compile" />
+        <File RelPath="System.Data.Services.Common\DataServiceProtocolVersion.cs" SubType="Code" BuildAction="Compile" />
+        <File RelPath="System.Data.Services.Client\HttpProcessUtility.cs" SubType="Code" BuildAction="Compile" />
+        <File RelPath="System.Data.Services.Client.Parsing\WebConvert.cs" SubType="Code" BuildAction="Compile" />
+        <File RelPath="System.Data.Services.Client\ClientConvert.cs" SubType="Code" BuildAction="Compile" />
+        <File RelPath="System.Data.Services.Client\XmlConstants.cs" SubType="Code" BuildAction="Compile" />
+        <File RelPath="System.Data.Services.Client.Serializers\EpmSourceTree.cs" SubType="Code" BuildAction="Compile" />
+        <File RelPath="System.Data.Services.Client.Serializers\EpmSourcePathSegment.cs" SubType="Code" BuildAction="Compile" />
+        <File RelPath="System.Data.Services.Client.Serializers\EpmTargetTree.cs" SubType="Code" BuildAction="Compile" />
+        <File RelPath="System.Data.Services.Client.Serializers\EntityPropertyMappingInfo.cs" SubType="Code" BuildAction="Compile" />
+        <File RelPath="System.Data.Services.Client.Metadata\ClientTypeAnnotation.cs" SubType="Code" BuildAction="Compile" />
+        <File RelPath="System.Data.Services.Client\PrimitiveType.cs" SubType="Code" BuildAction="Compile" />
+        <File RelPath="System.Data.Services.Client.Metadata\ClientPropertyAnnotation.cs" SubType="Code" BuildAction="Compile" />
+        <File RelPath="System.Data.Services.Client\ClientEdmModel.cs" SubType="Code" BuildAction="Compile" />
+        <File RelPath="System.Data.Services.Client.Metadata\ClientTypeUtil.cs" SubType="Code" BuildAction="Compile" />
+        <File RelPath="System.Data.Services.Client.Serializers\EpmTargetPathSegment.cs" SubType="Code" BuildAction="Compile" />
+        <File RelPath="System.Data.Services.Client.Providers\MetadataProviderEdmEntityType.cs" SubType="Code" BuildAction="Compile" />
+        <File RelPath="System.Data.Services.Client.Providers\MetadataProviderEdmComplexType.cs" SubType="Code" BuildAction="Compile" />
+        <File RelPath="System.Data.Services.Client\DataStringEscapeBuilder.cs" SubType="Code" BuildAction="Compile" />
+        <File RelPath="System.Data.Services.Client\Descriptor.cs" SubType="Code" BuildAction="Compile" />
+        <File RelPath="System.Data.Services.Client\EntityStates.cs" SubType="Code" BuildAction="Compile" />
+        <File RelPath="System.Data.Services.Client\DescriptorKind.cs" SubType="Code" BuildAction="Compile" />
+        <File RelPath="System.Data.Services.Client\OperationDescriptor.cs" SubType="Code" BuildAction="Compile" />
+        <File RelPath="System.Data.Services.Client\ActionDescriptor.cs" SubType="Code" BuildAction="Compile" />
+        <File RelPath="System.Data.Services.Client\BaseAsyncResult.cs" SubType="Code" BuildAction="Compile" />
+        <File RelPath="System.Data.Services.Client\DataServiceContext.cs" SubType="Code" BuildAction="Compile" />
+        <File RelPath="System.Data.Services.Client\ODataRequestMessageWrapper.cs" SubType="Code" BuildAction="Compile" />
+        <File RelPath="System.Data.Services.Client\Util.cs" SubType="Code" BuildAction="Compile" />
+        <File RelPath="System.Data.Services.Client\InternalError.cs" SubType="Code" BuildAction="Compile" />
+        <File RelPath="System.Data.Services.Client\WebUtil.cs" SubType="Code" BuildAction="Compile" />
+        <File RelPath="System.Data.Services.Client\BaseSaveResult.cs" SubType="Code" BuildAction="Compile" />
+        <File RelPath="System.Data.Services.Client\LinkDescriptor.cs" SubType="Code" BuildAction="Compile" />
+        <File RelPath="System.Data.Services.Client\EntityDescriptor.cs" SubType="Code" BuildAction="Compile" />
+        <File RelPath="System.Data.Services.Client\RequestInfo.cs" SubType="Code" BuildAction="Compile" />
+        <File RelPath="System.Data.Services.Client\EntityTracker.cs" SubType="Code" BuildAction="Compile" />
+        <File RelPath="System.Data.Services.Client\Serializer.cs" SubType="Code" BuildAction="Compile" />
+        <File RelPath="System.Data.Services.Client\SaveChangesOptions.cs" SubType="Code" BuildAction="Compile" />
+        <File RelPath="System.Data.Services.Client\StreamDescriptor.cs" SubType="Code" BuildAction="Compile" />
+        <File RelPath="System.Data.Services.Client\DataServiceRequest.cs" SubType="Code" BuildAction="Compile" />
+        <File RelPath="System.Data.Services.Client\SaveResult.cs" SubType="Code" BuildAction="Compile" />
+        <File RelPath="System.Data.Services.Client\BatchSaveResult.cs" SubType="Code" BuildAction="Compile" />
+        <File RelPath="System.Data.Services.Client\DataServiceClientException.cs" SubType="Code" BuildAction="Compile" />
+        <File RelPath="System.Data.Services.Client\DataServiceResponse.cs" SubType="Code" BuildAction="Compile" />
+        <File RelPath="System.Data.Services.Client\DataServiceResponsePreference.cs" SubType="Code" BuildAction="Compile" />
+        <File RelPath="System.Data.Services.Client\LinkInfo.cs" SubType="Code" BuildAction="Compile" />
+        <File RelPath="System.Data.Services.Client\UriResolver.cs" SubType="Code" BuildAction="Compile" />
+        <File RelPath="System.Data.Services.Client\MaterializeAtom.cs" SubType="Code" BuildAction="Compile" />
+        <File RelPath="System.Data.Services.Client\ResponseInfo.cs" SubType="Code" BuildAction="Compile" />
+        <File RelPath="System.Data.Services.Client\MergeOption.cs" SubType="Code" BuildAction="Compile" />
+        <File RelPath="System.Data.Services.Client\HttpWebResponseMessage.cs" SubType="Code" BuildAction="Compile" />
+        <File RelPath="System.Data.Services.Client\OperationResponse.cs" SubType="Code" BuildAction="Compile" />
+        <File RelPath="System.Data.Services.Client\QueryOperationResponse.cs" SubType="Code" BuildAction="Compile" />
+        <File RelPath="System.Data.Services.Client\ChangeOperationResponse.cs" SubType="Code" BuildAction="Compile" />
+        <File RelPath="System.Data.Services.Client\QueryComponents.cs" SubType="Code" BuildAction="Compile" />
+        <File RelPath="System.Data.Services.Client\ProjectionPlan.cs" SubType="Code" BuildAction="Compile" />
+        <File RelPath="System.Data.Services.Client\DataServiceSaveStream.cs" SubType="Code" BuildAction="Compile" />
+        <File RelPath="System.Data.Services.Client\DataServiceRequestException.cs" SubType="Code" BuildAction="Compile" />
+        <File RelPath="System.Data.Services.Client\OperationParameter.cs" SubType="Code" BuildAction="Compile" />
+        <File RelPath="System.Data.Services.Client\BodyOperationParameter.cs" SubType="Code" BuildAction="Compile" />
+        <File RelPath="System.Data.Services.Client\MimeTypePropertyAttribute.cs" SubType="Code" BuildAction="Compile" />
+        <File RelPath="System.Data.Services.Common\DataServiceEntityAttribute.cs" SubType="Code" BuildAction="Compile" />
+        <File RelPath="System.Data.Services.Client\DataServiceQueryContinuation.cs" SubType="Code" BuildAction="Compile" />
+        <File RelPath="System.Data.Services.Client\DataServiceQueryContinuation!1.cs" SubType="Code" BuildAction="Compile" />
+        <File RelPath="System.Data.Services.Client\DataServiceRequestArgs.cs" SubType="Code" BuildAction="Compile" />
+        <File RelPath="System.Data.Services.Client\DataServiceStreamLink.cs" SubType="Code" BuildAction="Compile" />
+        <File RelPath="System.Data.Services.Client\DynamicProxyMethodGenerator.cs" SubType="Code" BuildAction="Compile" />
+        <File RelPath="System.Data.Services.Client\AtomMaterializerLog.cs" SubType="Code" BuildAction="Compile" />
+        <File RelPath="System.Data.Services.Client\FunctionDescriptor.cs" SubType="Code" BuildAction="Compile" />
+        <File RelPath="System.Data.Services.Client\InternalODataRequestMessage.cs" SubType="Code" BuildAction="Compile" />
+        <File RelPath="System.Data.Services.Client\InvokeResponse.cs" SubType="Code" BuildAction="Compile" />
+        <File RelPath="System.Data.Services.Client\QueryResult.cs" SubType="Code" BuildAction="Compile" />
+        <File RelPath="System.Data.Services.Client\QueryOperationResponse!1.cs" SubType="Code" BuildAction="Compile" />
+        <File RelPath="System.Data.Services.Client\DataServiceQueryException.cs" SubType="Code" BuildAction="Compile" />
+        <File RelPath="System.Data.Services.Client\LoadPropertyResult.cs" SubType="Code" BuildAction="Compile" />
+        <File RelPath="System.Data.Services.Client\BindingEntityInfo.cs" SubType="Code" BuildAction="Compile" />
+        <File RelPath="System.Data.Services.Client\TrackingMode.cs" SubType="Code" BuildAction="Compile" />
+        <File RelPath="System.Data.Services.Client.Materialization\ODataMaterializer.cs" SubType="Code" BuildAction="Compile" />
+        <File RelPath="System.Data.Services.Client\ReferenceEqualityComparer!1.cs" SubType="Code" BuildAction="Compile" />
+        <File RelPath="System.Data.Services.Client.Materialization\ODataReaderEntityMaterializer.cs" SubType="Code" BuildAction="Compile" />
+        <File RelPath="System.Data.Services.Client.Materialization\ODataValueMaterializer.cs" SubType="Code" BuildAction="Compile" />
+        <File RelPath="System.Data.Services.Client.Materialization\ODataPropertyMaterializer.cs" SubType="Code" BuildAction="Compile" />
+        <File RelPath="System.Data.Services.Client.Materialization\ODataLinksMaterializer.cs" SubType="Code" BuildAction="Compile" />
+        <File RelPath="System.Data.Services.Client.Materialization\ODataItemExtensions.cs" SubType="Code" BuildAction="Compile" />
+        <File RelPath="System.Data.Services.Client\PrimitiveTypeConverter.cs" SubType="Code" BuildAction="Compile" />
+        <File RelPath="System.Data.Services.Client\BinaryTypeConverter.cs" SubType="Code" BuildAction="Compile" />
+        <File RelPath="System.Data.Services.Client\TypeResolver.cs" SubType="Code" BuildAction="Compile" />
+        <File RelPath="System.Data.Services.Client.Materialization\ODataEntityMaterializer.cs" SubType="Code" BuildAction="Compile" />
+        <File RelPath="System.Data.Services.Client.Materialization\MaterializerEntry.cs" SubType="Code" BuildAction="Compile" />
+        <File RelPath="System.Data.Services.Client\ProjectionPath.cs" SubType="Code" BuildAction="Compile" />
+        <File RelPath="System.Data.Services.Client.Materialization\MaterializerNavigationLink.cs" SubType="Code" BuildAction="Compile" />
+        <File RelPath="System.Data.Services.Client\ProjectionPathSegment.cs" SubType="Code" BuildAction="Compile" />
+        <File RelPath="System.Data.Services.Client.Materialization\MaterializerFeed.cs" SubType="Code" BuildAction="Compile" />
+        <File RelPath="System.Data.Services.Client\DataServiceCollection!1.cs" SubType="Code" BuildAction="Compile" />
+        <File RelPath="System.Data.Services.Client\ProjectionPlanCompiler.cs" SubType="Code" BuildAction="Compile" />
+        <File RelPath="System.Data.Services.Client.Materialization\ODataEntityMaterializerInvoker.cs" SubType="Code" BuildAction="Compile" />
+        <File RelPath="System.Data.Services.Client.Materialization\ODataEntriesEntityMaterializer.cs" SubType="Code" BuildAction="Compile" />
+        <File RelPath="System.Data.Services.Client.Materialization\ODataMessageReaderMaterializer.cs" SubType="Code" BuildAction="Compile" />
+        <File RelPath="System.Data.Services.Client\ALinqExpressionVisitor.cs" SubType="Code" BuildAction="Compile" />
+        <File RelPath="System.Data.Services.Client\MemberAssignmentAnalysis.cs" SubType="Code" BuildAction="Compile" />
+        <File RelPath="System.Data.Services.Client\ResourceBinder.cs" SubType="Code" BuildAction="Compile" />
+        <File RelPath="System.Data.Services.Client\ReflectionUtil.cs" SubType="Code" BuildAction="Compile" />
+        <File RelPath="System.Data.Services.Client\SequenceMethod.cs" SubType="Code" BuildAction="Compile" />
+        <File RelPath="System.Data.Services.Client\HttpWebRequestMessage.cs" SubType="Code" BuildAction="Compile" />
+        <File RelPath="System.Data.Services.Client\SendingRequest2EventArgs.cs" SubType="Code" BuildAction="Compile" />
+        <File RelPath="System.Data.Services.Client\ProjectionPathBuilder.cs" SubType="Code" BuildAction="Compile" />
+        <File RelPath="System.Data.Services.Client\ProjectionAnalyzer.cs" SubType="Code" BuildAction="Compile" />
+        <File RelPath="System.Data.Services.Client\EntityChangedParams.cs" SubType="Code" BuildAction="Compile" />
+        <File RelPath="System.Data.Services.Client\EntityCollectionChangedParams.cs" SubType="Code" BuildAction="Compile" />
+        <File RelPath="System.Data.Services.Client\SendingRequestEventArgs.cs" SubType="Code" BuildAction="Compile" />
+        <File RelPath="System.Data.Services.Client\PrimitiveParserToken.cs" SubType="Code" BuildAction="Compile" />
+        <File RelPath="System.Data.Services.Client\TextPrimitiveParserToken.cs" SubType="Code" BuildAction="Compile" />
+        <File RelPath="System.Data.Services.Client\BooleanTypeConverter.cs" SubType="Code" BuildAction="Compile" />
+        <File RelPath="System.Data.Services.Client\ByteTypeConverter.cs" SubType="Code" BuildAction="Compile" />
+        <File RelPath="System.Data.Services.Client\ByteArrayTypeConverter.cs" SubType="Code" BuildAction="Compile" />
+        <File RelPath="System.Data.Services.Client\DateTimeTypeConverter.cs" SubType="Code" BuildAction="Compile" />
+        <File RelPath="System.Data.Services.Client\DecimalTypeConverter.cs" SubType="Code" BuildAction="Compile" />
+        <File RelPath="System.Data.Services.Client\DoubleTypeConverter.cs" SubType="Code" BuildAction="Compile" />
+        <File RelPath="System.Data.Services.Client\GuidTypeConverter.cs" SubType="Code" BuildAction="Compile" />
+        <File RelPath="System.Data.Services.Client\Int16TypeConverter.cs" SubType="Code" BuildAction="Compile" />
+        <File RelPath="System.Data.Services.Client\Int32TypeConverter.cs" SubType="Code" BuildAction="Compile" />
+        <File RelPath="System.Data.Services.Client\Int64TypeConverter.cs" SubType="Code" BuildAction="Compile" />
+        <File RelPath="System.Data.Services.Client\SingleTypeConverter.cs" SubType="Code" BuildAction="Compile" />
+        <File RelPath="System.Data.Services.Client\StringTypeConverter.cs" SubType="Code" BuildAction="Compile" />
+        <File RelPath="System.Data.Services.Client\SByteTypeConverter.cs" SubType="Code" BuildAction="Compile" />
+        <File RelPath="System.Data.Services.Client\CharTypeConverter.cs" SubType="Code" BuildAction="Compile" />
+        <File RelPath="System.Data.Services.Client\CharArrayTypeConverter.cs" SubType="Code" BuildAction="Compile" />
+        <File RelPath="System.Data.Services.Client\ClrTypeConverter.cs" SubType="Code" BuildAction="Compile" />
+        <File RelPath="System.Data.Services.Client\UriTypeConverter.cs" SubType="Code" BuildAction="Compile" />
+        <File RelPath="System.Data.Services.Client\XDocumentTypeConverter.cs" SubType="Code" BuildAction="Compile" />
+        <File RelPath="System.Data.Services.Client\XElementTypeConverter.cs" SubType="Code" BuildAction="Compile" />
+        <File RelPath="System.Data.Services.Client\DateTimeOffsetTypeConverter.cs" SubType="Code" BuildAction="Compile" />
+        <File RelPath="System.Data.Services.Client\TimeSpanTypeConverter.cs" SubType="Code" BuildAction="Compile" />
+        <File RelPath="System.Data.Services.Client\UInt16TypeConverter.cs" SubType="Code" BuildAction="Compile" />
+        <File RelPath="System.Data.Services.Client\UInt32TypeConverter.cs" SubType="Code" BuildAction="Compile" />
+        <File RelPath="System.Data.Services.Client\UInt64TypeConverter.cs" SubType="Code" BuildAction="Compile" />
+        <File RelPath="System.Data.Services.Client\GeographyTypeConverter.cs" SubType="Code" BuildAction="Compile" />
+        <File RelPath="System.Data.Services.Client\InstancePrimitiveParserToken!1.cs" SubType="Code" BuildAction="Compile" />
+        <File RelPath="System.Data.Services.Client\GeometryTypeConverter.cs" SubType="Code" BuildAction="Compile" />
+        <File RelPath="System.Data.Services.Client\NamedStreamTypeConverter.cs" SubType="Code" BuildAction="Compile" />
+        <File RelPath="System.Data.Services.Client\ReferenceEqualityComparer.cs" SubType="Code" BuildAction="Compile" />
+        <File RelPath="System.Data.Services.Client\ProjectionRewriter.cs" SubType="Code" BuildAction="Compile" />
+        <File RelPath="System.Data.Services.Client\ResourceExpression.cs" SubType="Code" BuildAction="Compile" />
+        <File RelPath="System.Data.Services.Client\ResourceSetExpression.cs" SubType="Code" BuildAction="Compile" />
+        <File RelPath="System.Data.Services.Client\GetReadStreamResult.cs" SubType="Code" BuildAction="Compile" />
+        <File RelPath="System.Data.Services.Client\DataServiceStreamResponse.cs" SubType="Code" BuildAction="Compile" />
+        <File RelPath="System.Data.Services.Client\PathBox.cs" SubType="Code" BuildAction="Compile" />
+        <File RelPath="System.Data.Services.Client\UriHelper.cs" SubType="Code" BuildAction="Compile" />
+        <File RelPath="System.Data.Services.Client\DataServiceALinqExpressionVisitor.cs" SubType="Code" BuildAction="Compile" />
+        <File RelPath="System.Data.Services.Client\ProjectionQueryOptionExpression.cs" SubType="Code" BuildAction="Compile" />
+        <File RelPath="System.Data.Services.Client\TypeSystem.cs" SubType="Code" BuildAction="Compile" />
+        <File RelPath="System.Data.Services.Client\ResourceExpressionType.cs" SubType="Code" BuildAction="Compile" />
+        <File RelPath="System.Data.Services.Client\NavigationPropertySingletonExpression.cs" SubType="Code" BuildAction="Compile" />
+        <File RelPath="System.Data.Services.Client\InputReferenceExpression.cs" SubType="Code" BuildAction="Compile" />
+        <File RelPath="System.Data.Services.Client\CountOption.cs" SubType="Code" BuildAction="Compile" />
+        <File RelPath="System.Data.Services.Client\QueryOptionExpression.cs" SubType="Code" BuildAction="Compile" />
+        <File RelPath="System.Data.Services.Client\UriOperationParameter.cs" SubType="Code" BuildAction="Compile" />
+        <File RelPath="System.Data.Services.Client\Evaluator.cs" SubType="Code" BuildAction="Compile" />
+        <File RelPath="System.Data.Services.Client\ExpressionNormalizer.cs" SubType="Code" BuildAction="Compile" />
+        <File RelPath="_PrivateImplementationDetails_{9AC2B384-2A20-410D-9E01-C376C7FD8130}.cs" SubType="Code" BuildAction="Compile" />
+        <File RelPath="System.Data.Services.Client\FilterQueryOptionExpression.cs" SubType="Code" BuildAction="Compile" />
+        <File RelPath="System.Data.Services.Client\InputBinder.cs" SubType="Code" BuildAction="Compile" />
+        <File RelPath="System.Data.Services.Client\OrderByQueryOptionExpression.cs" SubType="Code" BuildAction="Compile" />
+        <File RelPath="System.Data.Services.Client\SkipQueryOptionExpression.cs" SubType="Code" BuildAction="Compile" />
+        <File RelPath="System.Data.Services.Client\TakeQueryOptionExpression.cs" SubType="Code" BuildAction="Compile" />
+        <File RelPath="System.Data.Services.Client\DataServiceQuery!1.cs" SubType="Code" BuildAction="Compile" />
+        <File RelPath="System.Data.Services.Client\ExpressionWriter.cs" SubType="Code" BuildAction="Compile" />
+        <File RelPath="System.Data.Services.Client\UriWriter.cs" SubType="Code" BuildAction="Compile" />
+        <File RelPath="System.Data.Services.Client\DataServiceQueryProvider.cs" SubType="Code" BuildAction="Compile" />
+        <File RelPath="System.Data.Services.Client\ArraySet!1.cs" SubType="Code" BuildAction="Compile" />
+        <File RelPath="System.Data.Services.Client\BindingPropertyKind.cs" SubType="Code" BuildAction="Compile" />
+        <File RelPath="System.Data.Services.Common\EntitySetAttribute.cs" SubType="Code" BuildAction="Compile" />
+        <File RelPath="System.Data.Services.Client\VertexColor.cs" SubType="Code" BuildAction="Compile" />
+        <File RelPath="System.Data.Services.Client\BindingGraph.cs" SubType="Code" BuildAction="Compile" />
+        <File RelPath="System.Data.Services.Client\BindingObserver.cs" SubType="Code" BuildAction="Compile" />
+        <File RelPath="System.Data.Services.Client\BindingUtils.cs" SubType="Code" BuildAction="Compile" />
+        <File RelPath="System.Data.Services.Client\SaveChangesEventArgs.cs" SubType="Code" BuildAction="Compile" />
+        <File RelPath="System.Data.Services.Client\DataServiceQuery.cs" SubType="Code" BuildAction="Compile" />
+        <File RelPath="System.Data.Services.Common\DataServiceKeyAttribute.cs" SubType="Code" BuildAction="Compile" />
+        <File RelPath="System.Data.Services.Common\HasStreamAttribute.cs" SubType="Code" BuildAction="Compile" />
+        <File RelPath="System.Data.Services.Common\NamedStreamAttribute.cs" SubType="Code" BuildAction="Compile" />
+        <File RelPath="System.Data.Services.Client\MediaEntryAttribute.cs" SubType="Code" BuildAction="Compile" />
+        <File RelPath="System.Data.Services.Client\DataServiceRequest!1.cs" SubType="Code" BuildAction="Compile" />
+        <File RelPath="System.Data.Services.Client\ReadingWritingEntityEventArgs.cs" SubType="Code" BuildAction="Compile" />
+        <File RelPath="System.Data.Services.Client.Metadata\ClientTypeCache.cs" SubType="Code" BuildAction="Compile" />
+        <File RelPath="DataFxAssemblyRef.cs" SubType="Code" BuildAction="Compile" />
+        <File RelPath="System.Data.Services.Client\TextResDescriptionAttribute.cs" SubType="Code" BuildAction="Compile" />
+        <File RelPath="System.Data.Services.Client\TextRes.cs" SubType="Code" BuildAction="Compile" />
+        <File RelPath="System.Data.Services.Client\TextResCategoryAttribute.cs" SubType="Code" BuildAction="Compile" />
+        <File RelPath="System.Data.Services.Client.resx" BuildAction="EmbeddedResource" />
+      </Include>
+    </Files>
+  </CSHARP>
+  <PropertyGroup xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{236F5B85-FC0A-4D8D-B5A8-7FAB95B27E87}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>Microsoft.Data.Services.Client.PowerShell</RootNamespace>
+    <AssemblyName>Microsoft.Data.Services.Client.PowerShell</AssemblyName>
+    <SignAssembly>True</SignAssembly>
+    <AssemblyOriginatorKeyFile>..\..\..\mono.snk</AssemblyOriginatorKeyFile>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' " xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <DebugSymbols>True</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>False</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <WarningLevel>4</WarningLevel>
+    <RunWithWarnings>False</RunWithWarnings>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' " xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <DebugType>none</DebugType>
+    <Optimize>False</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <WarningLevel>4</WarningLevel>
+    <RunWithWarnings>False</RunWithWarnings>
+  </PropertyGroup>
+  <ItemGroup xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <Compile Include="AssemblyInfo.cs" />
+    <Compile Include="System.Data.Services.Client\CommonUtil.cs" />
+    <Compile Include="System.Data.Services.Client\PlatformHelper.cs" />
+    <Compile Include="System.Data.Services.Client\Strings.cs" />
+    <Compile Include="System.Data.Services.Client\Error.cs" />
+    <Compile Include="System.Data.Services.Common\DataServiceProtocolVersion.cs" />
+    <Compile Include="System.Data.Services.Client\HttpProcessUtility.cs" />
+    <Compile Include="System.Data.Services.Client.Parsing\WebConvert.cs" />
+    <Compile Include="System.Data.Services.Client\ClientConvert.cs" />
+    <Compile Include="System.Data.Services.Client\XmlConstants.cs" />
+    <Compile Include="System.Data.Services.Client.Serializers\EpmSourceTree.cs" />
+    <Compile Include="System.Data.Services.Client.Serializers\EpmSourcePathSegment.cs" />
+    <Compile Include="System.Data.Services.Client.Serializers\EpmTargetTree.cs" />
+    <Compile Include="System.Data.Services.Client.Serializers\EntityPropertyMappingInfo.cs" />
+    <Compile Include="System.Data.Services.Client.Metadata\ClientTypeAnnotation.cs" />
+    <Compile Include="System.Data.Services.Client\PrimitiveType.cs" />
+    <Compile Include="System.Data.Services.Client.Metadata\ClientPropertyAnnotation.cs" />
+    <Compile Include="System.Data.Services.Client\ClientEdmModel.cs" />
+    <Compile Include="System.Data.Services.Client.Metadata\ClientTypeUtil.cs" />
+    <Compile Include="System.Data.Services.Client.Serializers\EpmTargetPathSegment.cs" />
+    <Compile Include="System.Data.Services.Client.Providers\MetadataProviderEdmEntityType.cs" />
+    <Compile Include="System.Data.Services.Client.Providers\MetadataProviderEdmComplexType.cs" />
+    <Compile Include="System.Data.Services.Client\DataStringEscapeBuilder.cs" />
+    <Compile Include="System.Data.Services.Client\Descriptor.cs" />
+    <Compile Include="System.Data.Services.Client\EntityStates.cs" />
+    <Compile Include="System.Data.Services.Client\DescriptorKind.cs" />
+    <Compile Include="System.Data.Services.Client\OperationDescriptor.cs" />
+    <Compile Include="System.Data.Services.Client\ActionDescriptor.cs" />
+    <Compile Include="System.Data.Services.Client\BaseAsyncResult.cs" />
+    <Compile Include="System.Data.Services.Client\DataServiceContext.cs" />
+    <Compile Include="System.Data.Services.Client\ODataRequestMessageWrapper.cs" />
+    <Compile Include="System.Data.Services.Client\Util.cs" />
+    <Compile Include="System.Data.Services.Client\InternalError.cs" />
+    <Compile Include="System.Data.Services.Client\WebUtil.cs" />
+    <Compile Include="System.Data.Services.Client\BaseSaveResult.cs" />
+    <Compile Include="System.Data.Services.Client\LinkDescriptor.cs" />
+    <Compile Include="System.Data.Services.Client\EntityDescriptor.cs" />
+    <Compile Include="System.Data.Services.Client\RequestInfo.cs" />
+    <Compile Include="System.Data.Services.Client\EntityTracker.cs" />
+    <Compile Include="System.Data.Services.Client\Serializer.cs" />
+    <Compile Include="System.Data.Services.Client\SaveChangesOptions.cs" />
+    <Compile Include="System.Data.Services.Client\StreamDescriptor.cs" />
+    <Compile Include="System.Data.Services.Client\DataServiceRequest.cs" />
+    <Compile Include="System.Data.Services.Client\SaveResult.cs" />
+    <Compile Include="System.Data.Services.Client\BatchSaveResult.cs" />
+    <Compile Include="System.Data.Services.Client\DataServiceClientException.cs" />
+    <Compile Include="System.Data.Services.Client\DataServiceResponse.cs" />
+    <Compile Include="System.Data.Services.Client\DataServiceResponsePreference.cs" />
+    <Compile Include="System.Data.Services.Client\LinkInfo.cs" />
+    <Compile Include="System.Data.Services.Client\UriResolver.cs" />
+    <Compile Include="System.Data.Services.Client\MaterializeAtom.cs" />
+    <Compile Include="System.Data.Services.Client\ResponseInfo.cs" />
+    <Compile Include="System.Data.Services.Client\MergeOption.cs" />
+    <Compile Include="System.Data.Services.Client\HttpWebResponseMessage.cs" />
+    <Compile Include="System.Data.Services.Client\OperationResponse.cs" />
+    <Compile Include="System.Data.Services.Client\QueryOperationResponse.cs" />
+    <Compile Include="System.Data.Services.Client\ChangeOperationResponse.cs" />
+    <Compile Include="System.Data.Services.Client\QueryComponents.cs" />
+    <Compile Include="System.Data.Services.Client\ProjectionPlan.cs" />
+    <Compile Include="System.Data.Services.Client\DataServiceSaveStream.cs" />
+    <Compile Include="System.Data.Services.Client\DataServiceRequestException.cs" />
+    <Compile Include="System.Data.Services.Client\OperationParameter.cs" />
+    <Compile Include="System.Data.Services.Client\BodyOperationParameter.cs" />
+    <Compile Include="System.Data.Services.Client\MimeTypePropertyAttribute.cs" />
+    <Compile Include="System.Data.Services.Common\DataServiceEntityAttribute.cs" />
+    <Compile Include="System.Data.Services.Client\DataServiceQueryContinuation.cs" />
+    <Compile Include="System.Data.Services.Client\DataServiceQueryContinuation!1.cs" />
+    <Compile Include="System.Data.Services.Client\DataServiceRequestArgs.cs" />
+    <Compile Include="System.Data.Services.Client\DataServiceStreamLink.cs" />
+    <Compile Include="System.Data.Services.Client\DynamicProxyMethodGenerator.cs" />
+    <Compile Include="System.Data.Services.Client\AtomMaterializerLog.cs" />
+    <Compile Include="System.Data.Services.Client\FunctionDescriptor.cs" />
+    <Compile Include="System.Data.Services.Client\InternalODataRequestMessage.cs" />
+    <Compile Include="System.Data.Services.Client\InvokeResponse.cs" />
+    <Compile Include="System.Data.Services.Client\QueryResult.cs" />
+    <Compile Include="System.Data.Services.Client\QueryOperationResponse!1.cs" />
+    <Compile Include="System.Data.Services.Client\DataServiceQueryException.cs" />
+    <Compile Include="System.Data.Services.Client\LoadPropertyResult.cs" />
+    <Compile Include="System.Data.Services.Client\BindingEntityInfo.cs" />
+    <Compile Include="System.Data.Services.Client\TrackingMode.cs" />
+    <Compile Include="System.Data.Services.Client.Materialization\ODataMaterializer.cs" />
+    <Compile Include="System.Data.Services.Client\ReferenceEqualityComparer!1.cs" />
+    <Compile Include="System.Data.Services.Client.Materialization\ODataReaderEntityMaterializer.cs" />
+    <Compile Include="System.Data.Services.Client.Materialization\ODataValueMaterializer.cs" />
+    <Compile Include="System.Data.Services.Client.Materialization\ODataPropertyMaterializer.cs" />
+    <Compile Include="System.Data.Services.Client.Materialization\ODataLinksMaterializer.cs" />
+    <Compile Include="System.Data.Services.Client.Materialization\ODataItemExtensions.cs" />
+    <Compile Include="System.Data.Services.Client\PrimitiveTypeConverter.cs" />
+    <Compile Include="System.Data.Services.Client\BinaryTypeConverter.cs" />
+    <Compile Include="System.Data.Services.Client\TypeResolver.cs" />
+    <Compile Include="System.Data.Services.Client.Materialization\ODataEntityMaterializer.cs" />
+    <Compile Include="System.Data.Services.Client.Materialization\MaterializerEntry.cs" />
+    <Compile Include="System.Data.Services.Client\ProjectionPath.cs" />
+    <Compile Include="System.Data.Services.Client.Materialization\MaterializerNavigationLink.cs" />
+    <Compile Include="System.Data.Services.Client\ProjectionPathSegment.cs" />
+    <Compile Include="System.Data.Services.Client.Materialization\MaterializerFeed.cs" />
+    <Compile Include="System.Data.Services.Client\DataServiceCollection!1.cs" />
+    <Compile Include="System.Data.Services.Client\ProjectionPlanCompiler.cs" />
+    <Compile Include="System.Data.Services.Client.Materialization\ODataEntityMaterializerInvoker.cs" />
+    <Compile Include="System.Data.Services.Client.Materialization\ODataEntriesEntityMaterializer.cs" />
+    <Compile Include="System.Data.Services.Client.Materialization\ODataMessageReaderMaterializer.cs" />
+    <Compile Include="System.Data.Services.Client\ALinqExpressionVisitor.cs" />
+    <Compile Include="System.Data.Services.Client\MemberAssignmentAnalysis.cs" />
+    <Compile Include="System.Data.Services.Client\ResourceBinder.cs" />
+    <Compile Include="System.Data.Services.Client\ReflectionUtil.cs" />
+    <Compile Include="System.Data.Services.Client\SequenceMethod.cs" />
+    <Compile Include="System.Data.Services.Client\HttpWebRequestMessage.cs" />
+    <Compile Include="System.Data.Services.Client\SendingRequest2EventArgs.cs" />
+    <Compile Include="System.Data.Services.Client\ProjectionPathBuilder.cs" />
+    <Compile Include="System.Data.Services.Client\ProjectionAnalyzer.cs" />
+    <Compile Include="System.Data.Services.Client\EntityChangedParams.cs" />
+    <Compile Include="System.Data.Services.Client\EntityCollectionChangedParams.cs" />
+    <Compile Include="System.Data.Services.Client\SendingRequestEventArgs.cs" />
+    <Compile Include="System.Data.Services.Client\PrimitiveParserToken.cs" />
+    <Compile Include="System.Data.Services.Client\TextPrimitiveParserToken.cs" />
+    <Compile Include="System.Data.Services.Client\BooleanTypeConverter.cs" />
+    <Compile Include="System.Data.Services.Client\ByteTypeConverter.cs" />
+    <Compile Include="System.Data.Services.Client\ByteArrayTypeConverter.cs" />
+    <Compile Include="System.Data.Services.Client\DateTimeTypeConverter.cs" />
+    <Compile Include="System.Data.Services.Client\DecimalTypeConverter.cs" />
+    <Compile Include="System.Data.Services.Client\DoubleTypeConverter.cs" />
+    <Compile Include="System.Data.Services.Client\GuidTypeConverter.cs" />
+    <Compile Include="System.Data.Services.Client\Int16TypeConverter.cs" />
+    <Compile Include="System.Data.Services.Client\Int32TypeConverter.cs" />
+    <Compile Include="System.Data.Services.Client\Int64TypeConverter.cs" />
+    <Compile Include="System.Data.Services.Client\SingleTypeConverter.cs" />
+    <Compile Include="System.Data.Services.Client\StringTypeConverter.cs" />
+    <Compile Include="System.Data.Services.Client\SByteTypeConverter.cs" />
+    <Compile Include="System.Data.Services.Client\CharTypeConverter.cs" />
+    <Compile Include="System.Data.Services.Client\CharArrayTypeConverter.cs" />
+    <Compile Include="System.Data.Services.Client\ClrTypeConverter.cs" />
+    <Compile Include="System.Data.Services.Client\UriTypeConverter.cs" />
+    <Compile Include="System.Data.Services.Client\XDocumentTypeConverter.cs" />
+    <Compile Include="System.Data.Services.Client\XElementTypeConverter.cs" />
+    <Compile Include="System.Data.Services.Client\DateTimeOffsetTypeConverter.cs" />
+    <Compile Include="System.Data.Services.Client\TimeSpanTypeConverter.cs" />
+    <Compile Include="System.Data.Services.Client\UInt16TypeConverter.cs" />
+    <Compile Include="System.Data.Services.Client\UInt32TypeConverter.cs" />
+    <Compile Include="System.Data.Services.Client\UInt64TypeConverter.cs" />
+    <Compile Include="System.Data.Services.Client\GeographyTypeConverter.cs" />
+    <Compile Include="System.Data.Services.Client\InstancePrimitiveParserToken!1.cs" />
+    <Compile Include="System.Data.Services.Client\GeometryTypeConverter.cs" />
+    <Compile Include="System.Data.Services.Client\NamedStreamTypeConverter.cs" />
+    <Compile Include="System.Data.Services.Client\ReferenceEqualityComparer.cs" />
+    <Compile Include="System.Data.Services.Client\ProjectionRewriter.cs" />
+    <Compile Include="System.Data.Services.Client\ResourceExpression.cs" />
+    <Compile Include="System.Data.Services.Client\ResourceSetExpression.cs" />
+    <Compile Include="System.Data.Services.Client\GetReadStreamResult.cs" />
+    <Compile Include="System.Data.Services.Client\DataServiceStreamResponse.cs" />
+    <Compile Include="System.Data.Services.Client\PathBox.cs" />
+    <Compile Include="System.Data.Services.Client\UriHelper.cs" />
+    <Compile Include="System.Data.Services.Client\DataServiceALinqExpressionVisitor.cs" />
+    <Compile Include="System.Data.Services.Client\ProjectionQueryOptionExpression.cs" />
+    <Compile Include="System.Data.Services.Client\TypeSystem.cs" />
+    <Compile Include="System.Data.Services.Client\ResourceExpressionType.cs" />
+    <Compile Include="System.Data.Services.Client\NavigationPropertySingletonExpression.cs" />
+    <Compile Include="System.Data.Services.Client\InputReferenceExpression.cs" />
+    <Compile Include="System.Data.Services.Client\CountOption.cs" />
+    <Compile Include="System.Data.Services.Client\QueryOptionExpression.cs" />
+    <Compile Include="System.Data.Services.Client\UriOperationParameter.cs" />
+    <Compile Include="System.Data.Services.Client\Evaluator.cs" />
+    <Compile Include="System.Data.Services.Client\ExpressionNormalizer.cs" />
+    <Compile Include="_PrivateImplementationDetails_{9AC2B384-2A20-410D-9E01-C376C7FD8130}.cs" />
+    <Compile Include="System.Data.Services.Client\FilterQueryOptionExpression.cs" />
+    <Compile Include="System.Data.Services.Client\InputBinder.cs" />
+    <Compile Include="System.Data.Services.Client\OrderByQueryOptionExpression.cs" />
+    <Compile Include="System.Data.Services.Client\SkipQueryOptionExpression.cs" />
+    <Compile Include="System.Data.Services.Client\TakeQueryOptionExpression.cs" />
+    <Compile Include="System.Data.Services.Client\DataServiceQuery!1.cs" />
+    <Compile Include="System.Data.Services.Client\ExpressionWriter.cs" />
+    <Compile Include="System.Data.Services.Client\UriWriter.cs" />
+    <Compile Include="System.Data.Services.Client\DataServiceQueryProvider.cs" />
+    <Compile Include="System.Data.Services.Client\ArraySet!1.cs" />
+    <Compile Include="System.Data.Services.Client\BindingPropertyKind.cs" />
+    <Compile Include="System.Data.Services.Common\EntitySetAttribute.cs" />
+    <Compile Include="System.Data.Services.Client\VertexColor.cs" />
+    <Compile Include="System.Data.Services.Client\BindingGraph.cs" />
+    <Compile Include="System.Data.Services.Client\BindingObserver.cs" />
+    <Compile Include="System.Data.Services.Client\BindingUtils.cs" />
+    <Compile Include="System.Data.Services.Client\SaveChangesEventArgs.cs" />
+    <Compile Include="System.Data.Services.Client\DataServiceQuery.cs" />
+    <Compile Include="System.Data.Services.Common\DataServiceKeyAttribute.cs" />
+    <Compile Include="System.Data.Services.Common\HasStreamAttribute.cs" />
+    <Compile Include="System.Data.Services.Common\NamedStreamAttribute.cs" />
+    <Compile Include="System.Data.Services.Client\MediaEntryAttribute.cs" />
+    <Compile Include="System.Data.Services.Client\DataServiceRequest!1.cs" />
+    <Compile Include="System.Data.Services.Client\ReadingWritingEntityEventArgs.cs" />
+    <Compile Include="System.Data.Services.Client.Metadata\ClientTypeCache.cs" />
+    <Compile Include="DataFxAssemblyRef.cs" />
+    <Compile Include="System.Data.Services.Client\TextResDescriptionAttribute.cs" />
+    <Compile Include="System.Data.Services.Client\TextRes.cs" />
+    <Compile Include="System.Data.Services.Client\TextResCategoryAttribute.cs" />
+  </ItemGroup>
+  <ItemGroup xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <EmbeddedResource Include="System.Data.Services.Client.resx">
+      <LogicalName>System.Data.Services.Client.resources</LogicalName>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <ProjectReference Include="..\System.Spatial.PowerShell\System.Spatial.PowerShell.csproj">
+      <Project>{16E74297-50B6-44A4-A3EB-6DD23F27884B}</Project>
+      <Name>System.Spatial.PowerShell</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Microsoft.Data.Edm.PowerShell\Microsoft.Data.Edm.PowerShell.csproj">
+      <Project>{72D167B9-C5C7-44A6-9C1B-A3D925153411}</Project>
+      <Name>Microsoft.Data.Edm.PowerShell</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Microsoft.Data.OData.PowerShell\Microsoft.Data.OData.PowerShell.csproj">
+      <Project>{6E31202F-874A-440B-AD71-209FFB503EC7}</Project>
+      <Name>Microsoft.Data.OData.PowerShell</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\External\System.ServiceModel\System.ServiceModel.Web\System.ServiceModel.Web-net_4_0.csproj">
+      <Project>{154AEF28-C81F-405D-9072-9F52580E3E7D}</Project>
+      <Name>System.ServiceModel.Web-net_4_0</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\External\System.ServiceModel\System.ServiceModel\System.ServiceModel-net_4_0.csproj">
+      <Project>{155AEF28-C81F-405D-9072-9D52780E3E70}</Project>
+      <Name>System.ServiceModel-net_4_0</Name>
+    </ProjectReference>
+  </ItemGroup>
+</VisualStudioProject>

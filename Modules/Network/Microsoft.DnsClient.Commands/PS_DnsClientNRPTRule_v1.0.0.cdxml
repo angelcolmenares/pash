@@ -1,0 +1,382 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<PowerShellMetadata xmlns="http://schemas.microsoft.com/cmdlets-over-objects/2009/11">
+  <Class ClassName="root/Microsoft/Windows/DNS/PS_DnsClientNrptRule" ClassVersion="1.0.0">
+    <Version>1.0.0</Version>
+    <DefaultNoun>DnsClientNrptRule</DefaultNoun>
+    <StaticCmdlets>
+      <Cmdlet>
+        <CmdletMetadata Verb="Add" ConfirmImpact="Medium" />
+        <Method MethodName="Add">
+          <ReturnValue>
+            <Type PSType="System.Int32" />
+            <CmdletOutputMetadata>
+              <ErrorCode />
+            </CmdletOutputMetadata>
+          </ReturnValue>
+          <Parameters>
+            <Parameter ParameterName="GpoName">
+              <Type PSType="System.String" />
+              <CmdletParameterMetadata ValueFromPipelineByPropertyName="true" />
+            </Parameter>
+            <Parameter ParameterName="DANameServers">
+              <Type PSType="System.String[]" />
+              <CmdletParameterMetadata Aliases="DirectAccessDnsServers" ValueFromPipelineByPropertyName="true" />
+            </Parameter>
+            <Parameter ParameterName="DAIPsecRequired">
+              <Type PSType="System.Management.Automation.SwitchParameter" />
+              <CmdletParameterMetadata Aliases="DirectAccessQueryIPsecRequired" ValueFromPipelineByPropertyName="true" />
+            </Parameter>
+            <Parameter ParameterName="DAIPsecEncryptionType">
+              <Type PSType="System.String" />
+              <CmdletParameterMetadata Aliases="DirectAccessQueryIPSSECEncryption" ValueFromPipelineByPropertyName="true">
+	      	<AllowEmptyString />
+		<AllowNull />
+                <ValidateSet>
+		  <AllowedValue></AllowedValue>
+                  <AllowedValue>None</AllowedValue>
+                  <AllowedValue>Low</AllowedValue>
+                  <AllowedValue>Medium</AllowedValue>
+                  <AllowedValue>High</AllowedValue>
+                </ValidateSet>
+              </CmdletParameterMetadata>
+            </Parameter>
+            <Parameter ParameterName="DAProxyServerName">
+              <Type PSType="System.String" />
+              <CmdletParameterMetadata Aliases="DirectAccessProxyName" ValueFromPipelineByPropertyName="true" />
+            </Parameter>
+            <Parameter ParameterName="DnsSecEnable">
+              <Type PSType="System.Management.Automation.SwitchParameter" />
+              <CmdletParameterMetadata Aliases="DnsSecEnabled" ValueFromPipelineByPropertyName="true" />
+            </Parameter>
+            <Parameter ParameterName="DnsSecIPsecRequired">
+              <Type PSType="System.Management.Automation.SwitchParameter" />
+              <CmdletParameterMetadata Aliases="DnsSecQueryIPsecRequired" ValueFromPipelineByPropertyName="true" />
+            </Parameter>
+            <Parameter ParameterName="DnsSecIPsecEncryptionType">
+              <Type PSType="System.String" />
+              <CmdletParameterMetadata Aliases="DnsSecQueryIPsecEncryption" ValueFromPipelineByPropertyName="true">
+	      	<AllowEmptyString />
+		<AllowNull />
+                <ValidateSet>
+		  <AllowedValue></AllowedValue>
+                  <AllowedValue>None</AllowedValue>
+                  <AllowedValue>Low</AllowedValue>
+                  <AllowedValue>Medium</AllowedValue>
+                  <AllowedValue>High</AllowedValue>
+                </ValidateSet>
+              </CmdletParameterMetadata>
+            </Parameter>
+            <Parameter ParameterName="NameServers">
+              <Type PSType="System.String[]" />
+              <CmdletParameterMetadata ValueFromPipelineByPropertyName="true" />
+            </Parameter>
+            <Parameter ParameterName="NameEncoding">
+              <Type PSType="System.String" />
+              <CmdletParameterMetadata ValueFromPipelineByPropertyName="true">
+                <ValidateSet>
+                  <AllowedValue>Disable</AllowedValue>
+                  <AllowedValue>Utf8WithMapping</AllowedValue>
+                  <AllowedValue>Utf8WithoutMapping</AllowedValue>
+                  <AllowedValue>Punycode</AllowedValue>
+                </ValidateSet>
+              </CmdletParameterMetadata>
+            </Parameter>
+            <Parameter ParameterName="Namespace">
+              <Type PSType="System.String[]" />
+              <CmdletParameterMetadata IsMandatory="true" Position="1" ValueFromPipelineByPropertyName="true">
+                <ValidateNotNull />
+                <ValidateNotNullOrEmpty />
+              </CmdletParameterMetadata>
+            </Parameter>
+            <Parameter ParameterName="Server">
+              <Type PSType="System.String" />
+              <CmdletParameterMetadata ValueFromPipelineByPropertyName="true" />
+            </Parameter>
+            <Parameter ParameterName="DAProxyType">
+              <Type PSType="System.String" />
+              <CmdletParameterMetadata Aliases="DirectAccessProxyType" ValueFromPipelineByPropertyName="true">
+	      	<AllowEmptyString />
+		<AllowNull />
+                <ValidateSet>
+		  <AllowedValue></AllowedValue>
+                  <AllowedValue>NoProxy</AllowedValue>
+                  <AllowedValue>UseDefault</AllowedValue>
+                  <AllowedValue>UseProxyName</AllowedValue>
+                </ValidateSet>
+              </CmdletParameterMetadata>
+            </Parameter>
+            <Parameter ParameterName="DnsSecValidationRequired">
+              <Type PSType="System.Management.Automation.SwitchParameter" />
+              <CmdletParameterMetadata ValueFromPipelineByPropertyName="true" />
+            </Parameter>
+            <Parameter ParameterName="DAEnable">
+              <Type PSType="System.Management.Automation.SwitchParameter" />
+              <CmdletParameterMetadata Aliases="DirectAccessEnabled" ValueFromPipelineByPropertyName="true" />
+            </Parameter>
+            <Parameter ParameterName="IPsecTrustAuthority">
+              <Type PSType="System.String" />
+              <CmdletParameterMetadata Aliases="IPsecCARestriction" ValueFromPipelineByPropertyName="true" />
+            </Parameter>
+            <Parameter ParameterName="Comment">
+              <Type PSType="System.String" />
+              <CmdletParameterMetadata ValueFromPipelineByPropertyName="true" />
+            </Parameter>
+            <Parameter ParameterName="DisplayName">
+              <Type PSType="System.String" />
+              <CmdletParameterMetadata ValueFromPipelineByPropertyName="true" />
+            </Parameter>
+            <Parameter ParameterName="PassThru">
+              <Type PSType="System.Management.Automation.SwitchParameter" />
+              <CmdletParameterMetadata>
+                <ValidateNotNull />
+                <ValidateNotNullOrEmpty />
+              </CmdletParameterMetadata>
+            </Parameter>
+            <Parameter ParameterName="CmdletOutput">
+              <Type PSType="Microsoft.Management.Infrastructure.CimInstance" ETSType="Microsoft.Management.Infrastructure.CimInstance#DnsClientNrptRule" />
+              <CmdletOutputMetadata />
+            </Parameter>
+          </Parameters>
+        </Method>
+      </Cmdlet>
+      <Cmdlet>
+        <CmdletMetadata Verb="Get" />
+        <Method MethodName="Get">
+          <ReturnValue>
+            <Type PSType="System.Int32" />
+            <CmdletOutputMetadata>
+              <ErrorCode />
+            </CmdletOutputMetadata>
+          </ReturnValue>
+          <Parameters>
+            <Parameter ParameterName="GpoName">
+              <Type PSType="System.String" />
+              <CmdletParameterMetadata ValueFromPipelineByPropertyName="true">
+                <ValidateNotNull />
+                <ValidateNotNullOrEmpty />
+              </CmdletParameterMetadata>
+            </Parameter>
+            <Parameter ParameterName="Name">
+              <Type PSType="System.String[]" />
+              <CmdletParameterMetadata Position="1" ValueFromPipelineByPropertyName="true">
+                <ValidateNotNull />
+                <ValidateNotNullOrEmpty />
+              </CmdletParameterMetadata>
+            </Parameter>
+            <Parameter ParameterName="Server">
+              <Type PSType="System.String" />
+              <CmdletParameterMetadata ValueFromPipelineByPropertyName="true">
+                <ValidateNotNull />
+                <ValidateNotNullOrEmpty />
+              </CmdletParameterMetadata>
+            </Parameter>
+            <Parameter ParameterName="CmdletOutput">
+              <Type PSType="Microsoft.Management.Infrastructure.CimInstance[]" ETSType="Microsoft.Management.Infrastructure.CimInstance#DnsClientNrptRule" />
+              <CmdletOutputMetadata />
+            </Parameter>
+          </Parameters>
+        </Method>
+      </Cmdlet>
+      <Cmdlet>
+        <CmdletMetadata Verb="Remove" ConfirmImpact="Medium" />
+        <Method MethodName="Remove">
+          <ReturnValue>
+            <Type PSType="System.Int32" />
+            <CmdletOutputMetadata>
+              <ErrorCode />
+            </CmdletOutputMetadata>
+          </ReturnValue>
+          <Parameters>
+            <Parameter ParameterName="GpoName">
+              <Type PSType="System.String" />
+              <CmdletParameterMetadata ValueFromPipelineByPropertyName="true">
+                <ValidateNotNull />
+                <ValidateNotNullOrEmpty />
+              </CmdletParameterMetadata>
+            </Parameter>
+            <Parameter ParameterName="Name">
+              <Type PSType="System.String" />
+              <CmdletParameterMetadata IsMandatory="true" Position="1" ValueFromPipelineByPropertyName="true">
+                <ValidateNotNull />
+                <ValidateNotNullOrEmpty />
+              </CmdletParameterMetadata>
+            </Parameter>
+            <Parameter ParameterName="PassThru">
+              <Type PSType="System.Management.Automation.SwitchParameter" />
+              <CmdletParameterMetadata>
+                <ValidateNotNull />
+                <ValidateNotNullOrEmpty />
+              </CmdletParameterMetadata>
+            </Parameter>
+            <Parameter ParameterName="Server">
+              <Type PSType="System.String" />
+              <CmdletParameterMetadata ValueFromPipelineByPropertyName="true">
+                <ValidateNotNull />
+                <ValidateNotNullOrEmpty />
+              </CmdletParameterMetadata>
+            </Parameter>
+            <Parameter ParameterName="Force">
+              <Type PSType="System.Management.Automation.SwitchParameter" />
+              <CmdletParameterMetadata>
+                <ValidateNotNull />
+                <ValidateNotNullOrEmpty />
+              </CmdletParameterMetadata>
+            </Parameter>
+            <Parameter ParameterName="CmdletOutput">
+              <Type PSType="Microsoft.Management.Infrastructure.CimInstance" ETSType="Microsoft.Management.Infrastructure.CimInstance#DnsClientNrptRule" />
+              <CmdletOutputMetadata />
+            </Parameter>
+          </Parameters>
+        </Method>
+      </Cmdlet>
+      <Cmdlet>
+        <CmdletMetadata Verb="Set" ConfirmImpact="Medium" />
+        <Method MethodName="Set">
+          <ReturnValue>
+            <Type PSType="System.Int32" />
+            <CmdletOutputMetadata>
+              <ErrorCode />
+            </CmdletOutputMetadata>
+          </ReturnValue>
+          <Parameters>
+            <Parameter ParameterName="DAEnable">
+              <Type PSType="System.Boolean" />
+              <CmdletParameterMetadata Aliases="DirectAccessEnabled" ValueFromPipelineByPropertyName="true">
+                <ValidateNotNull />
+                <ValidateNotNullOrEmpty />
+              </CmdletParameterMetadata>
+            </Parameter>
+            <Parameter ParameterName="DAIPsecEncryptionType">
+              <Type PSType="System.String" />
+              <CmdletParameterMetadata Aliases="DirectAccessQueryIPSSECEncryption" ValueFromPipelineByPropertyName="true">
+	      	<AllowEmptyString />
+		<AllowNull />
+                <ValidateSet>
+		  <AllowedValue></AllowedValue>
+                  <AllowedValue>None</AllowedValue>
+                  <AllowedValue>Low</AllowedValue>
+                  <AllowedValue>Medium</AllowedValue>
+                  <AllowedValue>High</AllowedValue>
+                </ValidateSet>
+              </CmdletParameterMetadata>
+            </Parameter>
+            <Parameter ParameterName="DAIPsecRequired">
+              <Type PSType="Nullable[System.Boolean]" />
+              <CmdletParameterMetadata Aliases="DirectAccessQueryIPsecRequired" ValueFromPipelineByPropertyName="true" />
+            </Parameter>
+            <Parameter ParameterName="DANameServers">
+              <Type PSType="System.String[]" />
+              <CmdletParameterMetadata Aliases="DirectAccessDNSServers" ValueFromPipelineByPropertyName="true" />
+            </Parameter>
+            <Parameter ParameterName="DAProxyServerName">
+              <Type PSType="System.String" />
+              <CmdletParameterMetadata Aliases="DirectAccessProxyName" ValueFromPipelineByPropertyName="true" />
+            </Parameter>
+            <Parameter ParameterName="DAProxyType">
+              <Type PSType="System.String" />
+              <CmdletParameterMetadata Aliases="DirectAccessProxyType" ValueFromPipelineByPropertyName="true">
+	      	<AllowEmptyString />
+		<AllowNull />
+                <ValidateSet>
+		  <AllowedValue></AllowedValue>
+                  <AllowedValue>NoProxy</AllowedValue>
+                  <AllowedValue>UseDefault</AllowedValue>
+                  <AllowedValue>UseProxyName</AllowedValue>
+                </ValidateSet>
+              </CmdletParameterMetadata>
+            </Parameter>
+            <Parameter ParameterName="Comment">
+              <Type PSType="System.String" />
+              <CmdletParameterMetadata ValueFromPipelineByPropertyName="true" />
+            </Parameter>
+            <Parameter ParameterName="DnsSecEnable">
+              <Type PSType="System.Boolean" />
+              <CmdletParameterMetadata Aliases="DnsSecEnabled" ValueFromPipelineByPropertyName="true" />
+            </Parameter>
+            <Parameter ParameterName="DnsSecIPsecEncryptionType">
+              <Type PSType="System.String" />
+              <CmdletParameterMetadata Aliases="DnsSecQueryIPsecEncryption" ValueFromPipelineByPropertyName="true">
+	      	<AllowEmptyString />
+		<AllowNull />
+                <ValidateSet>
+		  <AllowedValue></AllowedValue>
+                  <AllowedValue>None</AllowedValue>
+                  <AllowedValue>Low</AllowedValue>
+                  <AllowedValue>Medium</AllowedValue>
+                  <AllowedValue>High</AllowedValue>
+                </ValidateSet>
+              </CmdletParameterMetadata>
+            </Parameter>
+            <Parameter ParameterName="DnsSecIPsecRequired">
+              <Type PSType="Nullable[System.Boolean]" />
+              <CmdletParameterMetadata Aliases="DnsSecQueryIPsecRequired" ValueFromPipelineByPropertyName="true" />
+            </Parameter>
+            <Parameter ParameterName="DnsSecValidationRequired">
+              <Type PSType="Nullable[System.Boolean]" />
+              <CmdletParameterMetadata ValueFromPipelineByPropertyName="true" />
+            </Parameter>
+            <Parameter ParameterName="GpoName">
+              <Type PSType="System.String" />
+              <CmdletParameterMetadata ValueFromPipelineByPropertyName="true" />
+            </Parameter>
+            <Parameter ParameterName="IPsecTrustAuthority">
+              <Type PSType="System.String" />
+              <CmdletParameterMetadata Aliases="IPsecCARestriction" ValueFromPipelineByPropertyName="true" />
+            </Parameter>
+            <Parameter ParameterName="Name">
+              <Type PSType="System.String" />
+              <CmdletParameterMetadata IsMandatory="true" Position="1" ValueFromPipelineByPropertyName="true">
+                <ValidateNotNull />
+                <ValidateNotNullOrEmpty />
+              </CmdletParameterMetadata>
+            </Parameter>
+            <Parameter ParameterName="NameEncoding">
+              <Type PSType="System.String" />
+              <CmdletParameterMetadata ValueFromPipelineByPropertyName="true">
+                <ValidateSet>
+                  <AllowedValue>Disable</AllowedValue>
+                  <AllowedValue>Utf8WithMapping</AllowedValue>
+                  <AllowedValue>Utf8WithoutMapping</AllowedValue>
+                  <AllowedValue>Punycode</AllowedValue>
+                </ValidateSet>
+              </CmdletParameterMetadata>
+            </Parameter>
+            <Parameter ParameterName="NameServers">
+              <Type PSType="System.String[]" />
+              <CmdletParameterMetadata ValueFromPipelineByPropertyName="true" />
+            </Parameter>
+            <Parameter ParameterName="Namespace">
+              <Type PSType="System.String[]" />
+              <CmdletParameterMetadata ValueFromPipelineByPropertyName="true">
+                <ValidateNotNull />
+                <ValidateNotNullOrEmpty />
+              </CmdletParameterMetadata>
+            </Parameter>
+            <Parameter ParameterName="Server">
+              <Type PSType="System.String" />
+              <CmdletParameterMetadata ValueFromPipelineByPropertyName="true">
+                <ValidateNotNull />
+                <ValidateNotNullOrEmpty />
+              </CmdletParameterMetadata>
+            </Parameter>
+            <Parameter ParameterName="DisplayName">
+              <Type PSType="System.String" />
+              <CmdletParameterMetadata ValueFromPipelineByPropertyName="true" />
+            </Parameter>
+            <Parameter ParameterName="PassThru">
+              <Type PSType="System.Management.Automation.SwitchParameter" />
+              <CmdletParameterMetadata>
+                <ValidateNotNull />
+                <ValidateNotNullOrEmpty />
+              </CmdletParameterMetadata>
+            </Parameter>
+            <Parameter ParameterName="CmdletOutput">
+              <Type PSType="Microsoft.Management.Infrastructure.CimInstance" ETSType="Microsoft.Management.Infrastructure.CimInstance#DnsClientNrptRule" />
+              <CmdletOutputMetadata />
+            </Parameter>
+          </Parameters>
+        </Method>
+      </Cmdlet>
+    </StaticCmdlets>
+  </Class>
+</PowerShellMetadata>

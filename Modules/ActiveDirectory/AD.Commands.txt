@@ -1,0 +1,21 @@
+Get-ADRootDSE -Server "192.168.1.20" -Credential "METRO\Administrator"
+
+Get-ADForest -Server "192.168.1.20" -Credential "METRO\Administrator"
+
+Get-ADDomain -Server "192.168.1.20" -Credential "METRO\Administrator"
+
+Get-ADDomainController -Server "192.168.1.20" -Credential "METRO\Administrator"
+
+Get-ADGroup -Server "192.168.1.20" -Credential "METRO\Administrator" -Filter *
+
+Get-ADComputer -Server "192.168.1.20" -Credential "METRO\Administrator" -Filter *
+
+Get-ADUser -Server "192.168.1.20" -Credential "METRO\Administrator" -Filter *
+
+Get-ADUserResultantPasswordPolicy -Server "192.168.1.20" -Credential "METRO\Administrator"
+
+Get-ADGroupMember -Server "192.168.1.20" -Credential "METRO\Administrator" Administrators
+
+Get-Process | where {$_ -like "T*"}
+
+Register-ScheduledJob -Name 'System Job 1' -Credential 'bruno' -Trigger (New-JobTrigger -Daily -At 03:00) -ScriptBlock { echo 'Hello World' }

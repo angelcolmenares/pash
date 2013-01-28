@@ -1,0 +1,33 @@
+namespace Microsoft.Data.Edm.Expressions
+{
+	internal enum EdmExpressionKind
+	{
+		None,
+		BinaryConstant,
+		BooleanConstant,
+		DateTimeConstant,
+		DateTimeOffsetConstant,
+		DecimalConstant,
+		FloatingConstant,
+		GuidConstant,
+		IntegerConstant,
+		StringConstant,
+		TimeConstant,
+		Null,
+		Record,
+		Collection,
+		Path,
+		ParameterReference,
+		FunctionReference,
+		PropertyReference,
+		ValueTermReference,
+		EntitySetReference,
+		EnumMemberReference,
+		If,
+		AssertType,
+		IsType,
+		FunctionApplication,
+		LabeledExpressionReference,
+		Labeled
+	}
+}

@@ -1,0 +1,93 @@
+namespace System.Management.Automation
+{
+    using System;
+
+    internal static class RemoteDataNameStrings
+    {
+        internal const string Action = "Action";
+        internal const string AddToHistory = "AddToHistory";
+        internal const string ApartmentState = "ApartmentState";
+        internal const string ApplicationArguments = "ApplicationArguments";
+        internal const string ApplicationPrivateData = "ApplicationPrivateData";
+        internal const string AvailableRunspaces = "AvailableRunspaces";
+        internal const string CallId = "ci";
+        internal const string ClientPowerShellId = "ClientPowerShellId";
+        internal const string ClientRunspacePoolId = "ClientRunspacePoolId";
+        internal const string Commands = "Cmds";
+        internal const string CommandText = "Cmd";
+        internal const string DataType = "DataType";
+        internal const string Destination = "Destination";
+        internal const string DiscoveryArgumentList = "ArgumentList";
+        internal const string DiscoveryCount = "Count";
+        internal const string DiscoveryModule = "Namespace";
+        internal const string DiscoveryName = "Name";
+        internal const string DiscoveryType = "CommandType";
+        internal const string EncryptedSessionKey = "EncryptedSessionKey";
+        internal const string ExceptionAsErrorRecord = "ExceptionAsErrorRecord";
+        internal const string ExtraCommands = "ExtraCmds";
+        internal const string HistoryString = "History";
+        internal const string HostInfo = "HostInfo";
+        internal const string IsNegotiationSucceeded = "IsNegotiationSucceeded";
+        internal const string IsNested = "IsNested";
+        internal const string IsScript = "IsScript";
+        internal const string MaxRunspaces = "MaxRunspaces";
+        internal const string MergeDebug = "MergeDebug";
+        internal const string MergeError = "MergeError";
+        internal const string MergeMyResult = "MergeMyResult";
+        internal const string MergeToResult = "MergeToResult";
+        internal const string MergeUnclaimedPreviousCommandResults = "MergePreviousResults";
+        internal const string MergeVerbose = "MergeVerbose";
+        internal const string MergeWarning = "MergeWarning";
+        internal const string MethodArrayElements = "mae";
+        internal const string MethodArrayElementType = "mat";
+        internal const string MethodArrayLengths = "mal";
+        internal const string MethodException = "me";
+        internal const string MethodId = "mi";
+        internal const string MethodParameters = "mp";
+        internal const string MethodReturnValue = "mr";
+        internal const string MinRunspaces = "MinRunspaces";
+        internal const string MustComply = "MustComply";
+        internal const string NoInput = "NoInput";
+        internal const string ObjectType = "T";
+        internal const string ObjectValue = "V";
+        internal const string ParameterName = "N";
+        internal const string Parameters = "Args";
+        internal const string ParameterValue = "V";
+        internal const string PipelineState = "PipelineState";
+        internal const string PowerShell = "PowerShell";
+        internal const string ProgressRecord_Activity = "Activity";
+        internal const string ProgressRecord_ActivityId = "ActivityId";
+        internal const string ProgressRecord_CurrentOperation = "CurrentOperation";
+        internal const string ProgressRecord_ParentActivityId = "ParentActivityId";
+        internal const string ProgressRecord_PercentComplete = "PercentComplete";
+        internal const string ProgressRecord_SecondsRemaining = "SecondsRemaining";
+        internal const string ProgressRecord_StatusDescription = "StatusDescription";
+        internal const string ProgressRecord_Type = "Type";
+        internal const string PS_STARTUP_PROTOCOL_VERSION_NAME = "protocolversion";
+        internal const string PSEventArgsComputerName = "PSEventArgs.ComputerName";
+        internal const string PSEventArgsEventIdentifier = "PSEventArgs.EventIdentifier";
+        internal const string PSEventArgsMessageData = "PSEventArgs.MessageData";
+        internal const string PSEventArgsRunspaceId = "PSEventArgs.RunspaceId";
+        internal const string PSEventArgsSender = "PSEventArgs.Sender";
+        internal const string PSEventArgsSourceArgs = "PSEventArgs.SourceArgs";
+        internal const string PSEventArgsSourceIdentifier = "PSEventArgs.SourceIdentifier";
+        internal const string PSEventArgsTimeGenerated = "PSEventArgs.TimeGenerated";
+        internal const string PSInvocationSettings = "PSInvocationSettings";
+        internal const string PSv2TabExpansionFunction = "TabExpansion";
+        internal const string PSv2TabExpansionFunctionText = "\r\n            param($line, $lastWord)\r\n            & {\r\n                function Write-Members ($sep='.')\r\n                {\r\n                    Invoke-Expression ('$_val=' + $_expression)\r\n\r\n                    $_method = [Management.Automation.PSMemberTypes] `\r\n                        'Method,CodeMethod,ScriptMethod,ParameterizedProperty'\r\n                    if ($sep -eq '.')\r\n                    {\r\n                        $params = @{view = 'extended','adapted','base'}\r\n                    }\r\n                    else\r\n                    {\r\n                        $params = @{static=$true}\r\n                    }\r\n        \r\n                    foreach ($_m in ,$_val | Get-Member @params $_pat |\r\n                        Sort-Object membertype,name)\r\n                    {\r\n                        if ($_m.MemberType -band $_method)\r\n                        {\r\n                            # Return a method...\r\n                            $_base + $_expression + $sep + $_m.name + '('\r\n                        }\r\n                        else {\r\n                            # Return a property...\r\n                            $_base + $_expression + $sep + $_m.name\r\n                        }\r\n                    }\r\n                }\r\n\r\n                # If a command name contains any of these chars, it needs to be quoted\r\n                $_charsRequiringQuotes = ('`&@''#{}()$,;|<> ' + \"`t\").ToCharArray()\r\n\r\n                # If a variable name contains any of these characters it needs to be in braces\r\n                $_varsRequiringQuotes = ('-`&@''#{}()$,;|<> .\\/' + \"`t\").ToCharArray()\r\n\r\n                switch -regex ($lastWord)\r\n                {\r\n                    # Handle property and method expansion rooted at variables...\r\n                    # e.g. $a.b.<tab>\r\n                    '(^.*)(\\$(\\w|:|\\.)+)\\.([*\\w]*)$' {\r\n                        $_base = $matches[1]\r\n                        $_expression = $matches[2]\r\n                        $_pat = $matches[4] + '*'\r\n                        Write-Members\r\n                        break;\r\n                    }\r\n\r\n                    # Handle simple property and method expansion on static members...\r\n                    # e.g. [datetime]::n<tab>\r\n                    '(^.*)(\\[(\\w|\\.|\\+)+\\])(\\:\\:|\\.){0,1}([*\\w]*)$' {\r\n                        $_base = $matches[1]\r\n                        $_expression = $matches[2]\r\n                        $_pat = $matches[5] + '*'\r\n                        Write-Members $(if (! $matches[4]) {'::'} else {$matches[4]})\r\n                        break;\r\n                    }\r\n\r\n                    # Handle complex property and method expansion on static members\r\n                    # where there are intermediate properties...\r\n                    # e.g. [datetime]::now.d<tab>\r\n                    '(^.*)(\\[(\\w|\\.|\\+)+\\](\\:\\:|\\.)(\\w+\\.)+)([*\\w]*)$' {\r\n                        $_base = $matches[1]  # everything before the expression\r\n                        $_expression = $matches[2].TrimEnd('.') # expression less trailing '.'\r\n                        $_pat = $matches[6] + '*'  # the member to look for...\r\n                        Write-Members\r\n                        break;\r\n                    }\r\n\r\n                    # Handle variable name expansion...\r\n                    '(^.*\\$)([*\\w:]+)$' {\r\n                        $_prefix = $matches[1]\r\n                        $_varName = $matches[2]\r\n                        $_colonPos = $_varname.IndexOf(':')\r\n                        if ($_colonPos -eq -1)\r\n                        {\r\n                            $_varName = 'variable:' + $_varName\r\n                            $_provider = ''\r\n                        }\r\n                        else\r\n                        {\r\n                            $_provider = $_varname.Substring(0, $_colonPos+1)\r\n                        }\r\n\r\n                        foreach ($_v in Get-ChildItem ($_varName + '*') | sort Name)\r\n                        { \r\n                            $_nameFound = $_v.name\r\n                            $(if ($_nameFound.IndexOfAny($_varsRequiringQuotes) -eq -1) {'{0}{1}{2}'}\r\n                            else {'{0}{{{1}{2}}}'}) -f $_prefix, $_provider, $_nameFound\r\n                        }\r\n                        break;\r\n                    }\r\n\r\n                    # Do completion on parameters...\r\n                    '^-([*\\w0-9]*)' {\r\n                        $_pat = $matches[1] + '*'\r\n\r\n                        # extract the command name from the string\r\n                        # first split the string into statements and pipeline elements\r\n                        # This doesn't handle strings however.\r\n                        $_command = [regex]::Split($line, '[|;=]')[-1]\r\n\r\n                        #  Extract the trailing unclosed block e.g. ls | foreach { cp\r\n                        if ($_command -match '\\{([^\\{\\}]*)$')\r\n                        {\r\n                            $_command = $matches[1]\r\n                        }\r\n\r\n                        # Extract the longest unclosed parenthetical expression...\r\n                        if ($_command -match '\\(([^()]*)$')\r\n                        {\r\n                            $_command = $matches[1]\r\n                        }\r\n\r\n                        # take the first space separated token of the remaining string\r\n                        # as the command to look up. Trim any leading or trailing spaces\r\n                        # so you don't get leading empty elements.\r\n                        $_command = $_command.TrimEnd('-')\r\n                        $_command,$_arguments = $_command.Trim().Split()\r\n\r\n                        # now get the info object for it, -ArgumentList will force aliases to be resolved\r\n                        # it also retrieves dynamic parameters\r\n                        try\r\n                        {\r\n                            $_command = @(Get-Command -type 'Alias,Cmdlet,Function,Filter,ExternalScript' `\r\n                                -Name $_command -ArgumentList $_arguments)[0]\r\n                        }\r\n                        catch\r\n                        {\r\n                            # see if the command is an alias. If so, resolve it to the real command\r\n                            if(Test-Path alias:\\$_command)\r\n                            {\r\n                                $_command = @(Get-Command -Type Alias $_command)[0].Definition\r\n                            }\r\n\r\n                            # If we were unsuccessful retrieving the command, try again without the parameters\r\n                            $_command = @(Get-Command -type 'Cmdlet,Function,Filter,ExternalScript' `\r\n                                -Name $_command)[0]\r\n                        }\r\n\r\n                        # remove errors generated by the command not being found, and break\r\n                        if(-not $_command) { $error.RemoveAt(0); break; }\r\n\r\n                        # expand the parameter sets and emit the matching elements\r\n                        # need to use psbase.Keys in case 'keys' is one of the parameters\r\n                        # to the cmdlet\r\n                        foreach ($_n in $_command.Parameters.psbase.Keys)\r\n                        {\r\n                            if ($_n -like $_pat) { '-' + $_n }\r\n                        }\r\n                        break;\r\n                    }\r\n\r\n                    # Tab complete against history either #<pattern> or #<id>\r\n                    '^#(\\w*)' {\r\n                        $_pattern = $matches[1]\r\n                        if ($_pattern -match '^[0-9]+$')\r\n                        {\r\n                            Get-History -ea SilentlyContinue -Id $_pattern | Foreach { $_.CommandLine } \r\n                        }\r\n                        else\r\n                        {\r\n                            $_pattern = '*' + $_pattern + '*'\r\n                            Get-History -Count 32767 | Sort-Object -Descending Id| Foreach { $_.CommandLine } | where { $_ -like $_pattern }\r\n                        }\r\n                        break;\r\n                    }\r\n\r\n                    # try to find a matching command...\r\n                    default {\r\n                        # parse the script...\r\n                        $_tokens = [System.Management.Automation.PSParser]::Tokenize($line,\r\n                            [ref] $null)\r\n\r\n                        if ($_tokens)\r\n                        {\r\n                            $_lastToken = $_tokens[$_tokens.count - 1]\r\n                            if ($_lastToken.Type -eq 'Command')\r\n                            {\r\n                                $_cmd = $_lastToken.Content\r\n\r\n                                # don't look for paths...\r\n                                if ($_cmd.IndexOfAny('/\\:') -eq -1)\r\n                                {\r\n                                    # handle parsing errors - the last token string should be the last\r\n                                    # string in the line...\r\n                                    if ($lastword.Length -ge $_cmd.Length -and \r\n                                        $lastword.substring($lastword.length-$_cmd.length) -eq $_cmd)\r\n                                    {\r\n                                        $_pat = $_cmd + '*'\r\n                                        $_base = $lastword.substring(0, $lastword.length-$_cmd.length)\r\n\r\n                                        # get files in current directory first, then look for commands...\r\n                                        $( try {Resolve-Path -ea SilentlyContinue -Relative $_pat } catch {} ;\r\n                                           try { $ExecutionContext.InvokeCommand.GetCommandName($_pat, $true, $false) |\r\n                                               Sort-Object -Unique } catch {} ) |\r\n                                                   # If the command contains non-word characters (space, ) ] ; ) etc.)\r\n                                                   # then it needs to be quoted and prefixed with &\r\n                                                   ForEach-Object {\r\n                                                        if ($_.IndexOfAny($_charsRequiringQuotes) -eq -1) { $_ }\r\n                                                        elseif ($_.IndexOf('''') -ge 0) {'& ''{0}''' -f $_.Replace('''','''''') }\r\n                                                        else { '& ''{0}''' -f $_ }} |\r\n                                                   ForEach-Object {'{0}{1}' -f $_base,$_ }\r\n                                    }\r\n                                }\r\n                            }\r\n                        }\r\n                    }\r\n                }\r\n            }\r\n        ";
+        internal const string PSVersion = "PSVersion";
+        internal const string PublicKey = "PublicKey";
+        internal const string PublicKeyAsXml = "PublicKeyAsXml";
+        internal const string RedirectShellErrorOutputPipe = "RedirectShellErrorOutputPipe";
+        internal const string RemoteStreamOptions = "RemoteStreamOptions";
+        internal const string RemotingTargetInterface = "RemotingTargetInterface";
+        internal const string RunspacePoolOperationResponse = "SetMinMaxRunspacesResponse";
+        internal const string RunspaceState = "RunspaceState";
+        internal const string SenderInfoPreferenceVariable = "PSSenderInfo";
+        internal const string SerializationVersion = "SerializationVersion";
+        internal const string ThreadOptions = "PSThreadOptions";
+        internal const string TimeZone = "TimeZone";
+        internal const string UseLocalScopeNullable = "UseLocalScope";
+    }
+}
+

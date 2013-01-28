@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>10.0.0</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{F7243B5E-D4FA-43C0-B27D-C83175D588DD}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>Mono.Data.OData.PowerShell</RootNamespace>
+    <AssemblyName>Mono.Data.OData.PowerShell</AssemblyName>
+    <SignAssembly>True</SignAssembly>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <AssemblyOriginatorKeyFile>..\..\..\mono.snk</AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>True</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>False</Optimize>
+    <OutputPath>..\..\..\v1.0\Modules\OData</OutputPath>
+    <DefineConstants>DEBUG;</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>False</ConsolePause>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>none</DebugType>
+    <Optimize>True</Optimize>
+    <OutputPath>..\..\..\v1.0\Modules\OData</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>False</ConsolePause>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.Linq" />
+    <Reference Include="PostSharp">
+      <HintPath>..\..\..\lib\PostSharp.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <ItemGroup>
+    <Folder Include="Formats\" />
+    <Folder Include="en-US\" />
+    <Folder Include="Provider\" />
+    <Folder Include="Provider\Nodes\" />
+    <Folder Include="Provider\Utility\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Formats\OData.Formats.ps1xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="license.txt" />
+    <None Include="OData.psd1">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="en-US\about_OData.help.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="en-US\about_OData_Format.help.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="en-US\about_OData_Query.help.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="en-US\about_OData_Version.help.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="OData.psm1">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Provider\ODataDrive.cs" />
+    <Compile Include="Provider\ODataPathNodeProcessor.cs" />
+    <Compile Include="Provider\ODataProvider.cs" />
+    <Compile Include="Provider\Nodes\ODataCollectionNodeFactory.cs" />
+    <Compile Include="Provider\Nodes\ODataDynamicParameters.cs" />
+    <Compile Include="Provider\Nodes\ODataEntityContentReader.cs" />
+    <Compile Include="Provider\Nodes\ODataEntryNodeFactory.cs" />
+    <Compile Include="Provider\Nodes\ODataLinkNodeFactory.cs" />
+    <Compile Include="Provider\Nodes\ODataNodeFactoryBase.cs" />
+    <Compile Include="Provider\Nodes\ODataRootNodeFactory.cs" />
+    <Compile Include="Provider\Utility\OData.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\System.Management.Automation\System.Management.Automation.csproj">
+      <Project>{3AA23D43-1616-4C39-95D6-D26E63E7D5AB}</Project>
+      <Name>System.Management.Automation</Name>
+      <Private>False</Private>
+    </ProjectReference>
+    <ProjectReference Include="..\Mono.Data.PowerShell\Mono.Data.PowerShell.csproj">
+      <Project>{93E2477A-BF87-446D-8077-30E7930C0BF2}</Project>
+      <Name>Mono.Data.PowerShell</Name>
+    </ProjectReference>
+  </ItemGroup>
+</Project>

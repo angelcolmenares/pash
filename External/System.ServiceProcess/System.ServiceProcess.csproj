@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>10.0.0</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{3FC67CBE-D5F2-4CE6-A9E0-8322D04F7DCE}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>System.ServiceProcess</RootNamespace>
+    <AssemblyName>System.ServiceProcess</AssemblyName>
+    <SignAssembly>True</SignAssembly>
+    <AssemblyOriginatorKeyFile>..\..\mono.snk</AssemblyOriginatorKeyFile>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>True</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>False</Optimize>
+    <OutputPath>bin\Debug</OutputPath>
+    <DefineConstants>DEBUG;NET_2_0;NET_4_0;NET_4_5</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>False</ConsolePause>
+    <AllowUnsafeBlocks>True</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>none</DebugType>
+    <Optimize>True</Optimize>
+    <OutputPath>bin\Release</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>False</ConsolePause>
+    <AllowUnsafeBlocks>True</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration.Install" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Core" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <ItemGroup>
+    <Compile Include="PowerBroadcastStatus.cs" />
+    <Compile Include="ServiceAccount.cs" />
+    <Compile Include="ServiceBase.cs" />
+    <Compile Include="ServiceController.cs" />
+    <Compile Include="ServiceControllerImpl.cs" />
+    <Compile Include="ServiceControllerPermission.cs" />
+    <Compile Include="ServiceControllerPermissionAccess.cs" />
+    <Compile Include="ServiceControllerPermissionAttribute.cs" />
+    <Compile Include="ServiceControllerPermissionEntry.cs" />
+    <Compile Include="ServiceControllerPermissionEntryCollection.cs" />
+    <Compile Include="ServiceControllerStatus.cs" />
+    <Compile Include="ServiceInstaller.cs" />
+    <Compile Include="ServiceProcessDescriptionAttribute.cs" />
+    <Compile Include="ServiceProcessInstaller.cs" />
+    <Compile Include="ServiceStartMode.cs" />
+    <Compile Include="ServiceType.cs" />
+    <Compile Include="SessionChangeDescription.cs" />
+    <Compile Include="SessionChangeReason.cs" />
+    <Compile Include="TimeoutException.cs" />
+    <Compile Include="UnixServiceController.cs" />
+    <Compile Include="Win32ServiceController.cs" />
+    <Compile Include="Design\ServiceInstallerDialog.cs" />
+    <Compile Include="Design\ServiceInstallerDialogResult.cs" />
+    <Compile Include="Design\ServiceNameConverter.cs" />
+    <Compile Include="Locale.cs" />
+    <Compile Include="MonoTODOAttribute.cs" />
+    <Compile Include="Consts.cs" />
+    <Compile Include="OSHelper.cs" />
+    <Compile Include="MacOSXServiceController.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Design\" />
+  </ItemGroup>
+</Project>

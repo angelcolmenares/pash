@@ -1,0 +1,60 @@
+TOPIC
+    about_OData_Query
+
+OVERVIEW
+	The OData PowerShell provider supports server-side OData filtering, 
+	searching, and sorting.
+
+DETAILS
+	Most provider cmdlets expose an optional -filter parameter; the 
+	OData PowerShell provider allows you to use this parameter to
+	specify either a standard OData filter expression or query string.
+
+	For example, if you want to filter the set of entities in an OData feed,
+	you can specify an OData filter expression in the -filter parameter value 
+	of the get-childitem cmdlet:
+
+	get-childitem nuget:/packages -filter "Authors eq 'Code Owls LLC'"
+
+	If you need to sort the feed by a custom property, you can specify a full 
+	OData query string in the -filter parameter of the get-childitem cmdlet:
+
+	get-childitem nuget:/packages -filter "`$orderby=Version"
+
+	You can include any valid OData query string in the filter parameter.  For
+	instance, you can filter, sort, and limit the feed results in a single 
+	filter:
+
+	get-childitem nuget:/packages -filter "`$orderby=Version&`$filter=Authors eq 'Code Owls LLC'&`$top=3"
+
+	Alternatively, the OData PowerShell provider supports a set of optional 
+	custom parameters when operating against a path that represents an OData 
+	collection.	 These parameters are:
+
+	-filter: the OData filter expression
+	-top: the number of results to return
+	-skip: the number of results to skip
+	-orderBy: the property name by which to sort the collection entities; by
+		default the results are sorted ascending
+	-descending: a switch to indicate that results should be sorted decending;
+		this switch has no effect when -sortBy is not also specified
+		-select: a list of property names to include in the results
+	-expand: a list of property names to include inline in the results
+	
+	This example performs the identical query as the previous example, using the 
+	optional parameters:
+
+	get-childitem nuget:/packages -orderBy Version -filter "Authors eq 'Code Owls LLC'" -top 3
+
+NOTES
+	When using the dynamic parameters and filter expression, the OData provider
+	will URI-encode the necessary characters for you.  However, when you 
+	specify a query string in the -filter parameter, you must URI-encode any
+	characters necessary to include the query string in an HTTP request URL.
+	
+SEE ALSO
+	http://o.codeplex.com
+	http://www.odata.org
+	http://www.odata.org/developers/protocols/uri-conventions
+	about_OData
+	about_OData_Format

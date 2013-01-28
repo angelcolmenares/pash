@@ -1,0 +1,843 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="NotValidUrlOption" xml:space="preserve">
+    <value>Parameter {0} is not a valid URL option for cmdlet {1}.</value>
+  </data>
+  <data name="UserQuotaExceeded" xml:space="preserve">
+    <value>User quota exceeded</value>
+  </data>
+  <data name="BaseClassNotFound" xml:space="preserve">
+    <value>Base type {0} declared for class {1} is not found</value>
+  </data>
+  <data name="ImmutableParametersNotPresentInParameterSets" xml:space="preserve">
+    <value>The following immutable parameters are not present in any parameter set: {0}</value>
+  </data>
+  <data name="NullPassedForParameter" xml:space="preserve">
+    <value>Null value is passed for field parameter {0}</value>
+  </data>
+  <data name="EntityDoesNotHaveCommand" xml:space="preserve">
+    <value>{0} type entity does not have the following type command {1}</value>
+  </data>
+  <data name="RefWithoutAssociationQual" xml:space="preserve">
+    <value>A class reference must include the [AssociationClass] and [ToEnd] qualifiers.</value>
+  </data>
+  <data name="FieldParamNotPresentInParameterSets" xml:space="preserve">
+    <value>The following field parameters are not present in any parameter set: {0}</value>
+  </data>
+  <data name="PropertyNotFoundInODataResource" xml:space="preserve">
+    <value>Property {0} not found in resource type {1}</value>
+  </data>
+  <data name="NeedSingularReference" xml:space="preserve">
+    <value>The property is declared as an array.  Omit the brackets: an association end must be singular, even if the matching navigation property in the associated class is an array.</value>
+  </data>
+  <data name="InvalidPipeline" xml:space="preserve">
+    <value>The string "{0}" is not a valid PowerShell pipeline.</value>
+  </data>
+  <data name="ConfigMissing" xml:space="preserve">
+    <value>Configuration does not contain a section named '{0}'.</value>
+  </data>
+  <data name="PropertyKey" xml:space="preserve">
+    <value>property {0} has value {1}</value>
+  </data>
+  <data name="InvalidResourceMappingFile" xml:space="preserve">
+    <value>Resource mapping file {0} validation failed. Cause of failure {1}</value>
+  </data>
+  <data name="DuplicateParameterInParameterSet" xml:space="preserve">
+    <value>Parameter {0} already present in parameter set</value>
+  </data>
+  <data name="InvalidResourceProperty" xml:space="preserve">
+    <value>Invalid resource property is sent. Current type {0}</value>
+  </data>
+  <data name="NullParameter" xml:space="preserve">
+    <value>Null parameter is passed. Parameter Name: {0} Additional message {1}</value>
+  </data>
+  <data name="InvalidParametersTypeForCollectionFields" xml:space="preserve">
+    <value>Cmdlet parameters mapped to collection fields need to have a valid non-null type. The following parameters do not have valid types: {0}</value>
+  </data>
+  <data name="InputVariableToODataMethodNull" xml:space="preserve">
+    <value>OData method has passed null value for parameter {0} in function {1}</value>
+  </data>
+  <data name="InvalidResourceType" xml:space="preserve">
+    <value>Invalid resource type {0} encountered</value>
+  </data>
+  <data name="AssociationEndCount" xml:space="preserve">
+    <value>Type {0}: an association class must have exactly two ends.</value>
+  </data>
+  <data name="MissingResourceType" xml:space="preserve">
+    <value>Resource type {0} is not defined.</value>
+  </data>
+  <data name="MandatoryParameterMissing" xml:space="preserve">
+    <value>Cannot execute cmdlet {0}. One or more mandatory parameters are missing.</value>
+  </data>
+  <data name="CreateCommandNotReturnedInstance" xml:space="preserve">
+    <value>Command to perform Create operation for the resource {0} has not returned a newly created resource instance.</value>
+  </data>
+  <data name="InvocationOutputQuotaExceeded" xml:space="preserve">
+    <value>The output of the command has exceeded the configured limit.</value>
+  </data>
+  <data name="CimSchemaNameInImproperFormat" xml:space="preserve">
+    <value>"{0}" is not a well-formed CIM schema name.</value>
+  </data>
+  <data name="SerializeEntityReturnedNull" xml:space="preserve">
+    <value>Serialize entity has returned null</value>
+  </data>
+  <data name="InvalidInvocationData" xml:space="preserve">
+    <value>Not all required properties were specified.</value>
+  </data>
+  <data name="FalseStringValue" xml:space="preserve">
+    <value>false</value>
+  </data>
+  <data name="ParameterAlreadyAddedToCommand" xml:space="preserve">
+    <value>{0} parameter passed to the command {1} is already added earlier in the parameters</value>
+  </data>
+  <data name="IntegerOutOfRange" xml:space="preserve">
+    <value>Integer value {0} is outside of expected integer range (lower bound {1} and upper bound {2})</value>
+  </data>
+  <data name="EmptyResourceSet" xml:space="preserve">
+    <value>No resource set was specified.</value>
+  </data>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="genericInvoke" type="System.Byte[], mscorlib">
+    <value>
+        DQovLyBzY2hlbWEgdG8gaW52b2tlIGEgUG93ZXJTaGVsbCBjbWRsZXQgb3IgcGlwZWxpbmUsIGFuZCB0
+        byB2aWV3IGF2YWlsYWJsZSBjbWRsZXRzLg0KLy8NCi8vIFNlZSBbTVMtT0RBU01dIGluIFdpbmRvd3Mg
+        UHJvdG9jb2wgZG9jdW1lbnRhdGlvbiBmb3IgZGV0YWlscyBvZiBlYWNoIHByb3BlcnR5Lg0KLy8gQW55
+        IGNoYW5nZXMgaGVyZSBtdXN0IGJlIHJlZmxlY3RlZCBpbiB0aGF0IGRvY3VtZW50Lg0KDQoNCi8vIGEg
+        c2luZ2xlIGludm9jYXRpb24gb2YgYSBjbWRsZXQgb3IgcGlwZWxpbmUNCi8vDQpjbGFzcyBQb3dlclNo
+        ZWxsX0NvbW1hbmRJbnZvY2F0aW9uDQp7DQoJW2tleSwgRW1iZWRkZWRJbnN0YW5jZSgiRURNX0dVSUQi
+        KV0gc3RyaW5nIElEOw0KDQoJW1JlcXVpcmVkXSBzdHJpbmcgQ29tbWFuZDsNCg0KCVtSZXF1aXJlZF0g
+        c3RyaW5nIFN0YXR1czsNCg0KCVtSZXF1aXJlZF0gc3RyaW5nIE91dHB1dEZvcm1hdDsNCg0KCXN0cmlu
+        ZyBPdXRwdXQ7DQoNCglbRW1iZWRkZWRJbnN0YW5jZSgiUG93ZXJTaGVsbF9FcnJvclJlY29yZCIpXSBz
+        dHJpbmcgRXJyb3JzW107DQoNCglEYXRlVGltZSBFeHBpcmF0aW9uVGltZTsNCg0KCVNJbnQzMiBXYWl0
+        TXNlYzsNCn07DQoNCi8vIHRoZSBTLk0uQS5FcnJvclJlY29yZCBjbGFzcw0KLy8NCltDb21wbGV4VHlw
+        ZV0NCmNsYXNzIFBvd2VyU2hlbGxfRXJyb3JSZWNvcmQNCnsNCiAgICBzdHJpbmcgRnVsbHlRdWFsaWZp
+        ZWRFcnJvcklkOw0KICAgIA0KCVtFbWJlZGRlZEluc3RhbmNlKCJQb3dlclNoZWxsX0Vycm9yQ2F0ZWdv
+        cnlJbmZvIildIHN0cmluZyBDYXRlZ29yeUluZm87DQogICAgDQoJW0VtYmVkZGVkSW5zdGFuY2UoIlBv
+        d2VyU2hlbGxfRXJyb3JEZXRhaWxzIildIHN0cmluZyBFcnJvckRldGFpbHM7DQogICAgDQogICAgc3Ry
+        aW5nIEV4Y2VwdGlvbjsNCn07DQoNCi8vIHRoZSBTLk0uQS5FcnJvckNhdGVnb3J5SW5mbyBjbGFzcw0K
+        Ly8NCltDb21wbGV4VHlwZV0NCmNsYXNzIFBvd2VyU2hlbGxfRXJyb3JDYXRlZ29yeUluZm8NCnsNCiAg
+        ICBzdHJpbmcgQWN0aXZpdHk7DQogICAgDQogICAgc3RyaW5nIENhdGVnb3J5Ow0KICAgIA0KICAgIHN0
+        cmluZyBSZWFzb247DQogICAgDQogICAgc3RyaW5nIFRhcmdldE5hbWU7DQogICAgDQogICAgc3RyaW5n
+        IFRhcmdldFR5cGU7DQp9Ow0KDQovLyB0aGUgUy5NLkEuRXJyb3JEZXRhaWxzIGNsYXNzDQovLw0KW0Nv
+        bXBsZXhUeXBlXQ0KY2xhc3MgUG93ZXJTaGVsbF9FcnJvckRldGFpbHMNCnsNCiAgICBzdHJpbmcgTWVz
+        c2FnZTsNCiAgICANCiAgICBzdHJpbmcgUmVjb21tZW5kZWRBY3Rpb247DQp9Ow0KDQovLyBhIGNtZGxl
+        dCANCi8vDQpjbGFzcyBQb3dlclNoZWxsX0NvbW1hbmREZXNjcmlwdGlvbg0Kew0KICAgIFtrZXldIHN0
+        cmluZyBOYW1lOw0KICAgIA0KICAgIHN0cmluZyBIZWxwVXJsOw0KICAgIA0KICAgIHN0cmluZyBBbGlh
+        c2VkQ29tbWFuZDsNCiAgICANCglbRW1iZWRkZWRJbnN0YW5jZSgiUG93ZXJTaGVsbF9Db21tYW5kUGFy
+        YW1ldGVyIildIHN0cmluZyBQYXJhbWV0ZXJzW107DQp9Ow0KDQovLyBhIGNtZGxldCBwYXJhbWV0ZXIN
+        Ci8vDQpbQ29tcGxleFR5cGVdDQpjbGFzcyBQb3dlclNoZWxsX0NvbW1hbmRQYXJhbWV0ZXINCnsNCiAg
+        ICBbUmVxdWlyZWRdIHN0cmluZyBOYW1lOw0KDQogICAgW1JlcXVpcmVkXSBzdHJpbmcgUGFyYW1ldGVy
+        VHlwZTsNCn07
+</value>
+  </data>
+  <data name="BatchUpdatesNotSupported" xml:space="preserve">
+    <value>Batch updates are not supported.</value>
+  </data>
+  <data name="ComplexTypeNotSupported" xml:space="preserve">
+    <value>Complex type {0} is not supported.</value>
+  </data>
+  <data name="WrongAssocEndDataType" xml:space="preserve">
+    <value>The property's data type '{0}' does not match the association end's data type '{1}'.</value>
+  </data>
+  <data name="ReferringResourceTypeCannotNull" xml:space="preserve">
+    <value>Referring resource type for serializing the property {0} cannot be null</value>
+  </data>
+  <data name="PropertyRetrievalFailed" xml:space="preserve">
+    <value>Retrieval of property {0} from the object returned from cmdlet execution failed. Cause {1}</value>
+  </data>
+  <data name="KeysMissingInQuery" xml:space="preserve">
+    <value>Query does not specify all necessary keys</value>
+  </data>
+  <data name="NoParameterMapping" xml:space="preserve">
+    <value>Field {0} cannot be translated to a cmdlet parameter.</value>
+  </data>
+  <data name="TrueStringValue" xml:space="preserve">
+    <value>true</value>
+  </data>
+  <data name="UnknownPipelineError" xml:space="preserve">
+    <value>An unspecified error has occurred.</value>
+  </data>
+  <data name="ResourceSetNameDuplicated" xml:space="preserve">
+    <value>Resource set name {0} is duplicated for resource types {0} and {1}</value>
+  </data>
+  <data name="NullWindowsIdentity" xml:space="preserve">
+    <value>Null WindowsIdentity</value>
+  </data>
+  <data name="PropertyNotRef" xml:space="preserve">
+    <value>Property {1} of type {0} is not a reference property.</value>
+  </data>
+  <data name="ParameterCountExceedsLimit" xml:space="preserve">
+    <value>Number of parameter sets are {0} which is more than the limit of 64</value>
+  </data>
+  <data name="InvalidSwitchParameterValue" xml:space="preserve">
+    <value>Allowed values for switch parameters are true/false. Current  value is {0}</value>
+  </data>
+  <data name="NotBaseResourceType" xml:space="preserve">
+    <value>Resource type {0} is not base of resource type {1}</value>
+  </data>
+  <data name="CimFullNameInImproperFormat" xml:space="preserve">
+    <value>"{0}" is not a well-formed CIM class name.</value>
+  </data>
+  <data name="MappingClassNotFound" xml:space="preserve">
+    <value>The &lt;ClassImplementations&gt; section of the resource-mapping file refers to undefined type "{0}".</value>
+  </data>
+  <data name="CmdletExecutionPerRequestQuotaExceeded" xml:space="preserve">
+    <value>The number of cmdlets invoked during this request has exceeded the server quota.</value>
+  </data>
+  <data name="NullIsPassedAsResourceName" xml:space="preserve">
+    <value>Null is passed as resource name</value>
+  </data>
+  <data name="ClrTypeNameForParameterNotValid" xml:space="preserve">
+    <value>Not able to load .Net type {0} specified for parameter {1} </value>
+  </data>
+  <data name="NotValidArrayType" xml:space="preserve">
+    <value>Not a valid array type</value>
+  </data>
+  <data name="AssociationQualWithoutRef" xml:space="preserve">
+    <value>The [AssociationClass] and [ToEnd] qualifiers  apply only to class references.</value>
+  </data>
+  <data name="CustomAutzModuleReturnedZeroMgmtSystem" xml:space="preserve">
+    <value>Custom authorization module has returned zero management systems supported</value>
+  </data>
+  <data name="EmptyCmdletName" xml:space="preserve">
+    <value>Empty cmdlet name is passed.</value>
+  </data>
+  <data name="ResourceTypeIsInvalid" xml:space="preserve">
+    <value>Resource {0} is of type {1} but it is expected to be of type {2}</value>
+  </data>
+  <data name="ComplexTypeSpecifiesKeyProperty" xml:space="preserve">
+    <value>The [key] qualifier is not allowed in types with the [ComplexType] qualifier.</value>
+  </data>
+  <data name="BaseClassesNotPresentOrRecursive" xml:space="preserve">
+    <value>Base classes for following types are either not present or recursive : {0}</value>
+  </data>
+  <data name="InvalidXmlTag" xml:space="preserve">
+    <value>Invalid parameter value tag found in Url options. Expected value: {0} Actual value:{1}</value>
+  </data>
+  <data name="CrossCategoryDerivation" xml:space="preserve">
+    <value>Type {1} cannot be a base class for {0} because they are not the same sort of class.  The base class and the derived class must be both entities, both associations, or both complex types.</value>
+  </data>
+  <data name="ParameterSetNameNullOrEmpty" xml:space="preserve">
+    <value>Parameter set name is either null or empty</value>
+  </data>
+  <data name="CmdletExceededOutputObjectsQuota" xml:space="preserve">
+    <value>Cmdlet {0} has exceeded the server quota for number of output objects. </value>
+  </data>
+  <data name="PropertyNotFoundInPSObject" xml:space="preserve">
+    <value>Property {0} is not found in the object returned from cmdlet execution.</value>
+  </data>
+  <data name="AssemblLoadFromGACFailed" xml:space="preserve">
+    <value>Not able to load assembly {0} from GAC. Cause of the failure is: {1}</value>
+  </data>
+  <data name="IdentityDescription" xml:space="preserve">
+    <value>Identity description. Name: {0}. Authentication type {1}. Is authenticated {2}. Is windows identity {3}</value>
+  </data>
+  <data name="CollectionSeralizationFailedNotValidCollectionType" xml:space="preserve">
+    <value>Serialization of the collection failed. The input type {0} is not a valid collection type.</value>
+  </data>
+  <data name="CommandExecutionFailedWithoutCause" xml:space="preserve">
+    <value>Execution of command {0} failed.</value>
+  </data>
+  <data name="ParameterNotDefinedAsArray" xml:space="preserve">
+    <value>Parameter {0} is not defined as array type in the cmdlet {1}.</value>
+  </data>
+  <data name="ConfigurationHasInvalidEntitySet" xml:space="preserve">
+    <value>Configuration is defining limits on entity set name {0} which does not exist in the schema.</value>
+  </data>
+  <data name="InvalidExpression" xml:space="preserve">
+    <value>Invalid expression was passed to process. The OfType method does not contain resource set or resource type information.</value>
+  </data>
+  <data name="FieldIsNotAKey" xml:space="preserve">
+    <value>Field {0} is not a key field.</value>
+  </data>
+  <data name="ResolveResourceAfterDelete" xml:space="preserve">
+    <value>The resource was deleted and cannot be resolved.</value>
+  </data>
+  <data name="InvalidUpdateHandle" xml:space="preserve">
+    <value>Handle is not an update handle: {0}</value>
+  </data>
+  <data name="CustomAuthzGetMgmtSystemKeyReturnedZero" xml:space="preserve">
+    <value>Custom authorization GetSupportedManagementSystems should return a non-empty collection of management systems supported</value>
+  </data>
+  <data name="InvalidCastTried" xml:space="preserve">
+    <value>Unable to convert from .Net type {0} to type {1}</value>
+  </data>
+  <data name="GetRefCmdletMissing" xml:space="preserve">
+    <value>The cmdlet {1} is needed to support reference property {0}, but it is missing from the PowerShell initial session state that was provided.</value>
+  </data>
+  <data name="NotValidQueueType" xml:space="preserve">
+    <value>Not a valid queue type</value>
+  </data>
+  <data name="NotValidStackType" xml:space="preserve">
+    <value>Not a valid stack type</value>
+  </data>
+  <data name="UnsupportedPrimitiveTypeInMofSchema" xml:space="preserve">
+    <value>Unsupported primitive type is encountered in mof schema file. Type name: {0}</value>
+  </data>
+  <data name="NullOrEmptyStringValue" xml:space="preserve">
+    <value>Parameter {0} is null or empty string</value>
+  </data>
+  <data name="ParameterNotFoundInCommand" xml:space="preserve">
+    <value>{0} parameter passed to the command {1} is not found in list of allowed parameters</value>
+  </data>
+  <data name="ResourceNotFoundException" xml:space="preserve">
+    <value>Resource not found.</value>
+  </data>
+  <data name="DuplicateCommandInEntityMetadata" xml:space="preserve">
+    <value>Command {0} is already present in the Entity Metadata</value>
+  </data>
+  <data name="SettablePropertyNotFound" xml:space="preserve">
+    <value>Set method for the property {0} not found inside the {1} type</value>
+  </data>
+  <data name="NullPassedAsDerivedType" xml:space="preserve">
+    <value>Null derived type is passed to be added in the resource type {0}</value>
+  </data>
+  <data name="NotValidListType" xml:space="preserve">
+    <value>Not a valid list type</value>
+  </data>
+  <data name="CustomModuleMethodInvocationFailed" xml:space="preserve">
+    <value>Invocation of method {0} of type {1} failed. Cause of the problem is: {2}</value>
+  </data>
+  <data name="ConcurrentRequestZero" xml:space="preserve">
+    <value>The number of active requests should not be negative.</value>
+  </data>
+  <data name="NoAccessToNavProperty" xml:space="preserve">
+    <value>The client does not have read access to navigation property '{0}'.</value>
+  </data>
+  <data name="NullPassedForCmdletParameter" xml:space="preserve">
+    <value>Null parameter information is passed for cmdlet parameter {0}</value>
+  </data>
+  <data name="CastingToPSObjectFailed" xml:space="preserve">
+    <value>Casting Object to PSObject failed</value>
+  </data>
+  <data name="DictionaryCacheLockOrAddFailed" xml:space="preserve">
+    <value>Failed to add or lock value in the Dictionary Cache</value>
+  </data>
+  <data name="MissingBaseClass" xml:space="preserve">
+    <value>Type {0} derives from an undefined base class {1}.</value>
+  </data>
+  <data name="SchemaInvalidKeyOrEtagDiscrepancy" xml:space="preserve">
+    <value>Only key and etag attributes may be specified here</value>
+  </data>
+  <data name="CannotAddMoreToCache" xml:space="preserve">
+    <value>The cache currently contains {0} items, which is its maximum limit allowed. </value>
+  </data>
+  <data name="UnknownQualifier" xml:space="preserve">
+    <value>{1}: Qualifier {0} is not supported.</value>
+  </data>
+  <data name="NotImplementedExceptionMessage" xml:space="preserve">
+    <value>Method {0} in interface (1) is not implemented.</value>
+  </data>
+  <data name="EntityTypeResourceNotFound" xml:space="preserve">
+    <value>Entity type resource {0} not found in list of entity type resources</value>
+  </data>
+  <data name="ResourceTypeNotFound" xml:space="preserve">
+    <value>Resource type {0} not found in list of resources</value>
+  </data>
+  <data name="ParametersAddedFromExclusiveSets" xml:space="preserve">
+    <value>Parameter {0} added on cmdlet {1} is mutually exclusive with other parameters already added</value>
+  </data>
+  <data name="ComplexPropertySpecifiesEtag" xml:space="preserve">
+    <value>The [etag] qualifier is not allowed on a property with the [EmbeddedType] qualifier.</value>
+  </data>
+  <data name="AssociationEndType" xml:space="preserve">
+    <value>The property must be a reference.</value>
+  </data>
+  <data name="NullValueNotAllowedForNonNullableProperty" xml:space="preserve">
+    <value>Value of property {0} is passed null, which is not allowed for a non-nullable property</value>
+  </data>
+  <data name="NullQuota" xml:space="preserve">
+    <value>Null quota</value>
+  </data>
+  <data name="ConfigError" xml:space="preserve">
+    <value>An error was encountered while loading the configuration settings.</value>
+  </data>
+  <data name="InternalErrorOccurred" xml:space="preserve">
+    <value>An internal error has occurred.</value>
+  </data>
+  <data name="InvalidRenamedProperty" xml:space="preserve">
+    <value>Type {0} does not have a property named {1}.</value>
+  </data>
+  <data name="CustomAuthorizationPluginCreationFailed" xml:space="preserve">
+    <value>Custom Authorization plugin creation failed.</value>
+  </data>
+  <data name="ComplexTypeResourceNotFound" xml:space="preserve">
+    <value>Complex type resource {0} not found in list of complex type resources</value>
+  </data>
+  <data name="NotValidDictionaryType" xml:space="preserve">
+    <value>Not a valid dictionary type</value>
+  </data>
+  <data name="UseCimClassName" xml:space="preserve">
+    <value>The name of a class must be a schema-name and a class-name separated by an underscore, as in "ContosoDeployment_DataFile". Class "{0}" does not conform to that pattern.</value>
+  </data>
+  <data name="UnlockAlreadyLockedCache" xml:space="preserve">
+    <value>Trying to unlock cache but cache lock count is already Zero</value>
+  </data>
+  <data name="LowerBoundGreaterThanUpper" xml:space="preserve">
+    <value>Lower Bound {0} is greater than the upper bound {1}</value>
+  </data>
+  <data name="PropertyDoesNotHaveCommand" xml:space="preserve">
+    <value>Property {1} of type {0} does not support the action "{2}".</value>
+  </data>
+  <data name="TimeShouldBeGreater" xml:space="preserve">
+    <value>Time passed cannot be less than the current time</value>
+  </data>
+  <data name="NoLongerValidUpdateHandle" xml:space="preserve">
+    <value>Update handle is no longer valid</value>
+  </data>
+  <data name="EmptyArgumentPassed" xml:space="preserve">
+    <value>Empty arguments are passed. Parameter name {0}. Additional message {1}</value>
+  </data>
+  <data name="ParameterSetNull" xml:space="preserve">
+    <value>Resource class for resource set {0} in dispatch file does not seem to be present in the mof schema file.</value>
+  </data>
+  <data name="MissingAssociationEnd" xml:space="preserve">
+    <value>The [ToEnd] qualifier refers to an undefined association end.</value>
+  </data>
+  <data name="FieldOptionOrMandatoryParameterNotInParamset" xml:space="preserve">
+    <value>Inconsistencies were found in cmdlet parameter usage for cmdlet {0}. {1}</value>
+  </data>
+  <data name="PropertyDeclarationProblem" xml:space="preserve">
+    <value>There is a problem with the declaration of property {0} in class {1}.  {2}</value>
+  </data>
+  <data name="NotAComplexType" xml:space="preserve">
+    <value>Resource type {0} is not a complex type.</value>
+  </data>
+  <data name="NullPassedForSerializingEntity" xml:space="preserve">
+    <value>Null value is passed to serialize entity of type {0}</value>
+  </data>
+  <data name="PropertyNotFoundInDotNetType" xml:space="preserve">
+    <value>Property {0} is not found in .Net type {1}</value>
+  </data>
+  <data name="ResourceCustomStateNull" xml:space="preserve">
+    <value>ResourceCustomState is not set in the resource</value>
+  </data>
+  <data name="PowerShellConstrainedRunspaceCreationFailed" xml:space="preserve">
+    <value>PowerShell Constrained Runspace creation failed</value>
+  </data>
+  <data name="AssociationQualWithoutParm" xml:space="preserve">
+    <value>The [AssociationClass] qualifier must have a string parameter specifying the association class name.</value>
+  </data>
+  <data name="ContainsBothPropertyTypeAndGetReference" xml:space="preserve">
+    <value>Navigation property {0} in the resource type {1} contains both 'PropertyType' and 'GetReference' nodes. They are exclusive so specify only one of them.</value>
+  </data>
+  <data name="ContainerTypeNotSupportedInOData" xml:space="preserve">
+    <value>Property : {0} is a container type and is not supported</value>
+  </data>
+  <data name="CompoundForeignKeysCannotEmbeddedAsKeys" xml:space="preserve">
+    <value>Foreign keys of resource type {0} having compound keys cannot be embedded directly as a single property {1} in the resource type {2}. Consider changing the property type of property {1} in dispatch to 'Instance' or addding a reference cmdlet to get associated instances.</value>
+  </data>
+  <data name="TypeLoadFromAssebmlyFailed" xml:space="preserve">
+    <value>Not able to load .Net type {0} from the assembly {1}</value>
+  </data>
+  <data name="OptionsNotPresentInParameterSets" xml:space="preserve">
+    <value>The following option parameters are not present in any parameter set: {0}</value>
+  </data>
+  <data name="CmdletExecutionQuotaExceeded" xml:space="preserve">
+    <value>Cmdlet {0} has exceeded execution time quota.</value>
+  </data>
+  <data name="RefSetCmdletsOnNonRefSet" xml:space="preserve">
+    <value>In the resource mapping for class {0}, the &lt;Associations&gt; node defines reference-to-collection cmdlets for property {1}, which is not a reference to a collection of entities.</value>
+  </data>
+  <data name="KeyParameterFailed" xml:space="preserve">
+    <value>The command to get an instance of the {0} type does not define a parameter to filter by key property '{1}'.  </value>
+  </data>
+  <data name="QueryDoesNotIncludePswsProvider" xml:space="preserve">
+    <value>Query does not refer to the PowerShellWebService provider</value>
+  </data>
+  <data name="ComplexTypeSpecifiesEtagProperty" xml:space="preserve">
+    <value>The [etag] qualifier is not allowed in types with the [ComplexType] qualifier.</value>
+  </data>
+  <data name="ValidContextNotSet" xml:space="preserve">
+    <value>Valid Context (Http or Operation) is not set in the current request</value>
+  </data>
+  <data name="ResourceInstanceNotFound" xml:space="preserve">
+    <value>Resource instance not found</value>
+  </data>
+  <data name="GetCmdletNotReturningAnObject" xml:space="preserve">
+    <value>Get cmdlet didn't return an object</value>
+  </data>
+  <data name="ClrTypeNameIsInvalid" xml:space="preserve">
+    <value>.Net type name {0} cannot be found.</value>
+  </data>
+  <data name="MissingAssociationType" xml:space="preserve">
+    <value>Type {0} is not a recognized association class.</value>
+  </data>
+  <data name="AssociationMoreThanTwoEndNotSupported" xml:space="preserve">
+    <value>Associations with more than two ends are not supported</value>
+  </data>
+  <data name="InvalidQueryParameterMessage" xml:space="preserve">
+    <value>Invalid query sent for processing {0}</value>
+  </data>
+  <data name="CsdlForWellKnownTypes" type="System.Byte[], mscorlib">
+    <value>
+        DQpbQ29tcGxleFR5cGVdDQpjbGFzcyBQb3dlclNoZWxsX1BTQ3JlZGVudGlhbA0Kew0KICAgIHN0cmlu
+        ZyBVc2VyTmFtZTsNCiAgICBzdHJpbmcgUGFzc3dvcmQ7DQp9Ow0KDQpbQ29tcGxleFR5cGVdDQpjbGFz
+        cyBQb3dlclNoZWxsX1NlY3VyZVN0cmluZw0Kew0KICAgIHN0cmluZyBDb250ZW50czsNCn07DQo=
+</value>
+  </data>
+  <data name="StackTrace" xml:space="preserve">
+    <value>Stack Trace: {0}</value>
+  </data>
+  <data name="MethodReturnedInvalidOutput" xml:space="preserve">
+    <value>Method {0} returned invalid output {1}</value>
+  </data>
+  <data name="MofInitializerNotSupported" xml:space="preserve">
+    <value>MOF initializers are not supported.</value>
+  </data>
+  <data name="ReadOnlyProperty" xml:space="preserve">
+    <value>Property {1} of type {0} is not modifiable.</value>
+  </data>
+  <data name="UserNameContextIdentityMismatch" xml:space="preserve">
+    <value>Mismatch between the user name and context identity. Current user identity {0} Context identity  {1}</value>
+  </data>
+  <data name="FieldParameterNullOrEmpty" xml:space="preserve">
+    <value>Field Parameter is either null or empty</value>
+  </data>
+  <data name="ComplexTypeWithAssociation" xml:space="preserve">
+    <value>Class {0} : a type cannot be a complex type and also an association.</value>
+  </data>
+  <data name="InvalidParameterValue" xml:space="preserve">
+    <value>Parameter {0} has an invalid value {1}</value>
+  </data>
+  <data name="CommandParameterNullOrEmpty" xml:space="preserve">
+    <value>Command Parameter is either null or empty</value>
+  </data>
+  <data name="InvalidFieldNameOrParameterInCmdlet" xml:space="preserve">
+    <value>{0} cmdlet has invalid fieldName or field parameter. Field Name {1} Parameter name {2}</value>
+  </data>
+  <data name="NullIsPassedAsResourceSetName" xml:space="preserve">
+    <value>Null is passed as resource set name</value>
+  </data>
+  <data name="PropertySpecifiesKeyWithEtag" xml:space="preserve">
+    <value>The [etag] and [key] qualifiers are mutually exclusive.</value>
+  </data>
+  <data name="InvalidArgMessage" xml:space="preserve">
+    <value>Invalid Argument passed. Current value is {0} and expected value is {1}</value>
+  </data>
+  <data name="CannotSetNullToNonNullable" xml:space="preserve">
+    <value>Cannot set null value to a non-nullable primitive type</value>
+  </data>
+  <data name="CommandExecutionFailed" xml:space="preserve">
+    <value>Execution of command {0} failed. Cause of the problem: {1}</value>
+  </data>
+  <data name="InvalidFieldInParameterMapping" xml:space="preserve">
+    <value>In the resource mapping for class {0}, the "{1}\FieldParameterMap" section refers to a nonexistent field "{2}".</value>
+  </data>
+  <data name="MissingResourceSet" xml:space="preserve">
+    <value>Resource set {0} is not present.</value>
+  </data>
+  <data name="InvalidArgClrType" xml:space="preserve">
+    <value>Internal error: argument {0}; Current type {1}; Expected type {2}.</value>
+  </data>
+  <data name="PropertyNotSerialized" xml:space="preserve">
+    <value>Unable to construct property {0} from the object returned from cmdlet. Cause: {1}</value>
+  </data>
+  <data name="AssemblyLoadFailed" xml:space="preserve">
+    <value>Assembly {0} loading failed with errror {1}</value>
+  </data>
+  <data name="GenericInvokeMapping" type="System.Byte[], mscorlib">
+    <value>
+        PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4NCjxSZXNvdXJjZU1ldGFkYXRhIHht
+        bG5zPSJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3Bvd2Vyc2hlbGwtd2ViLXNlcnZpY2VzLzIw
+        MTAvMDkiPg0KICAgIDxTY2hlbWFOYW1lc3BhY2U+VW51c2VkPC9TY2hlbWFOYW1lc3BhY2U+DQogICAg
+        PENvbnRhaW5lck5hbWU+VW51c2VkQ29udGFpbmVyPC9Db250YWluZXJOYW1lPg0KICAgIDxSZXNvdXJj
+        ZXM+DQogICAgICAgIDxSZXNvdXJjZT4NCiAgICAgICAgICA8UmVsYXRpdmVVcmw+Q29tbWFuZEludm9j
+        YXRpb25zPC9SZWxhdGl2ZVVybD4NCiAgICAgICAgICA8Q2xhc3M+UG93ZXJTaGVsbF9Db21tYW5kSW52
+        b2NhdGlvbjwvQ2xhc3M+DQogICAgICAgIDwvUmVzb3VyY2U+DQogICAgICAgIDxSZXNvdXJjZT4NCiAg
+        ICAgICAgICAgIDxSZWxhdGl2ZVVybD5Db21tYW5kRGVzY3JpcHRpb25zPC9SZWxhdGl2ZVVybD4NCiAg
+        ICAgICAgICAgIDxDbGFzcz5Qb3dlclNoZWxsX0NvbW1hbmREZXNjcmlwdGlvbjwvQ2xhc3M+DQogICAg
+        ICAgIDwvUmVzb3VyY2U+DQogICAgPC9SZXNvdXJjZXM+DQogICAgPENsYXNzSW1wbGVtZW50YXRpb25z
+        Pg0KICAgICAgICA8Q2xhc3M+DQogICAgICAgICAgPE5hbWU+UG93ZXJTaGVsbF9Db21tYW5kRGVzY3Jp
+        cHRpb248L05hbWU+DQogIAkJCQk8Q21kbGV0SW1wbGVtZW50YXRpb24+DQogIAkJCQkJCTxRdWVyeT4N
+        CiAgIAkJCQkJCQkgIDxDbWRsZXQ+R2V0LUNvbW1hbmQ8L0NtZGxldD4NCiAgCQkJCQkJCQk8RmllbGRQ
+        YXJhbWV0ZXJNYXA+DQogIAkJCQkJCQkJCQk8RmllbGQ+DQogIAkJCQkJCQkJCQkJCTxGaWVsZE5hbWU+
+        TmFtZTwvRmllbGROYW1lPg0KICAJCQkJCQkJCQkJCQk8UGFyYW1ldGVyTmFtZT5OYW1lPC9QYXJhbWV0
+        ZXJOYW1lPg0KICAJCQkJCQkJCQkJPC9GaWVsZD4NCiAgCQkJCQkJCQk8L0ZpZWxkUGFyYW1ldGVyTWFw
+        Pg0KICAJCQkJCQkJCTxQYXJhbWV0ZXJTZXRzPg0KICAJCQkJCQkJCQkJPFBhcmFtZXRlclNldD4NCiAg
+        CQkJCQkJCQkJCQkJPE5hbWU+RGVmYXVsdDwvTmFtZT4NCiAgCQkJCQkJCQkJCQkJPFBhcmFtZXRlcj48
+        TmFtZT5OYW1lPC9OYW1lPjxUeXBlPlN5c3RlbS5TdHJpbmdbXTwvVHlwZT48L1BhcmFtZXRlcj4NCiAg
+        CQkJCQkJCQkJCTwvUGFyYW1ldGVyU2V0Pg0KICAJCQkJCQkJCTwvUGFyYW1ldGVyU2V0cz4NCiAgCQkJ
+        CQkJPC9RdWVyeT4NCiAgICAgICAgICA8L0NtZGxldEltcGxlbWVudGF0aW9uPg0KICAgICAgICA8L0Ns
+        YXNzPg0KICAgICAgPENsYXNzPg0KICAgICAgICA8TmFtZT5Qb3dlclNoZWxsX0NvbW1hbmRQYXJhbWV0
+        ZXI8L05hbWU+DQogICAgICAgIDxSZW5hbWVkRmllbGRzPg0KICAgICAgICAgIDxGaWVsZD4NCiAgICAg
+        ICAgICAgIDxTY2hlbWFQcm9wZXJ0eT5OYW1lPC9TY2hlbWFQcm9wZXJ0eT4NCiAgICAgICAgICAgIDxQ
+        b3dlclNoZWxsUHJvcGVydHk+VmFsdWUuTmFtZTwvUG93ZXJTaGVsbFByb3BlcnR5Pg0KICAgICAgICAg
+        IDwvRmllbGQ+DQogICAgICAgICAgPEZpZWxkPg0KICAgICAgICAgICAgPFNjaGVtYVByb3BlcnR5PlBh
+        cmFtZXRlclR5cGU8L1NjaGVtYVByb3BlcnR5Pg0KICAgICAgICAgICAgPFBvd2VyU2hlbGxQcm9wZXJ0
+        eT5WYWx1ZS5QYXJhbWV0ZXJUeXBlLkZ1bGxOYW1lPC9Qb3dlclNoZWxsUHJvcGVydHk+DQogICAgICAg
+        ICAgPC9GaWVsZD4NCiAgICAgICAgPC9SZW5hbWVkRmllbGRzPg0KICAgICAgPC9DbGFzcz4NCiAgICA8
+        L0NsYXNzSW1wbGVtZW50YXRpb25zPg0KPC9SZXNvdXJjZU1ldGFkYXRhPg0K
+</value>
+  </data>
+  <data name="pswsSchema" type="System.Byte[], mscorlib">
+    <value>
+        PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4NCjx4czpzY2hlbWEgeG1sbnM9Imh0
+        dHA6Ly9zY2hlbWFzLm1pY3Jvc29mdC5jb20vcG93ZXJzaGVsbC13ZWItc2VydmljZXMvMjAxMC8wOSIg
+        dGFyZ2V0TmFtZXNwYWNlPSJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3Bvd2Vyc2hlbGwtd2Vi
+        LXNlcnZpY2VzLzIwMTAvMDkiIHhtbG5zOnhzPSJodHRwOi8vd3d3LnczLm9yZy8yMDAxL1hNTFNjaGVt
+        YSIgZWxlbWVudEZvcm1EZWZhdWx0PSJxdWFsaWZpZWQiPg0KICA8eHM6ZWxlbWVudCBuYW1lPSJSZXNv
+        dXJjZU1ldGFkYXRhIj4NCiAgICA8eHM6Y29tcGxleFR5cGU+DQogICAgICA8eHM6YWxsPg0KICAgICAg
+        ICA8eHM6ZWxlbWVudCBuYW1lPSJTY2hlbWFOYW1lc3BhY2UiIHR5cGU9InhzOnN0cmluZyIgLz4NCiAg
+        ICAgICAgPHhzOmVsZW1lbnQgbmFtZT0iQ29udGFpbmVyTmFtZSIgdHlwZT0ieHM6c3RyaW5nIiAvPg0K
+        ICAgICAgICA8eHM6ZWxlbWVudCBuYW1lPSJSZXNvdXJjZXMiPg0KICAgICAgICAgIDx4czpjb21wbGV4
+        VHlwZT4NCiAgICAgICAgICAgIDx4czpzZXF1ZW5jZT4NCiAgICAgICAgICAgICAgPHhzOmVsZW1lbnQg
+        bmFtZT0iUmVzb3VyY2UiIG1pbk9jY3Vycz0iMCIgbWF4T2NjdXJzPSJ1bmJvdW5kZWQiPg0KICAgICAg
+        ICAgICAgICAgIDx4czpjb21wbGV4VHlwZT4NCiAgICAgICAgICAgICAgICAgIDx4czpzZXF1ZW5jZT4N
+        CiAgICAgICAgICAgICAgICAgICAgPHhzOmVsZW1lbnQgbmFtZT0iUmVsYXRpdmVVcmwiIHR5cGU9Inhz
+        OnN0cmluZyIgLz4NCiAgICAgICAgICAgICAgICAgICAgPHhzOmVsZW1lbnQgbmFtZT0iQ2xhc3MiIHR5
+        cGU9InhzOnN0cmluZyIgLz4NCiAgICAgICAgICAgICAgICAgIDwveHM6c2VxdWVuY2U+DQogICAgICAg
+        ICAgICAgICAgPC94czpjb21wbGV4VHlwZT4NCiAgICAgICAgICAgICAgPC94czplbGVtZW50Pg0KICAg
+        ICAgICAgICAgPC94czpzZXF1ZW5jZT4NCiAgICAgICAgICA8L3hzOmNvbXBsZXhUeXBlPg0KICAgICAg
+        ICA8L3hzOmVsZW1lbnQ+DQogICAgICAgIDx4czplbGVtZW50IG5hbWU9IkNsYXNzSW1wbGVtZW50YXRp
+        b25zIj4NCiAgICAgICAgICA8eHM6Y29tcGxleFR5cGU+DQogICAgICAgICAgICA8eHM6c2VxdWVuY2U+
+        DQogICAgICAgICAgICAgIDx4czplbGVtZW50IG5hbWU9IkNsYXNzIiBtaW5PY2N1cnM9IjAiIG1heE9j
+        Y3Vycz0idW5ib3VuZGVkIj4NCiAgICAgICAgICAgICAgICA8eHM6Y29tcGxleFR5cGU+DQogICAgICAg
+        ICAgICAgICAgICA8eHM6YWxsPg0KICAgICAgICAgICAgICAgICAgICA8eHM6ZWxlbWVudCBuYW1lPSJO
+        YW1lIiB0eXBlPSJ4czpzdHJpbmciIC8+DQogICAgICAgICAgICAgICAgICAgIDx4czplbGVtZW50IG5h
+        bWU9IkNsclR5cGUiIHR5cGU9InhzOnN0cmluZyIgbWluT2NjdXJzPSIwIiAvPg0KICAgICAgICAgICAg
+        ICAgICAgICA8eHM6ZWxlbWVudCBuYW1lPSJDbWRsZXRJbXBsZW1lbnRhdGlvbiIgdHlwZT0iQ21kbGV0
+        SW1wbGVtZW50YXRpb25UeXBlIiBtaW5PY2N1cnM9IjAiIC8+DQogICAgICAgICAgICAgICAgICAgIDx4
+        czplbGVtZW50IG5hbWU9IlJlbmFtZWRGaWVsZHMiIG1pbk9jY3Vycz0iMCI+DQogICAgICAgICAgICAg
+        ICAgICAgICAgPHhzOmNvbXBsZXhUeXBlPg0KICAgICAgICAgICAgICAgICAgICAgICAgPHhzOnNlcXVl
+        bmNlPg0KICAgICAgICAgICAgICAgICAgICAgICAgICA8eHM6ZWxlbWVudCBuYW1lPSJGaWVsZCIgbWlu
+        T2NjdXJzPSIwIiBtYXhPY2N1cnM9InVuYm91bmRlZCI+DQogICAgICAgICAgICAgICAgICAgICAgICAg
+        ICAgPHhzOmNvbXBsZXhUeXBlPg0KICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgPHhzOmFsbD4N
+        CiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgPHhzOmVsZW1lbnQgbmFtZT0iU2NoZW1hUHJv
+        cGVydHkiIHR5cGU9InhzOnN0cmluZyIgLz4NCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAg
+        PHhzOmVsZW1lbnQgbmFtZT0iUG93ZXJTaGVsbFByb3BlcnR5IiB0eXBlPSJ4czpzdHJpbmciIC8+DQog
+        ICAgICAgICAgICAgICAgICAgICAgICAgICAgICA8L3hzOmFsbD4NCiAgICAgICAgICAgICAgICAgICAg
+        ICAgICAgICA8L3hzOmNvbXBsZXhUeXBlPg0KICAgICAgICAgICAgICAgICAgICAgICAgICA8L3hzOmVs
+        ZW1lbnQ+DQogICAgICAgICAgICAgICAgICAgICAgICA8L3hzOnNlcXVlbmNlPg0KICAgICAgICAgICAg
+        ICAgICAgICAgIDwveHM6Y29tcGxleFR5cGU+DQogICAgICAgICAgICAgICAgICAgIDwveHM6ZWxlbWVu
+        dD4NCiAgICAgICAgICAgICAgICAgIDwveHM6YWxsPg0KICAgICAgICAgICAgICAgIDwveHM6Y29tcGxl
+        eFR5cGU+DQogICAgICAgICAgICAgIDwveHM6ZWxlbWVudD4NCiAgICAgICAgICAgIDwveHM6c2VxdWVu
+        Y2U+DQogICAgICAgICAgPC94czpjb21wbGV4VHlwZT4NCiAgICAgICAgPC94czplbGVtZW50Pg0KICAg
+        ICAgPC94czphbGw+DQogICAgPC94czpjb21wbGV4VHlwZT4NCiAgPC94czplbGVtZW50Pg0KICA8eHM6
+        Y29tcGxleFR5cGUgbmFtZT0iQ21kbGV0SW1wbGVtZW50YXRpb25UeXBlIj4NCiAgICA8eHM6YWxsPg0K
+        ICAgICAgPHhzOmVsZW1lbnQgbmFtZT0iUXVlcnkiIG1pbk9jY3Vycz0iMCI+DQogICAgICAgIDx4czpj
+        b21wbGV4VHlwZT4NCiAgICAgICAgICA8eHM6YWxsPg0KICAgICAgICAgICAgPHhzOmVsZW1lbnQgbmFt
+        ZT0iQ21kbGV0IiB0eXBlPSJ4czpzdHJpbmciIC8+DQogICAgICAgICAgICA8eHM6ZWxlbWVudCBuYW1l
+        PSJJbW11dGFibGVQYXJhbWV0ZXJzIiB0eXBlPSJQYXJhbWV0ZXJWYWx1ZXNUeXBlIiBtaW5PY2N1cnM9
+        IjAiIC8+DQogICAgICAgICAgICA8eHM6ZWxlbWVudCBuYW1lPSJGaWVsZFBhcmFtZXRlck1hcCIgdHlw
+        ZT0iRmllbGRQYXJhbWV0ZXJNYXBUeXBlIiBtaW5PY2N1cnM9IjAiIC8+DQogICAgICAgICAgICA8eHM6
+        ZWxlbWVudCBuYW1lPSJPcHRpb25zIiB0eXBlPSJPcHRpb25zVHlwZSIgbWluT2NjdXJzPSIwIiAvPg0K
+        ICAgICAgICAgICAgPHhzOmVsZW1lbnQgbmFtZT0iUGFyYW1ldGVyU2V0cyIgdHlwZT0iUGFyYW1ldGVy
+        U2V0c1R5cGUiIG1pbk9jY3Vycz0iMCIgLz4NCiAgICAgICAgICA8L3hzOmFsbD4NCiAgICAgICAgPC94
+        czpjb21wbGV4VHlwZT4NCiAgICAgIDwveHM6ZWxlbWVudD4NCiAgICAgIDx4czplbGVtZW50IG5hbWU9
+        IkNyZWF0ZSIgbWluT2NjdXJzPSIwIj4NCiAgICAgICAgPHhzOmNvbXBsZXhUeXBlPg0KICAgICAgICAg
+        IDx4czphbGw+DQogICAgICAgICAgICA8eHM6ZWxlbWVudCBuYW1lPSJDbWRsZXQiIHR5cGU9InhzOnN0
+        cmluZyIgLz4NCiAgICAgICAgICAgIDx4czplbGVtZW50IG5hbWU9IkltbXV0YWJsZVBhcmFtZXRlcnMi
+        IHR5cGU9IlBhcmFtZXRlclZhbHVlc1R5cGUiIG1pbk9jY3Vycz0iMCIgLz4NCiAgICAgICAgICAgIDx4
+        czplbGVtZW50IG5hbWU9IkZpZWxkUGFyYW1ldGVyTWFwIiB0eXBlPSJGaWVsZFBhcmFtZXRlck1hcFR5
+        cGUiIG1pbk9jY3Vycz0iMCIgLz4NCiAgICAgICAgICAgIDx4czplbGVtZW50IG5hbWU9Ik9wdGlvbnMi
+        IHR5cGU9Ik9wdGlvbnNUeXBlIiBtaW5PY2N1cnM9IjAiIC8+DQogICAgICAgICAgICA8eHM6ZWxlbWVu
+        dCBuYW1lPSJQYXJhbWV0ZXJTZXRzIiB0eXBlPSJQYXJhbWV0ZXJTZXRzVHlwZSIgbWluT2NjdXJzPSIw
+        IiAvPg0KICAgICAgICAgIDwveHM6YWxsPg0KICAgICAgICA8L3hzOmNvbXBsZXhUeXBlPg0KICAgICAg
+        PC94czplbGVtZW50Pg0KICAgICAgPHhzOmVsZW1lbnQgbmFtZT0iVXBkYXRlIiBtaW5PY2N1cnM9IjAi
+        Pg0KICAgICAgICA8eHM6Y29tcGxleFR5cGU+DQogICAgICAgICAgPHhzOmFsbD4NCiAgICAgICAgICAg
+        IDx4czplbGVtZW50IG5hbWU9IkNtZGxldCIgdHlwZT0ieHM6c3RyaW5nIiAvPg0KICAgICAgICAgICAg
+        PHhzOmVsZW1lbnQgbmFtZT0iSW1tdXRhYmxlUGFyYW1ldGVycyIgdHlwZT0iUGFyYW1ldGVyVmFsdWVz
+        VHlwZSIgbWluT2NjdXJzPSIwIiAvPg0KICAgICAgICAgICAgPHhzOmVsZW1lbnQgbmFtZT0iRmllbGRQ
+        YXJhbWV0ZXJNYXAiIHR5cGU9IkZpZWxkUGFyYW1ldGVyTWFwVHlwZSIgbWluT2NjdXJzPSIwIiAvPg0K
+        ICAgICAgICAgICAgPHhzOmVsZW1lbnQgbmFtZT0iT3B0aW9ucyIgdHlwZT0iT3B0aW9uc1R5cGUiIG1p
+        bk9jY3Vycz0iMCIgLz4NCiAgICAgICAgICAgIDx4czplbGVtZW50IG5hbWU9IlBhcmFtZXRlclNldHMi
+        IHR5cGU9IlBhcmFtZXRlclNldHNUeXBlIiBtaW5PY2N1cnM9IjAiIC8+DQogICAgICAgICAgPC94czph
+        bGw+DQogICAgICAgIDwveHM6Y29tcGxleFR5cGU+DQogICAgICA8L3hzOmVsZW1lbnQ+DQogICAgICA8
+        eHM6ZWxlbWVudCBuYW1lPSJEZWxldGUiIG1pbk9jY3Vycz0iMCI+DQogICAgICAgIDx4czpjb21wbGV4
+        VHlwZT4NCiAgICAgICAgICA8eHM6YWxsPg0KICAgICAgICAgICAgPHhzOmVsZW1lbnQgbmFtZT0iQ21k
+        bGV0IiB0eXBlPSJ4czpzdHJpbmciIC8+DQogICAgICAgICAgICA8eHM6ZWxlbWVudCBuYW1lPSJJbW11
+        dGFibGVQYXJhbWV0ZXJzIiB0eXBlPSJQYXJhbWV0ZXJWYWx1ZXNUeXBlIiBtaW5PY2N1cnM9IjAiIC8+
+        DQogICAgICAgICAgICA8eHM6ZWxlbWVudCBuYW1lPSJGaWVsZFBhcmFtZXRlck1hcCIgdHlwZT0iRmll
+        bGRQYXJhbWV0ZXJNYXBUeXBlIiAvPg0KICAgICAgICAgICAgPHhzOmVsZW1lbnQgbmFtZT0iT3B0aW9u
+        cyIgdHlwZT0iT3B0aW9uc1R5cGUiIG1pbk9jY3Vycz0iMCIgLz4NCiAgICAgICAgICAgIDx4czplbGVt
+        ZW50IG5hbWU9IlBhcmFtZXRlclNldHMiIHR5cGU9IlBhcmFtZXRlclNldHNUeXBlIiBtaW5PY2N1cnM9
+        IjAiIC8+DQogICAgICAgICAgPC94czphbGw+DQogICAgICAgIDwveHM6Y29tcGxleFR5cGU+DQogICAg
+        ICA8L3hzOmVsZW1lbnQ+DQogICAgICA8eHM6ZWxlbWVudCBuYW1lPSJBc3NvY2lhdGlvbnMiIG1pbk9j
+        Y3Vycz0iMCI+DQogICAgICAgIDx4czpjb21wbGV4VHlwZT4NCiAgICAgICAgICA8eHM6c2VxdWVuY2U+
+        DQogICAgICAgICAgICA8eHM6ZWxlbWVudCBuYW1lPSJOYXZpZ2F0aW9uUHJvcGVydHkiIHR5cGU9IkFz
+        c29jaWF0aW9uRmllbGRUeXBlIiBtYXhPY2N1cnM9InVuYm91bmRlZCIgLz4NCiAgICAgICAgICA8L3hz
+        OnNlcXVlbmNlPg0KICAgICAgICA8L3hzOmNvbXBsZXhUeXBlPg0KICAgICAgPC94czplbGVtZW50Pg0K
+        ICAgIDwveHM6YWxsPg0KICA8L3hzOmNvbXBsZXhUeXBlPg0KICA8eHM6Y29tcGxleFR5cGUgbmFtZT0i
+        RmllbGRQYXJhbWV0ZXJNYXBUeXBlIj4NCiAgICA8eHM6c2VxdWVuY2U+DQogICAgICA8eHM6ZWxlbWVu
+        dCBuYW1lPSJGaWVsZCIgbWluT2NjdXJzPSIwIiBtYXhPY2N1cnM9InVuYm91bmRlZCI+DQogICAgICAg
+        IDx4czpjb21wbGV4VHlwZT4NCiAgICAgICAgICA8eHM6YWxsPg0KICAgICAgICAgICAgPHhzOmVsZW1l
+        bnQgbmFtZT0iRmllbGROYW1lIiB0eXBlPSJ4czpzdHJpbmciIC8+DQogICAgICAgICAgICA8eHM6ZWxl
+        bWVudCBuYW1lPSJQYXJhbWV0ZXJOYW1lIiB0eXBlPSJ4czpzdHJpbmciIC8+DQogICAgICAgICAgPC94
+        czphbGw+DQogICAgICAgIDwveHM6Y29tcGxleFR5cGU+DQogICAgICA8L3hzOmVsZW1lbnQ+DQogICAg
+        PC94czpzZXF1ZW5jZT4NCiAgPC94czpjb21wbGV4VHlwZT4NCiAgPHhzOmNvbXBsZXhUeXBlIG5hbWU9
+        IlBhcmFtZXRlclNldHNUeXBlIj4NCiAgICA8eHM6c2VxdWVuY2U+DQogICAgICA8eHM6ZWxlbWVudCBu
+        YW1lPSJQYXJhbWV0ZXJTZXQiIG1pbk9jY3Vycz0iMCIgbWF4T2NjdXJzPSJ1bmJvdW5kZWQiPg0KICAg
+        ICAgICA8eHM6Y29tcGxleFR5cGU+DQogICAgICAgICAgPHhzOnNlcXVlbmNlPg0KICAgICAgICAgICAg
+        PHhzOmVsZW1lbnQgbmFtZT0iTmFtZSIgdHlwZT0ieHM6c3RyaW5nIiAvPg0KICAgICAgICAgICAgPHhz
+        OmVsZW1lbnQgbmFtZT0iUGFyYW1ldGVyIiBtYXhPY2N1cnM9InVuYm91bmRlZCI+DQogICAgICAgICAg
+        ICAgIDx4czpjb21wbGV4VHlwZT4NCiAgICAgICAgICAgICAgICA8eHM6YWxsPg0KICAgICAgICAgICAg
+        ICAgICAgPHhzOmVsZW1lbnQgbmFtZT0iTmFtZSIgdHlwZT0ieHM6c3RyaW5nIiAvPg0KICAgICAgICAg
+        ICAgICAgICAgPHhzOmVsZW1lbnQgbmFtZT0iVHlwZSIgdHlwZT0ieHM6c3RyaW5nIiBtaW5PY2N1cnM9
+        IjAiIC8+DQogICAgICAgICAgICAgICAgICA8eHM6ZWxlbWVudCBuYW1lPSJJc1N3aXRjaCIgdHlwZT0i
+        eHM6c3RyaW5nIiBtaW5PY2N1cnM9IjAiIC8+DQogICAgICAgICAgICAgICAgICA8eHM6ZWxlbWVudCBu
+        YW1lPSJJc01hbmRhdG9yeSIgdHlwZT0ieHM6c3RyaW5nIiBtaW5PY2N1cnM9IjAiIC8+DQogICAgICAg
+        ICAgICAgICAgPC94czphbGw+DQogICAgICAgICAgICAgIDwveHM6Y29tcGxleFR5cGU+DQogICAgICAg
+        ICAgICA8L3hzOmVsZW1lbnQ+DQogICAgICAgICAgPC94czpzZXF1ZW5jZT4NCiAgICAgICAgPC94czpj
+        b21wbGV4VHlwZT4NCiAgICAgIDwveHM6ZWxlbWVudD4NCiAgICA8L3hzOnNlcXVlbmNlPg0KICA8L3hz
+        OmNvbXBsZXhUeXBlPg0KICA8eHM6Y29tcGxleFR5cGUgbmFtZT0iUGFyYW1ldGVyVmFsdWVzVHlwZSI+
+        DQogICAgPHhzOnNlcXVlbmNlPg0KICAgICAgPHhzOmVsZW1lbnQgbmFtZT0iUGFyYW1ldGVyVmFsdWUi
+        IG1pbk9jY3Vycz0iMCIgbWF4T2NjdXJzPSJ1bmJvdW5kZWQiPg0KICAgICAgICA8eHM6Y29tcGxleFR5
+        cGU+DQogICAgICAgICAgPHhzOmFsbD4NCiAgICAgICAgICAgIDx4czplbGVtZW50IG5hbWU9IlBhcmFt
+        ZXRlck5hbWUiIHR5cGU9InhzOnN0cmluZyIgLz4NCiAgICAgICAgICAgIDx4czplbGVtZW50IG5hbWU9
+        IlZhbHVlIiB0eXBlPSJ4czpzdHJpbmciIC8+DQogICAgICAgICAgPC94czphbGw+DQogICAgICAgIDwv
+        eHM6Y29tcGxleFR5cGU+DQogICAgICA8L3hzOmVsZW1lbnQ+DQogICAgPC94czpzZXF1ZW5jZT4NCiAg
+        PC94czpjb21wbGV4VHlwZT4NCiAgPHhzOmNvbXBsZXhUeXBlIG5hbWU9Ik9wdGlvbnNUeXBlIj4NCiAg
+        ICA8eHM6c2VxdWVuY2U+DQogICAgICA8eHM6ZWxlbWVudCBuYW1lPSJQYXJhbWV0ZXJOYW1lIiB0eXBl
+        PSJ4czpzdHJpbmciIG1pbk9jY3Vycz0iMCIgbWF4T2NjdXJzPSJ1bmJvdW5kZWQiIC8+DQogICAgPC94
+        czpzZXF1ZW5jZT4NCiAgPC94czpjb21wbGV4VHlwZT4NCiAgPHhzOmNvbXBsZXhUeXBlIG5hbWU9IkFz
+        c29jaWF0aW9uRmllbGRUeXBlIj4NCiAgICA8eHM6YWxsPg0KICAgICAgPHhzOmVsZW1lbnQgbmFtZT0i
+        TmFtZSIgdHlwZT0ieHM6c3RyaW5nIiAvPg0KICAgICAgPHhzOmVsZW1lbnQgbmFtZT0iUHJvcGVydHlU
+        eXBlIiB0eXBlPSJQcm9wZXJ0eVR5cGVFbnVtIiBtaW5PY2N1cnM9IjAiIC8+DQogICAgICA8eHM6ZWxl
+        bWVudCBuYW1lPSJHZXRSZWZlcmVuY2UiIHR5cGU9IkdldEFzc29jaWF0aW9uUmVmZXJlbmNlVHlwZSIg
+        bWluT2NjdXJzPSIwIiAvPg0KICAgICAgPHhzOmVsZW1lbnQgbmFtZT0iQWRkUmVmZXJlbmNlIiB0eXBl
+        PSJBc3NvY2lhdGlvblJlZmVyZW5jZVR5cGUiIG1pbk9jY3Vycz0iMCIvPg0KICAgICAgPHhzOmVsZW1l
+        bnQgbmFtZT0iUmVtb3ZlUmVmZXJlbmNlIiB0eXBlPSJBc3NvY2lhdGlvblJlZmVyZW5jZVR5cGUiIG1p
+        bk9jY3Vycz0iMCIvPg0KICAgIDwveHM6YWxsPg0KICA8L3hzOmNvbXBsZXhUeXBlPg0KICA8eHM6Y29t
+        cGxleFR5cGUgbmFtZT0iQXNzb2NpYXRpb25SZWZlcmVuY2VUeXBlIj4NCiAgICA8eHM6YWxsPg0KICAg
+        ICAgPHhzOmVsZW1lbnQgbmFtZT0iQ21kbGV0IiB0eXBlPSJ4czpzdHJpbmciIC8+DQogICAgICA8eHM6
+        ZWxlbWVudCBuYW1lPSJQYXJhbWV0ZXJGb3JUaGlzT2JqZWN0IiB0eXBlPSJGaWVsZFBhcmFtZXRlck1h
+        cFR5cGUiIC8+DQogICAgICA8eHM6ZWxlbWVudCBuYW1lPSJQYXJhbWV0ZXJGb3JSZWZlcnJlZE9iamVj
+        dCIgdHlwZT0iRmllbGRQYXJhbWV0ZXJNYXBUeXBlIiAvPg0KICAgICAgPHhzOmVsZW1lbnQgbmFtZT0i
+        T3B0aW9ucyIgdHlwZT0iT3B0aW9uc1R5cGUiIG1pbk9jY3Vycz0iMCIgLz4NCiAgICA8L3hzOmFsbD4N
+        CiAgPC94czpjb21wbGV4VHlwZT4NCiAgPHhzOmNvbXBsZXhUeXBlIG5hbWU9IkdldEFzc29jaWF0aW9u
+        UmVmZXJlbmNlVHlwZSI+DQogICAgPHhzOmFsbD4NCiAgICAgIDx4czplbGVtZW50IG5hbWU9IkNtZGxl
+        dCIgdHlwZT0ieHM6c3RyaW5nIiAvPg0KICAgICAgPHhzOmVsZW1lbnQgbmFtZT0iUGFyYW1ldGVyRm9y
+        VGhpc09iamVjdCIgdHlwZT0iRmllbGRQYXJhbWV0ZXJNYXBUeXBlIiAvPg0KICAgICAgPHhzOmVsZW1l
+        bnQgbmFtZT0iT3B0aW9ucyIgdHlwZT0iT3B0aW9uc1R5cGUiIG1pbk9jY3Vycz0iMCIgLz4NCiAgICA8
+        L3hzOmFsbD4NCiAgPC94czpjb21wbGV4VHlwZT4NCiAgPHhzOnNpbXBsZVR5cGUgbmFtZT0iUHJvcGVy
+        dHlUeXBlRW51bSIgZmluYWw9InJlc3RyaWN0aW9uIj4NCiAgICA8eHM6cmVzdHJpY3Rpb24gYmFzZT0i
+        eHM6c3RyaW5nIj4gICAgICAgIA0KICAgICAgPHhzOmVudW1lcmF0aW9uIHZhbHVlPSJLZXlPbmx5IiAv
+        PiAgICAgICAgDQogICAgICA8eHM6ZW51bWVyYXRpb24gdmFsdWU9Ikluc3RhbmNlIiAvPiAgICAgICAg
+        DQogICAgPC94czpyZXN0cmljdGlvbj4NCiAgPC94czpzaW1wbGVUeXBlPg0KPC94czpzY2hlbWE+DQo=
+</value>
+  </data>
+  <data name="NotValidSwitchParameterValue" xml:space="preserve">
+    <value>Parameter {0} is a switch parameter in cmdlet {1}. Value Allowed values are true/false but value passed is {2}</value>
+  </data>
+  <data name="PSSessionConfigurationCreationFailed" xml:space="preserve">
+    <value>Creation of PowerShell Session Configuration plug-in failed</value>
+  </data>
+</root>

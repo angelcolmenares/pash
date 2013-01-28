@@ -1,0 +1,23 @@
+// Assembly Microsoft.Data.OData.PowerShell, Version 5.0.0.0
+
+[assembly: System.CLSCompliant(true)]
+[assembly: System.Security.SecurityTransparent]
+[assembly: System.Security.SecurityRules(System.Security.SecurityRuleSet.Level2, SkipVerificationInFullTrust=true)]
+[assembly: System.Runtime.InteropServices.ComVisible(false)]
+[assembly: System.Reflection.AssemblyTitle("Microsoft.Data.OData.PowerShell.dll")]
+[assembly: System.Reflection.AssemblyDescription("Microsoft.Data.OData.PowerShell.dll")]
+[assembly: System.Reflection.AssemblyDefaultAlias("Microsoft.Data.OData.PowerShell.dll")]
+[assembly: System.Reflection.AssemblyCompany("Microsoft Corporation")]
+//[assembly: System.Runtime.CompilerServices.Extension]
+[assembly: System.Reflection.AssemblyCopyright("\x00a9 Microsoft Corporation.  All rights reserved.")]
+[assembly: System.Resources.NeutralResourcesLanguage("en-US")]
+[assembly: System.Runtime.CompilerServices.RuntimeCompatibility(WrapNonExceptionThrows=true)]
+[assembly: System.Reflection.AssemblyFileVersion("5.0.0.50524")]
+[assembly: System.Reflection.AssemblyProduct("Microsoft\x00ae .NET Framework")]
+[assembly: System.Resources.SatelliteContractVersion("5.0.0.0")]
+[assembly: System.Runtime.CompilerServices.InternalsVisibleTo("Microsoft.Data.Services.Client.PowerShell,PublicKey=002400000480000094000000060200000024000052534131000400000100010079159977d2d03a8e6bea7a2e74e8d1afcc93e8851974952bb480a12c9134474d04062447c37e0e68c080536fcf3c3fbe2ff9c979ce998475e506e8ce82dd5b0f350dc10e93bf2eeecf874b24770c5081dbea7447fddafa277b22de47d6ffea449674a4f9fccf84d15069089380284dbdd35f46cdff12a1bd78e4ef0065d016df")]
+[assembly: System.Reflection.AssemblyInformationalVersion("5.0.0.50524")]
+[assembly: System.Runtime.CompilerServices.InternalsVisibleTo("Microsoft.Data.Services.PowerShell,PublicKey=002400000480000094000000060200000024000052534131000400000100010079159977d2d03a8e6bea7a2e74e8d1afcc93e8851974952bb480a12c9134474d04062447c37e0e68c080536fcf3c3fbe2ff9c979ce998475e506e8ce82dd5b0f350dc10e93bf2eeecf874b24770c5081dbea7447fddafa277b22de47d6ffea449674a4f9fccf84d15069089380284dbdd35f46cdff12a1bd78e4ef0065d016df")]
+[assembly: System.Runtime.CompilerServices.InternalsVisibleTo("AstoriaUnitTests.TDDUnitTests, PublicKey=002400000480000094000000060200000024000052534131000400000100010007D1FA57C4AED9F0A32E84AA0FAEFD0DE9E8FD6AEC8F87FB03766C834C99921EB23BE79AD9D5DCC1DD9AD236132102900B723CF980957FC4E177108FC607774F29E8320E92EA05ECE4E821C0A5EFE8F1645C4C0C93C1AB99285D622CAA652C1DFAD63D745D6F2DE5F17E5EAF0FC4963D261C8A12436518206DC093344D5AD293")]
+[assembly: System.Runtime.CompilerServices.CompilationRelaxations(8)]
+

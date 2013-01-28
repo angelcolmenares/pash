@@ -1,0 +1,201 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{D740AD94-548E-4FB9-9A37-1C1ADE8DDC50}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Microsoft.PowerShell.Security</RootNamespace>
+    <AssemblyName>Microsoft.PowerShell.Security</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <ProductVersion>10.0.0</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>True</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>False</Optimize>
+    <OutputPath>..\v1.0\</OutputPath>
+    <DefineConstants>DEBUG;TRACE;MONO</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AllowUnsafeBlocks>True</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>True</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AllowUnsafeBlocks>True</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>True</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AssemblyOriginatorKeyFile>..\mono.snk</AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Configuration.Install" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Transactions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="..\GlobalAssemblyInfo.cs">
+      <Link>Properties\GlobalAssemblyInfo.cs</Link>
+    </Compile>
+    <Compile Include="CertificateCommands.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CertificateCommands.resx</DependentUpon>
+    </Compile>
+    <Compile Include="CertificateProviderStrings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CertificateProviderStrings.resx</DependentUpon>
+    </Compile>
+    <Compile Include="ExecutionPolicyCommands.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ExecutionPolicyCommands.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Microsoft.PowerShell\Commands\CertificateFilterHandle.cs" />
+    <Compile Include="Microsoft.PowerShell\Commands\CertificateNotFoundException.cs" />
+    <Compile Include="Microsoft.PowerShell\Commands\CertificateProvider.cs" />
+    <Compile Include="Microsoft.PowerShell\Commands\CertificateProviderCodeSigningDynamicParameters.cs" />
+    <Compile Include="Microsoft.PowerShell\Commands\CertificateProviderDynamicParameters.cs" />
+    <Compile Include="Microsoft.PowerShell\Commands\CertificateProviderItem.cs" />
+    <Compile Include="Microsoft.PowerShell\Commands\CertificateProviderItemNotFoundException.cs" />
+    <Compile Include="Microsoft.PowerShell\Commands\CertificateStoreHandle.cs" />
+    <Compile Include="Microsoft.PowerShell\Commands\CertificateStoreLocationNotFoundException.cs" />
+    <Compile Include="Microsoft.PowerShell\Commands\CertificateStoreNotFoundException.cs" />
+    <Compile Include="Microsoft.PowerShell\Commands\ConvertFromSecureStringCommand.cs" />
+    <Compile Include="Microsoft.PowerShell\Commands\ConvertFromToSecureStringCommandBase.cs" />
+    <Compile Include="Microsoft.PowerShell\Commands\ConvertToSecureStringCommand.cs" />
+    <Compile Include="Microsoft.PowerShell\Commands\Crypt32Helpers.cs" />
+    <Compile Include="Microsoft.PowerShell\Commands\DetectUIHelper.cs" />
+    <Compile Include="Microsoft.PowerShell\Commands\DnsNameProperty.cs" />
+    <Compile Include="Microsoft.PowerShell\Commands\DnsNameRepresentation.cs" />
+    <Compile Include="Microsoft.PowerShell\Commands\DownLevelHelper.cs" />
+    <Compile Include="Microsoft.PowerShell\Commands\EnhancedKeyUsageProperty.cs" />
+    <Compile Include="Microsoft.PowerShell\Commands\EnhancedKeyUsageRepresentation.cs" />
+    <Compile Include="Microsoft.PowerShell\Commands\GetAclCommand.cs" />
+    <Compile Include="Microsoft.PowerShell\Commands\GetAuthenticodeSignatureCommand.cs" />
+    <Compile Include="Microsoft.PowerShell\Commands\GetCredentialCommand.cs" />
+    <Compile Include="Microsoft.PowerShell\Commands\GetExecutionPolicyCommand.cs" />
+    <Compile Include="Microsoft.PowerShell\Commands\GetPfxCertificateCommand.cs" />
+    <Compile Include="Microsoft.PowerShell\Commands\ProviderRemoveItemDynamicParameters.cs" />
+    <Compile Include="Microsoft.PowerShell\Commands\SecureStringCommandBase.cs" />
+    <Compile Include="Microsoft.PowerShell\Commands\SecurityDescriptorCommandsBase.cs" />
+    <Compile Include="Microsoft.PowerShell\Commands\SendAsTrustedIssuerProperty.cs" />
+    <Compile Include="Microsoft.PowerShell\Commands\SetAclCommand.cs" />
+    <Compile Include="Microsoft.PowerShell\Commands\SetAuthenticodeSignatureCommand.cs" />
+    <Compile Include="Microsoft.PowerShell\Commands\SetExecutionPolicyCommand.cs" />
+    <Compile Include="Microsoft.PowerShell\Commands\SignatureCommandsBase.cs" />
+    <Compile Include="Microsoft.PowerShell\Commands\X509NativeStore.cs" />
+    <Compile Include="Microsoft.PowerShell\Commands\X509StoreLocation.cs" />
+    <Compile Include="Microsoft.PowerShell\PSSecurityPSSnapIn.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Microsoft.PowerShell\SecurityUtils.cs" />
+    <Compile Include="MshSecurityManager.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>MshSecurityManager.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SecureStringCommands.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SecureStringCommands.resx</DependentUpon>
+    </Compile>
+    <Compile Include="SecurityMshSnapInResources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SecurityMshSnapInResources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="SignatureCommands.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SignatureCommands.resx</DependentUpon>
+    </Compile>
+    <Compile Include="UtilsStrings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>UtilsStrings.resx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\System.Management.Automation\System.Management.Automation.csproj">
+      <Project>{3AA23D43-1616-4C39-95D6-D26E63E7D5AB}</Project>
+      <Name>System.Management.Automation</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\External\System.Management\System.Management.csproj">
+      <Project>{FDC0FF3F-39C6-4837-937B-877497B41A34}</Project>
+      <Name>System.Management</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="CertificateCommands.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>CertificateCommands.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CertificateProviderStrings.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>CertificateProviderStrings.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ExecutionPolicyCommands.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>ExecutionPolicyCommands.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MshSecurityManager.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>MshSecurityManager.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SecureStringCommands.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>SecureStringCommands.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SecurityMshSnapInResources.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>SecurityMshSnapInResources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SignatureCommands.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>SignatureCommands.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UtilsStrings.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>UtilsStrings.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CertificateProviderStrings.en.resx" />
+    <EmbeddedResource Include="ExecutionPolicyCommands.en.resx" />
+    <EmbeddedResource Include="MshSecurityManager.en.resx" />
+    <EmbeddedResource Include="SecureStringCommands.en.resx" />
+    <EmbeddedResource Include="SecurityMshSnapInResources.en.resx" />
+    <EmbeddedResource Include="SignatureCommands.en.resx" />
+    <EmbeddedResource Include="UtilsStrings.en.resx" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <ItemGroup>
+    <None Include="CertificateCommands.en.resx" />
+  </ItemGroup>
+</Project>

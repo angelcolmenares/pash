@@ -1,0 +1,539 @@
+<?xml version="1.0"?>
+<Project xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <ProjectGuid>{7B71B957-6C02-4D6A-AA75-73C8D727AFEA}</ProjectGuid>
+    <SchemaVersion>2.0</SchemaVersion>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <AssemblyName>Microsoft.WindowsAzure.Management.ServiceManagement</AssemblyName>
+    <OutputType>Library</OutputType>
+    <RootNamespace>Microsoft</RootNamespace>
+    <ProductVersion>10.0.0</ProductVersion>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>True</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>False</Optimize>
+    <OutputPath>bin\Debug</OutputPath>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>none</DebugType>
+    <Optimize>False</Optimize>
+    <OutputPath>bin\Release</OutputPath>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Core" />
+    <Reference Include="System" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Management.Automation">
+      <HintPath>..\..\..\v1.0\System.Management.Automation.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="WindowsAzure.Management.ServiceManagement.AffinityGroups\GetAzureAffinityGroupCommand.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="WindowsAzure.Management.ServiceManagement.AffinityGroups\NewAzureAffinityGroupCommand.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="WindowsAzure.Management.ServiceManagement.AffinityGroups\RemoveAzureAffinityGroupCommand.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="WindowsAzure.Management.ServiceManagement.AffinityGroups\SetAzureAffinityGroupCommand.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="WindowsAzure.Management.ServiceManagement.Certificates\AddAzureCertificateCommand.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="WindowsAzure.Management.ServiceManagement.Certificates\GetAzureCertificateCommand.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="WindowsAzure.Management.ServiceManagement.Certificates\RemoveAzureCertificateCommand.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="WindowsAzure.Management.ServiceManagement.Common\ValidationHelpers.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="WindowsAzure.Management.ServiceManagement.Helpers\AzureBlob.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="WindowsAzure.Management.ServiceManagement.Helpers\Disks.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="WindowsAzure.Management.ServiceManagement.Helpers\PersistentVMHelper.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="WindowsAzure.Management.ServiceManagement.Helpers\Utility.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="WindowsAzure.Management.ServiceManagement.HostedServices\GetAzureDeploymentCommand.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="WindowsAzure.Management.ServiceManagement.HostedServices\GetAzureOSVersionCommand.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="WindowsAzure.Management.ServiceManagement.HostedServices\GetAzureLocationCommand.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="WindowsAzure.Management.ServiceManagement.HostedServices\GetAzureRoleCommand.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="WindowsAzure.Management.ServiceManagement.HostedServices\GetAzureServiceCommand.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="WindowsAzure.Management.ServiceManagement.HostedServices\MoveAzureDeploymentCommand.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="WindowsAzure.Management.ServiceManagement.HostedServices\NewAzureDeploymentCommand.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="WindowsAzure.Management.ServiceManagement.HostedServices\NewAzureServiceCommand.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="WindowsAzure.Management.ServiceManagement.HostedServices\RemoveAzureDeploymentCommand.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="WindowsAzure.Management.ServiceManagement.HostedServices\ResetAzureRoleInstanceCommand.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="WindowsAzure.Management.ServiceManagement.HostedServices\SetAzureDeploymentCommand.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="WindowsAzure.Management.ServiceManagement.HostedServices\SetAzureRoleCommand.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="WindowsAzure.Management.ServiceManagement.HostedServices\SetAzureServiceCommand.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="WindowsAzure.Management.ServiceManagement.HostedServices\SetAzureWalkUpgradeDomainCommand.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="WindowsAzure.Management.ServiceManagement.HostedServices\TestAzureNameCommand.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="WindowsAzure.Management.ServiceManagement.IaaS\NewAzureCertificateSettingCommand.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="WindowsAzure.Management.ServiceManagement.IaaS\NewAzureSSHKeyCommand.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="WindowsAzure.Management.ServiceManagement.IaaS\AddAzureDiskCommand.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="WindowsAzure.Management.ServiceManagement.IaaS\DiskRepository\AddAzureVMImageCommand.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="WindowsAzure.Management.ServiceManagement.IaaS\GetAzureDiskCommand.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="WindowsAzure.Management.ServiceManagement.IaaS\DiskRepository\GetAzureVMImageCommand.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="WindowsAzure.Management.ServiceManagement.IaaS\RemoveAzureDiskCommand.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="WindowsAzure.Management.ServiceManagement.IaaS\DiskRepository\RemoveAzureVMImageCommand.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="WindowsAzure.Management.ServiceManagement.IaaS\UpdateAzureDiskCommand.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="WindowsAzure.Management.ServiceManagement.IaaS\DiskRepository\UpdateAzureVMImageCommand.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="WindowsAzure.Management.ServiceManagement.IaaS\VirtualMachineConfigurationCmdletBase.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="WindowsAzure.Management.ServiceManagement.IaaS\AddAzureDataDiskCommand.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="WindowsAzure.Management.ServiceManagement.IaaS\Disks\GetAzureDataDisk.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="WindowsAzure.Management.ServiceManagement.IaaS\RemoveAzureDataDiskCommand.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="WindowsAzure.Management.ServiceManagement.IaaS\SetAzureDataDiskCommand.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="WindowsAzure.Management.ServiceManagement.IaaS\SetAzureOSDiskCommand.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="WindowsAzure.Management.ServiceManagement.IaaS\Endpoints\AddAzureEndpointCommand.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="WindowsAzure.Management.ServiceManagement.IaaS\Endpoints\GetAzureEndpointCommand.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="WindowsAzure.Management.ServiceManagement.IaaS\Endpoints\RemoveAzureInputEndpointCommand.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="WindowsAzure.Management.ServiceManagement.IaaS\Endpoints\SetAzureEndpointCommand.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="WindowsAzure.Management.ServiceManagement.IaaS\IaaSDeploymentManagementCmdletBase.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="WindowsAzure.Management.ServiceManagement.IaaS\GatewayCmdletBase.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="WindowsAzure.Management.ServiceManagement.IaaS\PersistentVMs\GetAzureDnsCommand.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="WindowsAzure.Management.ServiceManagement.IaaS\PersistentVMs\GetAzureSubnetCommand.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="WindowsAzure.Management.ServiceManagement.IaaS\GetAzureVNetConfigCommand.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="WindowsAzure.Management.ServiceManagement.IaaS\GetAzureVNetConnectionCommand.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="WindowsAzure.Management.ServiceManagement.IaaS\GetAzureVNetGatewayCommand.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="WindowsAzure.Management.ServiceManagement.IaaS\GetAzureVNetGatewayKeyCommand.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="WindowsAzure.Management.ServiceManagement.IaaS\GetAzureVNetSiteCommand.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="WindowsAzure.Management.ServiceManagement.IaaS\Network\NewAzureDnsCommand.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="WindowsAzure.Management.ServiceManagement.IaaS\NewAzureVNetGatewayCommand.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="WindowsAzure.Management.ServiceManagement.IaaS\RemoveAzureVNetConfigCommand.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="WindowsAzure.Management.ServiceManagement.IaaS\RemoveAzureVNetGatewayCommand.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="WindowsAzure.Management.ServiceManagement.IaaS\SetAzureSubnetCommand.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="WindowsAzure.Management.ServiceManagement.IaaS\SetAzureVNetConfigCommand.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="WindowsAzure.Management.ServiceManagement.IaaS\SetAzureVNetGatewayCommand.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="WindowsAzure.Management.ServiceManagement.IaaS\ProvisioningConfigurationCmdletBase.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="WindowsAzure.Management.ServiceManagement.IaaS\AddAzureProvisioningConfigCommand.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="WindowsAzure.Management.ServiceManagement.IaaS\GetAzureVMCommand.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="WindowsAzure.Management.ServiceManagement.IaaS\ExportAzureVMCommand.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="WindowsAzure.Management.ServiceManagement.IaaS\PersistentVMs\GetAzureOSDiskCommand.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="WindowsAzure.Management.ServiceManagement.IaaS\PersistentVMs\GetAzureRemoteDesktopFileCommand.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="WindowsAzure.Management.ServiceManagement.IaaS\ImportAzureVMCommand.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="WindowsAzure.Management.ServiceManagement.IaaS\PersistentVMs\NewQuickVM.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="WindowsAzure.Management.ServiceManagement.IaaS\PersistentVMs\NewAzureVMCommand.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="WindowsAzure.Management.ServiceManagement.IaaS\NewAzureVMConfigCommand.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="WindowsAzure.Management.ServiceManagement.IaaS\RemoveAzureVMCommand.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="WindowsAzure.Management.ServiceManagement.IaaS\RestartAzureVMCommand.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="WindowsAzure.Management.ServiceManagement.IaaS\SaveAzureVMImageCommand.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="WindowsAzure.Management.ServiceManagement.IaaS\SetAzureVMSizeCommand.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="WindowsAzure.Management.ServiceManagement.IaaS\StartAzureVMCommand.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="WindowsAzure.Management.ServiceManagement.IaaS\StopAzureVMCommand.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="WindowsAzure.Management.ServiceManagement.IaaS\UpdateAzureVMCommand.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="WindowsAzure.Management.ServiceManagement.Model\AffinityGroupContext.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="WindowsAzure.Management.ServiceManagement.Model\AvailabilityResponseContext.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="WindowsAzure.Management.ServiceManagement.Model\CertificateConfiguration.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="WindowsAzure.Management.ServiceManagement.Model\ServiceOperationContext.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="WindowsAzure.Management.ServiceManagement.Model\CertificateContext.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="WindowsAzure.Management.ServiceManagement.Model\DeploymentInfoContext.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="WindowsAzure.Management.ServiceManagement.Model\DiskContext.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="WindowsAzure.Management.ServiceManagement.Model\GatewayConnectionContext.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="WindowsAzure.Management.ServiceManagement.Model\GatewayManagementOperationContext.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="WindowsAzure.Management.ServiceManagement.Model\HostedServiceContext.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="WindowsAzure.Management.ServiceManagement.Model\HostedServiceDetailedContext.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="WindowsAzure.Management.ServiceManagement.Model\InputEndpointContext.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="WindowsAzure.Management.ServiceManagement.Model\IPersistentVM.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="WindowsAzure.Management.ServiceManagement.Model\LocationsContext.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="WindowsAzure.Management.ServiceManagement.Model\OSImageContext.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="WindowsAzure.Management.ServiceManagement.Model\OSVersionsContext.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="WindowsAzure.Management.ServiceManagement.Model\PersistentVM.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="WindowsAzure.Management.ServiceManagement.Model\PersistentVMRoleContext.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="WindowsAzure.Management.ServiceManagement.Model\PersistentVMRoleListContext.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="WindowsAzure.Management.ServiceManagement.Model\RoleConfiguration.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="WindowsAzure.Management.ServiceManagement.Model\RoleContext.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="WindowsAzure.Management.ServiceManagement.Model\RoleInstanceContext.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="WindowsAzure.Management.ServiceManagement.Model\RoleInstanceCountContext.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="WindowsAzure.Management.ServiceManagement.Model\RoleInstanceStatusInfo.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="WindowsAzure.Management.ServiceManagement.Model\RoleInstanceStatusInfoContext.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="WindowsAzure.Management.ServiceManagement.Model\SharedKeyContext.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="WindowsAzure.Management.ServiceManagement.Model\StorageServiceOperationContext.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="WindowsAzure.Management.ServiceManagement.Model\StorageServiceKeyOperationContext.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="WindowsAzure.Management.ServiceManagement.Model\StorageServicePropertiesOperationContext.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="WindowsAzure.Management.ServiceManagement.Model\VirtualNetworkConfigContext.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="WindowsAzure.Management.ServiceManagement.Model\VirtualNetworkGatewayContext.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="WindowsAzure.Management.ServiceManagement.Model\VirtualNetworkSiteContext.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="WindowsAzure.Management.ServiceManagement.Model\VirtualNetworkSupportedDevicesContext.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="WindowsAzure.Management.ServiceManagement.Storage\GetAzureStorageAccountCommand.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="WindowsAzure.Management.ServiceManagement.Storage\GetAzureStorageKeyCommand.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="WindowsAzure.Management.ServiceManagement.Storage\NewAzureStorageAccountCommand.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="WindowsAzure.Management.ServiceManagement.Storage\NewAzureStorageKeyCommand.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="WindowsAzure.Management.ServiceManagement.Storage\RemoveAzureStorageAccountCommand.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="WindowsAzure.Management.ServiceManagement.Storage\SetAzureStorageAccountCommand.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <ItemGroup>
+    <ProjectReference Include="..\Microsoft.WindowsAzure.Management.Service\Microsoft.WindowsAzure.Management.Service.csproj">
+      <Project>{E0B5B65A-2CA6-4294-B69D-858C8AAE1123}</Project>
+      <Name>Microsoft.WindowsAzure.Management.Service</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Microsoft.WindowsAzure.StorageClient\Microsoft.WindowsAzure.StorageClient.csproj">
+      <Project>{C6F30C10-E1C2-4327-BB6B-3160B479CCA1}</Project>
+      <Name>Microsoft.WindowsAzure.StorageClient</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Microsoft.Samples.WindowsAzure.ServiceManagement\Microsoft.Samples.WindowsAzure.ServiceManagement.csproj">
+      <Project>{75D7724F-5EC6-42A5-876A-627F9C1FD733}</Project>
+      <Name>Microsoft.Samples.WindowsAzure.ServiceManagement</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Microsoft.WindowsAzure.Management\Microsoft.WindowsAzure.Management.csproj">
+      <Project>{CD5AA507-F5EF-473D-855B-84B91A1ABE54}</Project>
+      <Name>Microsoft.WindowsAzure.Management</Name>
+    </ProjectReference>
+  </ItemGroup>
+</Project>

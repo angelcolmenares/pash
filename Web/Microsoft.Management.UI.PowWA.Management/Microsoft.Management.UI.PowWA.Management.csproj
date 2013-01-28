@@ -1,0 +1,132 @@
+<?xml version="1.0"?>
+<Project xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <ProjectGuid>{EB37BDB5-A572-4991-BD5A-F4018CBC866E}</ProjectGuid>
+    <SchemaVersion>2.0</SchemaVersion>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <AssemblyName>Microsoft.Management.UI.PowWA.Management</AssemblyName>
+    <OutputType>Library</OutputType>
+    <RootNamespace>Microsoft</RootNamespace>
+    <ProductVersion>10.0.0</ProductVersion>
+    <SignAssembly>True</SignAssembly>
+    <AssemblyOriginatorKeyFile>..\..\mono.snk</AssemblyOriginatorKeyFile>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugType>full</DebugType>
+    <Optimize>False</Optimize>
+    <OutputPath>bin\Debug</OutputPath>
+    <WarningLevel>4</WarningLevel>
+    <DebugSymbols>True</DebugSymbols>
+    <DefineConstants>DEBUG</DefineConstants>
+    <AllowUnsafeBlocks>True</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>none</DebugType>
+    <Optimize>False</Optimize>
+    <OutputPath>bin\Release</OutputPath>
+    <WarningLevel>4</WarningLevel>
+    <AllowUnsafeBlocks>True</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Management.PowerShellWebAccess\Management\Resources.Designer.cs">
+      <AutoGen>true</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTimeSharedInput>true</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Management.PowerShellWebAccess\NativeMethods.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Management.PowerShellWebAccess\IActiveDirectoryHelper.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Management.PowerShellWebAccess\ActiveDirectoryHelper.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Management.PowerShellWebAccess\PswaAuthorizationRule.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Management.PowerShellWebAccess\PswaUserType.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Management.PowerShellWebAccess\PswaDestinationType.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Management.PowerShellWebAccess\PswaAuthorizationRuleManager.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Management.PowerShellWebAccess\TestRuleRuleMatchEventArgs.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Management.PowerShellWebAccess\TestRuleInvalidRuleEventArgs.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Management.PowerShellWebAccess\GetRuleByIdNotFoundEventArgs.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Management.PowerShellWebAccess\GetRuleByNameNotFoundEventArgs.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Management.PowerShellWebAccess\DataFileLoadError.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Management.PowerShellWebAccess\MatchingWildcard.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Management.PowerShellWebAccess\PswaHelper.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <EmbeddedResource Include="Management.PowerShellWebAccess\Management\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <LogicalName>Microsoft.Management.UI.PowWA.Management.Resources.resources</LogicalName>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Microsoft.Management.PowerShellWebAccess.data.AuthorizationRuleSchema.xsd">
+      <LogicalName>Microsoft.Management.PowerShellWebAccess.data.AuthorizationRuleSchema.xsd</LogicalName>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Microsoft.Management.PowerShellWebAccess.data.powwa.config.xml">
+      <LogicalName>Microsoft.Management.PowerShellWebAccess.data.powwa.config.xml</LogicalName>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Microsoft.Management.PowerShellWebAccess.data.AuthorizationRules.xml">
+      <LogicalName>Microsoft.Management.PowerShellWebAccess.data.AuthorizationRules.xml</LogicalName>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Management.PowerShellWebAccess\Management\Resources.en.resx">
+      <LogicalName>Microsoft.Management.UI.PowWA.Management.Resources.en.resources</LogicalName>
+    </EmbeddedResource>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <ItemGroup>
+    <ProjectReference Include="..\..\External\System.DirectoryServices\System.DirectoryServices.csproj">
+      <Project>{44EA805B-4769-4511-9D3F-212CFEFF5A99}</Project>
+      <Name>System.DirectoryServices</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\External\System.DirectoryServices.Protocols\System.DirectoryServices.Protocols.csproj">
+      <Project>{FAE22CF8-E105-44F8-A56F-9D3329808E31}</Project>
+      <Name>System.DirectoryServices.Protocols</Name>
+    </ProjectReference>
+  </ItemGroup>
+</Project>
