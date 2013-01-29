@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<WMI>
+	<Namespaces>
+		<Namespace Id="2fbca944-21c6-4d3b-b858-87c12c378e81" Name="root/cimv2">
+			<Class Id="a3d024ed-a234-4b76-b909-f17a75f28327" Name="Meta_Class" Type="System.Management.Classes.Meta_Class, System.Management, Version=4.0.0.0, Culture=neutral, PublicKeyToken=0738eb9f132ed756" />
+			<Class Id="3f2224ea-24d6-4251-987e-2836bf58d49a" Name="__SystemClass" Type="System.Management.Classes.__SystemClass, System.Management, Version=4.0.0.0, Culture=neutral, PublicKeyToken=0738eb9f132ed756" />
+			<Class Id="f8e42a1d-7441-4c87-80fd-ff2da2672c93" Name="__NAMESPACE" Type="System.Management.Classes.__NAMESPACE, System.Management, Version=4.0.0.0, Culture=neutral, PublicKeyToken=0738eb9f132ed756" />
+			<Class Id="2dce690c-3883-41c1-a5c7-281ea4e1b381" Name="__Provider" Type="System.Management.Classes.__Provider, System.Management, Version=4.0.0.0, Culture=neutral, PublicKeyToken=0738eb9f132ed756" />
+			<Class Id="7d25a7d7-8471-4568-a176-1917b4feaa5e" Name="CIM_ManagedSystemElement" Type="System.Management.Classes.CIM_ManagedSystemElement, System.Management, Version=4.0.0.0, Culture=neutral, PublicKeyToken=0738eb9f132ed756" />
+			<Class Id="723acec9-7cd5-47e9-89b8-c0ba3f463505" Name="CIM_ComputerSystem" Type="System.Management.Classes.CIM_ComputerSystem, System.Management, Version=4.0.0.0, Culture=neutral, PublicKeyToken=0738eb9f132ed756" />
+			<Class Id="075e8f60-8bf5-43ce-adbc-262392d95655" Name="CIM_LogicalDisk" Type="System.Management.Classes.CIM_LogicalDisk, System.Management, Version=4.0.0.0, Culture=neutral, PublicKeyToken=0738eb9f132ed756" />
+			<Class Id="68acf581-18dc-4e0c-920b-dd66dc29dc74" Name="CIM_Process" Type="System.Management.Classes.CIM_Process, System.Management, Version=4.0.0.0, Culture=neutral, PublicKeyToken=0738eb9f132ed756" />
+			<Class Id="3e901358-04e2-413e-ac05-3c8dc7225ef9" Name="CIM_OperatingSystem" Type="System.Management.Classes.CIM_OperatingSystem, System.Management, Version=4.0.0.0, Culture=neutral, PublicKeyToken=0738eb9f132ed756" />
+			<Class Id="f011c6a6-cc5d-45f3-9f79-f768f6f18a50" Name="UNIX_ComputerSystem" Type="System.Management.Classes.UNIX_ComputerSystem, System.Management, Version=4.0.0.0, Culture=neutral, PublicKeyToken=0738eb9f132ed756" />
+			<Class Id="a389b15b-ac5a-49c0-811d-dfcd2d827457" Name="UNIX_LogicalDisk" Type="System.Management.Classes.UNIX_LogicalDisk, System.Management, Version=4.0.0.0, Culture=neutral, PublicKeyToken=0738eb9f132ed756" />
+			<Class Id="9ce7daf0-2af7-4a89-9eac-da61b7811dd8" Name="UNIX_OperatingSystem" Type="System.Management.Classes.UNIX_OperatingSystem, System.Management, Version=4.0.0.0, Culture=neutral, PublicKeyToken=0738eb9f132ed756" />
+			<Class Id="b0c22d87-38ef-486d-9b6d-8a4bb58a3d75" Name="UNIX_PingStatus" Type="System.Management.Classes.UNIX_PingStatus, System.Management, Version=4.0.0.0, Culture=neutral, PublicKeyToken=0738eb9f132ed756" />
+			<Class Id="9fa13381-e953-4cc7-a4f0-9849d84e6f20" Name="UNIX_Process" Type="System.Management.Classes.UNIX_Process, System.Management, Version=4.0.0.0, Culture=neutral, PublicKeyToken=0738eb9f132ed756" />
+			
+			<!-- <Class Id="" Name="" Type="System.Management.Classes., System.Management, Version=4.0.0.0, Culture=neutral, PublicKeyToken=0738eb9f132ed756" /> -->
+		</Namespace>
+	</Namespaces>
+</WMI>

@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema targetNamespace="http://schemas.microsoft.com/2010/08/ActiveDirectory/PossibleValues"
+    elementFormDefault="qualified"
+    xmlns="http://schemas.microsoft.com/2010/08/ActiveDirectory/PossibleValues"
+    xmlns:mstns="http://schemas.microsoft.com/2010/08/ActiveDirectory/PossibleValues"
+    xmlns:xs="http://www.w3.org/2001/XMLSchema"
+>
+  <xs:complexType name="ClaimValueItemBaseType" abstract="true">
+    <xs:sequence minOccurs ="1" maxOccurs="1">
+      <xs:element name="ValueGUID" type="xs:string" minOccurs="0" maxOccurs="1" />
+      <xs:element name="ValueDisplayName" type="xs:string" minOccurs="0" maxOccurs="1" />
+      <xs:element name="ValueDescription" type="xs:string" minOccurs="0" maxOccurs="1" />
+      <xs:any namespace="##other" minOccurs="0" maxOccurs="unbounded" processContents="skip"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="IntegerItemType">
+    <xs:complexContent>
+      <xs:extension base="ClaimValueItemBaseType">
+        <xs:sequence>
+          <xs:element name="Value" type="xs:long" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+
+  <xs:complexType name="IntegerListType">
+    <xs:sequence minOccurs ="1" maxOccurs="1">
+      <xs:element name="Item" type="IntegerItemType" minOccurs="1" maxOccurs="unbounded"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="UnsignedIntegerItemType">
+    <xs:complexContent>
+      <xs:extension base="ClaimValueItemBaseType">
+        <xs:sequence>
+          <xs:element name="Value" type="xs:unsignedLong" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+
+  <xs:complexType name="UnsignedIntegerListType">
+    <xs:sequence minOccurs ="1" maxOccurs="1">
+      <xs:element name="Item" type="UnsignedIntegerItemType" minOccurs="1" maxOccurs="unbounded"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="StringItemType">
+    <xs:complexContent>
+      <xs:extension base="ClaimValueItemBaseType">
+        <xs:sequence>
+          <xs:element name="Value" type="xs:string" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+
+  <xs:complexType name="StringListType">
+    <xs:sequence minOccurs ="1" maxOccurs="1">
+      <xs:element name="Item" type="StringItemType" minOccurs="1" maxOccurs="unbounded"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="PossibleClaimValuesType">
+    <xs:choice minOccurs="1" maxOccurs="1">
+      <xs:element name="StringList" type="StringListType" />
+      <xs:element name="IntegerList" type="IntegerListType" />
+      <xs:element name="UnsignedIntegerList" type="UnsignedIntegerListType" />
+      <xs:any namespace="##other" minOccurs="0" maxOccurs="unbounded" processContents="skip"/>
+    </xs:choice>
+  </xs:complexType>
+  <xs:element name="PossibleClaimValues" type="mstns:PossibleClaimValuesType" />
+</xs:schema>
